@@ -13,7 +13,7 @@ This is a more detailed guide on how the automation of the weekly review works. 
 [![Detailed Automated Weekly Review Guide](https://img.youtube.com/vi/tUWjyzvljfs/0.jpg)](https://www.youtube.com/watch?v=tUWjyzvljfs)
 
 # Bug fixes
-I try to cover all possible bugs in the [![Detailed Automated Weekly Review Guide](https://img.youtube.com/vi/tUWjyzvljfs/0.jpg)](https://www.youtube.com/watch?v=tUWjyzvljfs) Video but here are some things that will break the system.
+I try to cover all possible bugs in the  [Detailed Automated Weekly Review Guide Video](https://www.youtube.com/watch?v=tUWjyzvljfs) but here are some things that will break the system.
 - If you change the folder structure, you have to update the Periodic Note Plugin Settings
 - If you change the naming format of the daily or weekly review, you need to update the templates and the Periodic Note Plugin Settings
 - If you click on the link to the weekly page (on the daily page) without first creating the note using "Periodic Notes: Open weekly note", you will get a blank page. Fix this by 
