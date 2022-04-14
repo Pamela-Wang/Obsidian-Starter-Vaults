@@ -22,6 +22,10 @@ I try to cover all possible bugs in the [![Detailed Automated Weekly Review Guid
 	3) Type in "weekly"
 	4) Click on "Periodic Notes: Open weekly note"
 
+
+# Note
+I left all my css snippets in there, but they actually come from like various places? I tried my best to credit. If anyone wants me to remove it, email me at mwahacookie@gmail.com :) I check my email on all working days, so should be fixed within 48-72 hours.
+
 # Upcoming
 - [x] Basic vault for automated weekly review
 - [x] Video on how to install and use for daily note and weekly review
