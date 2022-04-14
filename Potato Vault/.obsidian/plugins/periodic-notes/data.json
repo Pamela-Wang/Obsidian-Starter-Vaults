@@ -1,0 +1,33 @@
+{
+  "showGettingStartedBanner": false,
+  "hasMigratedDailyNoteSettings": false,
+  "hasMigratedWeeklyNoteSettings": false,
+  "daily": {
+    "format": "",
+    "template": "",
+    "folder": "20 Periodic/21 Daily Notes",
+    "enabled": true
+  },
+  "weekly": {
+    "format": "[Weekly Review] YYYY-[W]ww (MMM-DD)",
+    "template": "",
+    "folder": "20 Periodic/22 Weekly Review",
+    "enabled": true
+  },
+  "monthly": {
+    "format": "[Monthly Review] YYYY-MM (MMMM)",
+    "template": "",
+    "folder": "20 Periodic/23 Monthly Review",
+    "enabled": true
+  },
+  "quarterly": {
+    "format": "",
+    "template": "",
+    "folder": ""
+  },
+  "yearly": {
+    "format": "",
+    "template": "",
+    "folder": ""
+  }
+}

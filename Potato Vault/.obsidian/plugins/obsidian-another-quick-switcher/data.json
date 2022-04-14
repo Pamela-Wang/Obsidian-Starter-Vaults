@@ -1,0 +1,16 @@
+{
+  "showDirectory": true,
+  "showAliasesOnTop": false,
+  "showExistingFilesOnly": false,
+  "maxNumberOfSuggestions": 50,
+  "normalizeAccentsAndDiacritics": false,
+  "ignoreNormalPathPrefixPatterns": "80 Archive",
+  "ignoreRecentPathPrefixPatterns": "80 Archive",
+  "ignoreBackLinkPathPrefixPatterns": "80 Archive",
+  "ignoreMoveFileToAnotherFolderPrefixPatterns": "",
+  "showLogAboutPerformanceInConsole": false,
+  "showTags": true,
+  "ignoreNormalPathPattern": "",
+  "ignoreRecentPathPattern": "",
+  "ignoreBackLinkPathPattern": ""
+}

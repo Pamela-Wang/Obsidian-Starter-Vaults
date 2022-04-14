@@ -1,0 +1,39 @@
+{
+  "targetAttributes": [
+    "mode",
+    "kind",
+    "type",
+    "status"
+  ],
+  "targetTags": true,
+  "presetFields": [
+    {
+      "name": "mode",
+      "values": {
+        "1": "mode/life🏠",
+        "2": "mode/work💼",
+        "3": "mode/youtuber🏙️",
+        "4": "mode/zettelkasten🗳️ ",
+        "5": "mode/other☄️"
+      },
+      "id": "1",
+      "isCycle": true,
+      "isMulti": false,
+      "valuesListNotePath": ""
+    }
+  ],
+  "displayFieldsInContextMenu": true,
+  "globallyIgnoredFields": [
+    "summary",
+    "doc"
+  ],
+  "classFilesPath": "",
+  "getFromInlineField": true,
+  "activateSnippet": true,
+  "enableEditor": true,
+  "enableFileList": true,
+  "enableBacklinks": true,
+  "enableQuickSwitcher": false,
+  "enableSuggestor": true,
+  "selectors": []
+}

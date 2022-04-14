@@ -1,0 +1,69 @@
+{
+  "dayCounts": {
+    "2022/2/15": 2144,
+    "2022/2/16": 1160,
+    "2022/2/17": 3548,
+    "2022/2/18": 3375,
+    "2022/2/19": 4668,
+    "2022/2/20": 6438,
+    "2022/2/21": 2138,
+    "2022/2/22": 1745,
+    "2022/2/23": 8427,
+    "2022/2/24": 1810,
+    "2022/2/25": 539,
+    "2022/2/26": 1764,
+    "2022/2/27": 3660,
+    "2022/2/28": 6009,
+    "2022/2/29": 3087,
+    "2022/2/30": 970,
+    "2022/2/31": 1329,
+    "2022/3/1": 1184,
+    "2022/3/2": 823,
+    "2022/3/3": 1692,
+    "2022/3/4": 1110,
+    "2022/3/5": 1019,
+    "2022/3/6": 1573,
+    "2022/3/7": 851,
+    "2022/3/8": 474,
+    "2022/3/9": 1426,
+    "2022/3/10": 1552,
+    "2022/3/11": 1942,
+    "2022/3/12": 3008,
+    "2022/3/13": 1074,
+    "2022/3/14": 3835
+  },
+  "todaysWordCount": {
+    "20 Periodic/21 Daily Notes/2022-04-13.md": {
+      "initial": 898,
+      "current": 1006
+    },
+    "20 Periodic/21 Daily Notes/2022-04-14.md": {
+      "initial": 112,
+      "current": 87
+    },
+    "50 Pages/55 All Pages/course-Ali Abdaal Video Editting in Final Cut Pro.md": {
+      "initial": 14,
+      "current": 1311
+    },
+    "50 Pages/53 Source/Course - Ali Abdaal Video Editting in Final Cut Pro - Source.md": {
+      "initial": 1311,
+      "current": 1567
+    },
+    "50 Pages/53 Source/Course - Accents & Voice Impressions - From Beginner to Pro - Source.md": {
+      "initial": 78,
+      "current": 2248
+    },
+    "50 Pages/55 All Pages/Next Weekly Review.md": {
+      "initial": 11,
+      "current": 13
+    },
+    "10 Templates/Monthly Review Template.md": {
+      "initial": 719,
+      "current": 718
+    },
+    "10 Templates/Daily Note Template.md": {
+      "initial": 118,
+      "current": 120
+    }
+  }
+}

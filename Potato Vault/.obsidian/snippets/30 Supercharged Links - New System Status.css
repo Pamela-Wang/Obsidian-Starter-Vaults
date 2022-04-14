@@ -1,0 +1,146 @@
+/*   
+.data-link-icon-after[data-link-tags*="#mode/life🏠" i]::after{
+    content: " 🏠"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#mode/work💼" i]::after{
+    content: " 💼"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#mode/youtuber🏙" i]::after{
+    content: " 🏙"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#mode/zettelkasten🗳" i]::after{
+    content: " 🗳"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#mode/other☄" i]::after{
+    content: " ☄"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#mode/hobby🐬" i]::after{
+    content: " 🐬"
+}
+
+*/   
+
+
+
+.data-link-icon-after[data-link-tags*="#Status/Blank⚪" i]::after{
+    content: " ⚪"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#Status/Started🟣" i]::after{
+    content: " 🟣"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#Status/Focus❗" i]::after{
+    content: " ❗"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#Status/Waiting❓" i]::after{
+    content: " ❓"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#Status/Completed🟢" i]::after{
+    content: " 🟢"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#Zettel/Fleeting⚪" i]::after{
+    content: " ⚪"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#Zettel/Seed🟣" i]::after{
+    content: " 🟣"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#Zettel/Seedling🌱" i]::after{
+    content: " 🌱"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#Zettel/Evergreen🌲" i]::after{
+    content: " 🌲"
+}
+
+        
+
+.data-link-icon-after[data-link-tags*="#VidStatus/Research🐣" i]::after{
+    content: " 🐣"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#VidStatus/Ideate💡" i]::after{
+    content: " 💡"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#VidStatus/Film🎬" i]::after{
+    content: " 🎬"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#VidStatus/Edit🧩" i]::after{
+    content: " 🧩"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#VidStatus/Promoting📢" i]::after{
+    content: " 📢"
+}
+
+        
+
+
+.data-link-icon-after[data-link-tags*="#VidStatus/Published✅" i]::after{
+    content: " ✅"
+}
+
+        

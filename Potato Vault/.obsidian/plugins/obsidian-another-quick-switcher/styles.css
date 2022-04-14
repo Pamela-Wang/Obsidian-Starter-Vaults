@@ -1,0 +1,95 @@
+/* Sets all the text color to red! */
+
+.another-quick-switcher__item {
+    display: flex;
+    align-items: center;
+}
+
+.another-quick-switcher__phantom_item {
+    /*noinspection CssUnresolvedCustomProperty*/
+    color: var(--text-faint);
+}
+
+.another-quick-switcher__item__icon {
+    position: absolute;
+    /*noinspection CssUnresolvedCustomProperty*/
+    color: var(--text-muted);
+    left: 10px;
+    top: 6px;
+}
+
+.another-quick-switcher__item__entry {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.another-quick-switcher__item__title {
+    flex: 1;
+}
+
+.another-quick-switcher__item__directory {
+    display: flex;
+    align-items: center;
+    font-size: 0.75em;
+    /*noinspection CssUnresolvedCustomProperty*/
+    color: var(--text-muted);
+    padding-left: 15px;
+}
+
+.another-quick-switcher__item__descriptions {
+}
+
+.another-quick-switcher__item__description {
+    font-size: 0.75em;
+    display: inline-block;
+    /*noinspection CssUnresolvedCustomProperty*/
+    color: var(--text-muted);
+}
+
+.another-quick-switcher__item__description__alias {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.another-quick-switcher__item__description__tag {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+/*mobile*/
+
+.is-mobile .another-quick-switcher__item {
+    display: flex;
+    align-items: center;
+}
+
+.is-mobile .another-quick-switcher__item__icon {
+    position: relative;
+    /*noinspection CssUnresolvedCustomProperty*/
+    color: var(--text-muted);
+    left: 0;
+    top: 0;
+    padding-right: 3px;
+}
+
+.is-mobile .another-quick-switcher__item__entry {
+    display: block;
+}
+
+.is-mobile .another-quick-switcher__item__title {
+    display: block;
+}
+
+.is-mobile .another-quick-switcher__item__directory {
+    align-items: center;
+    font-size: 0.75em;
+    /*noinspection CssUnresolvedCustomProperty*/
+    color: var(--text-muted);
+}
+
+.another-quick-switcher__settings__ignore_path_patterns {
+    height: 120px;
+    width: 500px;
+}

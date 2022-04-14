@@ -1,0 +1,29 @@
+/*.theme-dark
+{
+  --graph-node: hsl(var(--accent-h),calc(var(--accent-s) + 10%),calc(var(--accent-d) + 5%));
+
+}
+
+.theme-light
+{
+  --graph-node: hsl(var(--accent-h),calc(var(--accent-s) + 10%),calc(var(--accent-l) + 5%));
+
+}
+
+*/
+.theme-dark
+{
+  --graph-node: #A37ACC; /*d8d8d8*/
+
+}
+
+.theme-light
+{
+  --graph-node: #A37ACC; /*d8d8d8*/
+}
+
+
+
+.graph-view.color-fill {
+    color: var(--graph-node); /*Created notes color*/
+}

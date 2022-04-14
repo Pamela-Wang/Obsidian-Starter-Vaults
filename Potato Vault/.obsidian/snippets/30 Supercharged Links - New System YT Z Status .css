@@ -1,0 +1,54 @@
+
+.data-link-icon[data-link-tags$="#Zettel/Seedling🌱" i]::before{
+    content: "🌱 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags$="#Zettel/Evergreen🌲" i]::before{
+    content: "🌲 "
+}
+
+        
+
+.data-link-icon[data-link-tags$="#VidStatus/Research🐣" i]::before{
+    content: "🐣 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags$="#VidStatus/Ideate💡" i]::before{
+    content: "💡 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags$="#VidStatus/Film🎬" i]::before{
+    content: "🎬 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags$="#VidStatus/Edit🧩" i]::before{
+    content: "🧩 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags$="#VidStatus/Promoting📢" i]::before{
+    content: "📢 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags$="#VidStatus/Published✅" i]::before{
+    content: "✅ "
+}
+
+        

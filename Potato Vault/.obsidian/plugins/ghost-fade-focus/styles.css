@@ -1,0 +1,22 @@
+.CodeMirror-code .ghost-fade-focus {
+  opacity: var(--ghost-fade-focus-opacity);
+}
+.CodeMirror-code .CodeMirror-activeline {
+  opacity: 1;
+}
+.CodeMirror-code .ghost-fade-focus--1 {
+  opacity: var(--ghost-fade-focus-opacity-1);
+}
+.CodeMirror-code .ghost-fade-focus--2 {
+  opacity: var(--ghost-fade-focus-opacity-2);
+}
+.CodeMirror-code .ghost-fade-focus--3 {
+  opacity: var(--ghost-fade-focus-opacity-3);
+}
+.CodeMirror-code .ghost-fade-focus--4 {
+  opacity: var(--ghost-fade-focus-opacity-4);
+}
+.CodeMirror-code .ghost-fade-focus--5 {
+  opacity: var(--ghost-fade-focus-opacity-5);
+}
+

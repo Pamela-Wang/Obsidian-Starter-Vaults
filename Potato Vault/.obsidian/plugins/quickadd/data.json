@@ -1,0 +1,40 @@
+{
+  "choices": [
+    {
+      "id": "06e8ccb0-e0ae-4764-a7da-c4044cb1cd6f",
+      "name": "Daily Log",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "20 Periodic/21 Daily Notes/{{DATE}}.md",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": true,
+        "template": "10 Templates/Daily Note Template.md"
+      },
+      "format": {
+        "enabled": true,
+        "format": "- {{DATE:h:mm A}} {{VALUE}} \\n"
+      },
+      "insertAfter": {
+        "enabled": true,
+        "after": "# Log",
+        "insertAtEnd": true,
+        "createIfNotFound": true,
+        "createIfNotFoundLocation": "bottom"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    }
+  ],
+  "macros": [],
+  "inputPrompt": "single-line"
+}

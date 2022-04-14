@@ -1,0 +1,82 @@
+
+/* EDITOR headings */
+.theme-dark
+{
+  --text-title-h1: #F07171; /* CyberYellow: fcf601, FullYellow: fffb00, H1Yellow: c7c400 */
+  --text-title-h2: #FF9940; 
+  --text-title-h3: #52c1da;
+  --text-title-h4: #67c073; /*6fcf7f*/
+  --text-title-h5: #a16cd6; /*d8d8d8*/
+  --text-title-h6: #b4b4b4;
+}
+
+.theme-light
+{
+  --text-title-h1: #F07171; /* ayu mirage https://github.com/ayu-theme/ayu-colors */
+  --text-title-h2: #FF9940; 
+  --text-title-h3: #55B4D4;
+  --text-title-h4: #4CBF99; /*6fcf7f*/
+  --text-title-h5: #A37ACC; /*d8d8d8*/
+  --text-title-h6: #575F66;
+}
+
+
+
+
+.cm-header-1
+{
+  color: var(--text-title-h1);
+
+}
+
+.cm-header-2
+{
+  color: var(--text-title-h2);
+}
+
+.cm-header-3
+{
+  color: var(--text-title-h3);
+}
+
+.cm-header-4
+{
+  color: var(--text-title-h4);
+}
+
+.cm-header-5
+{
+  color: var(--text-title-h5);
+}
+
+.cm-header-6
+{
+  color: var(--text-title-h6);
+}
+
+.cm-strong {
+  color: rgb(179, 153, 255, 0.95);
+  font-weight: 700;
+}
+
+.cm-em {
+  color: #bac04f;
+}
+
+.cm-s-obsidian span.cm-hashtag {
+    color: #d669bc;
+    text-decoration: underline;
+}
+
+
+
+/* This is the dashes in bullets. Color does not work, 
+but font weight does. */
+.cm-formatting-list {
+  color: #fcf601;
+  font-weight: 700;
+} 
+
+.cm-formatting  /* This is the color of header hashtags. Don't change. */
+.cm-formatting-list-ul
+.cm-list-1 /* This is the color of text in lists. Don't change. */

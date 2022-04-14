@@ -1,0 +1,319 @@
+[
+  {
+    "fileName": "Untitled",
+    "relativePath": "Untitled.md"
+  },
+  {
+    "fileName": "Untitled 1",
+    "relativePath": "Untitled 1.md",
+    "tags": [
+      "mode/life🏠",
+      "periodic/daily📅"
+    ],
+    "headings": [
+      {
+        "heading": "Daily Checklist",
+        "level": 1
+      },
+      {
+        "heading": "Tracking",
+        "level": 4
+      },
+      {
+        "heading": "Tasks",
+        "level": 1
+      },
+      {
+        "heading": "Log",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "0000-12-31"
+      },
+      {
+        "link": "Weekly Review 0000-W01 (Dec-31)"
+      },
+      {
+        "link": "0001-01-02"
+      }
+    ]
+  },
+  {
+    "fileName": "2022-04-14",
+    "relativePath": "20 Periodic/21 Daily Notes/2022-04-14.md",
+    "tags": [
+      "mode/life🏠",
+      "periodic/daily📅"
+    ],
+    "headings": [
+      {
+        "heading": "Daily Checklist",
+        "level": 1
+      },
+      {
+        "heading": "Tracking",
+        "level": 4
+      },
+      {
+        "heading": "Tasks",
+        "level": 1
+      },
+      {
+        "heading": "Log",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-04-13"
+      },
+      {
+        "link": "Weekly Review 2022-W16 (Apr-10)"
+      },
+      {
+        "link": "2022-04-15"
+      }
+    ]
+  },
+  {
+    "fileName": "Monthly Review Template",
+    "relativePath": "10 Templates/Monthly Review Template.md",
+    "tags": [
+      "mode/life🏠",
+      "periodic/monthly🌔",
+      "status/blank⚪"
+    ],
+    "headings": [
+      {
+        "heading": "This Month <% tp.date.now(\"YYYY-MM\") %>",
+        "level": 1
+      },
+      {
+        "heading": "Keep In Mind",
+        "level": 2
+      },
+      {
+        "heading": "Goals",
+        "level": 2
+      },
+      {
+        "heading": "Task List",
+        "level": 1
+      },
+      {
+        "heading": "Summary of Last Month <% tp.date.now(\"MMMM YYYY\") %>",
+        "level": 1
+      },
+      {
+        "heading": "Weeks of The Month",
+        "level": 2
+      },
+      {
+        "heading": "Memories",
+        "level": 2
+      },
+      {
+        "heading": "Work",
+        "level": 2
+      },
+      {
+        "heading": "Youtube",
+        "level": 2
+      },
+      {
+        "heading": "Goals",
+        "level": 2
+      },
+      {
+        "heading": "Feelings",
+        "level": 3
+      },
+      {
+        "heading": "In-Depth habit Tracker",
+        "level": 3
+      },
+      {
+        "heading": "Habits Overview",
+        "level": 3
+      },
+      {
+        "heading": "Life",
+        "level": 2
+      },
+      {
+        "heading": "Reflection",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "Monthly Academic Report - <% tp.date.now(\"MMM YYYY\") %>"
+      }
+    ]
+  },
+  {
+    "fileName": "Weekly Review Template",
+    "relativePath": "10 Templates/Weekly Review Template.md",
+    "tags": [
+      "mode/life🏠",
+      "periodic/weekly📆",
+      "status/blank⚪"
+    ],
+    "headings": [
+      {
+        "heading": "This Week",
+        "level": 1
+      },
+      {
+        "heading": "Review This Week",
+        "level": 1
+      },
+      {
+        "heading": "Notes for Next Week",
+        "level": 2
+      },
+      {
+        "heading": "Events",
+        "level": 3
+      },
+      {
+        "heading": "Must Do",
+        "level": 3
+      },
+      {
+        "heading": "Changes to System",
+        "level": 3
+      },
+      {
+        "heading": "Bonus",
+        "level": 3
+      },
+      {
+        "heading": "Misc",
+        "level": 3
+      },
+      {
+        "heading": "Checklist",
+        "level": 2
+      },
+      {
+        "heading": "Summary of this Week - <% tp.date.weekday(\"YYYY-MM-DD\", 0) %> to <% tp.date.weekday(\"YYYY-MM-DD\", 6) %>",
+        "level": 1
+      },
+      {
+        "heading": "Week Notes",
+        "level": 2
+      },
+      {
+        "heading": "Memories",
+        "level": 2
+      },
+      {
+        "heading": "Goals",
+        "level": 2
+      },
+      {
+        "heading": "Feelings",
+        "level": 3
+      },
+      {
+        "heading": "Habits",
+        "level": 3
+      },
+      {
+        "heading": "Work",
+        "level": 2
+      },
+      {
+        "heading": "Youtube",
+        "level": 2
+      },
+      {
+        "heading": "Life",
+        "level": 2
+      },
+      {
+        "heading": "Reflection",
+        "level": 2
+      },
+      {
+        "heading": "Tasks this Week",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "<% tp.date.weekday(\"[Weekly Review] YYYY-[W]ww (MMM-DD)\",  -7) %>"
+      },
+      {
+        "link": "Monthly Review <% tp.date.now(\"YYYY-MM (MMMM)\") %>"
+      },
+      {
+        "link": "<% tp.date.weekday(\"[Weekly Review] YYYY-[W]ww (MMM-DD)\",  7) %>"
+      },
+      {
+        "link": "Next Weekly Review"
+      },
+      {
+        "link": "<% tp.date.weekday(\"YYYY-MM-DD\", 0) %>"
+      },
+      {
+        "link": "<% tp.date.weekday(\"YYYY-MM-DD\", 1) %>"
+      },
+      {
+        "link": "<% tp.date.weekday(\"YYYY-MM-DD\", 2) %>"
+      },
+      {
+        "link": "<% tp.date.weekday(\"YYYY-MM-DD\", 3) %>"
+      },
+      {
+        "link": "<% tp.date.weekday(\"YYYY-MM-DD\", 4) %>"
+      },
+      {
+        "link": "<% tp.date.weekday(\"YYYY-MM-DD\", 5) %>"
+      },
+      {
+        "link": "<% tp.date.weekday(\"YYYY-MM-DD\", 6) %>"
+      }
+    ]
+  },
+  {
+    "fileName": "Daily Note Template",
+    "relativePath": "10 Templates/Daily Note Template.md",
+    "tags": [
+      "mode/life🏠",
+      "periodic/daily📅"
+    ],
+    "headings": [
+      {
+        "heading": "Daily Checklist",
+        "level": 1
+      },
+      {
+        "heading": "Tracking",
+        "level": 4
+      },
+      {
+        "heading": "Tasks",
+        "level": 1
+      },
+      {
+        "heading": "Log",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "<% moment(tp.file.title,'YYYY-MM-DD').add(-1,'days').format(\"YYYY-MM-DD\") %>"
+      },
+      {
+        "link": "Weekly Review <% tp.date.weekday(\"YYYY-[W]ww (MMM-DD)\",0, tp.file.title, \"YYYY-MM-DD\") %>"
+      },
+      {
+        "link": "<% moment(tp.file.title,'YYYY-MM-DD').add(1,'days').format(\"YYYY-MM-DD\") %>"
+      }
+    ]
+  }
+]

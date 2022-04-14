@@ -1,0 +1,25 @@
+{
+  "pluginList": [
+    "scambier/obsidian-omnisearch",
+    "franciskafieh/obsidian-list-modified",
+    "nothingislost/obsidian-hover-editor",
+    "Sanqui/obsidian-persistent-graph",
+    "SkepticMystic/nlp",
+    "SkepticMystic/codeblock-completer",
+    "caronchen/obsidian-calibre-plugin",
+    "alexobenauer/Cross-reference-Navigation-for-Obsidian",
+    "ruivieira/obsidian-plugin-logseq",
+    "kinabalu/obsidian-word-sprint",
+    "aleksey-rezvov/obsidian-local-images",
+    "kenset/obsidian-theme-picker"
+  ],
+  "themesList": [],
+  "updateAtStartup": false,
+  "updateThemesAtStartup": false,
+  "ribbonIconEnabled": true,
+  "loggingEnabled": false,
+  "loggingPath": "BRAT-log",
+  "loggingVerboseEnabled": false,
+  "debuggingMode": true,
+  "notificationsEnabled": true
+}

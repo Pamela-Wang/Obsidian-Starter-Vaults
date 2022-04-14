@@ -1,0 +1,44 @@
+{
+  "folders": [
+    {
+      "name": "",
+      "relativePath": "/"
+    },
+    {
+      "name": "10 Templates",
+      "relativePath": "10 Templates"
+    },
+    {
+      "name": "20 Periodic",
+      "relativePath": "20 Periodic"
+    },
+    {
+      "name": "90 Meta",
+      "relativePath": "90 Meta"
+    },
+    {
+      "name": "21 Daily Notes",
+      "relativePath": "20 Periodic/21 Daily Notes"
+    },
+    {
+      "name": "22 Weekly Review",
+      "relativePath": "20 Periodic/22 Weekly Review"
+    },
+    {
+      "name": "23 Monthly Review",
+      "relativePath": "20 Periodic/23 Monthly Review"
+    },
+    {
+      "name": "24 Quarterly Review",
+      "relativePath": "20 Periodic/24 Quarterly Review"
+    },
+    {
+      "name": "25 Yearly Review",
+      "relativePath": "20 Periodic/25 Yearly Review"
+    },
+    {
+      "name": "Attachments",
+      "relativePath": "90 Meta/Attachments"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+.theme-dark
+{
+  --line-colors-h1: #F07171; /* CyberYellow: fcf601, FullYellow: fffb00, H1Yellow: c7c400 */
+  --line-colors-h2: #FF9940; 
+  --line-colors-h3: #52c1da;
+  --line-colors-h4: #67c073; /*6fcf7f*/
+  --line-colors-h5: #a16cd6; /*d8d8d8*/
+  --line-colors-h6: #f2ea5e;
+  --line-colors-h7: #4dffef;
+
+}
+
+.theme-light
+{
+  --line-colors-h1: #F07171; /* ayu mirage https://github.com/ayu-theme/ayu-colors */
+  --line-colors-h2: #FF9940; 
+  --line-colors-h3: #55B4D4;
+  --line-colors-h4: #4CBF99; /*6fcf7f*/
+  --line-colors-h5: #A37ACC; /*d8d8d8*/
+  --line-colors-h6: #754519;
+  --line-colors-h7: #4dffef;
+}
+
+
+/*the entire line in editor is color coded*/
+/*.cm-s-obsidian .HyperMD-list-line-1234567 {
+     color: var(--line-colors-h1);
+}
+*/
+
+.cm-s-obsidian .HyperMD-list-line-2 {
+     color: var(--line-colors-h1);
+}
+
+.cm-s-obsidian .HyperMD-list-line-3 {
+    color: var(--line-colors-h2);
+}
+
+
+.cm-s-obsidian .HyperMD-list-line-4 {
+     color: var(--line-colors-h3);
+}
+
+.cm-s-obsidian .HyperMD-list-line-5 {
+    color: var(--line-colors-h4);
+}
+
+.cm-s-obsidian .HyperMD-list-line-6 {
+    color: var(--line-colors-h5);
+}
+
+.cm-s-obsidian .HyperMD-list-line-7 {
+    color: var(--line-colors-h6);
+}
+
+.cm-s-obsidian .HyperMD-list-line-8 {
+    color: var(--line-colors-h7);
+}
+/*the entire line in preview is color coded*/
+
+/*span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1 {
+     color: var(--line-colors-h1);
+}
+*/
+/*span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-2 {
+    color: var(--line-colors-h2);
+}
+
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-3 {
+     color: var(--line-colors-h3);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-4 {
+    color: var(--line-colors-h4);
+}
+
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-5 {
+     color: var(--line-colors-h5);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-6 {
+    color: var(--line-colors-h6);
+}
+*/
+
+
+/*ul {
+     color: var(--line-colors-h1);
+}
+*/
+
+ul ul {
+     color: var(--line-colors-h1);
+}
+
+ul ul ul {
+    color: var(--line-colors-h2);
+}
+
+
+ul ul ul ul  {
+     color: var(--line-colors-h3);
+}
+
+ul ul ul ul ul  {
+    color: var(--line-colors-h4);
+}
+
+
+ul ul ul ul ul ul  {
+     color: var(--line-colors-h5);
+}
+
+ul ul ul ul ul ul ul  {
+    color: var(--line-colors-h6);
+}
+
+ul ul ul ul ul ul ul ul {
+    color: var(--line-colors-h7);
+}
+
+
+
+

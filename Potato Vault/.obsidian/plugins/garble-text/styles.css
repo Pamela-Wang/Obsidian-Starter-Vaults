@@ -1,0 +1,23 @@
+/*
+  CSS part developed by Matthias C. Hormann (aka Moonbase59) 2021-08-22
+*/
+
+.app-container.is-text-garbled img {
+  filter: blur(10px) !important;
+  -webkit-filter: blur(10px) !important;
+  transition: all 0.3s;
+}
+/*
+  CSS part developed by Matthias C. Hormann (aka Moonbase59) 2021-08-22 
+*/
+
+.app-container.is-text-garbled *:hover {
+  font-family: unset !important;
+  transition: all 0.3s;
+}
+
+.app-container.is-text-garbled img:hover {
+  filter: unset !important;
+  -webkit-filter: unset !important;
+  transition: all 0.3s;
+}

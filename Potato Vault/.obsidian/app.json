@@ -1,0 +1,25 @@
+{
+  "fileSortOrder": "byModifiedTime",
+  "foldHeading": true,
+  "foldIndent": true,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "90 Meta/Attachments",
+  "promptDelete": false,
+  "readableLineLength": false,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 60
+  },
+  "autoConvertHtml": true,
+  "communityPluginSortOrder": "download",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "50 Pages/55 All Pages",
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": false,
+  "legacyEditor": false,
+  "livePreview": true,
+  "showFrontmatter": false,
+  "defaultViewMode": "source"
+}

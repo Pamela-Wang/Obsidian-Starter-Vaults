@@ -1,0 +1,173 @@
+/* iA Writer Syntax Highlighting */
+.theme-light {
+	--verb: hsl(220 100% 40%);
+	--adjective: hsl(38 100% 35%);
+	--adverb: hsl(303 100% 32%);
+	--conjunction: hsl(120 100% 25%);
+	--noun: hsl(0 80% 40%);
+}
+
+.theme-dark {
+	--verb: hsl(220 100% 60%);
+	--adjective: hsl(38 100% 50%);
+	--adverb: hsl(303 80% 45%);
+	--conjunction: hsl(120 100% 35%);
+	--noun: hsl(0 70% 55%);
+}
+
+body:not(.no-verbs) .Verb {
+	color: var(--verb);
+}
+body:not(.no-adjectives) .Adjective {
+	color: var(--adjective);
+}
+body:not(.no-adverbs) .Adverb {
+	color: var(--adverb);
+}
+body:not(.no-conjunctions) .Conjunction {
+	color: var(--conjunction);
+}
+body:not(.no-nouns) .Noun {
+	color: var(--noun);
+}
+
+/* Toggles for `Parts of Speech` when using the Style Settings Plugin */
+/* @settings
+name: 'NLP Plugin: Syntax Highlighting'
+id: nlp-linguistic-syntax-highlighting
+settings:
+  -
+	 id: no-nouns
+	 title: Do not highlight nouns.
+	 type: class-toggle
+	 default: false
+  -
+	 id: no-verbs
+	 title: Do not highlight verbs.
+	 type: class-toggle
+	 default: false
+  -
+	 id: no-adjectives
+	 title: Do not highlight adjectives.
+	 type: class-toggle
+	 default: false
+  -
+	 id: no-adverbs
+	 title: Do not highlight adverbs.
+	 type: class-toggle
+	 default: false
+  -
+	 id: no-conjunctions
+	 title: Do not highlight conjunctions.
+	 type: class-toggle
+	 default: false
+  -
+*/
+
+/* Highlighting every other sentence */
+.Sentence:nth-child(even) {
+	color: var(--text-faint);
+}
+
+/* Things */
+.Person {
+}
+.Duration {
+}
+.Date {
+}
+.WeekDay {
+}
+.Month {
+}
+.Year {
+}
+
+/* Numbers */
+.Cardinal {
+}
+.Ordinal {
+}
+.NumericValue {
+	/* e.g. "fifth" */
+}
+.TextValue {
+}
+
+/* Count */
+.Singular {
+}
+.Plural {
+}
+
+/* Tenses */
+
+.PastTense {
+}
+.PresentTense {
+}
+.FutureTense {
+}
+
+/* Names */
+.MaleName {
+}
+.FemaleName {
+}
+.FirstName {
+}
+.LastName {
+}
+
+/* Parts of Speech */
+.Noun {
+}
+.Verb {
+}
+
+.Adjective {
+}
+.Gerund {
+}
+.ProperNoun {
+}
+.Conjunction {
+}
+.Article {
+}
+.Adverb {
+}
+.Preposition {
+}
+.Possessive {
+}
+.Copula {
+}
+.Determiner {
+}
+.Demonym {
+}
+.Infinitive {
+}
+.Comparable {
+}
+.Auxiliary {
+}
+.Superlative {
+}
+.Modal {
+}
+.Uncountable {
+}
+.PhrasalVerb {
+}
+.Particle {
+}
+.Negative {
+}
+.Imperative {
+}
+.Expression {
+}
+.QuestionWord {
+}

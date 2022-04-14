@@ -1,0 +1,9 @@
+{
+  "id": "workbench-obsidian",
+  "name": "Workbench",
+  "version": "1.6.1",
+  "description": "Keep a workbench of knowledge materials.",
+  "author": "ryanjamurphy",
+  "authorUrl": "axle.design",
+  "isDesktopOnly": false
+}

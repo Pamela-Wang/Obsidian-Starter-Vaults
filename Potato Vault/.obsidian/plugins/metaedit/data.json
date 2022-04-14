@@ -1,0 +1,25 @@
+{
+  "ProgressProperties": {
+    "enabled": true,
+    "properties": []
+  },
+  "IgnoredProperties": {
+    "enabled": false,
+    "properties": []
+  },
+  "AutoProperties": {
+    "enabled": true,
+    "properties": []
+  },
+  "EditMode": {
+    "mode": "All Single",
+    "properties": []
+  },
+  "KanbanHelper": {
+    "enabled": false,
+    "boards": []
+  },
+  "UIElements": {
+    "enabled": true
+  }
+}

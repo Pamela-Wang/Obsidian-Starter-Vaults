@@ -1,0 +1,208 @@
+{
+  "recentFiles": [
+    {
+      "basename": "2021-08-11",
+      "path": "Daily/2021-08-11.md"
+    },
+    {
+      "basename": "2021-08-10",
+      "path": "Daily/2021-08-10.md"
+    },
+    {
+      "basename": "Shared Architecture for RIAL & DIAL",
+      "path": "Shared Architecture for RIAL & DIAL.md"
+    },
+    {
+      "basename": "2021-05-07",
+      "path": "2021-05-07.md"
+    },
+    {
+      "basename": "Life Philosophy",
+      "path": "Life Philosophy.md"
+    },
+    {
+      "basename": "Difference between RIAL and DIAL",
+      "path": "Difference between RIAL and DIAL.md"
+    },
+    {
+      "basename": "DIAL - Differentiable inter-agent learning",
+      "path": "DIAL - Differentiable inter-agent learning.md"
+    },
+    {
+      "basename": "2021-08-09",
+      "path": "Daily/2021-08-09.md"
+    },
+    {
+      "basename": "2021-08-08",
+      "path": "Daily/2021-08-08.md"
+    },
+    {
+      "basename": "Workbench",
+      "path": "Workbench.md"
+    },
+    {
+      "basename": "multi timestep message context",
+      "path": "multi timestep message context.md"
+    },
+    {
+      "basename": "Learning to Communicate with Deep Multi-Agent Reinforcement Learning",
+      "path": "Learning to Communicate with Deep Multi-Agent Reinforcement Learning.md"
+    },
+    {
+      "basename": "RIAL - Reinforced Inter-Agent Learning",
+      "path": "RIAL - Reinforced Inter-Agent Learning.md"
+    },
+    {
+      "basename": "Lab Meeting Comms 2021-08-10",
+      "path": "Lab Meeting Comms 2021-08-10.md"
+    },
+    {
+      "basename": "Generalizability of communication protocol learnt",
+      "path": "Generalizability of communication protocol learnt.md"
+    },
+    {
+      "basename": "why we might not want to impose or incentivise structure on neural networks",
+      "path": "why we might not want to impose or incentivise structure on neural networks.md"
+    },
+    {
+      "basename": "spy conversion",
+      "path": "spy conversion.md"
+    },
+    {
+      "basename": "Untitled 3",
+      "path": "Untitled 3.md"
+    },
+    {
+      "basename": "Sparse Discrete Communication Learning for Multi-Agent Cooperation through Backpropagation",
+      "path": "Sparse Discrete Communication Learning for Multi-Agent Cooperation through Backpropagation.md"
+    },
+    {
+      "basename": "Trust - Adversarial - Robustness - Resilience - generalisability Communication",
+      "path": "Trust - Adversarial - Robustness - Resilience - generalisability Communication.md"
+    },
+    {
+      "basename": "Lab Meeting Comms 2021-08-03",
+      "path": "Lab Meeting Comms 2021-08-03.md"
+    },
+    {
+      "basename": "On the Measure of Intelligence",
+      "path": "On the Measure of Intelligence.md"
+    },
+    {
+      "basename": "Academic Blogs",
+      "path": "Academic Blogs.md"
+    },
+    {
+      "basename": "Inbox",
+      "path": "Inbox.md"
+    },
+    {
+      "basename": "Inbox",
+      "path": "Inbox.txt"
+    },
+    {
+      "basename": "Landing Page",
+      "path": "Landing Page.md"
+    },
+    {
+      "basename": "Map of Deep Learning",
+      "path": "Map of Deep Learning.md"
+    },
+    {
+      "basename": "Reinforcement Learning by Google",
+      "path": "Reinforcement Learning by Google.md"
+    },
+    {
+      "basename": "What is my Research Question",
+      "path": "What is my Research Question.md"
+    },
+    {
+      "basename": "Perpetual Task List",
+      "path": "Perpetual Task List.md"
+    },
+    {
+      "basename": "Daily Note Template",
+      "path": "Template/Daily Note Template.md"
+    },
+    {
+      "basename": "Map of Reinforcement Learning",
+      "path": "Map of Reinforcement Learning.md"
+    },
+    {
+      "basename": "Replicable Studies",
+      "path": "Replicable Studies.md"
+    },
+    {
+      "basename": "Research Skills",
+      "path": "Research Skills.md"
+    },
+    {
+      "basename": "Research Thinking",
+      "path": "Research Thinking.md"
+    },
+    {
+      "basename": "Human-level control through deep reinforcement learning",
+      "path": "Human-level control through deep reinforcement learning.md"
+    },
+    {
+      "basename": "Q-Learning",
+      "path": "Q-Learning.md"
+    },
+    {
+      "basename": "Q function",
+      "path": "Q function.md"
+    },
+    {
+      "basename": "Value function",
+      "path": "Value function.md"
+    },
+    {
+      "basename": "Habit Tracker - 2021-08-08",
+      "path": "Habit Tracker - 2021-08-08.md"
+    },
+    {
+      "basename": "Papers to read",
+      "path": "Papers to read.md"
+    },
+    {
+      "basename": "Emergent Communication Papers to Read",
+      "path": "Emergent Communication Papers to Read.md"
+    },
+    {
+      "basename": "Deep Recurrent Q-Learning for Partially Observable MDPs",
+      "path": "Deep Recurrent Q-Learning for Partially Observable MDPs.md"
+    },
+    {
+      "basename": "Multiagent Cooperation and Competition with Deep Reinforcement Learning",
+      "path": "Multiagent Cooperation and Competition with Deep Reinforcement Learning.md"
+    },
+    {
+      "basename": "Cheap Talk",
+      "path": "Cheap Talk.md"
+    },
+    {
+      "basename": "centralised learning but decentralised execution",
+      "path": "centralised learning but decentralised execution.md"
+    },
+    {
+      "basename": "Emergent Communication",
+      "path": "Emergent Communication.md"
+    },
+    {
+      "basename": "What is Emergent Communication",
+      "path": "What is Emergent Communication.md"
+    },
+    {
+      "basename": "Experience Replay",
+      "path": "Experience Replay.md"
+    },
+    {
+      "basename": "recurrent neural network",
+      "path": "recurrent neural network.md"
+    }
+  ],
+  "omittedPaths": [
+    "\\.png"
+  ],
+  "maxLength": null
+}

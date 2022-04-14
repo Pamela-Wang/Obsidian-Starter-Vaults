@@ -1,0 +1,10 @@
+{
+	"id": "obsidian-related-notes-finder",
+	"name": "Related Notes Finder",
+	"version": "1.1.0",
+	"minAppVersion": "0.9.12",
+	"description": "An Obsidian plugin that adds extra features for finding related notes.",
+	"author": "Joshua Michalik",
+	"authorUrl": "https://github.com/lifegems/obsidian-related-notes-finder",
+	"isDesktopOnly": false
+}

@@ -1,0 +1,39 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "10 Templates",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": true,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "20 Periodic/21 Daily Notes",
+      "template": "10 Templates/Daily Note Template.md"
+    },
+    {
+      "folder": "20 Periodic/22 Weekly Review",
+      "template": "10 Templates/Weekly Review Template.md"
+    },
+    {
+      "folder": "20 Periodic/23 Monthly Review",
+      "template": "10 Templates/Monthly Review Template.md"
+    }
+  ],
+  "syntax_highlighting": true,
+  "enabled_templates_hotkeys": [
+    "test"
+  ],
+  "startup_templates": [
+    ""
+  ],
+  "template_folder": "Template/",
+  "empty_file_template": "Template/Default Note Template"
+}

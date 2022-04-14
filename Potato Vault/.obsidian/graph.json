@@ -1,0 +1,58 @@
+{
+  "collapse-filter": false,
+  "search": "-path:\"80 Archive\" ",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "#Periodic",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "path:\"10 Templates\"",
+      "color": {
+        "a": 1,
+        "rgb": 14069084
+      }
+    },
+    {
+      "query": "tag:#mode/youtuber🏙️",
+      "color": {
+        "a": 1,
+        "rgb": 11392604
+      }
+    },
+    {
+      "query": "tag:#SystemMeta or tag:#mode/other☄️",
+      "color": {
+        "a": 1,
+        "rgb": 9972412
+      }
+    },
+    {
+      "query": "path:\"80 Archive\"",
+      "color": {
+        "a": 1,
+        "rgb": 11382189
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.18605716254223317,
+  "close": false
+}

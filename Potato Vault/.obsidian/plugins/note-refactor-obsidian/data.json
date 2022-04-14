@@ -1,0 +1,11 @@
+{
+  "includeFirstLineAsNoteHeading": false,
+  "excludeFirstLineInNote": true,
+  "headingFormat": "#",
+  "newFileLocation": 2,
+  "customFolder": "pages/",
+  "fileNamePrefix": "",
+  "transcludeByDefault": true,
+  "noteLinkTemplate": "[[{{new_note_title}}]]",
+  "refactoredNoteTemplate": "type:: #Atomic\ntopics::\nparent:: {{link}}\nsummary:: \n\n{{new_note_content}}\n\n"
+}

@@ -1,0 +1,350 @@
+.data-link-icon[data-link-tags*="#SystemMeta" i]::before{
+    content: "⚙️  "
+}
+
+.data-link-icon[data-link-tags*="#SystemMeta/Documentation📑" i]::before{
+    content: "⚙️  "
+}
+
+.data-link-icon[data-link-tags*=" #SystemMeta/Processing🐶" i]::before{
+    content: "⚙️  "
+}
+
+
+.data-link-icon[data-link-tags*="#SystemMeta/Processing🐶" i]::before{
+    content: "⚙️  "
+}
+
+.data-link-icon[data-link-tags*="#SystemMeta/Utility⚙️" i]::before{
+    content: "⚙️  "
+}
+
+/* -------------------------------------------------------------- */
+
+.data-link-icon[data-link-tags*=" #Periodic" i]::before{
+    content: "📅  "
+}
+
+
+.data-link-icon[data-link-tags*=" #Periodic/Daily📅" i]::before{
+    content: "📅  "
+}
+
+
+.data-link-icon[data-link-tags*="#Periodic/Weekly📆" i]::before{
+    content: "📆  "
+}
+
+
+.data-link-icon[data-link-tags*="#Periodic/Monthly🌔" i]::before{
+    content: "🌔  "
+}
+
+/* -------------------------------------------------------------- */
+
+.data-link-icon[data-link-tags*="#Series🔎" i]::before{
+    content: "🔎  "
+}
+
+.data-link-icon[data-link-tags*="#Version🗓️" i]::before{
+    content: "🔎🗓️  "
+}
+
+/* -------------------------------------------------------------- */
+.data-link-icon[data-link-tags*="#TrackerTag🔍" i]::before{
+    content: "🔍  "
+}
+
+
+/* -------------------------------------------------------------- */
+
+.data-link-icon[data-link-tags*="#Journal/Plan🍹" i]::before{
+    content: "🍹  "
+}
+
+
+.data-link-icon[data-link-tags*="#Journal/Reflection🍵" i]::before{
+    content: "🍵  "
+}
+
+
+.data-link-icon[data-link-tags*="#Journal/Memories🏝️" i]::before{
+    content: "🏝️  "
+}
+
+
+.data-link-icon[data-link-tags*="#Journal/Note📔" i]::before{
+    content: "📔  "
+}
+
+.data-link-icon[data-link-tags*="#Journal/Rant😡" i]::before{
+    content: "😡  "
+}
+
+/* -------------------------------------------------------------- */
+
+.data-link-icon[data-link-tags*="#Reference/Vault📑" i]::before{
+    content: "📑 "
+}
+
+.data-link-icon[data-link-tags*="#Reference/Snippet📑" i]::before{
+    content: "📑 "
+}
+
+
+.data-link-icon[data-link-tags*="#Reference/Material🔖" i]::before{
+    content: "🔖 "
+}
+
+.data-link-icon[data-link-tags*="#Reference/Infoℹ️" i]::before{
+    content: "ℹ️  "
+}
+
+/* -------------------------------------------------------------- */
+
+.data-link-icon[data-link-tags*="#Person👤" i]::before{
+    content: "👤  "
+}
+
+
+.data-link-icon[data-link-tags*="#Record/Event🌴" i]::before{
+    content: "🌴 "
+}
+
+
+.data-link-icon[data-link-tags*="#Record/Decision👍" i]::before{
+    content: "👍 "
+}
+
+
+.data-link-icon[data-link-tags*="#Record/Conversation🎙️" i]::before{
+    content: "🎙️ "
+}
+
+
+.data-link-icon[data-link-tags*="#Record/MeetingNote👥" i]::before{
+    content: "👥 "
+}
+
+.data-link-icon[data-link-tags*="#Record/Experiment🧪 " i]::before{
+    content: "🧪 "
+}
+
+
+.data-link-icon[data-link-tags*="#Record/Challenge🧪" i]::before{
+    content: "🧪 "
+}
+
+
+/* -------------------------------------------------------------- */
+
+
+
+
+
+.data-link-icon[data-link-tags*="#Person👤" i]::before{
+    content: "👤 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Project/MyYoutubeVideo📷" i]::before{
+    content: "📷 "
+}
+
+.data-link-icon[data-link-tags*="#Project/MyYoutubeShort📸" i]::before{
+    content: "📸 "
+}
+
+        
+
+.data-link-icon[data-link-tags*="#Project/WritingFiction🖋" i]::before{
+    content: "🖋 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Project/List📝" i]::before{
+    content: "📝 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Project/Paper📜" i]::before{
+    content: "📜 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Project/Articles📰" i]::before{
+    content: "📰 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Project/Newsletter🗞" i]::before{
+    content: "🗞 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Project/MiniProject🪚" i]::before{
+    content: "🪚 "
+}
+
+/* -------------------------------------------------------------- */
+
+
+.data-link-icon[data-link-tags*="#Log/WorkLog👩" i]::before{
+    content: "👩 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Log/ReadingLists🗒" i]::before{
+    content: "🗒 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Log/Plan" i]::before{
+    content: " "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Log/TaskList🌇" i]::before{
+    content: "🌇 "
+}
+
+/* -------------------------------------------------------------- */
+
+
+.data-link-icon[data-link-tags*="#Source/Book📖" i]::before{
+    content: "📖 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Source/Paper📜" i]::before{
+    content: "📜 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Source/Conference🧙" i]::before{
+    content: "🧙 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Source/Fiction🔖" i]::before{
+    content: "🔖 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Source/Article📰" i]::before{
+    content: "📰 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Source/Podcast🎙" i]::before{
+    content: "🎙 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Source/Video🖥" i]::before{
+    content: "🖥 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Source/Course🎓" i]::before{
+    content: "🎓 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Source/Newsletter🗞" i]::before{
+    content: "🗞 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Source/Infodump🍥" i]::before{
+    content: "🍥 "
+}
+
+/* -------------------------------------------------------------- */
+
+
+.data-link-icon[data-link-tags*="#Z/Idea💡" i]::before{
+    content: "💡 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Z/Inspired💡" i]::before{
+    content: "💡 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Z/Question❔" i]::before{
+    content: "❔ "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Z/Connector🔗" i]::before{
+    content: "🔗 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Z/Topic📦" i]::before{
+    content: "📦 "
+}
+
+        
+
+
+.data-link-icon[data-link-tags*="#Z/View🗃" i]::before{
+    content: "🗃 "
+}
+
+/* -------------------------------------------------------------- */
+
+
+.data-link-icon[data-link-tags*="#Scratchpad🧻" i]::before{
+    content: "🧻 "
+}
+
+
+
+/* -------------------------------------------------------------- */

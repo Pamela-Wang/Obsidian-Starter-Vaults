@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "ae988ffe4e51cb52",
+    "type": "split",
+    "children": [
+      {
+        "id": "d4645588bc9e88e9",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "pane-relief:history-v1": {
+          "pos": 0,
+          "stack": [
+            {
+              "leaf": "d4645588bc9e88e9",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Untitled 2.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"scroll\":0}"
+            },
+            {
+              "leaf": "d4645588bc9e88e9",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-10).md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
+            },
+            {
+              "leaf": "d4645588bc9e88e9",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"10 Templates/Daily Note Template.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "d4645588bc9e88e9",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-14.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "d4645588bc9e88e9",
+              "group": null,
+              "state": "{\"type\":\"empty\",\"state\":{}}",
+              "eState": "{}"
+            }
+          ]
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4cc569c25e8dd180",
+    "type": "split",
+    "children": [
+      {
+        "id": "c6de55312a5d936e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f2fe00b39059682e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "68c4625d46547131",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8b95520a1b0b2a23",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "f745348373ec32ea",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "3939e346c9d0e282",
+            "type": "leaf",
+            "state": {
+              "type": "VIEW_TYPE_LONGFORM_EXPLORER",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 246.00793838500977
+  },
+  "right": {
+    "id": "4bb4737f78febdae",
+    "type": "split",
+    "children": [
+      {
+        "id": "d8ce07a1fd8a7394",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "92a4bdf6adc5bb1a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8caf25c191519286",
+            "type": "leaf",
+            "state": {
+              "type": "stats-tracker",
+              "state": {}
+            }
+          },
+          {
+            "id": "8210db21b1cceaad",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {}
+            }
+          },
+          {
+            "id": "9e276a018239f3f1",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "0db9794f75f97dd9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "08ccce788dec75ee",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "f5284dc0078aa76c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8b39144375f56cad",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0c4c4dcc0eb308d1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "d4645588bc9e88e9",
+  "lastOpenFiles": [
+    "Untitled 2.md",
+    "20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-10).md",
+    "10 Templates/Daily Note Template.md",
+    "20 Periodic/21 Daily Notes/2022-04-14.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-11).md",
+    "10 Templates/Monthly Review Template.md"
+  ]
+}

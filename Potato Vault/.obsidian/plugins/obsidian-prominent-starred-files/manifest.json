@@ -1,0 +1,10 @@
+{
+    "id": "obsidian-prominent-starred-files",
+    "name": "Prominent Starred Files",
+    "version": "0.0.2",
+    "minAppVersion": "0.12.15",
+    "description": "Prominently display starred notes in the file explorer",
+    "author": "Jeremy Valentine",
+    "authorUrl": "",
+    "isDesktopOnly": false
+}

@@ -1,0 +1,9 @@
+.possible-links-container {
+    max-height: 600px;
+    overflow: auto;
+}
+
+.possible-link-item {
+    color: (--background-secondary);
+    cursor: pointer;
+}

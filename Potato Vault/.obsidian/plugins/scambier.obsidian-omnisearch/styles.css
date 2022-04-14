@@ -1,0 +1,25 @@
+.osresult__title {
+  font-weight: bold;
+}
+
+.osresult__name {
+  padding-right: .5em;
+  font-size: small;
+  font-weight: normal;
+  color: var(--text-normal);
+  /* color: var(--text-muted);
+  text-decoration: underline; */
+}
+
+.osresult__body {
+  white-space: normal;
+  font-size: small;
+  word-wrap: normal;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  color: var(--text-muted);
+}

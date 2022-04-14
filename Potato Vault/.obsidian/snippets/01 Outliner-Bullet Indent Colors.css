@@ -1,0 +1,114 @@
+
+/* EDITOR headings */
+.theme-dark
+{
+  --bullet-colors-h1: #F07171; /* CyberYellow: fcf601, FullYellow: fffb00, H1Yellow: c7c400 */
+  --bullet-colors-h2: #FF9940; 
+  --bullet-colors-h3: #52c1da;
+  --bullet-colors-h4: #67c073; /*6fcf7f*/
+  --bullet-colors-h5: #a16cd6; /*d8d8d8*/
+  --bullet-colors-h6: #b4b4b4;
+}
+
+.theme-light
+{
+  --bullet-colors-h1: #F07171; /* ayu mirage https://github.com/ayu-theme/ayu-colors */
+  --bullet-colors-h2: #FF9940; 
+  --bullet-colors-h3: #55B4D4;
+  --bullet-colors-h4: #4CBF99; /*6fcf7f*/
+  --bullet-colors-h5: #A37ACC; /*d8d8d8*/
+  --bullet-colors-h6: #575F66;
+}
+
+
+/*  _-------------      PREVIEW  _-------------_-------------_-------------_-------------   */
+
+ul li::marker {
+  color: var(--bullet-colors-h1);
+}
+
+ul li:active::marker {
+  color: #52c1da;
+}
+
+ul > li ::marker {
+  color: var(--bullet-colors-h2);
+}
+ul > li > ul > li::marker {
+  color: var(--bullet-colors-h3);
+}
+ul > li > ul > li > ul > li::marker {
+  color: var(--bullet-colors-h4);
+}
+/*5th indent*/
+ul > li > ul > li > ul > li > ul > li::marker {
+  color: var(--bullet-colors-h5);
+}
+
+ul > li > ul > li > ul > li > ul > li > ul > li::marker {
+  color: var(--bullet-colors-h6);
+}
+
+
+/*
+ul ul ::marker {
+     color: var(--bullet-colors-h1);
+}
+
+ul ul ul ::marker {
+    color: var(--bullet-colors-h2);
+}
+
+
+ul ul ul ul  ::marker {
+     color: var(--bullet-colors-h3);
+}
+
+ul ul ul ul ul ::marker {
+    color: var(--bullet-colors-h4);
+}
+
+
+ul ul ul ul ul ul ::marker {
+     color: var(--bullet-colors-h5);
+}
+
+ul ul ul ul ul ul ul ::marker {
+    color: var(--bullet-colors-h6);
+}
+
+ul ul ul ul ul ul ul ul ::marker {
+    color: var(--bullet-colors-h7);
+}
+
+
+*/
+
+
+
+/* _------------- EDITOR _-------------_-------------_------------- _-------------_-------------_-------------*/
+
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1 {
+    color: var(--bullet-colors-h1);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-2 {
+    color: var(--bullet-colors-h2);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-3 {
+    color: var(--bullet-colors-h3);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-4 {
+    color: var(--bullet-colors-h4);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-5 {
+    color: var(--bullet-colors-h5);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-6 {
+    color: var(--bullet-colors-h6);
+}

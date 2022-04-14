@@ -1,0 +1,36 @@
+.ul-two-columns ul {
+    columns: 2;
+}
+
+.ul-three-columns ul {
+    columns: 3;
+}
+
+.ul-four-columns ul {
+    columns: 4;
+}
+
+.ul-two-columns ul > li > ul {
+    columns: 1;
+}
+
+.ul-three-columns ul > li > ul {
+    columns: 1;
+}
+
+.ul-four-columns ul > li > ul {
+    columns: 1;
+}
+
+
+.ul-two-columns ul > li {
+    Padding-bottom: 10px;
+}
+
+.ul-three-columns ul > li {
+    Padding-bottom: 10px;
+}
+
+.ul-four-columns ul > li {
+    Padding-bottom: 10px;
+}
