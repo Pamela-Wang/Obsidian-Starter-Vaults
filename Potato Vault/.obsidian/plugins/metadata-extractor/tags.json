@@ -3,18 +3,34 @@
     "tag": "mode/life🏠",
     "tagCount": 5,
     "relativePaths": [
-      "Untitled 1.md",
+      "20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-10).md",
       "20 Periodic/21 Daily Notes/2022-04-14.md",
-      "10 Templates/Monthly Review Template.md",
       "10 Templates/Weekly Review Template.md",
+      "10 Templates/Monthly Review Template.md",
       "10 Templates/Daily Note Template.md"
     ]
   },
   {
-    "tag": "periodic/daily📅",
+    "tag": "periodic/weekly📆",
+    "tagCount": 2,
+    "relativePaths": [
+      "20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-10).md",
+      "10 Templates/Weekly Review Template.md"
+    ]
+  },
+  {
+    "tag": "status/blank⚪",
     "tagCount": 3,
     "relativePaths": [
-      "Untitled 1.md",
+      "20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-10).md",
+      "10 Templates/Weekly Review Template.md",
+      "10 Templates/Monthly Review Template.md"
+    ]
+  },
+  {
+    "tag": "periodic/daily📅",
+    "tagCount": 2,
+    "relativePaths": [
       "20 Periodic/21 Daily Notes/2022-04-14.md",
       "10 Templates/Daily Note Template.md"
     ]
@@ -24,21 +40,6 @@
     "tagCount": 1,
     "relativePaths": [
       "10 Templates/Monthly Review Template.md"
-    ]
-  },
-  {
-    "tag": "status/blank⚪",
-    "tagCount": 2,
-    "relativePaths": [
-      "10 Templates/Monthly Review Template.md",
-      "10 Templates/Weekly Review Template.md"
-    ]
-  },
-  {
-    "tag": "periodic/weekly📆",
-    "tagCount": 1,
-    "relativePaths": [
-      "10 Templates/Weekly Review Template.md"
     ]
   }
 ]

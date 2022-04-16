@@ -21,7 +21,9 @@ I try to cover all possible bugs in the  [Detailed Automated Weekly Review Guide
 	2) Open Command Palette (CMD + P)
 	3) Type in "weekly"
 	4) Click on "Periodic Notes: Open weekly note"
-
+- Depending on how your locale is set (does week start on monday or friday), you may need to change 
+	- the links to the weekly review note in the daily note template (this will affect task filtering and also your ability to click from daily note to weekly note)
+	- links to other weekly notes in the top of weekly review note
 
 # Note
 I left all my css snippets in there, but they actually come from like various places? I tried my best to credit. If anyone wants me to remove it, email me at mwahacookie@gmail.com :) I check my email on all working days, so should be fixed within 48-72 hours.
