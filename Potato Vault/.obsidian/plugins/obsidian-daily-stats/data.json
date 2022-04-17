@@ -31,28 +31,13 @@
     "2022/3/12": 3008,
     "2022/3/13": 1074,
     "2022/3/14": 3835,
-    "2022/3/16": 5
+    "2022/3/16": 5,
+    "2022/3/17": 0
   },
   "todaysWordCount": {
-    "20 Periodic/21 Daily Notes/2022-04-16.md": {
-      "initial": 87,
-      "current": 89
-    },
-    "20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-10).md": {
-      "initial": 1034,
-      "current": 1020
-    },
     "10 Templates/Weekly Review Template.md": {
-      "initial": 1228,
+      "initial": 1229,
       "current": 1229
-    },
-    "20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-11).md": {
-      "initial": 1020,
-      "current": 1020
-    },
-    "20 Periodic/21 Daily Notes/2022-04-14.md": {
-      "initial": 87,
-      "current": 89
     }
   }
 }

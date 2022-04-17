@@ -7,12 +7,53 @@
         "id": "d4645588bc9e88e9",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "10 Templates/Weekly Review Template.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
         },
         "pane-relief:history-v1": {
           "pos": 0,
           "stack": [
+            {
+              "leaf": "d4645588bc9e88e9",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"10 Templates/Weekly Review Template.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+            },
+            {
+              "leaf": "d4645588bc9e88e9",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"10 Templates/Daily Note Template.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
+            },
+            {
+              "leaf": "d4645588bc9e88e9",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"10 Templates/Weekly Review Template.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"scroll\":88.93889770835689}"
+            },
+            {
+              "leaf": "d4645588bc9e88e9",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-17.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "d4645588bc9e88e9",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-18.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{}"
+            },
+            {
+              "leaf": "d4645588bc9e88e9",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-17.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{}"
+            },
             {
               "leaf": "d4645588bc9e88e9",
               "group": null,
@@ -95,42 +136,6 @@
               "leaf": "d4645588bc9e88e9",
               "group": null,
               "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-14.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-13.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-14.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-16.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-15.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-14.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-16.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
               "eState": "{}"
             }
           ]
@@ -268,7 +273,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "10 Templates/Weekly Review Template.md"
+              }
             }
           }
         ]
@@ -283,6 +290,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "10 Templates/Weekly Review Template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -299,6 +307,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "10 Templates/Weekly Review Template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -312,15 +321,15 @@
   },
   "active": "d4645588bc9e88e9",
   "lastOpenFiles": [
+    "10 Templates/Weekly Review Template.md",
+    "10 Templates/Daily Note Template.md",
+    "20 Periodic/21 Daily Notes/2022-04-17.md",
+    "20 Periodic/21 Daily Notes/2022-04-18.md",
     "20 Periodic/21 Daily Notes/2022-04-14.md",
     "20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-11).md",
     "20 Periodic/21 Daily Notes/2022-04-16.md",
     "20 Periodic/21 Daily Notes/2022-04-13.md",
     "20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-10).md",
-    "20 Periodic/21 Daily Notes/2022-04-15.md",
-    "10 Templates/Daily Note Template.md",
-    "10 Templates/Weekly Review Template.md",
-    "Untitled 2.md",
-    "Untitled 1.md"
+    "20 Periodic/21 Daily Notes/2022-04-15.md"
   ]
 }

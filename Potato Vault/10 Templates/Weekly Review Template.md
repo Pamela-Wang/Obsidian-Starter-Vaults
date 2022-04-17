@@ -120,7 +120,7 @@ SORT file.name ASC
 ```tracker
 searchType: task.done  
 searchTarget: light exposure
-datasetName: OutOfBed
+datasetName: LightExposure
 folder: "20 Periodic/21 Daily Notes"
 startDate: <% tp.date.weekday("YYYY-MM-DD", 0) %>
 endDate: <% tp.date.weekday("YYYY-MM-DD", 6) %>

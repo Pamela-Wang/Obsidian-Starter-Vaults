@@ -1,59 +1,47 @@
 [
   {
-    "fileName": "Weekly Review 2022-W16 (Apr-10)",
-    "relativePath": "20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-10).md",
+    "fileName": "Monthly Review Template",
+    "relativePath": "10 Templates/Monthly Review Template.md",
     "tags": [
       "mode/life🏠",
-      "periodic/weekly📆",
+      "periodic/monthly🌔",
       "status/blank⚪"
     ],
     "headings": [
       {
-        "heading": "This Week",
+        "heading": "This Month <% tp.date.now(\"YYYY-MM\") %>",
         "level": 1
       },
       {
-        "heading": "Review This Week",
-        "level": 1
-      },
-      {
-        "heading": "Notes for Next Week",
+        "heading": "Keep In Mind",
         "level": 2
       },
       {
-        "heading": "Events",
-        "level": 3
-      },
-      {
-        "heading": "Must Do",
-        "level": 3
-      },
-      {
-        "heading": "Changes to System",
-        "level": 3
-      },
-      {
-        "heading": "Bonus",
-        "level": 3
-      },
-      {
-        "heading": "Misc",
-        "level": 3
-      },
-      {
-        "heading": "Checklist",
+        "heading": "Goals",
         "level": 2
       },
       {
-        "heading": "Summary of this Week - 2022-04-10 to 2022-04-16",
+        "heading": "Task List",
         "level": 1
       },
       {
-        "heading": "Week Notes",
+        "heading": "Summary of Last Month <% tp.date.now(\"MMMM YYYY\") %>",
+        "level": 1
+      },
+      {
+        "heading": "Weeks of The Month",
         "level": 2
       },
       {
         "heading": "Memories",
+        "level": 2
+      },
+      {
+        "heading": "Work",
+        "level": 2
+      },
+      {
+        "heading": "Youtube",
         "level": 2
       },
       {
@@ -65,16 +53,12 @@
         "level": 3
       },
       {
-        "heading": "Habits",
+        "heading": "In-Depth habit Tracker",
         "level": 3
       },
       {
-        "heading": "Work",
-        "level": 2
-      },
-      {
-        "heading": "Youtube",
-        "level": 2
+        "heading": "Habits Overview",
+        "level": 3
       },
       {
         "heading": "Life",
@@ -83,98 +67,11 @@
       {
         "heading": "Reflection",
         "level": 2
-      },
-      {
-        "heading": "Tasks this Week",
-        "level": 2
       }
     ],
     "links": [
       {
-        "link": "Weekly Review 2022-W15 (Apr-03)"
-      },
-      {
-        "link": "Monthly Review 2022-04 (April)"
-      },
-      {
-        "link": "Weekly Review 2022-W17 (Apr-17)"
-      },
-      {
-        "link": "Next Weekly Review"
-      },
-      {
-        "link": "2022-04-10"
-      },
-      {
-        "link": "2022-04-11"
-      },
-      {
-        "link": "2022-04-12"
-      },
-      {
-        "link": "2022-04-13"
-      },
-      {
-        "link": "2022-04-14",
-        "relativePath": "20 Periodic/21 Daily Notes/2022-04-14.md"
-      },
-      {
-        "link": "2022-04-15"
-      },
-      {
-        "link": "2022-04-16"
-      }
-    ],
-    "backlinks": [
-      {
-        "fileName": "2022-04-14",
-        "link": "Weekly Review 2022-W16 (Apr-10)",
-        "relativePath": "20 Periodic/21 Daily Notes/2022-04-14.md"
-      }
-    ]
-  },
-  {
-    "fileName": "2022-04-14",
-    "relativePath": "20 Periodic/21 Daily Notes/2022-04-14.md",
-    "tags": [
-      "mode/life🏠",
-      "periodic/daily📅"
-    ],
-    "headings": [
-      {
-        "heading": "Daily Checklist",
-        "level": 1
-      },
-      {
-        "heading": "Tracking",
-        "level": 4
-      },
-      {
-        "heading": "Tasks",
-        "level": 1
-      },
-      {
-        "heading": "Log",
-        "level": 1
-      }
-    ],
-    "links": [
-      {
-        "link": "2022-04-13"
-      },
-      {
-        "link": "Weekly Review 2022-W16 (Apr-10)",
-        "relativePath": "20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-10).md"
-      },
-      {
-        "link": "2022-04-15"
-      }
-    ],
-    "backlinks": [
-      {
-        "fileName": "Weekly Review 2022-W16 (Apr-10)",
-        "link": "2022-04-14",
-        "relativePath": "20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-10).md"
+        "link": "Monthly Academic Report - <% tp.date.now(\"MMM YYYY\") %>"
       }
     ]
   },
@@ -301,82 +198,6 @@
       },
       {
         "link": "<% tp.date.weekday(\"YYYY-MM-DD\", 6) %>"
-      }
-    ]
-  },
-  {
-    "fileName": "Monthly Review Template",
-    "relativePath": "10 Templates/Monthly Review Template.md",
-    "tags": [
-      "mode/life🏠",
-      "periodic/monthly🌔",
-      "status/blank⚪"
-    ],
-    "headings": [
-      {
-        "heading": "This Month <% tp.date.now(\"YYYY-MM\") %>",
-        "level": 1
-      },
-      {
-        "heading": "Keep In Mind",
-        "level": 2
-      },
-      {
-        "heading": "Goals",
-        "level": 2
-      },
-      {
-        "heading": "Task List",
-        "level": 1
-      },
-      {
-        "heading": "Summary of Last Month <% tp.date.now(\"MMMM YYYY\") %>",
-        "level": 1
-      },
-      {
-        "heading": "Weeks of The Month",
-        "level": 2
-      },
-      {
-        "heading": "Memories",
-        "level": 2
-      },
-      {
-        "heading": "Work",
-        "level": 2
-      },
-      {
-        "heading": "Youtube",
-        "level": 2
-      },
-      {
-        "heading": "Goals",
-        "level": 2
-      },
-      {
-        "heading": "Feelings",
-        "level": 3
-      },
-      {
-        "heading": "In-Depth habit Tracker",
-        "level": 3
-      },
-      {
-        "heading": "Habits Overview",
-        "level": 3
-      },
-      {
-        "heading": "Life",
-        "level": 2
-      },
-      {
-        "heading": "Reflection",
-        "level": 2
-      }
-    ],
-    "links": [
-      {
-        "link": "Monthly Academic Report - <% tp.date.now(\"MMM YYYY\") %>"
       }
     ]
   },
