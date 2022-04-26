@@ -25,6 +25,8 @@ I try to cover all possible bugs in the  [Detailed Automated Weekly Review Guide
 	- the links to the weekly review note in the daily note template (this will affect task filtering and also your ability to click from daily note to weekly note)
 	- links to other weekly notes in the top of weekly review note
 
+- If you see that your embed in the weekly review is cut off, try using the minimal theme as some themes will limit the length of the embed
+
 # Note
 I left all my css snippets in there, but they actually come from like various places? I tried my best to credit. If anyone wants me to remove it, email me at mwahacookie@gmail.com :) I check my email on all working days, so should be fixed within 48-72 hours.
 
