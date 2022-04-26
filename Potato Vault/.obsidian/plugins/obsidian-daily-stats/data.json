@@ -30,14 +30,44 @@
     "2022/3/11": 1942,
     "2022/3/12": 3008,
     "2022/3/13": 1074,
-    "2022/3/14": 3835,
-    "2022/3/16": 5,
-    "2022/3/17": 0
+    "2022/3/14": 4451,
+    "2022/3/15": 1242,
+    "2022/3/16": 565,
+    "2022/3/17": 1921,
+    "2022/3/18": 1789,
+    "2022/3/19": 1533,
+    "2022/3/20": 2267,
+    "2022/3/21": 1024,
+    "2022/3/22": 2293,
+    "2022/3/23": 1647,
+    "2022/3/24": 3918,
+    "2022/3/25": 3999,
+    "2022/3/26": 499
   },
   "todaysWordCount": {
-    "10 Templates/Weekly Review Template.md": {
-      "initial": 1229,
-      "current": 1229
+    "50 Pages/53 Source/InfoMap - prolonged fasting.md": {
+      "initial": 28,
+      "current": 296
+    },
+    "20 Periodic/21 Daily Notes/2022-04-26.md": {
+      "initial": 171,
+      "current": 268
+    },
+    "10 Templates/Daily Note Template.md": {
+      "initial": 143,
+      "current": 139
+    },
+    "20 Periodic/21 Daily Notes/2022-04-25.md": {
+      "initial": 1405,
+      "current": 1539
+    },
+    "30 Projects/32 Youtube/YT Video - potato vault shortcuts.md": {
+      "initial": 1648,
+      "current": 1648
+    },
+    "50 Pages/54 Objects/Experiments/Experiment - first prolonged fast for 3 days 2022-04-23 - fasting.md": {
+      "initial": 922,
+      "current": 773
     }
   }
 }

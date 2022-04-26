@@ -1,0 +1,11 @@
+/* default font is: 'Inter', sans-serif; */
+
+/* font for edit mode */
+/*.CodeMirror.cm-s-obsidian {
+    font-family: 'PT Sans';
+}*/
+
+/* font for preview mode */
+div.markdown-preview-view {
+  font-family: 'PT Sans';
+}

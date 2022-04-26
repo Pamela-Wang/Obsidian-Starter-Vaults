@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+:root {
+    --default-font: 'JetBrains Mono' !important;
+}
+
+/* ========== */
+/* Element-wide styles */
+body {
+  -webkit-font-smoothing: auto;
+  --font-monospace: 'Space Mono', 'Source Code Pro', monospace;
+}

@@ -1,0 +1,54 @@
+.theme-dark
+{
+  --color-accent-faded: #71272a; /* CyberYellow: fcf601, FullYellow: fffb00, H1Yellow: c7c400 */
+  --color-dark: #d4d5d6;
+}
+
+.theme-light
+{
+  --color-accent-faded: #fd8281; /* ayu mirage https://github.com/ayu-theme/ayu-colors */
+  --text-title-h2: #FF9940; 
+  --text-title-h3: #55B4D4;
+  --text-title-h4: #4CBF99; /*6fcf7f*/
+  --text-title-h5: #A37ACC; /*d8d8d8*/
+  --color-dark: #575F66;
+}
+
+
+/*.theme-dark
+{
+  --color-accent-faded: hsl(var(--accent-h),calc(var(--accent-s) - 15%),calc(var(--accent-d) + 5%));
+  --color-dark: hsl(var(--base-h),calc(var(--base-s) + 25%),calc(var(--base-d) + 15%));
+
+}
+
+.theme-light
+{
+  --color-accent-faded: hsl(var(--accent-h),calc(var(--accent-s) - 5%),calc(var(--accent-l) + 40%));
+  --color-dark: hsl(var(--base-h),calc(var(--base-s)  - 10%),calc(var(--base-l) - 60%));
+
+}
+*/
+
+.cm-s-obsidian span.cm-hashtag {
+  color: var(--color-dark) !important;
+  background: var(--color-accent-faded) !important;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  padding-top: 0.1rem;
+  display: inline-block;
+  text-decoration: none !important;
+  transition: color 0.4s, background 0.4s;
+  height: 1.45rem;
+  /*margin-right: 1rem;*/
+}
+
+.cm-s-obsidian span.cm-hashtag:before {
+  content: "#";
+  padding-right: 0.1rem;
+}
+
+.cm-s-obsidian span.cm-hashtag-begin {
+  display: none;
+}

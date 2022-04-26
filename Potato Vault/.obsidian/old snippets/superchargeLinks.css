@@ -1,0 +1,73 @@
+/*High Level Tags - tags for other tags*/
+
+.data-link-icon[data-link-type$="#SearchTag" i]::before{
+    content: "🔍 "
+}
+
+.data-link-icon[data-link-type$="#List" i]::before{
+    content: "🔎 "
+}
+
+
+
+/*Type of things*/
+/*If it exist in the file*/
+.data-link-icon[data-link-tags$="#Daily" i]::before{
+    content: "📆  "
+}
+
+.data-link-icon[data-link-type$="#IndexPage" i]::before{
+    content: "🏷️ "
+}
+
+/*If it exist it is the type defined*/
+
+.data-link-icon[data-link-type$="#Person" i]::before{
+    content: "👤 "
+}
+
+
+.data-link-icon[data-link-type$="#Source" i]::before{
+    content: "🔖 "
+}
+
+.data-link-icon[data-link-type$="#Source/Paper" i]::before{
+    content: "📜 "
+}
+
+.data-link-icon[data-link-type$="#Source/Article" i]::before{
+    content: "📃 "
+}
+
+
+.data-link-icon[data-link-type$="#Topic" i]::before{
+    content: "🗃️ "
+}
+
+.data-link-icon[data-link-type$="#Project" i]::before{
+    content: "⚡ "
+}
+
+.data-link-icon[data-link-type$="#Atomic" i]::before{
+    content: "✒️ "
+}
+
+.data-link-icon[data-link-type$="#Feelings" i]::before{
+    content: "💛 "
+}
+
+.data-link-icon[data-link-type$="#Log" i]::before{
+    content: "📓 "
+}
+
+.data-link-icon[data-link-tags$="#MeetingNotes" i]::before{
+    content: "💬  "
+}
+
+/*Status of things*/
+
+
+.data-link-icon[data-link-status$="#in-progress" i]::before{
+    content: "✏️ "
+}
+

@@ -1,0 +1,11 @@
+{
+  "id": "discordian-plugin",
+  "name": "Discordian Theme",
+  "version": "0.7.1",
+  "minAppVersion": "0.10.6",
+  "description": "Discordian plugin for tweaking Discordian theme",
+  "author": "@radekkozak",
+  "authorUrl": "https://github.com/radekkozak",
+  "isDesktopOnly": false
+}
+

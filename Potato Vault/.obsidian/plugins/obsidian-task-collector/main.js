@@ -592,10 +592,6 @@ var TaskCollectorPlugin = class extends import_obsidian4.Plugin {
       for (let i = cursorStart.line; i <= cursorEnd.line; i++) {
         lines.push(i);
       }
-      editor.setSelection(cursorStart, {
-        line: cursorEnd.line,
-        ch: editor.getLine(cursorEnd.line).length
-      });
     } else {
       const anchor = editor.getCursor("from");
       lines.push(anchor.line);

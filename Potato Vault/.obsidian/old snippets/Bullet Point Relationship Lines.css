@@ -1,0 +1,43 @@
+.cm-hmd-list-indent .cm-tab, ul ul, ol ol { 
+  position: relative; 
+}
+
+.cm-hmd-list-indent .cm-tab::before, ul ul::before {
+ content:'';
+ border-left: 1px solid #fc0087; 
+ position: absolute;
+}
+
+.cm-hmd-list-indent .cm-tab::before { 
+  left: 0; 
+  top: -5px; 
+  bottom: -4px; 
+}
+
+ul ul::before, ol ol::before { 
+  left: -11px; 
+  top: 0; 
+  bottom: 0;
+}
+
+li {
+
+  padding-left: 5px;
+  padding-top: 0px;
+}
+
+ol li {
+  counter-increment: list;
+  list-style-type: none;
+  position: relative;
+}
+
+ol li:before {
+  color: var(--color-accent);
+  content: counter(list) ".";
+  left: -15px;
+  position: absolute;
+  text-align: left;
+  width: 26px;
+  text-shadow:0 0px 10px var(--color-accent);
+}

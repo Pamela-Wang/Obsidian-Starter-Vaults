@@ -1,77 +1,236 @@
 [
   {
-    "fileName": "Monthly Review Template",
-    "relativePath": "10 Templates/Monthly Review Template.md",
+    "fileName": "recent weekly task rollup",
+    "relativePath": "50 Pages/55 All Pages/recent weekly task rollup.md",
     "tags": [
       "mode/life🏠",
-      "periodic/monthly🌔",
-      "status/blank⚪"
+      "systemmeta/utility⚙️",
+      "status/completed🟢"
     ],
     "headings": [
       {
-        "heading": "This Month <% tp.date.now(\"YYYY-MM\") %>",
+        "heading": "Quick View - Daily",
         "level": 1
       },
       {
-        "heading": "Keep In Mind",
-        "level": 2
-      },
+        "heading": "Quick View - Other Files",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "fileName": "2022-04-23",
+    "relativePath": "20 Periodic/21 Daily Notes/2022-04-23.md",
+    "tags": [
+      "mode/life🏠",
+      "periodic/daily📅"
+    ],
+    "headings": [
       {
-        "heading": "Goals",
-        "level": 2
-      },
-      {
-        "heading": "Task List",
+        "heading": "Daily Checklist",
         "level": 1
       },
       {
-        "heading": "Summary of Last Month <% tp.date.now(\"MMMM YYYY\") %>",
+        "heading": "Tracking",
+        "level": 4
+      },
+      {
+        "heading": "Tasks",
         "level": 1
       },
       {
-        "heading": "Weeks of The Month",
-        "level": 2
-      },
-      {
-        "heading": "Memories",
-        "level": 2
-      },
-      {
-        "heading": "Work",
-        "level": 2
-      },
-      {
-        "heading": "Youtube",
-        "level": 2
-      },
-      {
-        "heading": "Goals",
-        "level": 2
-      },
-      {
-        "heading": "Feelings",
-        "level": 3
-      },
-      {
-        "heading": "In-Depth habit Tracker",
-        "level": 3
-      },
-      {
-        "heading": "Habits Overview",
-        "level": 3
-      },
-      {
-        "heading": "Life",
-        "level": 2
-      },
-      {
-        "heading": "Reflection",
-        "level": 2
+        "heading": "Log",
+        "level": 1
       }
     ],
     "links": [
       {
-        "link": "Monthly Academic Report - <% tp.date.now(\"MMM YYYY\") %>"
+        "link": "2022-04-22",
+        "relativePath": "20 Periodic/21 Daily Notes/2022-04-22.md"
+      },
+      {
+        "link": "Weekly Review 2022-W17 (Apr-18)"
+      },
+      {
+        "link": "2022-04-24"
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "2022-04-22",
+        "link": "2022-04-23",
+        "relativePath": "20 Periodic/21 Daily Notes/2022-04-22.md"
+      }
+    ]
+  },
+  {
+    "fileName": "2022-04-22",
+    "relativePath": "20 Periodic/21 Daily Notes/2022-04-22.md",
+    "tags": [
+      "mode/life🏠",
+      "periodic/daily📅"
+    ],
+    "headings": [
+      {
+        "heading": "Daily Checklist",
+        "level": 1
+      },
+      {
+        "heading": "Tracking",
+        "level": 4
+      },
+      {
+        "heading": "Tasks",
+        "level": 1
+      },
+      {
+        "heading": "Log",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-04-21",
+        "relativePath": "20 Periodic/21 Daily Notes/2022-04-21.md"
+      },
+      {
+        "link": "Weekly Review 2022-W17 (Apr-18)"
+      },
+      {
+        "link": "2022-04-23",
+        "relativePath": "20 Periodic/21 Daily Notes/2022-04-23.md"
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "2022-04-23",
+        "link": "2022-04-22",
+        "relativePath": "20 Periodic/21 Daily Notes/2022-04-23.md"
+      },
+      {
+        "fileName": "2022-04-21",
+        "link": "2022-04-22",
+        "relativePath": "20 Periodic/21 Daily Notes/2022-04-21.md"
+      }
+    ]
+  },
+  {
+    "fileName": "2022-04-21",
+    "relativePath": "20 Periodic/21 Daily Notes/2022-04-21.md",
+    "tags": [
+      "mode/life🏠",
+      "periodic/daily📅"
+    ],
+    "headings": [
+      {
+        "heading": "Daily Checklist",
+        "level": 1
+      },
+      {
+        "heading": "Tracking",
+        "level": 4
+      },
+      {
+        "heading": "Tasks",
+        "level": 1
+      },
+      {
+        "heading": "Log",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-04-20",
+        "relativePath": "20 Periodic/21 Daily Notes/2022-04-20.md"
+      },
+      {
+        "link": "Weekly Review 2022-W17 (Apr-18)"
+      },
+      {
+        "link": "2022-04-22",
+        "relativePath": "20 Periodic/21 Daily Notes/2022-04-22.md"
+      },
+      {
+        "link": "Book Source -How to not die alone"
+      },
+      {
+        "link": "On the Measure of Intelligence"
+      },
+      {
+        "link": "Video - OpenAI Codex Live Demo - Source"
+      },
+      {
+        "link": "Book Source -How to not die alone"
+      },
+      {
+        "link": "Morning Journal"
+      },
+      {
+        "link": "Work Log for simulation"
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "2022-04-22",
+        "link": "2022-04-21",
+        "relativePath": "20 Periodic/21 Daily Notes/2022-04-22.md"
+      },
+      {
+        "fileName": "2022-04-20",
+        "link": "2022-04-21",
+        "relativePath": "20 Periodic/21 Daily Notes/2022-04-20.md"
+      }
+    ]
+  },
+  {
+    "fileName": "2022-04-20",
+    "relativePath": "20 Periodic/21 Daily Notes/2022-04-20.md",
+    "tags": [
+      "mode/life🏠",
+      "periodic/daily📅"
+    ],
+    "headings": [
+      {
+        "heading": "Daily Checklist",
+        "level": 1
+      },
+      {
+        "heading": "Tracking",
+        "level": 4
+      },
+      {
+        "heading": "Tasks",
+        "level": 1
+      },
+      {
+        "heading": "Log",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-04-19"
+      },
+      {
+        "link": "Weekly Review 2022-W17 (Apr-18)"
+      },
+      {
+        "link": "2022-04-21",
+        "relativePath": "20 Periodic/21 Daily Notes/2022-04-21.md"
+      },
+      {
+        "link": "Book Source - The courage to be disliked"
+      },
+      {
+        "link": "Book Source - Getting Things Done"
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "2022-04-21",
+        "link": "2022-04-20",
+        "relativePath": "20 Periodic/21 Daily Notes/2022-04-21.md"
       }
     ]
   },
@@ -199,6 +358,89 @@
       {
         "link": "<% tp.date.weekday(\"YYYY-MM-DD\", 6) %>"
       }
+    ]
+  },
+  {
+    "fileName": "Monthly Review Template",
+    "relativePath": "10 Templates/Monthly Review Template.md",
+    "tags": [
+      "mode/life🏠",
+      "periodic/monthly🌔",
+      "status/blank⚪"
+    ],
+    "headings": [
+      {
+        "heading": "This Month <% tp.date.now(\"YYYY-MM\") %>",
+        "level": 1
+      },
+      {
+        "heading": "Keep In Mind",
+        "level": 2
+      },
+      {
+        "heading": "Goals",
+        "level": 2
+      },
+      {
+        "heading": "Task List",
+        "level": 1
+      },
+      {
+        "heading": "Summary of Last Month <% tp.date.now(\"MMMM YYYY\") %>",
+        "level": 1
+      },
+      {
+        "heading": "Weeks of The Month",
+        "level": 2
+      },
+      {
+        "heading": "Memories",
+        "level": 2
+      },
+      {
+        "heading": "Work",
+        "level": 2
+      },
+      {
+        "heading": "Youtube",
+        "level": 2
+      },
+      {
+        "heading": "Goals",
+        "level": 2
+      },
+      {
+        "heading": "Feelings",
+        "level": 3
+      },
+      {
+        "heading": "In-Depth habit Tracker",
+        "level": 3
+      },
+      {
+        "heading": "Habits Overview",
+        "level": 3
+      },
+      {
+        "heading": "Life",
+        "level": 2
+      },
+      {
+        "heading": "Reflection",
+        "level": 2
+      }
+    ],
+    "links": [
+      {
+        "link": "Monthly Academic Report - <% tp.date.now(\"MMM YYYY\") %>"
+      }
+    ]
+  },
+  {
+    "fileName": "Default Note Template",
+    "relativePath": "10 Templates/Default Note Template.md",
+    "tags": [
+      "status/blank⚪"
     ]
   },
   {

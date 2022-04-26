@@ -1,0 +1,40 @@
+.markdown-preview-view h1 {
+  font-family: "KG A Little Spark";
+  letter-spacing:-0.05em;
+  font-size:45px !important;
+  line-height:1.3;
+  font-weight:var(--normal-weight) !important;
+}
+
+.markdown-preview-view.dailynote h1 {
+  text-align: right;
+}
+
+.markdown-preview-view h2 {
+/*  font-variant:caps;
+  text-transform:uppercase;*/
+  letter-spacing:-0em;
+  font-family: "Just tell me what";
+  font-size:30px !important;
+  line-height:1.3;
+}
+
+.markdown-preview-view h3 {
+ font-family: "hastoler";
+/*  font-variant:caps;
+  text-transform:uppercase;*/
+  letter-spacing:0.005em;
+  color:var(--text-normal);
+  font-weight:550 !important;
+  font-size:26px !important;
+  line-height:1.4;
+}
+
+.markdown-preview-view h4 {
+ font-family: "hastoler";
+  /*font-variant:caps;*/
+  color:var(--text-normal);
+  font-weight:550 !important;
+  font-size:24px !important;
+  line-height:1.4;
+}

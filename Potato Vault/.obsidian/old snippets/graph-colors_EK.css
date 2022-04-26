@@ -1,0 +1,18 @@
+.graph-view.color-fill {
+color: #8272d0;
+}
+
+.theme-light .graph-view.color-fill-unresolved {
+color: #e2d7ff;
+Opacity:1;
+}
+
+.theme-light .graph-view.color-fill-tag {
+color: #cde7a2;
+}
+
+.theme-light .graph-view.color-fill-attachment {
+color: #c9d7b3;
+}
+
+

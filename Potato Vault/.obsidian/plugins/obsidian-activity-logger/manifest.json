@@ -1,0 +1,9 @@
+{
+  "id": "obsidian-activity-logger",
+  "name": "Activity Logger",
+  "description": "Log your activities like creating notes, modifying notes, deleting notes and so on.",
+  "author": "Creling",
+  "minAppVersion": "0.9.12",
+  "version": "0.1.0",
+  "isDesktopOnly": true
+}

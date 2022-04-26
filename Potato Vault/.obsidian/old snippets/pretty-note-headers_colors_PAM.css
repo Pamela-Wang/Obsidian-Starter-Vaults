@@ -1,0 +1,38 @@
+.theme-light
+{
+  --text-title-h1: #F07171; /* ayu mirage https://github.com/ayu-theme/ayu-colors */
+  --text-title-h2: #FF9940; 
+  --text-title-h3: #55B4D4;
+  --text-title-h4: #4CBF99; /*6fcf7f*/
+  --text-title-h5: #A37ACC; /*d8d8d8*/
+  --text-title-h6: #575F66;
+}
+
+
+.markdown-preview-view h1 
+{
+  color: var(--text-title-h1);
+}
+
+.markdown-preview-view h2 {
+  color: var(--text-title-h2);
+}
+
+.markdown-preview-view h3
+{
+  color: var(--text-title-h3);
+}
+
+.markdown-preview-view h4
+{
+  color: var(--text-title-h4);
+}
+.markdown-preview-view h5
+{
+  color: var(--text-title-h5);
+}
+
+.markdown-preview-view h6
+{
+  color: var(--text-title-h6);
+}

@@ -1,0 +1,11 @@
+/*:root {
+    --default-font: 'Source Code Pro';
+}
+*/
+/* ========== */
+/* Element-wide styles */
+body {
+  -webkit-font-smoothing: auto;
+  --font: "Norwester", "Staatliches", "Racing Sans One", "Heavitas", "Playfair Display", serif;
+  --font-monospace: 'Space Mono', 'Source Code Pro', monospace;
+}

@@ -1,0 +1,10 @@
+{
+  "contextAwareMode": true,
+  "sourceSupport": false,
+  "codeHighlightSupport": false,
+  "inlineID": false,
+  "contextSeparator": " > ",
+  "deck": "SlipBox",
+  "flashcardsTag": "card",
+  "defaultAnkiTag": "obsidian"
+}

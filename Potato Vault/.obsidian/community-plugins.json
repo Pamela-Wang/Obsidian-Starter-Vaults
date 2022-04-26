@@ -13,6 +13,7 @@
   "note-refactor-obsidian",
   "dataview",
   "metaedit",
+  "calendar",
   "workbench-obsidian",
   "txt-as-md-obsidian",
   "obsidian-style-settings",
@@ -45,10 +46,10 @@
   "obsidian-snippetor",
   "obsidian-linter",
   "obsidian-smarter-md-hotkeys",
-  "various-complements",
   "obsidian-prominent-starred-files",
   "quick-explorer",
   "markdown-attributes",
+  "obsidian-admonition",
   "obsidian-excalidraw-plugin",
   "obsidian-task-collector",
   "buttons",
@@ -65,9 +66,8 @@
   "flashcards-obsidian",
   "garble-text",
   "juggl",
-  "obsidian-autocomplete-plugin",
   "sliding-panes-obsidian",
   "scambier.obsidian-omnisearch",
-  "obsidian-tasks-plugin",
-  "calendar"
+  "obsidian-hider",
+  "readwise-official"
 ]

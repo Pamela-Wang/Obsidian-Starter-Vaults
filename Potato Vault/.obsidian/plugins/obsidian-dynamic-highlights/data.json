@@ -1,0 +1,38 @@
+{
+  "selectionHighlighter": {
+    "highlightWordAroundCursor": false,
+    "highlightSelectedText": false,
+    "maxMatches": 100,
+    "minSelectionLength": 3,
+    "highlightDelay": 0,
+    "ignoredWords": "myself, our, ours, ourselves, you, your, yours, yourself, yourselves, him, his, himself, she, her, hers, herself, its, itself, they, them, their, theirs, themselves, what, which, who, whom, this, that, these, those, are, was, were, been, being, have, has, had, having, does, did, doing, the, and, but, because, until, while, for, with, about, against, between, into, through, during, before, after, above, below, from, down, out, off, over, under, again, further, then, once, here, there, when, where, why, how, all, any, both, each, few, more, most, other, some, such, nor, not, only, own, same, than, too, very, can, will, just, don, should,now"
+  },
+  "staticHighlighter": {
+    "queries": {
+      "dataview-inline-value": {
+        "class": "dataview-inline-value",
+        "color": "#00000000",
+        "regex": true,
+        "query": "(?:::)([^\\n]*)",
+        "mark": [
+          "match"
+        ],
+        "css": ".dataview-inline-value {\n  color: mediumpurple;\n  font-size: .95rem;\n  font-weight: 400;\n  line-height: 1em;\n  text-align: center;\n  text-decoration: none;\n  margin: 0px 0px;\n  border: 1px solid transparent;\n  border-radius: 0.4em;\n  transition: 150ms cubic-bezier(0.2, 0, 1, 0.9);\n  filter: saturate(1);\n}"
+      },
+      "dataview-inline-key": {
+        "class": "dataview-inline-key",
+        "color": "#00000000",
+        "regex": true,
+        "query": "[\\[a-zA-Z0-9_\\\\w]+::",
+        "mark": [
+          "match"
+        ],
+        "css": ".dataview-inline-key {\n  color: mediumslateblue;\n  font-size: .95rem;\n  font-weight: 400;\n  line-height: 1em;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}"
+      }
+    },
+    "queryOrder": [
+      "dataview-inline-value",
+      "dataview-inline-key"
+    ]
+  }
+}

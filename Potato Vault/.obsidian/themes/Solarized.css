@@ -1,0 +1,395 @@
+:root {
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base00-rgb: 101, 123, 131;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --base1-rgb: 147, 161, 161;
+    --base2: #eee8d5;
+    --base3: #fdf6e3;
+    --yellow: #b58900;
+    --orange: #cb4b16;
+    --orange-rgb: 203, 75, 22;
+    --red: #dc322f;
+    --red-rgb: 220, 50, 47;
+    --magenta: #d33682;
+    --violet: #6c71c4;
+    --blue: #268bd2;
+    --cyan: #2aa198;
+    --green: #859900;
+}
+
+.theme-dark {
+    --background-modifier-border: var(--base01);
+    /* --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-cover: rgba(0, 0, 0, 0.8); */
+    --background-modifier-error-hover: var(--text-error);
+    --background-modifier-error-rgb: var(--red-rgb);
+    --background-modifier-error: var(--text-error);
+    --background-modifier-form-field-highlighted: var(--background-primary);
+    --background-modifier-form-field: var(--background-primary-alt);
+    --background-modifier-success: var(--green);
+    --background-primary-alt: var(--base02);
+    --background-primary: var(--base03);
+    --background-secondary-alt: var(--background-primary-alt);
+    --background-secondary: var(--background-primary);
+    --highlight-mix-blend-mode: lighten;
+    --interactive-accent-hover: var(--cyan);
+    --interactive-accent-rgb: var(--orange-rgb);
+    --interactive-accent: var(--orange);
+    --interactive-hover: var(--interactive-normal);
+    --interactive-normal: var(--base03);
+    --interactive-success: var(--green);
+    /* --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1); */
+    --pre-code: var(--base0);
+    --text-accent-hover: var(--violet);
+    --text-accent: var(--blue);
+    --text-border: var(--yellow);
+    --text-code: var(--magenta);
+    --text-error-hover: var(--text-error);
+    --text-error: var(--red);
+    --text-faint: var(--base01);
+    --text-highlight-bg-active: var(--text-highlight-bg);
+    --text-highlight-bg: var(--base02);
+    --text-highlight-fg: var(--violet);
+    --text-muted-rgb: var(--base00-rgb);
+    --text-muted: var(--base00);
+    --text-normal: var(--base0);
+    --text-on-accent: var(--background-primary);
+    --text-on-selection: var(--base1);
+    --text-selection: var(--background-primary-alt);
+    --text-title: var(--cyan);
+    --vim-cursor: var(--green);
+}
+
+.theme-light {
+    --background-modifier-border: var(--base1);
+    /* --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-cover: rgba(0, 0, 0, 0.8); */
+    --background-modifier-error-hover: var(--text-error);
+    --background-modifier-error-rgb: var(--red-rgb);
+    --background-modifier-error: var(--text-error);
+    --background-modifier-form-field-highlighted: var(--background-primary);
+    --background-modifier-form-field: var(--background-primary-alt);
+    --background-modifier-success: var(--green);
+    --background-primary-alt: var(--base2);
+    --background-primary: var(--base3);
+    --background-secondary-alt: var(--background-primary-alt);
+    --background-secondary: var(--background-primary);
+    --highlight-mix-blend-mode: lighten;
+    --interactive-accent-hover: var(--cyan);
+    --interactive-accent-rgb: var(--orange-rgb);
+    --interactive-accent: var(--orange);
+    --interactive-hover: var(--interactive-normal);
+    --interactive-normal: var(--background-primary);
+    --interactive-success: var(--green);
+    /* --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1); */
+    --pre-code: var(--base1);
+    --text-accent-hover: var(--violet);
+    --text-accent: var(--blue);
+    --text-border: var(--yellow);
+    --text-code: var(--magenta);
+    --text-error-hover: var(--text-error);
+    --text-error: var(--red);
+    --text-faint: var(--base1);
+    --text-highlight-bg-active: var(--text-highlight-bg);
+    --text-highlight-bg: var(--base2);
+    --text-highlight-fg: var(--violet);
+    --text-muted-rgb: var(--base1-rgb);
+    --text-muted: var(--base1);
+    --text-normal: var(--base00);
+    --text-on-accent: var(--background-primary);
+    --text-on-selection: var(--base01);
+    --text-selection: var(--background-primary-alt);
+    --text-title: var(--cyan);
+    --vim-cursor: var(--green);
+}
+
+.cm-header {
+    color: var(--text-title);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.markdown-preview-view h6 {
+    color: var(--text-title);
+}
+
+.cm-formatting-image.cm-link {
+    color: var(--text-faint) !important;
+}
+
+.CodeMirror span.cm-inline-code,
+.CodeMirror span.cm-math,
+pre>code:not(.prism),
+.markdown-preview-view code {
+    color: var(--text-code);
+}
+
+.CodeMirror span.cm-formatting-math {
+    color: var(--text-highlight-fg);
+}
+
+pre.HyperMD-codeblock {
+    color: var(--text-on-selection) !important;
+}
+
+.cm-highlight,
+.markdown-preview-view mark {
+    background: var(--text-highlight-bg) !important;
+    background-color: var(--text-highlight-bg) !important;
+    color: var(--text-highlight-fg) !important;
+}
+
+blockquote,
+.markdown-embed {
+    border-color: var(--text-border) !important;
+}
+
+.suggestion-item.is-selected {
+    background-color: var(--background-secondary-alt);
+}
+
+/* Notice */
+.notice,
+.theme-dark .notice {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+/* Tags */
+.cm-s-obsidian span.cm-hashtag-begin,
+.cm-s-obsidian span.cm-hashtag,
+.cm-s-obsidian span.cm-hashtag-end,
+a.tag {
+    background-color: var(--text-normal);
+    color: var(--background-primary) !important;
+    font-family: inherit;
+    padding: 2px 0px;
+    text-decoration: none;
+}
+
+.cm-s-obsidian span.cm-hashtag-begin {
+    border-radius: 1em 0px 0px 1em;
+    padding-left: 5px;
+}
+
+.cm-s-obsidian span.cm-hashtag-end {
+    border-radius: 0px 1em 1em 0px;
+    padding-right: 5px;
+}
+
+a.tag {
+    border-radius: 1em;
+    padding: 2px 5px;
+}
+
+/* Background color of tag when hover */
+a.tag:hover {
+    background-color: var(--text-accent-hover);
+}
+
+/* Frontmatter */
+.cm-s-obsidian span.cm-atom {
+    color: var(--text-accent);
+}
+
+.cm-s-obsidian span.cm-meta,
+.cm-s-obsidian span.cm-def {
+    color: var(--text-code);
+}
+
+/* Frontmatter tag colors, same as tags in main body */
+.frontmatter-container .tag {
+    background-color: var(--text-normal);
+}
+
+.frontmatter-container .tag:hover {
+    background-color: var(--text-accent-hover);
+}
+
+/* Selection - Edit */
+.CodeMirror-selected {
+    background: rgba(0, 0, 0, 0.25) !important;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.theme-dark .CodeMirror-selected {
+    background: rgba(255, 255, 255, 0.25) !important;
+    background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+div[style="position: relative; z-index: 1;"] {
+    z-index: 99 !important;
+}
+
+/* Selection - Live Editor & Preview */
+.cm-selection,
+::selection,
+.CodeMirror-line::selection,
+.CodeMirror-line>span::selection,
+.CodeMirror-line>span>span::selection,
+.HyperMD-codeblock.CodeMirror-line::selection,
+.HyperMD-codeblock.CodeMirror-line>span::selection,
+.HyperMD-codeblock.CodeMirror-line>span>span::selection {
+    background-color: rgba(0, 0, 0, 0.20) !important;
+}
+
+.theme-dark .cm-selection,
+.theme-dark ::selection,
+.theme-dark .CodeMirror-line::selection,
+.theme-dark .CodeMirror-line>span::selection,
+.theme-dark .CodeMirror-line>span>span::selection,
+.theme-dark .HyperMD-codeblock.CodeMirror-line::selection,
+.theme-dark .HyperMD-codeblock.CodeMirror-line>span::selection,
+.theme-dark .HyperMD-codeblock.CodeMirror-line>span>span::selection {
+    background-color: rgba(255, 255, 255, 0.20) !important;
+}
+
+/* Search results */
+mark,
+.cm-searching,
+.search-result-file-matched-text,
+.cm-s-obsidian span.obsidian-search-match-highlight {
+    color: var(--text-on-accent);
+    background-color: var(--yellow);
+}
+
+/* In-page find results - Preview */
+.markdown-preview-view .search-highlight>div {
+    background-color: var(--yellow);
+    mix-blend-mode: color-burn;
+}
+
+.markdown-preview-view .search-highlight>div.is-active {
+    background-color: var(--yellow);
+}
+
+/* Window title */
+.titlebar,
+.titlebar .titlebar-inner {
+    color: var(--text-on-selection);
+    background-color: var(--background-primary-alt);
+}
+
+/* Slides */
+.reveal .slides {
+    width: 1920px !important;
+    height: 1080px !important;
+    zoom: 1 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reveal section.present {
+    max-width: 1920px;
+    max-height: 1080px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: unset !important;
+}
+
+.reveal {
+    --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.1);
+    --scrollbar-bg: rgba(255, 255, 255, 0);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.05);
+}
+
+.reveal .slides>section,
+.reveal .slides>section>section {
+    width: 80%;
+    transition: unset;
+}
+
+.reveal-viewport {
+    background: var(--background-primary);
+    background-color: var(--background-primary);
+}
+
+.reveal {
+    color: var(--text-title);
+    font-family: inherit;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    color: var(--text-code);
+}
+
+.reveal input[type='checkbox'] {
+    height: 2em;
+    width: 2em;
+    margin: 0 2em;
+    cursor: pointer;
+}
+
+
+.reveal .task-list-item {
+    margin-left: auto;
+    text-indent: -2em;
+}
+
+.reveal ::selection {
+    color: var(--text-on-selection);
+    background: var(--text-selection);
+}
+
+.reveal ::-moz-selection {
+    color: var(--text-on-selection);
+    background: var(--text-selection);
+}
+
+.reveal pre,
+.reveal code,
+.reveal pre code {
+    color: var(--text-code);
+}
+
+.reveal table {
+    zoom: 0.5;
+}
+
+.reveal img {
+    width: unset;
+    outline: 3px solid var(--text-normal);
+    outline-offset: -3px;
+}
+
+.reveal a {
+    color: var(--text-muted);
+    text-decoration: underline;
+    transition: color .15s ease;
+}
+
+.reveal a:hover {
+    color: var(--text-normal);
+}
+
+.reveal .roll span:after {
+    color: var(--background-primary);
+    background: var(--text-muted);
+}
+
+.reveal .controls {
+    color: var(--text-muted);
+}
+
+.reveal .progress {
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--text-muted);
+}

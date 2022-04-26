@@ -1,0 +1,145 @@
+{
+  "addDendronNotes": false,
+  "addDateNotes": false,
+  "aliasesInIndex": true,
+  "alphaSortAsc": true,
+  "altLinkFields": [],
+  "CSVPaths": "",
+  "dateFormat": "YYYY-MM-DD",
+  "dateNoteFormat": "yyyy-MM-dd",
+  "dateNoteField": "next",
+  "dataviewNoteField": "up",
+  "dateNoteAddMonth": "",
+  "dateNoteAddYear": "",
+  "debugMode": "WARN",
+  "defaultView": true,
+  "dendronNoteDelimiter": ".",
+  "dendronNoteField": "up",
+  "downViewWrap": false,
+  "dotsColour": "#000000",
+  "dvWaitTime": 5000,
+  "enableAlphaSort": true,
+  "enableRelationSuggestor": false,
+  "fieldSuggestor": true,
+  "filterImpliedSiblingsOfDifferentTypes": false,
+  "jugglLayout": "hierarchy",
+  "limitWriteBCCheckboxes": [
+    "parent",
+    "sibling",
+    "child"
+  ],
+  "CHECKBOX_STATES_OVERWRITTEN": true,
+  "gridDots": false,
+  "gridHeatmap": true,
+  "heatmapColour": "#EEEEEE",
+  "hierarchyNotes": [
+    ""
+  ],
+  "HNUpField": "",
+  "indexNotes": [
+    ""
+  ],
+  "namingSystemField": "",
+  "namingSystemRegex": "",
+  "namingSystemSplit": ".",
+  "namingSystemEndsWithDelimiter": false,
+  "refreshOnNoteChange": false,
+  "useAllMetadata": true,
+  "openMatrixOnLoad": true,
+  "openStatsOnLoad": true,
+  "openDuckOnLoad": false,
+  "openDownOnLoad": true,
+  "overflowMLView": true,
+  "parseJugglLinksWithoutJuggl": false,
+  "showNameOrType": true,
+  "showRelationType": true,
+  "regexNoteField": "",
+  "relSuggestorTrigger": "\\",
+  "rlLeaf": true,
+  "showAllPathsIfNoneToIndexNote": false,
+  "showAllAliases": true,
+  "showBCs": true,
+  "showBCsInEditLPMode": false,
+  "showRefreshNotice": true,
+  "showImpliedRelations": true,
+  "showTrail": true,
+  "showGrid": true,
+  "showJuggl": false,
+  "showPrevNext": true,
+  "sortByNameShowAlias": false,
+  "squareDirectionsOrder": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "limitTrailCheckboxes": [
+    "parent"
+  ],
+  "limitJumpToFirstFields": [
+    "parent",
+    "sibling",
+    "child"
+  ],
+  "showAll": false,
+  "noPathMessage": "This note has no real or implied parents",
+  "tagNoteField": "",
+  "threadIntoNewPane": false,
+  "threadingTemplate": "{{field}} of {{current}}",
+  "threadingDirTemplates": {
+    "up": "",
+    "same": "",
+    "down": "",
+    "next": "",
+    "prev": ""
+  },
+  "threadUnderCursor": false,
+  "trailSeperator": "→",
+  "treatCurrNodeAsImpliedSibling": false,
+  "trimDendronNotes": false,
+  "respectReadableLineLength": true,
+  "userHiers": [
+    {
+      "up": [
+        "parent"
+      ],
+      "same": [
+        "sibling"
+      ],
+      "down": [
+        "child"
+      ],
+      "prev": [],
+      "next": []
+    }
+  ],
+  "writeBCsInline": false,
+  "showWriteAllBCsCmd": false,
+  "visGraph": "Force Directed Graph",
+  "visRelation": "Parent",
+  "visClosed": "Real",
+  "visAll": "All",
+  "wikilinkIndex": true,
+  "impliedRelations": {
+    "siblingIdentity": false,
+    "sameParentIsSibling": true,
+    "siblingsSiblingIsSibling": false,
+    "parentsSiblingsIsParents": false,
+    "parentsParentsIsParent": false,
+    "cousinsIsSibling": false
+  },
+  "indexNote": [
+    ""
+  ],
+  "hierarchyNoteDownFieldName": "",
+  "hierarchyNoteUpFieldName": "",
+  "refreshIndexOnActiveLeafChange": false,
+  "refreshIntervalTime": 0,
+  "hideTrailFieldName": "hide-trail",
+  "trailOrTable": 3,
+  "superDebugMode": false,
+  "parentFieldName": "parent, source",
+  "siblingFieldName": "sibling",
+  "childFieldName": "child"
+}

@@ -1,26 +1,41 @@
 [
   {
     "tag": "mode/life🏠",
-    "tagCount": 3,
+    "tagCount": 8,
     "relativePaths": [
-      "10 Templates/Monthly Review Template.md",
+      "50 Pages/55 All Pages/recent weekly task rollup.md",
+      "20 Periodic/21 Daily Notes/2022-04-23.md",
+      "20 Periodic/21 Daily Notes/2022-04-22.md",
+      "20 Periodic/21 Daily Notes/2022-04-21.md",
+      "20 Periodic/21 Daily Notes/2022-04-20.md",
       "10 Templates/Weekly Review Template.md",
+      "10 Templates/Monthly Review Template.md",
       "10 Templates/Daily Note Template.md"
     ]
   },
   {
-    "tag": "periodic/monthly🌔",
+    "tag": "systemmeta/utility⚙️",
     "tagCount": 1,
     "relativePaths": [
-      "10 Templates/Monthly Review Template.md"
+      "50 Pages/55 All Pages/recent weekly task rollup.md"
     ]
   },
   {
-    "tag": "status/blank⚪",
-    "tagCount": 2,
+    "tag": "status/completed🟢",
+    "tagCount": 1,
     "relativePaths": [
-      "10 Templates/Monthly Review Template.md",
-      "10 Templates/Weekly Review Template.md"
+      "50 Pages/55 All Pages/recent weekly task rollup.md"
+    ]
+  },
+  {
+    "tag": "periodic/daily📅",
+    "tagCount": 5,
+    "relativePaths": [
+      "20 Periodic/21 Daily Notes/2022-04-23.md",
+      "20 Periodic/21 Daily Notes/2022-04-22.md",
+      "20 Periodic/21 Daily Notes/2022-04-21.md",
+      "20 Periodic/21 Daily Notes/2022-04-20.md",
+      "10 Templates/Daily Note Template.md"
     ]
   },
   {
@@ -31,10 +46,19 @@
     ]
   },
   {
-    "tag": "periodic/daily📅",
+    "tag": "status/blank⚪",
+    "tagCount": 3,
+    "relativePaths": [
+      "10 Templates/Weekly Review Template.md",
+      "10 Templates/Monthly Review Template.md",
+      "10 Templates/Default Note Template.md"
+    ]
+  },
+  {
+    "tag": "periodic/monthly🌔",
     "tagCount": 1,
     "relativePaths": [
-      "10 Templates/Daily Note Template.md"
+      "10 Templates/Monthly Review Template.md"
     ]
   }
 ]

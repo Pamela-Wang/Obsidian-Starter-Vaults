@@ -15,6 +15,10 @@
   "enable_folder_templates": true,
   "folder_templates": [
     {
+      "folder": "/",
+      "template": "10 Templates/Meta Template Picker.md"
+    },
+    {
       "folder": "20 Periodic/21 Daily Notes",
       "template": "10 Templates/Daily Note Template.md"
     },

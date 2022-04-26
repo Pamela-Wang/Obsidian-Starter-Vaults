@@ -1,0 +1,67 @@
+/* @settings
+
+name: Big Bullets
+id: pam-editor-bullets
+settings:
+    - 
+        id: letter-spacing
+        title: Letter Spacing
+        description: The letter spacing for editor list in rem units
+        type: variable-number-slider
+        default: 2
+        min: 0.2
+        max: 5
+        step: 0.2
+        format: rem
+
+    - 
+        id: bullet-size
+        title: Editor Bullet Size
+        description: The bullet size for editor list in rem units
+        type: variable-number-slider
+        default: 3.1
+        min: 0.5
+        max: 10
+        step: 0.1
+        format: rem
+    - 
+        id: leftMargin
+        title: Left Margin
+        description: The left margin for the bullet in editor list.
+        type: variable-number-slider
+        default: -9.5
+        min: -30
+        max: 30
+        step: 0.5
+        format: px
+
+    - 
+        id: topMargin
+        title: Top Margin
+        description: The right margin for the bullet in editor list.
+        type: variable-number-slider
+        default: 1.5
+        min: -20
+        max: 20
+        step: 0.1
+        format: px
+*/
+
+ul li::marker {
+  font-size: 1.3em;
+}
+
+
+.cm-s-obsidian span.cm-formatting-list {
+  letter-spacing: var(--letter-spacing);
+}
+
+.cm-s-obsidian span.cm-formatting-list-ul:before {
+  content: "•";
+  position: absolute;
+  margin-left: var(--leftMargin);;
+  margin-top: var(--topMargin);;
+  font-size: var(--bullet-size);
+  /*color: var(--text-muted);*/
+  visibility: visible !important;
+}

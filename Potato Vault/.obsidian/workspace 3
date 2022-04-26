@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "cc1b37e139931d96",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ee41004c802fb76",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Alain de Botton on Emotional Education.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "85d6002b53aff518",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "7ff84c3fffadefc1",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "d7e6e687cdabd38e",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "1738e92bf838f5e5",
+        "type": "leaf",
+        "state": {
+          "type": "recent-files",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "2405f8885b29c3ac",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "91d7bb2a880d8e75",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Alain de Botton on Emotional Education.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "727ebb0cf4842aaa",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
+      },
+      {
+        "id": "5ae489cc76fb2c0a",
+        "type": "leaf",
+        "state": {
+          "type": "advanced-tables-toolbar",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 2
+  },
+  "active": "6ee41004c802fb76",
+  "lastOpenFiles": [
+    "Alain de Botton on Emotional Education.md"
+  ]
+}

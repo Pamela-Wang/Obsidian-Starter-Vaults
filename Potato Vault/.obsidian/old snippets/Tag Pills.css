@@ -1,0 +1,32 @@
+.tag {
+  background-color: var(--text-accent);
+  border: none;
+  color: white;
+  font-size: 11px;
+  padding: 1px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 0px;
+  cursor: pointer;
+  border-radius: 14px;
+}
+.tag:not(.token):hover {
+  color: white;
+  background-color: var(--text-accent-hover);
+}
+.tag[href^="type::"] {
+  background-color: #4d3ca6;
+}
+.tag[href^="topics::"] {
+  background-color: red;
+}
+.tag[href^="source::"] {
+  background-color: green;
+}
+.tag[href^="authors::"] {
+  background-color: cyan;
+}
+.tag[href^="contributions::"] {
+  background-color: orange;
+}

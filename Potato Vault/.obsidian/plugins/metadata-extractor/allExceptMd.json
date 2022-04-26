@@ -5,16 +5,20 @@
       "relativePath": "/"
     },
     {
-      "name": "20 Periodic",
-      "relativePath": "20 Periodic"
-    },
-    {
       "name": "10 Templates",
       "relativePath": "10 Templates"
     },
     {
+      "name": "20 Periodic",
+      "relativePath": "20 Periodic"
+    },
+    {
       "name": "90 Meta",
       "relativePath": "90 Meta"
+    },
+    {
+      "name": "50 Pages",
+      "relativePath": "50 Pages"
     },
     {
       "name": "21 Daily Notes",
@@ -35,6 +39,10 @@
     {
       "name": "25 Yearly Review",
       "relativePath": "20 Periodic/25 Yearly Review"
+    },
+    {
+      "name": "55 All Pages",
+      "relativePath": "50 Pages/55 All Pages"
     },
     {
       "name": "Attachments",

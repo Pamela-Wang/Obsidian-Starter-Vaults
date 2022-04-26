@@ -1,142 +1,137 @@
 {
   "main": {
-    "id": "ae988ffe4e51cb52",
+    "id": "17ce7cb9cda06e6f",
     "type": "split",
     "children": [
       {
-        "id": "d4645588bc9e88e9",
+        "id": "40d5625798f2f9c7",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "10 Templates/Weekly Review Template.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         },
         "pane-relief:history-v1": {
           "pos": 0,
           "stack": [
             {
-              "leaf": "d4645588bc9e88e9",
+              "leaf": "40d5625798f2f9c7",
               "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"10 Templates/Weekly Review Template.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"10 Templates/Daily Note Template.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"10 Templates/Weekly Review Template.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{\"scroll\":88.93889770835689}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-17.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-26.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
               "eState": "{}"
             },
             {
-              "leaf": "d4645588bc9e88e9",
+              "leaf": "40d5625798f2f9c7",
               "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-18.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-17.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-14.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-11).md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/22 Weekly Review/Weekly Review 2022-W18 (Apr-25).md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
               "eState": "{\"scroll\":0}"
             },
             {
-              "leaf": "d4645588bc9e88e9",
+              "leaf": "40d5625798f2f9c7",
               "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-16.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{\"scroll\":25.617781575214575}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-14.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":38,\"ch\":16},\"to\":{\"line\":38,\"ch\":16}},\"scroll\":25.617781575214575}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-11).md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":296,\"ch\":16},\"to\":{\"line\":296,\"ch\":16}},\"scroll\":264.18997746500247}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-14.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{\"cursor\":{\"from\":{\"line\":2,\"ch\":40},\"to\":{\"line\":2,\"ch\":40}}}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-13.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-26.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
               "eState": "{}"
             },
             {
-              "leaf": "d4645588bc9e88e9",
+              "leaf": "40d5625798f2f9c7",
               "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-16.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"50 Pages/54 Objects/Experiments/Experiment - first prolonged fast for 3 days 2022-04-23 - fasting.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":13,\"ch\":0},\"to\":{\"line\":13,\"ch\":0}},\"scroll\":0}"
+            },
+            {
+              "leaf": "40d5625798f2f9c7",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-26.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+            },
+            {
+              "leaf": "40d5625798f2f9c7",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"50 Pages/54 Objects/Experiments/Experiment - first prolonged fast for 3 days 2022-04-23 - fasting.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":11,\"ch\":0},\"to\":{\"line\":11,\"ch\":0}},\"scroll\":0}"
+            },
+            {
+              "leaf": "40d5625798f2f9c7",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-26.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":30.576714490528126}"
+            },
+            {
+              "leaf": "40d5625798f2f9c7",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"30 Projects/32 Youtube/YT Video - potato vault shortcuts.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":163,\"ch\":41},\"to\":{\"line\":163,\"ch\":41}},\"scroll\":144.71893382577943}"
+            },
+            {
+              "leaf": "40d5625798f2f9c7",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-26.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":43,\"ch\":177},\"to\":{\"line\":43,\"ch\":177}},\"scroll\":19.08189423452084}"
+            },
+            {
+              "leaf": "40d5625798f2f9c7",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-25.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}}}"
+            },
+            {
+              "leaf": "40d5625798f2f9c7",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-26.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":2,\"ch\":12},\"to\":{\"line\":2,\"ch\":12}},\"scroll\":0}"
+            },
+            {
+              "leaf": "40d5625798f2f9c7",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"50 Pages/53 Source/InfoMap - prolonged fasting.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":17,\"ch\":162},\"to\":{\"line\":17,\"ch\":0}},\"scroll\":0}"
+            },
+            {
+              "leaf": "40d5625798f2f9c7",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-25.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":92,\"ch\":156},\"to\":{\"line\":92,\"ch\":156}},\"scroll\":80.11136779312015}"
+            },
+            {
+              "leaf": "40d5625798f2f9c7",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-26.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
+            },
+            {
+              "leaf": "40d5625798f2f9c7",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"10 Templates/Daily Note Template.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":4,\"ch\":36},\"to\":{\"line\":4,\"ch\":36}}}"
+            },
+            {
+              "leaf": "40d5625798f2f9c7",
+              "group": null,
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-26.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
               "eState": "{}"
             },
             {
-              "leaf": "d4645588bc9e88e9",
+              "leaf": "40d5625798f2f9c7",
               "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-13.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{}"
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"50 Pages/53 Source/InfoMap - prolonged fasting.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":12,\"ch\":161},\"to\":{\"line\":12,\"ch\":161}},\"scroll\":0}"
             },
             {
-              "leaf": "d4645588bc9e88e9",
+              "leaf": "40d5625798f2f9c7",
               "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-10).md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{}"
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-25.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":92,\"ch\":164},\"to\":{\"line\":92,\"ch\":164}},\"scroll\":85.45042002426278}"
             },
             {
-              "leaf": "d4645588bc9e88e9",
+              "leaf": "40d5625798f2f9c7",
               "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-14.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{}"
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"50 Pages/53 Source/InfoMap - prolonged fasting.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"scroll\":0}"
             },
             {
-              "leaf": "d4645588bc9e88e9",
+              "leaf": "40d5625798f2f9c7",
               "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-13.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-16.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{}"
-            },
-            {
-              "leaf": "d4645588bc9e88e9",
-              "group": null,
-              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-14.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
-              "eState": "{}"
+              "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-04-25.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+              "eState": "{\"cursor\":{\"from\":{\"line\":94,\"ch\":0},\"to\":{\"line\":94,\"ch\":0}},\"scroll\":74.96718405553537}"
             }
           ]
         }
@@ -145,23 +140,16 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "4cc569c25e8dd180",
+    "id": "5700aab2ea10673c",
     "type": "split",
     "children": [
       {
-        "id": "c6de55312a5d936e",
+        "id": "0ecc51eda46d2f61",
         "type": "tabs",
+        "dimension": 60.6060606060606,
         "children": [
           {
-            "id": "f2fe00b39059682e",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "68c4625d46547131",
+            "id": "8f1ab7124c4771ba",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -169,128 +157,215 @@
                 "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "byModifiedTime"
               }
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
             }
           },
           {
-            "id": "8b95520a1b0b2a23",
+            "id": "f924f46b2165a1eb",
             "type": "leaf",
             "state": {
               "type": "starred",
               "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
             }
           },
           {
-            "id": "f745348373ec32ea",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {}
-            }
-          },
-          {
-            "id": "3939e346c9d0e282",
+            "id": "5cc6f43c3221f65f",
             "type": "leaf",
             "state": {
               "type": "VIEW_TYPE_LONGFORM_EXPLORER",
               "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
+            }
+          },
+          {
+            "id": "fc5166842bda3bcd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
+            }
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "e5e020003854e777",
+        "type": "tabs",
+        "dimension": 17.316017316017316,
+        "children": [
+          {
+            "id": "83bcc3c512aab42f",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
             }
           }
         ]
       },
       {
-        "id": "2e34092f6cbb73df",
+        "id": "40f2b8313c409744",
         "type": "tabs",
+        "dimension": 22.077922077922082,
         "children": [
           {
-            "id": "58e775a2f2273d3b",
+            "id": "64ab0488e20579f0",
             "type": "leaf",
             "state": {
               "type": "calendar",
               "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 246.00793838500977
+    "width": 275.0036334991455
   },
   "right": {
-    "id": "4bb4737f78febdae",
+    "id": "ba6ca14772b992eb",
     "type": "split",
     "children": [
       {
-        "id": "d8ce07a1fd8a7394",
+        "id": "c9e197d78c4185bb",
         "type": "tabs",
         "children": [
           {
-            "id": "92a4bdf6adc5bb1a",
+            "id": "d1d9fbea15e78128",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
+                "sortOrder": "alphabetical",
+                "useHierarchy": false
               }
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
             }
           },
           {
-            "id": "8caf25c191519286",
+            "id": "41431233e44ab502",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "leaf": "41431233e44ab502",
+                  "group": null,
+                  "state": "{\"type\":\"outline\",\"state\":{\"file\":\"2021-07-30.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "leaf": "41431233e44ab502",
+                  "group": null,
+                  "state": "{\"type\":\"outline\",\"state\":{\"file\":\"Daily/2021-07-31.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "leaf": "41431233e44ab502",
+                  "group": null,
+                  "state": "{\"type\":\"outline\",\"state\":{\"file\":\"Map of Machine Learning.md\"}}",
+                  "eState": "{}"
+                }
+              ]
+            }
+          },
+          {
+            "id": "01a4cb8073e37883",
             "type": "leaf",
             "state": {
               "type": "stats-tracker",
               "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
             }
           },
           {
-            "id": "8210db21b1cceaad",
+            "id": "34cc4aade270b0e5",
             "type": "leaf",
             "state": {
               "type": "juggl_nodes",
               "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
             }
           },
           {
-            "id": "9e276a018239f3f1",
+            "id": "4e7c28183b9aa89e",
             "type": "leaf",
             "state": {
               "type": "juggl_style",
               "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
-        "id": "0db9794f75f97dd9",
+        "id": "c4bdb1350338a72d",
         "type": "tabs",
         "children": [
           {
-            "id": "08ccce788dec75ee",
+            "id": "43a615abe100193e",
             "type": "leaf",
             "state": {
-              "type": "outline",
+              "type": "outgoing-link",
               "state": {
-                "file": "10 Templates/Weekly Review Template.md"
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
               }
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
             }
-          }
-        ]
-      },
-      {
-        "id": "f5284dc0078aa76c",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "8b39144375f56cad",
+            "id": "acba8c954b53ee09",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "10 Templates/Weekly Review Template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -299,37 +374,255 @@
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
             }
           },
           {
-            "id": "0c4c4dcc0eb308d1",
+            "id": "709a9710783583fe",
             "type": "leaf",
             "state": {
-              "type": "outgoing-link",
+              "type": "empty",
+              "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "leaf": "709a9710783583fe",
+                  "group": null,
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"90 Meta/99 System Utility/Current Weekly Review Notes - Utility.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":6,\"ch\":0},\"to\":{\"line\":6,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "leaf": "709a9710783583fe",
+                  "group": null,
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"10 Templates/Daily Note Template.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":25,\"ch\":17},\"to\":{\"line\":25,\"ch\":17}},\"scroll\":12.191687344913152}"
+                },
+                {
+                  "leaf": "709a9710783583fe",
+                  "group": null,
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/22 Weekly Review/Weekly Review 2022-W12 (Mar-14).md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+                  "eState": "{}"
+                }
+              ]
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "e5eccaa076f76d16",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0af15f17d86e35e5",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
               "state": {
-                "file": "10 Templates/Weekly Review Template.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "options": {
+                  "collapse-filter": false,
+                  "search": "tag:#Atomic OR tag:#Topic OR tag:#MapOfContent ",
+                  "localJumps": 2,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [
+                    {
+                      "query": "tag:#Topic",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14048348
+                      }
+                    },
+                    {
+                      "query": "tag:#MapOfContent",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14069084
+                      }
+                    },
+                    {
+                      "query": "tag:#Source",
+                      "color": {
+                        "a": 1,
+                        "rgb": 11392604
+                      }
+                    }
+                  ],
+                  "collapse-display": true,
+                  "showArrow": true,
+                  "textFadeMultiplier": -3,
+                  "nodeSizeMultiplier": 1.33297257769653,
+                  "lineSizeMultiplier": 5,
+                  "collapse-forces": false,
+                  "centerStrength": 0.51454309489274,
+                  "repelStrength": 18.4365218718986,
+                  "linkStrength": 1,
+                  "linkDistance": 323,
+                  "scale": 0.19014112628194918,
+                  "close": true
+                }
               }
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
+            }
+          },
+          {
+            "id": "c16a54aade8fe49c",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "options": {
+                  "collapse-filter": true,
+                  "search": "tag:#Atomic OR tag:#Fleeting",
+                  "localJumps": 4,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [
+                    {
+                      "query": "line:([[Emergent Communication]])",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14048348
+                      }
+                    },
+                    {
+                      "query": "tag:#Atomic",
+                      "color": {
+                        "a": 1,
+                        "rgb": 16755200
+                      }
+                    }
+                  ],
+                  "collapse-display": false,
+                  "showArrow": true,
+                  "textFadeMultiplier": -1.8,
+                  "nodeSizeMultiplier": 1.18743415527903,
+                  "lineSizeMultiplier": 5,
+                  "collapse-forces": false,
+                  "centerStrength": 0.543476601267272,
+                  "repelStrength": 20,
+                  "linkStrength": 1,
+                  "linkDistance": 443,
+                  "scale": 0.2834947745429425,
+                  "close": true
+                }
+              }
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
+            }
+          },
+          {
+            "id": "2895ad11eb2db112",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "leaf": "2895ad11eb2db112",
+                  "group": null,
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"80 Archive/2022-03-09 Wolf Vault/pages/pinned.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":0,\"ch\":0},\"to\":{\"line\":0,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "leaf": "2895ad11eb2db112",
+                  "group": null,
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"80 Archive/2022-03-09 Wolf Vault/pages/Template/Daily Note Template.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":42,\"ch\":0},\"to\":{\"line\":42,\"ch\":0}},\"scroll\":0}"
+                },
+                {
+                  "leaf": "2895ad11eb2db112",
+                  "group": null,
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"80 Archive/2022-03-09 Wolf Vault/pages/Weekly Review 2022-02-20 to 2022-02-27.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":false}}",
+                  "eState": "{\"scroll\":109.37457516942861}"
+                }
+              ]
+            }
+          },
+          {
+            "id": "bbb840ac949e1f7c",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "leaf": "bbb840ac949e1f7c",
+                  "group": null,
+                  "state": "{\"type\":\"graph\",\"state\":{}}",
+                  "eState": "{}"
+                },
+                {
+                  "leaf": "bbb840ac949e1f7c",
+                  "group": null,
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"80 Archive/2022-03-09 Wolf Vault/pages/emacs/tracking_health_metrics.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "leaf": "bbb840ac949e1f7c",
+                  "group": null,
+                  "state": "{\"type\":\"graph\",\"state\":{}}",
+                  "eState": "{}"
+                },
+                {
+                  "leaf": "bbb840ac949e1f7c",
+                  "group": null,
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"20 Periodic/21 Daily Notes/2022-03-16.md\",\"mode\":\"source\",\"backlinks\":true,\"source\":true}}",
+                  "eState": "{}"
+                },
+                {
+                  "leaf": "bbb840ac949e1f7c",
+                  "group": null,
+                  "state": "{\"type\":\"empty\",\"state\":{}}",
+                  "eState": "{}"
+                }
+              ]
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 379.5,
+    "collapsed": true
   },
-  "active": "d4645588bc9e88e9",
+  "active": "40d5625798f2f9c7",
   "lastOpenFiles": [
-    "10 Templates/Weekly Review Template.md",
+    "20 Periodic/21 Daily Notes/2022-04-26.md",
+    "20 Periodic/22 Weekly Review/Weekly Review 2022-W18 (Apr-25).md",
+    "50 Pages/54 Objects/Experiments/Experiment - first prolonged fast for 3 days 2022-04-23 - fasting.md",
+    "30 Projects/32 Youtube/YT Video - potato vault shortcuts.md",
+    "20 Periodic/21 Daily Notes/2022-04-25.md",
+    "50 Pages/53 Source/InfoMap - prolonged fasting.md",
     "10 Templates/Daily Note Template.md",
-    "20 Periodic/21 Daily Notes/2022-04-17.md",
-    "20 Periodic/21 Daily Notes/2022-04-18.md",
-    "20 Periodic/21 Daily Notes/2022-04-14.md",
-    "20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-11).md",
-    "20 Periodic/21 Daily Notes/2022-04-16.md",
-    "20 Periodic/21 Daily Notes/2022-04-13.md",
-    "20 Periodic/22 Weekly Review/Weekly Review 2022-W16 (Apr-10).md",
-    "20 Periodic/21 Daily Notes/2022-04-15.md"
+    "70 Work/72 Projects/Notes/Contractual Gifting - 4 gates task - Work Log.md",
+    "20 Periodic/22 Weekly Review/Weekly Review 2022-W17 (Apr-18).md",
+    "50 Pages/55 All Pages/My Measurements 2022-04-24.md"
   ]
 }

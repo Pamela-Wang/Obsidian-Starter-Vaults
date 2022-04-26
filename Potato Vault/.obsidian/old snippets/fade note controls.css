@@ -1,0 +1,6 @@
+/*https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/10*/
+
+.view-header:not(:hover) .view-actions {
+  opacity: 0.1;
+  transition: opacity .25s ease-in-out;
+}

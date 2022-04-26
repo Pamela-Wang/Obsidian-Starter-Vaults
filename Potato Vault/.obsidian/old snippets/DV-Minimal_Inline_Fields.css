@@ -1,0 +1,75 @@
+/* 
+Default Behavior:
+Allows inline text to exist after the field, but if the field value casuses a line-break, it doesn't look very good.
+
+Alternative Behavior (uncomment snippet below):
+Does not behave as inline text, but looks much better with proper text-ellipses in the field value.
+
+If anyone can make this work better, please let me know.
+*/
+
+/* .dataview.inline-field {
+    display: inline-flex;
+    width: 100%;
+    page-break-after: avoid;
+
+} */
+
+
+/*.dataview .inline-field-key {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    color:var(--tx2);
+    background: var(--bg3) !important;
+    padding: 0px 8px 0px 8px !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.dataview .inline-field-key::after {
+    display: none;
+}
+
+.dataview .inline-field-value {
+    display: inline-block;
+    vertical-align: top;
+    background: var(--bg2) !important;
+    color: var(--tx1) !important;
+    padding: 0px 8px 0px 8px !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}*/
+
+
+/*dataview from github*/
+/*.dataview.inline-field-key {
+    border-top-left-radius: 250px;
+    border-bottom-left-radius: 250px;
+    padding-left: 16px;
+    padding-right: 8px;
+    font-family: var(--font-monospace);
+    background-color: var(--background-primary-alt);
+    color: var(--text-nav-selected);
+}
+.dataview.inline-field-value {
+    border-top-right-radius: 250px;
+    border-bottom-right-radius: 250px;
+    padding-left: 8px;
+    padding-right: 16px;
+    font-family: var(--font-monospace);
+    background-color: var(--background-secondary-alt);
+    color: var(--text-nav-selected);
+}
+
+.dataview.inline-field-standalone-value {
+    border-radius: 250px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: var(--font-monospace);
+    background-color: var(--background-secondary-alt);
+    color: var(--text-nav-selected);
+}
+*/

@@ -1,0 +1,40 @@
+/* Turn on custom 8px wide scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* 1px wider than Lion. */
+  height: 10px;
+
+  /* This is more usable for users trying to click it. */
+  background-color: rgba(0,0,0,0);
+  -webkit-border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.06)
+    /*rgba(189, 190, 255, 0.25);*/
+    /*transparent;*/
+    width: 3px;
+    border-radius: 5px;
+    opacity: 0.3;
+}
+
+/* hover effect for both scrollbar area, and scrollbar 'thumb' */
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+  width: 12px; /* 1px wider than Lion. */
+  height: 10px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    width: 10px;
+    opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(0,0,0,0.61); /* Some darker color when you click it */
+  -webkit-border-radius: 100px;
+}
+

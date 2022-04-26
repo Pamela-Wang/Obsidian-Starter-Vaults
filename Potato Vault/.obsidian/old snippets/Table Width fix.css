@@ -1,0 +1,18 @@
+/*
+    tables-auto-centered.css snippet
+
+    Adjust tables for auto-width columns & not using full width.
+    Also centers table.
+
+    2021-06-07 Matthias C. Hormann (Moonbase59)
+*/
+
+table {
+  table-layout: auto !important;
+  width: unset !important;
+  max-width: 100%;
+
+  /* for centered tables, add the following */
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,126 @@
+/* Center Content */
+#wordsprint #sprintActionPanel,
+#wordsprint .wordsWritten,
+#wordsprint #statsPanel,
+#wordsprint #sectionTab,
+#wordsprint #goalsPanel,
+#wordsprint .secondsLeft {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Status */
+#wordsprint .status {
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+#wordsprint .pending {
+	color: white;
+	background-color: grey;
+}
+
+#wordsprint .danger {
+	color: white;
+	background-color: red;
+}
+
+#wordsprint .warning {
+	color: black;
+	background-color: gold;
+}
+
+#wordsprint .success {
+	color: white;
+	background-color: green;
+}
+
+/* Time */
+#wordsprint .secondsLeft {
+	margin: .5em;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+/* Buttons */
+#wordsprint #sprintActionPanel {
+	margin: 0.5rem;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#wordsprint #sprintActionPanel .sprintStart {
+	margin: 0.5rem;
+	background-color: var(--background-modifier-success);
+}
+
+#wordsprint #sprintActionPanel .sprintStop {
+	margin: 0.5rem;
+	background-color: var(--background-modifier-error);
+    color: var(--text-on-accent);
+}
+
+#wordsprint .hand {
+	cursor: pointer;
+}
+
+/* Tabs */
+#wordsprint #sectionTab button {
+	margin: 0;
+}
+
+#wordsprint #sectionTab .active {
+	background-color: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+#wordsprint #sectionTab button:not(.active):not(:hover) {
+	background-color: var(--background-secondary-alt);
+}
+
+/* Stats */
+#wordsprint #statsPanel {
+    flex-direction: column;
+}
+
+#wordsprint #statsPanel .sprintTotalWordCount {
+	margin-top: 1rem;
+}
+
+#wordsprint #sprintViewStats {
+	padding: 1em 2em 2em;
+}
+
+#wordsprint #sprintViewStats .viewStats {
+	background-color: var(--text-faint);
+	color: var(--text-on-accent);
+}
+
+.setting-item-control button:disabled {
+	opacity: .4;
+}
+
+/* Goals */
+#wordsprint #goalsPanel {
+	flex-direction: column;
+	margin-top: 1rem;
+}
+
+#wordsprint #goalsPanel #sprintGoal {
+	padding: 2em;
+}
+
+#wordspring #goalsPanel .overallGoal {
+	margin: 0.5rem;
+}
+
+#wordspring #goalsPanel #sprintGoal {
+	padding: 2em;
+}
+
+#wordspring #goalsPanel #sprintGoal .setGoalsButton {
+	background-color: var(--text-faint);
+}

@@ -1,0 +1,18 @@
+.markdown-preview-view h1 {
+  text-transform: uppercase;
+}
+
+
+.markdown-preview-view h2 {
+  font-variant:caps;
+  text-transform:uppercase;
+}
+
+.markdown-preview-view h3 {
+  font-variant:caps;
+  text-transform:uppercase;
+}
+
+.markdown-preview-view h4 {
+  font-variant:caps;
+}

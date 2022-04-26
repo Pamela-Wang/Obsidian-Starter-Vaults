@@ -1,0 +1,4 @@
+.markdown-preview-view .markdown-embed-content, 
+.markdown-preview-view .markdown-embed-content>.markdown-preview-view {
+  max-height: unset;
+}

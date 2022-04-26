@@ -1,0 +1,27 @@
+li.logseq-complete-task:not(ul) {
+  text-decoration: line-through !important;
+  opacity: 0.5;
+  display: inline-block;
+}
+
+li.logseq-incomplete-task {
+  text-decoration: none !important;
+  display: inline-block;
+  opacity: 1.0;
+}
+
+
+span.logseq-keyword {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: var(--text-a);
+}
+
+a[href="#A"],
+a[href="#B"],
+a[href="#C"],
+a[href="#D"] {
+  color: var(--faded-blue) !important;
+}

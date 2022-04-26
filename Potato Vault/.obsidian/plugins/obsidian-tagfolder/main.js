@@ -201,16 +201,12 @@ function set_input_value(input, value) {
   input.value = value == null ? "" : value;
 }
 function set_style(node, key, value, important) {
-  if (value === null) {
-    node.style.removeProperty(key);
-  } else {
-    node.style.setProperty(key, value, important ? "important" : "");
-  }
+  node.style.setProperty(key, value, important ? "important" : "");
 }
 function toggle_class(element2, name, toggle) {
   element2.classList[toggle ? "add" : "remove"](name);
 }
-var managed_styles = new Map();
+var active_docs = new Set();
 var current_component;
 function set_current_component(component) {
   current_component = component;
@@ -230,20 +226,20 @@ function schedule_update() {
 function add_render_callback(fn) {
   render_callbacks.push(fn);
 }
+var flushing = false;
 var seen_callbacks = new Set();
-var flushidx = 0;
 function flush() {
-  const saved_component = current_component;
+  if (flushing)
+    return;
+  flushing = true;
   do {
-    while (flushidx < dirty_components.length) {
-      const component = dirty_components[flushidx];
-      flushidx++;
+    for (let i = 0; i < dirty_components.length; i += 1) {
+      const component = dirty_components[i];
       set_current_component(component);
       update(component.$$);
     }
     set_current_component(null);
     dirty_components.length = 0;
-    flushidx = 0;
     while (binding_callbacks.length)
       binding_callbacks.pop()();
     for (let i = 0; i < render_callbacks.length; i += 1) {
@@ -259,8 +255,8 @@ function flush() {
     flush_callbacks.pop()();
   }
   update_scheduled = false;
+  flushing = false;
   seen_callbacks.clear();
-  set_current_component(saved_component);
 }
 function update($$) {
   if ($$.fragment !== null) {
@@ -551,17 +547,17 @@ function add_css(target) {
 }
 function get_each_context_1(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[19] = list[i];
+  child_ctx[22] = list[i];
   return child_ctx;
 }
 function get_each_context(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[19] = list[i];
+  child_ctx[22] = list[i];
   return child_ctx;
 }
 function get_each_context_2(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[19] = list[i];
+  child_ctx[22] = list[i];
   return child_ctx;
 }
 function create_if_block_5(ctx) {
@@ -580,7 +576,7 @@ function create_if_block_5(ctx) {
       t = text(t_value);
       attr(div0, "class", "nav-file-title-content");
       attr(div1, "class", "nav-file-title");
-      toggle_class(div1, "is-active", ctx[5]);
+      toggle_class(div1, "is-active", ctx[6]);
       attr(div2, "class", "nav-file");
     },
     m(target, anchor) {
@@ -590,8 +586,10 @@ function create_if_block_5(ctx) {
       append(div0, t);
       if (!mounted) {
         dispose = [
-          listen(div1, "click", ctx[17]),
-          listen(div1, "contextmenu", ctx[18])
+          listen(div1, "click", ctx[19]),
+          listen(div1, "mouseover", ctx[20]),
+          listen(div1, "focus", focus_handler),
+          listen(div1, "contextmenu", ctx[21])
         ];
         mounted = true;
       }
@@ -599,8 +597,8 @@ function create_if_block_5(ctx) {
     p(ctx2, dirty) {
       if (dirty & 1 && t_value !== (t_value = ctx2[0].displayName + ""))
         set_data(t, t_value);
-      if (dirty & 32) {
-        toggle_class(div1, "is-active", ctx2[5]);
+      if (dirty & 64) {
+        toggle_class(div1, "is-active", ctx2[6]);
       }
     },
     i: noop,
@@ -633,13 +631,13 @@ function create_if_block(ctx) {
   let current;
   let mounted;
   let dispose;
-  let if_block0 = ctx[0].children && !ctx[4] && create_if_block_4(ctx);
+  let if_block0 = ctx[0].children && !ctx[5] && create_if_block_4(ctx);
   const if_block_creators = [create_if_block_1, create_if_block_3];
   const if_blocks = [];
   function select_block_type_1(ctx2, dirty) {
-    if (ctx2[6] != 1 && ctx2[8] > ctx2[6])
+    if (ctx2[7] != 1 && ctx2[9] > ctx2[7])
       return 0;
-    if (ctx2[0].descendants && !ctx2[4])
+    if (ctx2[0].descendants && !ctx2[5])
       return 1;
     return -1;
   }
@@ -670,9 +668,9 @@ function create_if_block(ctx) {
       attr(div2, "class", "tagfolder-quantity svelte-1yv0nhj");
       attr(div3, "class", "nav-folder-title-content lsl-f svelte-1yv0nhj");
       attr(div4, "class", "nav-folder-title");
-      toggle_class(div4, "is-active", ctx[0].children && ctx[4] && ctx[5]);
+      toggle_class(div4, "is-active", ctx[0].children && ctx[5] && ctx[6]);
       attr(div5, "class", "nav-folder");
-      toggle_class(div5, "is-collapsed", ctx[4]);
+      toggle_class(div5, "is-collapsed", ctx[5]);
     },
     m(target, anchor) {
       insert(target, div5, anchor);
@@ -695,8 +693,8 @@ function create_if_block(ctx) {
       current = true;
       if (!mounted) {
         dispose = [
-          listen(div4, "click", ctx[15]),
-          listen(div4, "contextmenu", ctx[16])
+          listen(div4, "click", ctx[17]),
+          listen(div4, "contextmenu", ctx[18])
         ];
         mounted = true;
       }
@@ -706,13 +704,13 @@ function create_if_block(ctx) {
         set_data(t1, t1_value);
       if ((!current || dirty & 1) && t3_value !== (t3_value = ctx2[0].itemsCount + ""))
         set_data(t3, t3_value);
-      if (dirty & 49) {
-        toggle_class(div4, "is-active", ctx2[0].children && ctx2[4] && ctx2[5]);
+      if (dirty & 97) {
+        toggle_class(div4, "is-active", ctx2[0].children && ctx2[5] && ctx2[6]);
       }
-      if (ctx2[0].children && !ctx2[4]) {
+      if (ctx2[0].children && !ctx2[5]) {
         if (if_block0) {
           if_block0.p(ctx2, dirty);
-          if (dirty & 17) {
+          if (dirty & 33) {
             transition_in(if_block0, 1);
           }
         } else {
@@ -756,8 +754,8 @@ function create_if_block(ctx) {
           if_block1 = null;
         }
       }
-      if (dirty & 16) {
-        toggle_class(div5, "is-collapsed", ctx2[4]);
+      if (dirty & 32) {
+        toggle_class(div5, "is-collapsed", ctx2[5]);
       }
     },
     i(local) {
@@ -812,7 +810,7 @@ function create_if_block_4(ctx) {
       current = true;
     },
     p(ctx2, dirty) {
-      if (dirty & 143) {
+      if (dirty & 287) {
         each_value_2 = ctx2[0].children.filter(func);
         let i;
         for (i = 0; i < each_value_2.length; i += 1) {
@@ -861,11 +859,12 @@ function create_each_block_2(ctx) {
   let current;
   treeitemcomponent = new TreeItemComponent({
     props: {
-      entry: ctx[19],
-      openfile: ctx[1],
-      expandFolder: ctx[2],
-      showMenu: ctx[3],
-      path: ctx[7]
+      entry: ctx[22],
+      openfile: ctx[2],
+      hoverPreview: ctx[1],
+      expandFolder: ctx[3],
+      showMenu: ctx[4],
+      path: ctx[8]
     }
   });
   return {
@@ -879,13 +878,15 @@ function create_each_block_2(ctx) {
     p(ctx2, dirty) {
       const treeitemcomponent_changes = {};
       if (dirty & 1)
-        treeitemcomponent_changes.entry = ctx2[19];
-      if (dirty & 2)
-        treeitemcomponent_changes.openfile = ctx2[1];
+        treeitemcomponent_changes.entry = ctx2[22];
       if (dirty & 4)
-        treeitemcomponent_changes.expandFolder = ctx2[2];
+        treeitemcomponent_changes.openfile = ctx2[2];
+      if (dirty & 2)
+        treeitemcomponent_changes.hoverPreview = ctx2[1];
       if (dirty & 8)
-        treeitemcomponent_changes.showMenu = ctx2[3];
+        treeitemcomponent_changes.expandFolder = ctx2[3];
+      if (dirty & 16)
+        treeitemcomponent_changes.showMenu = ctx2[4];
       treeitemcomponent.$set(treeitemcomponent_changes);
     },
     i(local) {
@@ -930,7 +931,7 @@ function create_if_block_3(ctx) {
       current = true;
     },
     p(ctx2, dirty) {
-      if (dirty & 143) {
+      if (dirty & 287) {
         each_value_1 = ctx2[0].descendants;
         let i;
         for (i = 0; i < each_value_1.length; i += 1) {
@@ -977,7 +978,7 @@ function create_if_block_3(ctx) {
 function create_if_block_1(ctx) {
   let if_block_anchor;
   let current;
-  let if_block = ctx[0].allDescendants && !ctx[4] && create_if_block_2(ctx);
+  let if_block = ctx[0].allDescendants && !ctx[5] && create_if_block_2(ctx);
   return {
     c() {
       if (if_block)
@@ -991,10 +992,10 @@ function create_if_block_1(ctx) {
       current = true;
     },
     p(ctx2, dirty) {
-      if (ctx2[0].allDescendants && !ctx2[4]) {
+      if (ctx2[0].allDescendants && !ctx2[5]) {
         if (if_block) {
           if_block.p(ctx2, dirty);
-          if (dirty & 17) {
+          if (dirty & 33) {
             transition_in(if_block, 1);
           }
         } else {
@@ -1034,11 +1035,12 @@ function create_each_block_1(ctx) {
   let current;
   treeitemcomponent = new TreeItemComponent({
     props: {
-      entry: ctx[19],
-      openfile: ctx[1],
-      expandFolder: ctx[2],
-      showMenu: ctx[3],
-      path: ctx[7]
+      entry: ctx[22],
+      openfile: ctx[2],
+      hoverPreview: ctx[1],
+      expandFolder: ctx[3],
+      showMenu: ctx[4],
+      path: ctx[8]
     }
   });
   return {
@@ -1052,13 +1054,15 @@ function create_each_block_1(ctx) {
     p(ctx2, dirty) {
       const treeitemcomponent_changes = {};
       if (dirty & 1)
-        treeitemcomponent_changes.entry = ctx2[19];
-      if (dirty & 2)
-        treeitemcomponent_changes.openfile = ctx2[1];
+        treeitemcomponent_changes.entry = ctx2[22];
       if (dirty & 4)
-        treeitemcomponent_changes.expandFolder = ctx2[2];
+        treeitemcomponent_changes.openfile = ctx2[2];
+      if (dirty & 2)
+        treeitemcomponent_changes.hoverPreview = ctx2[1];
       if (dirty & 8)
-        treeitemcomponent_changes.showMenu = ctx2[3];
+        treeitemcomponent_changes.expandFolder = ctx2[3];
+      if (dirty & 16)
+        treeitemcomponent_changes.showMenu = ctx2[4];
       treeitemcomponent.$set(treeitemcomponent_changes);
     },
     i(local) {
@@ -1103,7 +1107,7 @@ function create_if_block_2(ctx) {
       current = true;
     },
     p(ctx2, dirty) {
-      if (dirty & 143) {
+      if (dirty & 287) {
         each_value = ctx2[0].allDescendants;
         let i;
         for (i = 0; i < each_value.length; i += 1) {
@@ -1152,11 +1156,12 @@ function create_each_block(ctx) {
   let current;
   treeitemcomponent = new TreeItemComponent({
     props: {
-      entry: ctx[19],
-      openfile: ctx[1],
-      expandFolder: ctx[2],
-      showMenu: ctx[3],
-      path: ctx[7]
+      entry: ctx[22],
+      openfile: ctx[2],
+      expandFolder: ctx[3],
+      hoverPreview: ctx[1],
+      showMenu: ctx[4],
+      path: ctx[8]
     }
   });
   return {
@@ -1170,13 +1175,15 @@ function create_each_block(ctx) {
     p(ctx2, dirty) {
       const treeitemcomponent_changes = {};
       if (dirty & 1)
-        treeitemcomponent_changes.entry = ctx2[19];
-      if (dirty & 2)
-        treeitemcomponent_changes.openfile = ctx2[1];
+        treeitemcomponent_changes.entry = ctx2[22];
       if (dirty & 4)
-        treeitemcomponent_changes.expandFolder = ctx2[2];
+        treeitemcomponent_changes.openfile = ctx2[2];
       if (dirty & 8)
-        treeitemcomponent_changes.showMenu = ctx2[3];
+        treeitemcomponent_changes.expandFolder = ctx2[3];
+      if (dirty & 2)
+        treeitemcomponent_changes.hoverPreview = ctx2[1];
+      if (dirty & 16)
+        treeitemcomponent_changes.showMenu = ctx2[4];
       treeitemcomponent.$set(treeitemcomponent_changes);
     },
     i(local) {
@@ -1203,10 +1210,8 @@ function fallback_block(ctx) {
   const if_block_creators = [create_if_block, create_if_block_5];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
-    if (dirty & 65)
-      show_if = null;
-    if (show_if == null)
-      show_if = !!("tag" in ctx2[0] && (ctx2[8] <= ctx2[6] || ctx2[0].tag.startsWith(SUBTREE_MARK)));
+    if (show_if == null || dirty & 129)
+      show_if = !!("tag" in ctx2[0] && (ctx2[9] <= ctx2[7] || ctx2[0].tag.startsWith(SUBTREE_MARK)));
     if (show_if)
       return 0;
     if ("path" in ctx2[0])
@@ -1280,8 +1285,8 @@ function fallback_block(ctx) {
 }
 function create_fragment(ctx) {
   let current;
-  const default_slot_template = ctx[14].default;
-  const default_slot = create_slot(default_slot_template, ctx, ctx[13], null);
+  const default_slot_template = ctx[16].default;
+  const default_slot = create_slot(default_slot_template, ctx, ctx[15], null);
   const default_slot_or_fallback = default_slot || fallback_block(ctx);
   return {
     c() {
@@ -1296,11 +1301,11 @@ function create_fragment(ctx) {
     },
     p(ctx2, [dirty]) {
       if (default_slot) {
-        if (default_slot.p && (!current || dirty & 8192)) {
-          update_slot_base(default_slot, default_slot_template, ctx2, ctx2[13], !current ? get_all_dirty_from_scope(ctx2[13]) : get_slot_changes(default_slot_template, ctx2[13], dirty, null), null);
+        if (default_slot.p && (!current || dirty & 32768)) {
+          update_slot_base(default_slot, default_slot_template, ctx2, ctx2[15], !current ? get_all_dirty_from_scope(ctx2[15]) : get_slot_changes(default_slot_template, ctx2[15], dirty, null), null);
         }
       } else {
-        if (default_slot_or_fallback && default_slot_or_fallback.p && (!current || dirty & 127)) {
+        if (default_slot_or_fallback && default_slot_or_fallback.p && (!current || dirty & 255)) {
           default_slot_or_fallback.p(ctx2, !current ? -1 : dirty);
         }
       }
@@ -1330,9 +1335,12 @@ function getFilenames(entry) {
   }
 }
 var func = (e) => "tag" in e;
+var focus_handler = () => {
+};
 function instance($$self, $$props, $$invalidate) {
   let { $$slots: slots = {}, $$scope } = $$props;
   let { entry } = $$props;
+  let { hoverPreview } = $$props;
   let { openfile } = $$props;
   let { expandFolder } = $$props;
   let { showMenu } = $$props;
@@ -1345,7 +1353,7 @@ function instance($$self, $$props, $$invalidate) {
   function toggleFolder(entry2) {
     if ("tag" in entry2) {
       expandFolder(entry2, collapsed);
-      $$invalidate(4, collapsed = !collapsed);
+      $$invalidate(5, collapsed = !collapsed);
     }
   }
   function openfileLocal(entry2) {
@@ -1355,41 +1363,49 @@ function instance($$self, $$props, $$invalidate) {
   function handleContextMenu(e, path2, entry2) {
     showMenu(e, path2, entry2);
   }
+  function handleMouseover(e, entry2) {
+    if ("path" in entry2)
+      hoverPreview(e, entry2.path);
+  }
   currentFile.subscribe((path2) => {
-    $$invalidate(5, isSelected = false);
+    $$invalidate(6, isSelected = false);
     if ("tags" in entry && entry.path == path2) {
-      $$invalidate(5, isSelected = true);
+      $$invalidate(6, isSelected = true);
     }
     if ("tag" in entry && getFilenames(entry).contains(path2)) {
-      $$invalidate(5, isSelected = true);
+      $$invalidate(6, isSelected = true);
     }
   });
   maxDepth.subscribe((depth) => {
-    $$invalidate(6, _maxDepth = depth);
+    $$invalidate(7, _maxDepth = depth);
     if (depth == 0) {
-      $$invalidate(6, _maxDepth = currentDepth + 1);
+      $$invalidate(7, _maxDepth = currentDepth + 1);
     }
   });
   const click_handler = () => toggleFolder(entry);
   const contextmenu_handler = (e) => handleContextMenu(e, currentPath, entry);
   const click_handler_1 = () => openfileLocal(entry);
+  const mouseover_handler = (e) => handleMouseover(e, entry);
   const contextmenu_handler_1 = (e) => handleContextMenu(e, currentPath, entry);
   $$self.$$set = ($$props2) => {
     if ("entry" in $$props2)
       $$invalidate(0, entry = $$props2.entry);
+    if ("hoverPreview" in $$props2)
+      $$invalidate(1, hoverPreview = $$props2.hoverPreview);
     if ("openfile" in $$props2)
-      $$invalidate(1, openfile = $$props2.openfile);
+      $$invalidate(2, openfile = $$props2.openfile);
     if ("expandFolder" in $$props2)
-      $$invalidate(2, expandFolder = $$props2.expandFolder);
+      $$invalidate(3, expandFolder = $$props2.expandFolder);
     if ("showMenu" in $$props2)
-      $$invalidate(3, showMenu = $$props2.showMenu);
+      $$invalidate(4, showMenu = $$props2.showMenu);
     if ("path" in $$props2)
-      $$invalidate(12, path = $$props2.path);
+      $$invalidate(14, path = $$props2.path);
     if ("$$scope" in $$props2)
-      $$invalidate(13, $$scope = $$props2.$$scope);
+      $$invalidate(15, $$scope = $$props2.$$scope);
   };
   return [
     entry,
+    hoverPreview,
     openfile,
     expandFolder,
     showMenu,
@@ -1401,12 +1417,14 @@ function instance($$self, $$props, $$invalidate) {
     toggleFolder,
     openfileLocal,
     handleContextMenu,
+    handleMouseover,
     path,
     $$scope,
     slots,
     click_handler,
     contextmenu_handler,
     click_handler_1,
+    mouseover_handler,
     contextmenu_handler_1
   ];
 }
@@ -1415,10 +1433,11 @@ var TreeItemComponent = class extends SvelteComponent {
     super();
     init(this, options, instance, create_fragment, safe_not_equal, {
       entry: 0,
-      openfile: 1,
-      expandFolder: 2,
-      showMenu: 3,
-      path: 12
+      hoverPreview: 1,
+      openfile: 2,
+      expandFolder: 3,
+      showMenu: 4,
+      path: 14
     }, add_css);
   }
 };
@@ -1430,7 +1449,7 @@ function add_css2(target) {
 }
 function get_each_context2(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[13] = list[i];
+  child_ctx[14] = list[i];
   return child_ctx;
 }
 function create_if_block2(ctx) {
@@ -1457,17 +1476,17 @@ function create_if_block2(ctx) {
     m(target, anchor) {
       insert(target, div1, anchor);
       append(div1, input);
-      set_input_value(input, ctx[8]);
+      set_input_value(input, ctx[9]);
       append(div1, t);
       append(div1, div0);
       if (!mounted) {
-        dispose = listen(input, "input", ctx[12]);
+        dispose = listen(input, "input", ctx[13]);
         mounted = true;
       }
     },
     p(ctx2, dirty) {
-      if (dirty & 256 && input.value !== ctx2[8]) {
-        set_input_value(input, ctx2[8]);
+      if (dirty & 512 && input.value !== ctx2[9]) {
+        set_input_value(input, ctx2[9]);
       }
     },
     d(detaching) {
@@ -1483,10 +1502,11 @@ function create_each_block2(ctx) {
   let current;
   treeitemcomponent = new TreeItemComponent_default({
     props: {
-      entry: ctx[13],
-      openfile: ctx[1],
-      expandFolder: ctx[2],
-      showMenu: ctx[4],
+      entry: ctx[14],
+      hoverPreview: ctx[1],
+      openfile: ctx[2],
+      expandFolder: ctx[3],
+      showMenu: ctx[5],
       path: "/"
     }
   });
@@ -1501,13 +1521,15 @@ function create_each_block2(ctx) {
     p(ctx2, dirty) {
       const treeitemcomponent_changes = {};
       if (dirty & 1)
-        treeitemcomponent_changes.entry = ctx2[13];
+        treeitemcomponent_changes.entry = ctx2[14];
       if (dirty & 2)
-        treeitemcomponent_changes.openfile = ctx2[1];
+        treeitemcomponent_changes.hoverPreview = ctx2[1];
       if (dirty & 4)
-        treeitemcomponent_changes.expandFolder = ctx2[2];
-      if (dirty & 16)
-        treeitemcomponent_changes.showMenu = ctx2[4];
+        treeitemcomponent_changes.openfile = ctx2[2];
+      if (dirty & 8)
+        treeitemcomponent_changes.expandFolder = ctx2[3];
+      if (dirty & 32)
+        treeitemcomponent_changes.showMenu = ctx2[5];
       treeitemcomponent.$set(treeitemcomponent_changes);
     },
     i(local) {
@@ -1550,7 +1572,7 @@ function create_fragment2(ctx) {
   let current;
   let mounted;
   let dispose;
-  let if_block = ctx[9] && create_if_block2(ctx);
+  let if_block = ctx[10] && create_if_block2(ctx);
   let each_value = ctx[0];
   let each_blocks = [];
   for (let i = 0; i < each_value.length; i += 1) {
@@ -1585,7 +1607,7 @@ function create_fragment2(ctx) {
       t5 = space();
       div7 = element("div");
       t6 = text("Tags: ");
-      t7 = text(ctx[3]);
+      t7 = text(ctx[4]);
       t8 = space();
       div9 = element("div");
       for (let i = 0; i < each_blocks.length; i += 1) {
@@ -1639,25 +1661,25 @@ function create_fragment2(ctx) {
       if (!mounted) {
         dispose = [
           listen(div0, "click", function() {
+            if (is_function(ctx[8]))
+              ctx[8].apply(this, arguments);
+          }),
+          listen(div1, "click", function() {
             if (is_function(ctx[7]))
               ctx[7].apply(this, arguments);
           }),
-          listen(div1, "click", function() {
+          listen(div2, "click", function() {
             if (is_function(ctx[6]))
               ctx[6].apply(this, arguments);
           }),
-          listen(div2, "click", function() {
-            if (is_function(ctx[5]))
-              ctx[5].apply(this, arguments);
-          }),
-          listen(div3, "click", ctx[10])
+          listen(div3, "click", ctx[11])
         ];
         mounted = true;
       }
     },
     p(new_ctx, [dirty]) {
       ctx = new_ctx;
-      if (ctx[9]) {
+      if (ctx[10]) {
         if (if_block) {
           if_block.p(ctx, dirty);
         } else {
@@ -1669,9 +1691,9 @@ function create_fragment2(ctx) {
         if_block.d(1);
         if_block = null;
       }
-      if (!current || dirty & 8)
-        set_data(t7, ctx[3]);
-      if (dirty & 23) {
+      if (!current || dirty & 16)
+        set_data(t7, ctx[4]);
+      if (dirty & 47) {
         each_value = ctx[0];
         let i;
         for (i = 0; i < each_value.length; i += 1) {
@@ -1725,6 +1747,7 @@ function create_fragment2(ctx) {
 }
 function instance2($$self, $$props, $$invalidate) {
   let { items = [] } = $$props;
+  let { hoverPreview } = $$props;
   let { openfile } = $$props;
   let { expandFolder } = $$props;
   let { vaultname = "" } = $$props;
@@ -1740,37 +1763,39 @@ function instance2($$self, $$props, $$invalidate) {
   let search = "";
   let showSearch = false;
   function toggleSearch() {
-    $$invalidate(9, showSearch = !showSearch);
+    $$invalidate(10, showSearch = !showSearch);
     if (!showSearch) {
-      $$invalidate(8, search = "");
+      $$invalidate(9, search = "");
     }
   }
   function input_input_handler() {
     search = this.value;
-    $$invalidate(8, search);
+    $$invalidate(9, search);
   }
   $$self.$$set = ($$props2) => {
     if ("items" in $$props2)
       $$invalidate(0, items = $$props2.items);
+    if ("hoverPreview" in $$props2)
+      $$invalidate(1, hoverPreview = $$props2.hoverPreview);
     if ("openfile" in $$props2)
-      $$invalidate(1, openfile = $$props2.openfile);
+      $$invalidate(2, openfile = $$props2.openfile);
     if ("expandFolder" in $$props2)
-      $$invalidate(2, expandFolder = $$props2.expandFolder);
+      $$invalidate(3, expandFolder = $$props2.expandFolder);
     if ("vaultname" in $$props2)
-      $$invalidate(3, vaultname = $$props2.vaultname);
+      $$invalidate(4, vaultname = $$props2.vaultname);
     if ("showMenu" in $$props2)
-      $$invalidate(4, showMenu = $$props2.showMenu);
+      $$invalidate(5, showMenu = $$props2.showMenu);
     if ("showLevelSelect" in $$props2)
-      $$invalidate(5, showLevelSelect = $$props2.showLevelSelect);
+      $$invalidate(6, showLevelSelect = $$props2.showLevelSelect);
     if ("showOrder" in $$props2)
-      $$invalidate(6, showOrder = $$props2.showOrder);
+      $$invalidate(7, showOrder = $$props2.showOrder);
     if ("newNote" in $$props2)
-      $$invalidate(7, newNote = $$props2.newNote);
+      $$invalidate(8, newNote = $$props2.newNote);
     if ("setSearchString" in $$props2)
-      $$invalidate(11, setSearchString = $$props2.setSearchString);
+      $$invalidate(12, setSearchString = $$props2.setSearchString);
   };
   $$self.$$.update = () => {
-    if ($$self.$$.dirty & 2304) {
+    if ($$self.$$.dirty & 4608) {
       $: {
         if (setSearchString != null) {
           setSearchString(search);
@@ -1780,6 +1805,7 @@ function instance2($$self, $$props, $$invalidate) {
   };
   return [
     items,
+    hoverPreview,
     openfile,
     expandFolder,
     vaultname,
@@ -1799,14 +1825,15 @@ var TagFolderViewComponent = class extends SvelteComponent {
     super();
     init(this, options, instance2, create_fragment2, safe_not_equal, {
       items: 0,
-      openfile: 1,
-      expandFolder: 2,
-      vaultname: 3,
-      showMenu: 4,
-      showLevelSelect: 5,
-      showOrder: 6,
-      newNote: 7,
-      setSearchString: 11
+      hoverPreview: 1,
+      openfile: 2,
+      expandFolder: 3,
+      vaultname: 4,
+      showMenu: 5,
+      showLevelSelect: 6,
+      showOrder: 7,
+      newNote: 8,
+      setSearchString: 12
     }, add_css2);
   }
 };
@@ -1829,7 +1856,8 @@ var DEFAULT_SETTINGS = {
   expandLimit: 0,
   disableNestedTags: false,
   hideItems: "NONE",
-  ignoreFolders: ""
+  ignoreFolders: "",
+  scanDelay: 250
 };
 var VIEW_TYPE_TAGFOLDER = "tagfolder-view";
 var OrderKeyTag = {
@@ -1952,6 +1980,7 @@ var TagFolderView = class extends import_obsidian.ItemView {
         target: this.contentEl,
         props: {
           openfile: this.plugin.focusFile,
+          hoverPreview: this.plugin.hoverPreview,
           expandFolder: this.plugin.expandFolder,
           vaultname: this.app.vault.getName(),
           showMenu: this.showMenu,
@@ -2205,6 +2234,15 @@ var TagFolderPlugin = class extends import_obsidian.Plugin {
     }
     return null;
   }
+  hoverPreview(e, path) {
+    this.app.workspace.trigger("hover-link", {
+      event: e,
+      source: "file-explorer",
+      hoverParent: this,
+      targetEl: e.target,
+      linktext: path
+    });
+  }
   setSearchString(search) {
     this.searchString = search;
     this.refreshAllTree(null);
@@ -2238,9 +2276,10 @@ var TagFolderPlugin = class extends import_obsidian.Plugin {
   onload() {
     return __async(this, null, function* () {
       yield this.loadSettings();
+      this.hoverPreview = this.hoverPreview.bind(this);
       this.sortChildren = this.sortChildren.bind(this);
       this.setSearchString = this.setSearchString.bind(this);
-      this.loadFileInfo = (0, import_obsidian.debounce)(this.loadFileInfo.bind(this), 250, true);
+      this.loadFileInfo = (0, import_obsidian.debounce)(this.loadFileInfo.bind(this), this.settings.scanDelay, true);
       this.registerView(VIEW_TYPE_TAGFOLDER, (leaf) => new TagFolderView(leaf, this));
       this.app.workspace.onLayoutReady(() => __async(this, null, function* () {
         if (this.settings.alwaysOpen) {
@@ -2514,5 +2553,17 @@ var TagFolderSettingTab = class extends import_obsidian.PluginSettingTab {
       this.plugin.settings.ignoreFolders = value;
       yield this.plugin.saveSettings();
     })));
+    new import_obsidian.Setting(containerEl).setName("Tag scanning delay").setDesc("Sets the delay for reflecting metadata changes to the tag tree. (Plugin reload is required.)").addText((text2) => {
+      text2 = text2.setValue(this.plugin.settings.scanDelay + "").onChange((value) => __async(this, null, function* () {
+        const newDelay = Number.parseInt(value, 10);
+        if (newDelay) {
+          this.plugin.settings.scanDelay = newDelay;
+          yield this.plugin.saveSettings();
+        }
+      }));
+      text2.inputEl.setAttribute("type", "number");
+      text2.inputEl.setAttribute("min", "250");
+      return text2;
+    });
   }
 };

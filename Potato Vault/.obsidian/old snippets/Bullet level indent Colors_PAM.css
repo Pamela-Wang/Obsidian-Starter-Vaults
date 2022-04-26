@@ -1,0 +1,85 @@
+
+/* EDITOR headings */
+.theme-dark
+{
+  --text-title-h1: #F07171; /* CyberYellow: fcf601, FullYellow: fffb00, H1Yellow: c7c400 */
+  --text-title-h2: #FF9940; 
+  --text-title-h3: #52c1da;
+  --text-title-h4: #67c073; /*6fcf7f*/
+  --text-title-h5: #a16cd6; /*d8d8d8*/
+  --text-title-h6: #b4b4b4;
+}
+
+.theme-light
+{
+  --text-title-h1: #F07171; /* ayu mirage https://github.com/ayu-theme/ayu-colors */
+  --text-title-h2: #FF9940; 
+  --text-title-h3: #55B4D4;
+  --text-title-h4: #4CBF99; /*6fcf7f*/
+  --text-title-h5: #A37ACC; /*d8d8d8*/
+  --text-title-h6: #575F66;
+}
+
+
+/*  _-------------      PREVIEW  _-------------_-------------_-------------_-------------   */
+
+ul li::marker {
+  color: var(--text-title-h1);
+}
+
+ul li:active::marker {
+  color: #52c1da;
+}
+
+ul > li ::marker {
+  color: var(--text-title-h2);
+}
+ul > li > ul > li::marker {
+  color: var(--text-title-h3);
+}
+ul > li > ul > li > ul > li::marker {
+  color: var(--text-title-h4);
+}
+/*5th indent*/
+ul > li > ul > li > ul > li > ul > li::marker {
+  color: var(--text-title-h5);
+}
+
+ul > li > ul > li > ul > li > ul > li > ul > li::marker {
+  color: var(--text-title-h6);
+}
+
+/* _------------- EDITOR _-------------_-------------_------------- _-------------_-------------_-------------*/
+
+
+/*bullet colors - don't work*/
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1 {
+    color: var(--text-title-h1);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-2 {
+    color: var(--text-title-h2);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-3 {
+    color: var(--text-title-h3);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-4 {
+    color: var(--text-title-h4);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-5 {
+    color: var(--text-title-h5);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-6 {
+    color: var(--text-title-h6);
+}
+
+
+
+
+
+

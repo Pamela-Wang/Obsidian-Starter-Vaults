@@ -1,0 +1,680 @@
+/*
+        :::   :::       ::::::::       :::        ::::::::::       ::::::::      :::    :::       :::        ::::::::::
+      :+:+: :+:+:     :+:    :+:      :+:        :+:             :+:    :+:     :+:    :+:       :+:        :+:
+    +:+ +:+:+ +:+    +:+    +:+      +:+        +:+             +:+            +:+    +:+       +:+        +:+
+   +#+  +:+  +#+    +#+    +:+      +#+        +#++:++#        +#+            +#+    +:+       +#+        +#++:++#
+  +#+       +#+    +#+    +#+      +#+        +#+             +#+            +#+    +#+       +#+        +#+
+ #+#       #+#    #+#    #+#      #+#        #+#             #+#    #+#     #+#    #+#       #+#        #+#
+###       ###     ########       ########## ##########       ########       ########        ########## ##########
+
+Version: 1.14
+Check for releases: https://github.com/manassadasivuni/obsidian-molecule
+
+Made by Manas Sadasivuni (https://links.manassadasivuni.com)
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+:root {
+    --default-font: 'JetBrains Mono' !important;
+}
+
+.theme-light{
+  --background-primary: #ffffff;
+  --background-primary-alt: #ffffff;
+  --background-secondary: #ffffff;
+  --background-secondary-alt: #eeeeee;
+  --background-accent: #5aa17b;
+  --background-modifier-success: #A4E7C3;
+  --text-accent: #5aa17b;
+  --text-accent-hover: #45795d;
+  --text-normal: #000000;
+  --text-muted: #444444;
+  --text-highlight-bg: #4FFFB0;
+  --text-selection: #B8D9F4;
+  --interactive-normal: #5aa17b;
+  --interactive-hover: #45795d;
+  --interactive-accent: #5aa17b;
+  --interactive-accent-rgb: 164, 231, 195;
+  --interactive-accent-hover: #45795d;
+
+  --green-accent: #4FFFB0;
+  --light-green-accent: #5CFFB6;
+  --purple-accent: #8269FF;
+  --red-accent: #FF5136;
+  --code-block-background: #eeeeee;
+}
+
+/* ========== */
+/* Element-wide styles */
+body {
+  -webkit-font-smoothing: auto;
+  --font-monospace: 'Space Mono', 'Source Code Pro', monospace;
+}
+
+mjx-container[jax='CHTML'] {
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+blockquote {
+  margin-inline-start: 0;
+}
+
+blockquote p { 
+  display: inline; 
+}
+
+img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+} 
+
+a, .cm-hmd-internal-link, .cm-url {
+color: var(--interactive-accent) !important;
+text-decoration: none !important;
+}
+
+a:hover, .cm-hmd-internal-link:hover, .cm-url:hover {
+color: var(--purple-accent) !important;
+text-decoration: none !important;
+}
+
+.math-block > mjx-container[jax="CHTML"] {
+  font-size: 125%;
+}
+
+.tag {
+  background-color: var(--text-highlight-bg);
+  color: var(--text-normal) !important;
+  padding: 2px 8px;
+  display: inline-block;
+  text-align: center;
+  margin: 0px 0px;
+}
+
+.tag:hover {
+  background-color: var(--purple-accent);
+  color: var(--background-primary-alt) !important;
+}
+
+p {
+  text-align: justify;
+}
+
+/* ========== */
+/* Graph colours*/
+.graph-view.color-circle,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+    color: var(--light-green-accent);    
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--purple-accent) !important;
+  opacity: 0.6;
+}
+
+.graph-view.color-fill-tag {
+  color: var(--green-accent) !important;
+  opacity: 0.6;
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--red-accent);
+}
+
+.graph-view.color-text {
+    color: var(--text-normal);
+}
+
+.graph-view.color-line {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.graph-view.color-fill {
+    color: #111111;
+}
+
+.markdown-preview-view .task-list-item-checkbox {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border: 1px solid var(--text-muted);
+  border-radius: 2px;
+  position: relative;
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0;
+  filter: none;
+  outline: none;
+  margin-right: 4px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  vertical-align: baseline;
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked {
+  border: none;
+  background-color: var(--interactive-accent);
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked::before {
+  content: ' ';
+  position: absolute;
+  background-color: white;
+  left: 2px;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 14 14\'%3E%3Cpolygon points=\'5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039\'%3E%3C/polygon%3E%3C/svg%3E');
+}
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-section,
+.markdown-source-view.is-readable-line-width .CodeMirror {
+  max-width: 900px !important;
+  line-height: 26px;
+}
+
+
+/* Code block background color */
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  background-color: var(--code-block-background);
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock,
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
+.markdown-preview-view code {
+  color: inherit;
+}
+
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian span.cm-math,
+.cm-s-obsidian span.hmd-fold-math-placeholder {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.markdown-preview-view code {
+  vertical-align: text-top;
+  word-break: break-word;
+}
+
+.markdown-preview-section:not(:first-child) h1,
+.markdown-preview-section:not(:first-child) h2,
+.markdown-preview-section:not(:first-child) h3,
+.markdown-preview-section:not(:first-child) h4,
+.markdown-preview-section:not(:first-child) h5,
+.markdown-preview-section:not(:first-child) h6 {
+  margin-top: 40px !important;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b, .view-header-title {
+  font-weight: 600;
+}
+
+.nav-file.is-active {
+  --background-secondary-alt: var(--interactive-accent);
+  --text-normal: #ffffff;
+}
+
+.nav-file:not(.is-active):hover .nav-file-title,
+.nav-folder:hover .nav-folder-content {
+  background-color: transparent;
+}
+
+
+.theme-light .token.operator,
+.theme-light .token.entity,
+.theme-light .token.url,
+.theme-light .language-css .token.string,
+.theme-light .style .token.string {
+  background: transparent;
+}
+
+body:not(.is-grabbing) .nav-file:not(.is-active) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder:not(.is-active) .nav-folder-title:hover {
+  --text-normal: var(--text-muted);
+  --background-secondary-alt: var(--background-secondary);
+}
+
+.markdown-preview-view hr {
+  border: none;
+  height: 0;
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(to right, transparent, var(--red-accent), transparent);
+}
+
+.markdown-preview-view hr::after {
+  content: '«~»';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  padding: 0.5rem;
+  color: var(--text-muted);
+  background-color: var(--background-primary);
+}
+
+
+.markdown-preview-view blockquote {
+  background: var(--background-secondary-alt); 
+  border-radius: unset;
+  border: unset;
+  padding: 10px;
+  margin: unset;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--purple-accent) !important;
+}
+
+.markdown-preview-view blockquote p {
+  margin: 0 10px;
+}
+
+/*  Fix suggested item */
+.suggestion-item.is-selected .suggestion-note, .suggestion-item.is-selected{
+  color: var(--background-primary);
+  background: var(--interactive-accent);
+}
+
+.suggestion-item.is-selected .suggestion-hotkey{
+  color: var(--text-normal)
+}
+
+/* Change background overlay */
+.modal-bg {
+  background-color: var(--background-accent);
+  opacity: 0.75;
+}
+
+/* Increases link popup preview */
+.popover.hover-popover {
+  max-height: 1000px;    /* was 300 */
+  min-height: 100px;
+  width: 600px;     /* was 400 */
+}
+
+/* Fixes icons being same as highlight colour when selected */
+.suggestion-item.qsp-symbol-l0.is-selected .qsp-symbol-indicator, 
+.suggestion-item.qsp-symbol-l1.is-selected .qsp-symbol-indicator,
+.suggestion-item.qsp-symbol-l2.is-selected .qsp-symbol-indicator,
+.suggestion-item.qsp-symbol-l3.is-selected .qsp-symbol-indicator,
+.suggestion-item.qsp-symbol-l4.is-selected .qsp-symbol-indicator,
+.suggestion-item.qsp-symbol-l5.is-selected .qsp-symbol-indicator,
+.suggestion-item.qsp-symbol-l6.is-selected .qsp-symbol-indicator {
+  color: var(--background-primary-alt)
+}
+
+/* Fixes find and replace button colours */
+.document-search-button {
+  background-color: var(--interactive-normal);
+  color: var(--background-primary-alt);
+}
+
+/* center tables */
+.markdown-preview-view table {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* _-------------  _-------------_-------------_------------- _-------------_-------------_-------------*/
+
+/* Pam CSS Mods */
+/* _-------------  _-------------_-------------_------------- _-------------_-------------_-------------*/
+
+
+/* Make bigger subtler folding gutter arrows */
+.CodeMirror-foldgutter-folded:after, .CodeMirror-foldgutter-open:after {
+    opacity: 0.5;
+    font-size: 60%;
+}
+
+.CodeMirror-foldgutter-folded:hover:after, .CodeMirror-foldgutter-open:hover:after {
+    opacity: 1;
+}
+
+.CodeMirror-foldgutter-folded:after {
+    content: "\25BA";    
+}
+
+.CodeMirror-foldgutter-open:after {
+    content: "\25BC";    
+}
+
+
+ul li::marker {
+  font-size: 1.3em;
+}
+
+/* @settings
+
+name: Big Bullets
+id: pam-editor-bullets
+settings:
+    - 
+        id: letter-spacing
+        title: Letter Spacing
+        description: The letter spacing for editor list in rem units
+        type: variable-number-slider
+        default: 2
+        min: 0.2
+        max: 5
+        step: 0.2
+        format: rem
+
+    - 
+        id: bullet-size
+        title: Editor Bullet Size
+        description: The bullet size for editor list in rem units
+        type: variable-number-slider
+        default: 3.1
+        min: 0.5
+        max: 10
+        step: 0.1
+        format: rem
+    - 
+        id: leftMargin
+        title: Left Margin
+        description: The left margin for the bullet in editor list.
+        type: variable-number-slider
+        default: -9.5
+        min: -30
+        max: 30
+        step: 0.5
+        format: px
+
+    - 
+        id: topMargin
+        title: Top Margin
+        description: The right margin for the bullet in editor list.
+        type: variable-number-slider
+        default: 1.5
+        min: -20
+        max: 20
+        step: 0.1
+        format: px
+*/
+
+ul li::marker {
+  font-size: 1.3em;
+}
+
+
+.cm-s-obsidian span.cm-formatting-list {
+  letter-spacing: var(--letter-spacing);
+}
+
+.cm-s-obsidian span.cm-formatting-list-ul:before {
+  content: "•";
+  position: absolute;
+  margin-left: var(--leftMargin);;
+  margin-top: var(--topMargin);;
+  font-size: var(--bullet-size);
+  /*color: var(--text-muted);*/
+  visibility: visible !important;
+}
+
+
+
+/* EDITOR headings */
+.theme-dark
+{
+  --text-title-h1: #F07171; /* CyberYellow: fcf601, FullYellow: fffb00, H1Yellow: c7c400 */
+  --text-title-h2: #FF9940; 
+  --text-title-h3: #52c1da;
+  --text-title-h4: #67c073; /*6fcf7f*/
+  --text-title-h5: #a16cd6; /*d8d8d8*/
+  --text-title-h6: #b4b4b4;
+}
+
+.theme-light
+{
+  --text-title-h1: #F07171; /* ayu mirage https://github.com/ayu-theme/ayu-colors */
+  --text-title-h2: #FF9940; 
+  --text-title-h3: #55B4D4;
+  --text-title-h4: #4CBF99; /*6fcf7f*/
+  --text-title-h5: #A37ACC; /*d8d8d8*/
+  --text-title-h6: #575F66;
+}
+
+
+/*  _-------------      PREVIEW  _-------------_-------------_-------------_-------------   */
+
+ul li::marker {
+  color: var(--text-title-h1);
+}
+
+ul li:active::marker {
+  color: #52c1da;
+}
+
+ul > li ::marker {
+  color: var(--text-title-h2);
+}
+ul > li > ul > li::marker {
+  color: var(--text-title-h3);
+}
+ul > li > ul > li > ul > li::marker {
+  color: var(--text-title-h4);
+}
+/*5th indent*/
+ul > li > ul > li > ul > li > ul > li::marker {
+  color: var(--text-title-h5);
+}
+
+ul > li > ul > li > ul > li > ul > li > ul > li::marker {
+  color: var(--text-title-h6);
+}
+
+/* _------------- EDITOR _-------------_-------------_------------- _-------------_-------------_-------------*/
+
+
+
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1 {
+    color: var(--text-title-h1);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-2 {
+    color: var(--text-title-h2);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-3 {
+    color: var(--text-title-h3);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-4 {
+    color: var(--text-title-h4);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-5 {
+    color: var(--text-title-h5);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-6 {
+    color: var(--text-title-h6);
+}
+
+
+
+
+
+/* EDITOR headings */
+.theme-dark
+{
+  --text-title-h1: #F07171; /* CyberYellow: fcf601, FullYellow: fffb00, H1Yellow: c7c400 */
+  --text-title-h2: #FF9940; 
+  --text-title-h3: #52c1da;
+  --text-title-h4: #67c073; /*6fcf7f*/
+  --text-title-h5: #a16cd6; /*d8d8d8*/
+  --text-title-h6: #b4b4b4;
+}
+
+.theme-light
+{
+  --text-title-h1: #F07171; /* ayu mirage https://github.com/ayu-theme/ayu-colors */
+  --text-title-h2: #FF9940; 
+  --text-title-h3: #55B4D4;
+  --text-title-h4: #4CBF99; /*6fcf7f*/
+  --text-title-h5: #A37ACC; /*d8d8d8*/
+  --text-title-h6: #575F66;
+}
+
+/*h1, h2, h3, h4, h5, h6, .cm-s-obsidian .cm-header {
+    font-weight: var(--f-w-h);
+    font-family: var(--font);
+    color: var(--text-title-h4);
+}
+*/
+
+
+.cm-header-1
+{
+  color: var(--text-title-h1);
+}
+
+.cm-header-2
+{
+  color: var(--text-title-h2);
+}
+
+.cm-header-3
+{
+  color: var(--text-title-h3);
+}
+
+.cm-header-4
+{
+  color: var(--text-title-h4);
+}
+
+.cm-header-5
+{
+  color: var(--text-title-h5);
+}
+
+.cm-header-6
+{
+  color: var(--text-title-h6);
+}
+
+.cm-strong {
+  color: rgb(179, 153, 255, 0.95);
+  font-weight: 700;
+}
+
+.cm-em {
+  color: #bac04f;
+}
+
+.cm-s-obsidian span.cm-hashtag {
+    color: #d669bc;
+    text-decoration: underline;
+}
+
+
+
+/* This is the dashes in bullets. Color does not work, 
+but font weight does. */
+.cm-formatting-list {
+  color: #fcf601;
+  font-weight: 700;
+} 
+
+.cm-formatting  /* This is the color of header hashtags. Don't change. */
+.cm-formatting-list-ul
+.cm-list-1 /* This is the color of text in lists. Don't change. */
+
+
+
+.theme-light
+{
+  --text-title-h1: #F07171; /* ayu mirage https://github.com/ayu-theme/ayu-colors */
+  --text-title-h2: #FF9940; 
+  --text-title-h3: #55B4D4;
+  --text-title-h4: #4CBF99; /*6fcf7f*/
+  --text-title-h5: #A37ACC; /*d8d8d8*/
+  --text-title-h6: #575F66;
+}
+
+
+.markdown-preview-view h1 
+{
+  color: var(--text-title-h1);
+}
+
+.markdown-preview-view h2 {
+  color: var(--text-title-h2);
+}
+
+.markdown-preview-view h3
+{
+  color: var(--text-title-h3);
+}
+
+.markdown-preview-view h4
+{
+  color: var(--text-title-h4);
+}
+.markdown-preview-view h5
+{
+  color: var(--text-title-h5);
+}
+
+.markdown-preview-view h6
+{
+  color: var(--text-title-h6);
+}
+
+
+
+
+/* Turn on custom 8px wide scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* 1px wider than Lion. */
+  height: 10px;
+
+  /* This is more usable for users trying to click it. */
+  background-color: rgba(0,0,0,0);
+  -webkit-border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.06)
+    /*rgba(189, 190, 255, 0.25);*/
+    /*transparent;*/
+    width: 3px;
+    border-radius: 5px;
+    opacity: 0.3;
+}
+
+/* hover effect for both scrollbar area, and scrollbar 'thumb' */
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+  width: 12px; /* 1px wider than Lion. */
+  height: 10px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    width: 10px;
+    opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(0,0,0,0.61); /* Some darker color when you click it */
+  -webkit-border-radius: 100px;
+}
+
+

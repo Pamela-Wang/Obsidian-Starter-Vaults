@@ -1,0 +1,25 @@
+/* inline but on the side */
+
+aside {
+    float: right;
+    border: 1px solid #d9d4f0;
+	padding-left: 15px;
+	margin-left: 15px;
+    width: 25%;
+    box-shadow: 5px 8px #8272d0;
+}
+
+/* in the right gutter */ 
+
+/* 
+aside {
+    float: right;
+    border: 1px solid lightgrey;
+    padding: 8px;
+    position: relative;
+    left: 170px;
+    width: 155px;
+    box-shadow: 5px 8px #8272d0;
+    color: black;
+} 
+*/ 

@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "-path:\"80 Archive\" ",
+  "search": "",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -53,6 +53,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.18605716254223317,
-  "close": false
+  "scale": 0.10367396737032736,
+  "close": true
 }

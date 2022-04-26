@@ -194,9 +194,10 @@
   "quickadd:runQuickAdd": [
     {
       "modifiers": [
-        "Ctrl"
+        "Alt"
       ],
       "key": "A"
     }
-  ]
+  ],
+  "graph:open": []
 }

@@ -1,0 +1,8 @@
+.spotlight-container {
+    overflow-y: auto;
+    background-color: var(--color-bg-primary);
+    border: 1px solid var(--interactive-hover) !important;
+    border-radius: 6px;
+    padding: 15px;
+    padding-top: 0px;
+}

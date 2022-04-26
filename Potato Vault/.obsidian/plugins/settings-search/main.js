@@ -88,6 +88,10 @@ var SettingsSearch = class extends import_obsidian.Plugin {
     __publicField(this, "pluginTabIndex", 0);
     __publicField(this, "settingCache", new Map());
     __publicField(this, "searchAppended", false);
+    __publicField(this, "activeIndex", -1);
+    __publicField(this, "activeSetting");
+    __publicField(this, "scope", new import_obsidian.Scope(this.app.scope));
+    __publicField(this, "mobileContainers", []);
   }
   async onload() {
     this.app.workspace.onLayoutReady(async () => {
@@ -95,6 +99,7 @@ var SettingsSearch = class extends import_obsidian.Plugin {
         text: "Settings Search Results"
       });
       this.settingsResultsEl = this.settingsResultsContainerEl.createDiv("settings-search-results");
+      this.buildScope();
       this.buildSearch();
       this.buildResources();
       this.buildPluginResources();
@@ -106,7 +111,7 @@ var SettingsSearch = class extends import_obsidian.Plugin {
     if (tab) {
       this.getTabResources(tab);
       this.tabIndex++;
-      setImmediate(() => this.buildResources());
+      setTimeout(() => this.buildResources());
     }
   }
   buildPluginResources() {
@@ -114,7 +119,7 @@ var SettingsSearch = class extends import_obsidian.Plugin {
     if (tab) {
       this.getTabResources(tab);
       this.pluginTabIndex++;
-      setImmediate(() => this.buildPluginResources());
+      setTimeout(() => this.buildPluginResources());
     }
   }
   get manifests() {
@@ -161,8 +166,8 @@ var SettingsSearch = class extends import_obsidian.Plugin {
       this.settingCache.delete(resource.text);
     }
   }
-  getTabResources(tab) {
-    tab.display();
+  async getTabResources(tab) {
+    await tab.display();
     const settings = tab.containerEl.querySelectorAll(".setting-item:not(.setting-item-header)");
     for (const el of Array.from(settings)) {
       const text = el.querySelector(".setting-item-name")?.textContent;
@@ -189,7 +194,8 @@ var SettingsSearch = class extends import_obsidian.Plugin {
       onOpen: function(next) {
         return function() {
           next.apply(this);
-          self.search.inputEl.focus();
+          if (!import_obsidian.Platform.isMobile)
+            self.search.inputEl.focus();
           return next;
         };
       }
@@ -218,13 +224,23 @@ var SettingsSearch = class extends import_obsidian.Plugin {
       openTab: function(next) {
         return function(tab) {
           self.searchAppended = false;
+          self.app.keymap.popScope(self.scope);
           return next.call(this, tab);
         };
       },
       openTabById: function(next) {
         return function(tab) {
           self.searchAppended = false;
+          self.app.keymap.popScope(self.scope);
           return next.call(this, tab);
+        };
+      },
+      onClose: function(next) {
+        return function() {
+          if (import_obsidian.Platform.isMobile) {
+            self.detach();
+          }
+          return next.call(this);
         };
       }
     }));
@@ -241,16 +257,81 @@ var SettingsSearch = class extends import_obsidian.Plugin {
     this.search.setPlaceholder("Search settings...");
     this.app.setting.tabHeadersEl.prepend(this.settingsSearchEl);
   }
+  buildScope() {
+    this.scope.register([], "ArrowDown", () => {
+      if (this.activeSetting) {
+        this.activeSetting.settingEl.removeClass("active");
+      }
+      this.activeIndex = ((this.activeIndex + 1) % this.results.length + this.results.length) % this.results.length;
+      this.centerActiveSetting();
+    });
+    this.scope.register([], "ArrowUp", () => {
+      if (this.activeSetting) {
+        this.activeSetting.settingEl.removeClass("active");
+      }
+      this.activeIndex = ((this.activeIndex - 1) % this.results.length + this.results.length) % this.results.length;
+      this.centerActiveSetting();
+    });
+    this.scope.register([], "Enter", () => {
+      if (this.activeSetting) {
+        this.showResult(this.results[this.activeIndex]);
+      }
+    });
+  }
+  centerActiveSetting() {
+    const result = this.results[this.activeIndex];
+    this.activeSetting = this.getResourceFromCache(result);
+    this.activeSetting.settingEl.addClass("active");
+    this.activeSetting.settingEl.scrollIntoView({
+      behavior: "auto",
+      block: "nearest"
+    });
+  }
+  detachFromMobile() {
+    if (import_obsidian.Platform.isMobile) {
+      this.settingsResultsContainerEl.detach();
+      for (const header of this.mobileContainers) {
+        this.app.setting.tabHeadersEl.append(header);
+      }
+      this.search.setValue("");
+    }
+  }
+  detachFromDesktop() {
+    if (import_obsidian.Platform.isDesktop) {
+      this.app.setting.openTabById(this.app.setting.lastTabId);
+    }
+  }
+  detach() {
+    this.detachFromDesktop();
+    this.detachFromMobile();
+    this.searchAppended = false;
+  }
   onChange(v) {
     if (!v) {
-      this.app.setting.openTabById(this.app.setting.lastTabId);
-      this.searchAppended = false;
+      this.detach();
+      this.app.keymap.popScope(this.scope);
       return;
     }
     if (!this.searchAppended) {
-      this.app.setting.activeTab.navEl.removeClass("is-active");
-      this.app.setting.tabContentContainer.empty();
-      this.app.setting.tabContentContainer.append(this.settingsResultsContainerEl);
+      this.activeIndex = -1;
+      this.app.keymap.popScope(this.scope);
+      this.app.keymap.pushScope(this.scope);
+      if (this.activeSetting) {
+        this.activeSetting.settingEl.removeClass("active");
+        this.activeSetting = null;
+      }
+      if (!import_obsidian.Platform.isMobile) {
+        this.app.setting.activeTab.navEl.removeClass("is-active");
+        this.app.setting.tabContentContainer.empty();
+        this.app.setting.tabContentContainer.append(this.settingsResultsContainerEl);
+      } else {
+        const headers = this.app.setting.tabHeadersEl.querySelectorAll(".vertical-tab-header-group:not(.settings-search-container)");
+        for (const header of Array.from(headers)) {
+          this.mobileContainers.push(header);
+          header.detach();
+        }
+        this.app.setting.tabHeadersEl.append(this.settingsResultsContainerEl);
+      }
       this.searchAppended = true;
     }
     this.appendResults(this.performFuzzySearch(v));
@@ -281,18 +362,11 @@ var SettingsSearch = class extends import_obsidian.Plugin {
       const headers = {};
       for (const resource of results) {
         if (!(resource.tab in headers)) {
-          if (resource.tab == "hotkeys") {
-            headers[resource.tab] = createDiv();
-          } else {
-            headers[resource.tab] = this.settingsResultsEl.createDiv();
-          }
+          headers[resource.tab] = this.settingsResultsEl.createDiv();
           new import_obsidian.Setting(headers[resource.tab]).setHeading().setName(resource.name);
         }
         const setting = this.getResourceFromCache(resource);
         headers[resource.tab].append(setting.settingEl);
-      }
-      if ("hotkeys" in headers) {
-        this.settingsResultsEl.appendChild(headers["hotkeys"]);
       }
     } else {
       this.settingsResultsEl.setText("No results found :(");
@@ -306,6 +380,8 @@ var SettingsSearch = class extends import_obsidian.Plugin {
       return;
     }
     this.app.setting.openTabById(tab.id);
+    this.app.keymap.popScope(this.scope);
+    setTimeout(() => this.detach());
     try {
       const names = tab.containerEl.querySelectorAll(".setting-item-name");
       const el = Array.from(names).find((n) => n.textContent == result.text);
@@ -336,20 +412,25 @@ var SettingsSearch = class extends import_obsidian.Plugin {
     }
   }
   performFuzzySearch(input) {
-    const results = [];
+    const results = [], hotkeys = [];
     for (const resource of this.resources) {
       let result = (0, import_obsidian.prepareSimpleSearch)(input)(resource.text) ?? (0, import_obsidian.prepareSimpleSearch)(input)(resource.desc);
       if (result) {
-        results.push(resource);
+        if (resource.tab == "hotkeys") {
+          hotkeys.push(resource);
+        } else {
+          results.push(resource);
+        }
       }
     }
-    this.results = results;
-    return results;
+    this.results = [...results, ...hotkeys];
+    return this.results;
   }
   onunload() {
     this.settingsSearchEl.detach();
     this.settingsResultsEl.detach();
-    if (this.searchAppended)
+    this.detach();
+    if (this.searchAppended && import_obsidian.Platform.isDesktop)
       this.app.setting.openTabById(this.app.setting.lastTabId);
   }
 };

@@ -1,0 +1,107 @@
+.theme-dark
+{
+  --text-title-h1: #F07171; /* CyberYellow: fcf601, FullYellow: fffb00, H1Yellow: c7c400 */
+  --text-title-h2: #FF9940; 
+  --text-title-h3: #52c1da;
+  --text-title-h4: #67c073; /*6fcf7f*/
+  --text-title-h5: #a16cd6; /*d8d8d8*/
+  --text-title-h6: #b4b4b4;
+}
+
+.theme-light
+{
+  --text-title-h1: #F07171; /* ayu mirage https://github.com/ayu-theme/ayu-colors */
+  --text-title-h2: #FF9940; 
+  --text-title-h3: #55B4D4;
+  --text-title-h4: #4CBF99; /*6fcf7f*/
+  --text-title-h5: #A37ACC; /*d8d8d8*/
+  --text-title-h6: #575F66;
+}
+
+
+/*the entire line in editor is color coded*/
+.cm-s-obsidian .HyperMD-list-line-1 {
+     color: var(--text-title-h1);
+}
+
+.cm-s-obsidian .HyperMD-list-line-2 {
+    color: var(--text-title-h2);
+}
+
+
+.cm-s-obsidian .HyperMD-list-line-3 {
+     color: var(--text-title-h3);
+}
+
+.cm-s-obsidian .HyperMD-list-line-4 {
+    color: var(--text-title-h4);
+}
+
+
+.cm-s-obsidian .HyperMD-list-line-5 {
+     color: var(--text-title-h5);
+}
+
+.cm-s-obsidian .HyperMD-list-line-6 {
+    color: var(--text-title-h6);
+}
+
+
+/*the entire line in preview is color coded*/
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1 {
+     color: var(--text-title-h1);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-2 {
+    color: var(--text-title-h2);
+}
+
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-3 {
+     color: var(--text-title-h3);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-4 {
+    color: var(--text-title-h4);
+}
+
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-5 {
+     color: var(--text-title-h5);
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-6 {
+    color: var(--text-title-h6);
+}
+
+
+
+ul {
+     color: var(--text-title-h1);
+}
+
+ul ul {
+    color: var(--text-title-h2);
+}
+
+
+ul ul ul  {
+     color: var(--text-title-h3);
+}
+
+ul ul ul ul  {
+    color: var(--text-title-h4);
+}
+
+
+ul ul ul ul ul  {
+     color: var(--text-title-h5);
+}
+
+ul ul ul ul ul ul ul  {
+    color: var(--text-title-h6);
+}
+
+
+

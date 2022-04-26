@@ -1,0 +1,12 @@
+.markdown-preview-view .footnotes > hr:first-child {
+  display: none;
+}
+
+.markdown-preview-view .footnotes::before {
+  content: "Footnotes";
+  font-variant:caps;
+  text-transform:uppercase;
+  letter-spacing:-0em;
+  font-family: "Just tell me what";
+  font-size:30px !important;
+}

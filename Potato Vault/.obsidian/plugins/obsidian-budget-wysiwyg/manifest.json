@@ -1,0 +1,10 @@
+{
+	"id": "obsidian-budget-wysiwyg",
+	"name": "Budget WYSIWYG",
+	"version": "1.0.5",
+	"minAppVersion": "0.9.12",
+	"description": "This is a plugin that automatically switches between preview mode and source mode based on if you are typing or not.",
+	"author": "OwnJoke",
+	"authorUrl": "https://obsidian.md/about",
+	"isDesktopOnly": true
+}

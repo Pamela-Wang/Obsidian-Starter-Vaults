@@ -1,0 +1,10 @@
+{
+	"id": "obsidian-image-caption",
+	"name": "Image Caption",
+	"version": "0.0.13",
+	"minAppVersion": "0.14.2",
+	"description": "Add captions to images.",
+	"author": "Brian Carlsen",
+	"authorUrl": "https://github.com/bicarlsen",
+	"isDesktopOnly": false
+}

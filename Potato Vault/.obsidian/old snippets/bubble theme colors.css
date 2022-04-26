@@ -1,0 +1,12 @@
+/* Graph fixes */
+.theme-dark .graph-view.color-line {
+  color: #0d3566;
+}
+.theme-dark .workspace-leaf-content[data-type="graph"] .view-content {
+  background-color: #20142486;
+}
+.graph-view.graph-view.color-fill-focused {
+  color: #ff0000 !important;
+}
+
+/*by boppy*/
