@@ -1,5 +1,9 @@
 {
   "pluginList": [
+    "blacksmithgu/obsidian-dataview",
+    "pjeby/hot-reload",
+    "juliang22/ObsidianTimestampNotes",
+    "chetachiezikeuzor/Highlightr-Plugin",
     "scambier/obsidian-omnisearch",
     "franciskafieh/obsidian-list-modified",
     "nothingislost/obsidian-hover-editor",
@@ -7,15 +11,20 @@
     "SkepticMystic/nlp",
     "SkepticMystic/codeblock-completer",
     "caronchen/obsidian-calibre-plugin",
-    "alexobenauer/Cross-reference-Navigation-for-Obsidian",
     "ruivieira/obsidian-plugin-logseq",
     "kinabalu/obsidian-word-sprint",
     "aleksey-rezvov/obsidian-local-images",
     "kenset/obsidian-theme-picker"
   ],
+  "pluginSubListFrozenVersion": [
+    {
+      "repo": "blacksmithgu/obsidian-dataview",
+      "version": "0.4.26"
+    }
+  ],
   "themesList": [],
-  "updateAtStartup": false,
-  "updateThemesAtStartup": false,
+  "updateAtStartup": true,
+  "updateThemesAtStartup": true,
   "ribbonIconEnabled": true,
   "loggingEnabled": false,
   "loggingPath": "BRAT-log",

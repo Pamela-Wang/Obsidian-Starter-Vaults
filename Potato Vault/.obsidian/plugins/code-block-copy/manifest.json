@@ -1,8 +1,0 @@
-{
-  "id": "code-block-copy",
-  "name": "Copy button for code blocks",
-  "author": "Daniel Brandenburg",
-  "description": "Copy button for code blocks",
-  "isDesktopOnly": false,
-  "version": "0.1.0"
-}

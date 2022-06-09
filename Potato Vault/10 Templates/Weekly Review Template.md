@@ -290,5 +290,6 @@ weekly_reflection_summary::
 ## Tasks this Week
 ```dataview
 TASK FROM #Periodic/Daily📅 and [[<% tp.file.title %>]] and !"80 Archive" and !"90 Meta" and !"10 Templates" and !"00 System" and !#SystemMeta 
-WHERE (file.mtime >= (date("<% tp.date.weekday('YYYY-MM-DD', 0) %>"))) and (file.ctime <= date("<% tp.date.weekday('YYYY-MM-DD', 6) %>")+dur(1 day))  and !completed
+WHERE (file.mtime >= (date("<% tp.date.weekday('YYYY-MM-DD', 0) %>"))) and (file.ctime <= date("<% tp.date.weekday('YYYY-MM-DD', 6) %>")+dur(1 day)) and !completed
+WHERE !contains(meta(section).subpath, "Checklist")
 ```

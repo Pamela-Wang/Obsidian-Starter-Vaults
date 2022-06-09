@@ -1,0 +1,42 @@
+/* Unordered List / Bullet List LIVE PREVIEW */
+.markdown-source-view.mod-cm6 .list-bullet:after {
+  content: "•";
+  font-family: var(--font-code);
+  font-size: 1.25em;
+}
+.markdown-source-view.mod-cm6 .cm-list-2 .list-bullet:after {
+  content: "◦";
+}
+.markdown-source-view.mod-cm6 .cm-list-3 .list-bullet:after {
+  content: ":black_medium_small_square:";
+}
+
+
+
+
+/* Unordered List / Bullet List READING MODE */
+ul,
+ul ul ul ul,
+ul ul ul ul ul ul ul,
+ul ul ul ul ul ul ul ul ul ul,
+ul ul ul ul ul ul ul ul ul ul ul ul ul {
+  list-style-type: disc !important;
+  padding-left: 2ch;
+  margin-left: var(--scale-0-0);
+}
+
+ul ul,
+ul ul ul ul ul,
+ul ul ul ul ul ul ul ul,
+ul ul ul ul ul ul ul ul ul ul ul,
+ul ul ul ul ul ul ul ul ul ul ul ul ul ul {
+  list-style-type: circle !Important;
+}
+
+ul ul ul,
+ul ul ul ul ul ul,
+ul ul ul ul ul ul ul ul ul,
+ul ul ul ul ul ul ul ul ul ul ul ul,
+ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul {
+  list-style-type: square !important;
+}

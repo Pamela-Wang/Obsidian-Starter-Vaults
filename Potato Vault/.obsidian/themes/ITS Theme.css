@@ -250,14 +250,6 @@ settings:
         type: class-toggle
         default: false
     -
-        title: Wrap Note Title
-        id: title-wrap
-        type: class-toggle
-    -
-        title: Flat Note Title Color
-        id: nt-g
-        type: class-toggle
-    -
         title: Disable Settings Animation
         id: n-s-ani
         type: class-toggle
@@ -279,11 +271,50 @@ settings:
         id: rsb-up
         type: class-toggle
     -
-        title: Sidebar Ribbon Styling
+        title: Wide Status Bar
+        description: Undo the floating status bar
+        id: o-stat-bar
+        type: class-toggle
+    -
+        title: Sidebar
         id: sidebar-styling
         type: heading
         level: 3
         collapsed: true
+    -
+        title: Mobile Style Sidebars
+        id: mbl-sidebar
+        type: class-toggle
+    -
+        title: Tab Styling
+        id: sidebar-tab-styling
+        type: heading
+        level: 4
+    -
+        title: Wide Sidebar Tabs
+        id: wide-sb-tabs
+        type: class-toggle
+    -
+        title: Sidebar Tabs Original Style
+        id: sb-tabs-original
+        type: class-toggle
+    -
+        title: Sidebar Tabs Underline Style
+        id: sb-tabs-underline
+        type: class-toggle
+    -
+        title: Sidebar Tabular Style
+        id: tabs-sidebar
+        type: class-toggle
+    -
+        title: Sidebar Ribbon
+        id: sidebar-ribbon-styling
+        type: heading
+        level: 4
+    -
+        title: Thin Sidebar Ribbons
+        id: thin-ribbon
+        type: class-toggle
     -
         title: Floating Sidebar Ribbon
         id: float-sidebar
@@ -332,6 +363,41 @@ settings:
         min: 30
         max: 100
         step: 5
+    -
+        title: File Explorer
+        id: file-explorer-styling
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        title: Add Vault Title Icon
+        id: vlt-icon
+        type: class-toggle
+    -
+        title: Vault Image
+        id: vlt-icon-img
+        type: variable-text
+        default: "url()"
+    -
+        title: Folder Icon
+        id: folder-icon
+        type: variable-text
+        default: '"\e801"'
+    -
+        title: Folder Font Family
+        id: folder-f
+        type: variable-text
+        default: 'its'
+    -
+        title: File Icon
+        id: file-icon
+        type: variable-text
+        default: '"\e800"'
+    -
+        title: File Font Family
+        id: file-f
+        type: variable-text
+        default: 'its'
     -
         title: Minimalist Workspace
         description: Hide UI unless hovered over the edges of the app.
@@ -425,6 +491,22 @@ settings:
         max: 15
         step: 1
     -
+        title: Note Width
+        description: Resize note width when readable line length toggled on.
+        id: note-width
+        type: variable-number-slider
+        default: 700
+        format: px
+        min: 500
+        max: 1500
+        step: 50
+    -
+        title: Workspace UI Resize
+        description: Resize UI Elements
+        id: WS-UI-Resize
+        type: heading
+        level: 4
+    -
         title: Toggle Resize
         description: Toggle to resize UI Elements. (Not necessary for Resize Scrollbars)
         id: resize
@@ -450,6 +532,36 @@ settings:
         max: 20
         step: 1
     -
+        title: Sidebar Ribbon Width
+        description: Resize sidebar ribbon width
+        id: s-rib-pad
+        type: variable-number-slider
+        default: 18
+        format: px
+        min: 10
+        max: 25
+        step: 1
+    -
+        title: Sidebar Ribbon Icon Size
+        description: Resize sidebar Ribbon icons
+        id: f-s-rib-i
+        type: variable-number-slider
+        default: 18
+        format: px
+        min: 12
+        max: 22
+        step: 1
+    -
+        title: Sidebar Tab Icon Size
+        description: Resize sidebar tab icons
+        id: f-s-tab-i
+        type: variable-number-slider
+        default: 17
+        format: px
+        min: 12
+        max: 20
+        step: 1
+    -
         title: Note Title Size
         description: Adjust the size for the note titles.
         id: f-s-nt
@@ -459,16 +571,6 @@ settings:
         min: 12
         max: 20
         step: 1
-    -
-        title: Note Width
-        description: Resize note width when readable line length toggled on.
-        id: note-width
-        type: variable-number-slider
-        default: 700
-        format: px
-        min: 500
-        max: 1000
-        step: 50
     -
         title: Note Elements
         id: Other-Note
@@ -486,13 +588,44 @@ settings:
         id: imgctr
         type: class-toggle
     -
+        title: Disable Codeblock Wrapping
+        id: unwrap-codeblock
+        type: class-toggle
+    -
         title: Disable Triple Blockquote Syntax
         id: dis-tri-quote
         type: class-toggle
+        default: true
     -
         title: Crop Image Height In Popover
         description: ⚠ Warning, might have some unintended consequences
         id: crop-img
+        type: class-toggle
+    -
+        title: Note Title 
+        id: note-title
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        title: Wrap Note Title
+        id: title-wrap
+        type: class-toggle
+    -
+        title: Flat Note Title Color
+        id: nt-g
+        type: class-toggle
+    -   
+        title: No Note Title Background Color
+        id: nt-clear
+        type: class-toggle
+    -   
+        title: Underline Style Note Title
+        id: nt-underline
+        type: class-toggle
+    -   
+        title: Overline Style Note Title
+        id: nt-overline
         type: class-toggle
     -
         title: Headers
@@ -599,7 +732,7 @@ settings:
         level: 5
 		collapsed: true
 	-
-		title: Heading 1 Border Color Preview
+		title: Heading 1 Border Color
 		id: h1-b-c
 		type: variable-themed-color
 		format: hex
@@ -735,7 +868,7 @@ settings:
 		type: variable-number-slider
         default: 34
         format: px
-        min: 18
+        min: 12
         max: 40
         step: 2
 	-
@@ -744,7 +877,7 @@ settings:
 		type: variable-number-slider
         default: 34
         format: px
-        min: 18
+        min: 12
         max: 40
         step: 2
 	-
@@ -753,7 +886,7 @@ settings:
 		type: variable-number-slider
         default: 30
         format: px
-        min: 18
+        min: 12
         max: 40
         step: 2
 	-
@@ -762,7 +895,7 @@ settings:
 		type: variable-number-slider
         default: 28
         format: px
-        min: 18
+        min: 12
         max: 40
         step: 2
 	-
@@ -771,7 +904,7 @@ settings:
 		type: variable-number-slider
         default: 26
         format: px
-        min: 18
+        min: 12
         max: 40
         step: 2
 	-
@@ -780,7 +913,7 @@ settings:
 		type: variable-number-slider
         default: 24
         format: px
-        min: 18
+        min: 12
         max: 40
         step: 2
 	-
@@ -789,7 +922,7 @@ settings:
 		type: variable-number-slider
         default: 24
         format: px
-        min: 18
+        min: 12
         max: 40
         step: 2
 	-
@@ -798,7 +931,7 @@ settings:
 		type: variable-number-slider
         default: 22
         format: px
-        min: 18
+        min: 12
         max: 40
         step: 2
 	-
@@ -807,7 +940,7 @@ settings:
 		type: variable-number-slider
         default: 20
         format: px
-        min: 18
+        min: 12
         max: 40
         step: 2
 	-
@@ -816,7 +949,7 @@ settings:
 		type: variable-number-slider
         default: 20
         format: px
-        min: 18
+        min: 12
         max: 40
         step: 2	
 	-
@@ -825,7 +958,7 @@ settings:
 		type: variable-number-slider
         default: 18
         format: px
-        min: 18
+        min: 12
         max: 40
         step: 2	
 	-
@@ -834,7 +967,7 @@ settings:
 		type: variable-number-slider
         default: 18
         format: px
-        min: 18
+        min: 12
         max: 40
         step: 2
 	-
@@ -967,6 +1100,21 @@ settings:
             - 
                 label: Notion Style
                 value: link-ntn
+            - 
+                label: All Caps
+                value: link-caps
+            - 
+                label: Underline
+                value: link-underline
+    -
+        title: Link Fonts
+        id: link-f
+        type: variable-text
+        default: "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Microsoft YaHei Light', sans-serif"
+    -
+        title: Undo Link Style Coloring
+        id: unset-link-c
+        type: class-toggle
     -
         title: Tables
         id: tables
@@ -1693,6 +1841,53 @@ settings:
 		default-dark: '#e5ebee'
 		default-light: '#e5ebee'
     -
+        title: Header Lines
+        id: Header-Lines
+        type: heading
+        level: 4
+    -
+		title: Heading 1 Line Color
+		id: h1-c
+		type: variable-themed-color
+		format: hex
+		default-dark: '#912e2e'
+		default-light: '#bb5555'
+	-
+		title: Heading 2 Line Color
+		id: h2-c
+		type: variable-themed-color
+		format: hex
+		default-dark: '#c14343'
+		default-light: '#c14343'
+	-
+		title: Heading 3 Line Color
+		id: h3-c
+		type: variable-themed-color
+		format: hex
+		default-dark: '#bf5e5e'
+		default-light: '#ce6d6d'
+	-
+		title: Heading 4 Line Color
+		id: h4-c
+		type: variable-themed-color
+		format: hex
+		default-dark: '#61afef'
+		default-light: '#5599d0'
+	-
+		title: Heading 5 Line Color
+		id: h5-c
+		type: variable-themed-color
+		format: hex
+		default-dark: '#2f3b4d'
+		default-light: '#b5c2d8'
+	-
+		title: Heading 6 Line Color
+		id: h6-c
+		type: variable-themed-color
+		format: hex
+		default-dark: '#2a2e35'
+		default-light: '#ccd6eb'
+    -
         title: Other
         id: Other-Colors
         type: heading
@@ -1725,6 +1920,14 @@ settings:
         title: Lite Accent 2
         description: Link color.
         id: accent2-lite
+        type: variable-themed-color
+        format: hex
+        default-dark: '#61afef'
+        default-light: '#5599d0'
+    -
+        title: Text Accent
+        description: Link color.
+        id: text-accent
         type: variable-themed-color
         format: hex
         default-dark: '#61afef'
@@ -2074,12 +2277,16 @@ body {
   --f-s-sb: 16px;
   --f-s-nt: 16px;
   --frnt-text: var(--f-s-code);
+  --f-s-rib-i: 18px;
+  --f-s-tab-i: 17px;
+  --s-rib-pad: 18px;
   --h-brdr: 2px;
   --f-w-h: 600;
   --h-line: 100%;
   --head-h: 15px;
   --f-w-v: 600;
   --f-w-t: 500;
+  --f-w-l: 500;
   /*Other*/
   --hr-sym: "";
   --hr-f: var(--its);
@@ -2088,8 +2295,16 @@ body {
   --bul-f: var(--its);
   --b-line: 2px;
   --otl-sym: "H";
+  --folder-icon: "";
+  --file-icon: "";
+  --folder-f: var(--its);
+  --file-f: var(--its);
+  --link-f: inherit;
   --tag-txt-align: center;
   --sd-opacity: 40%;
+  /* Images */
+  --vlt-sym: ;
+  --vlt-icon-img: url("");
   /*--Specific--*/
   /*Fonts*/
   --sphd-pre-ff-1: "Calisto MT", "Palatino Black", "Suez One", serif;
@@ -2580,11 +2795,11 @@ body:not(.its-i) svg.pane-layout {
 }
 
 body:not(.its-i) svg.horizontal-split {
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M12.5 62.5h33.333v-8.333H12.5v8.333zm0 16.667h33.333v-8.333H12.5v8.333zm0 -33.333h33.333V37.5H12.5v8.333zm0 -25v8.333h33.333V20.833H12.5zm41.667 0h33.333v58.333h-33.333V20.833z' fill='currentColor'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M12.5 79.167h75v-25H12.5v25zm0 -33.333h75V37.5H12.5v8.333zm0 -25v8.333h75V20.833H12.5z' fill='currentColor'/%3E%3C/svg%3E");
 }
 
 body:not(.its-i) svg.vertical-split {
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M12.5 79.167h75v-25H12.5v25zm0 -33.333h75V37.5H12.5v8.333zm0 -25v8.333h75V20.833H12.5z' fill='currentColor'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M12.5 62.5h33.333v-8.333H12.5v8.333zm0 16.667h33.333v-8.333H12.5v8.333zm0 -33.333h33.333V37.5H12.5v8.333zm0 -25v8.333h33.333V20.833H12.5zm41.667 0h33.333v58.333h-33.333V20.833z' fill='currentColor'/%3E%3C/svg%3E");
 }
 
 body:not(.its-i) svg.split {
@@ -2989,6 +3204,12 @@ body:not(.its-i) svg.clock-glyph {
   --h4-b-c: var(--sphd-pre-4);
   --h5-b-c: var(--sphd-pre-5);
   --h6-b-c: var(--sphd-pre-6);
+  --h1-c: var(--accent);
+  --h2-c: var(--headers);
+  --h3-c: var(--i-at);
+  --h4-c: var(--accent2-lite);
+  --h5-c: var(--lines);
+  --h6-c: var(--table);
   --em-pre-c: var(--text);
   --em-ed-c: var(--text);
   --b-pre-c: var(--text);
@@ -3103,7 +3324,7 @@ body:not(.its-i) svg.clock-glyph {
   --tag: #c65656;
   --table: #ccd6eb;
   --hr: #d6deea;
-  --i-at: var(--headers)/*#804848*/;
+  --i-at: var(--folder)/*#804848*/;
   --bttn: var(--headers);
   --progress: var(--accent);
   --progress-bg: var(--bg);
@@ -3140,6 +3361,12 @@ body:not(.its-i) svg.clock-glyph {
   --h4-b-c: var(--sphd-pre-4);
   --h5-b-c: var(--sphd-pre-5);
   --h6-b-c: var(--sphd-pre-6);
+  --h1-c: var(--accent);
+  --h2-c: var(--headers);
+  --h3-c: var(--i-at);
+  --h4-c: var(--accent2-lite);
+  --h5-c: var(--lines);
+  --h6-c: var(--table);
   --em-pre-c: var(--text);
   --em-ed-c: var(--text);
   --b-pre-c: var(--text);
@@ -3157,9 +3384,12 @@ body:not(.its-i) svg.clock-glyph {
 .vertical-tab-header-group-title {
   padding-top: 10px;
   font-weight: 900;
-  background-color: var(--td);
   border-bottom: 2px solid var(--accent);
   color: var(--headers);
+}
+
+.modal-bg {
+  background-color: var(--background-modifier-box-shadow);
 }
 
 /*Settings Menu: Font Sizes*/
@@ -3289,6 +3519,10 @@ body:not(.its-i) svg.clock-glyph {
   background-color: var(--dark-accent);
 }
 
+.community-plugin-search .setting-item-control {
+  width: 100%;
+}
+
 /*Account Header 2*/
 .vertical-tab-content h2 {
   font-size: var(--f-s-h);
@@ -3361,6 +3595,10 @@ body:not(.its-i) svg.clock-glyph {
   padding-top: 7px;
 }
 
+.community-theme-filters-container .setting-item-control .search-input-container {
+  width: 100%;
+}
+
 /*Settings Toggle*/
 .checkbox-container {
   cursor: pointer;
@@ -3376,7 +3614,11 @@ body:not(.its-i) svg.clock-glyph {
 }
 
 .suggestion-item.is-selected {
-  background-color: var(--dark-accent);
+  background-color: var(--text-selection);
+}
+
+.suggestion-highlight {
+  color: var(--lite-accent);
 }
 
 /*--Scrollbars--*/
@@ -3458,6 +3700,11 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 
 .workspace-ribbon {
   transition: none;
+  padding: 0px 18px;
+}
+
+.thin-ribbon .workspace-ribbon {
+  padding: 0;
 }
 
 /*Buttons*/
@@ -3487,65 +3734,6 @@ button.mod-cta,
 .view-action:hover,
 .view-action.is-active {
   color: var(--accent);
-}
-
-/*--Sidebar--*/
-.workspace-split.mod-left-split .workspace-tabs .workspace-leaf,
-.workspace-split.mod-right-split .workspace-tabs .workspace-leaf,
-.workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content,
-.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
-  border-radius: var(--radius);
-}
-
-/*Recolor Top*/
-.workspace-tabs,
-.workspace-tab-container-before.is-before-active,
-.workspace-tab-container-after.is-after-active,
-.workspace-tab-header.is-before-active,
-.workspace-tab-header.is-after-active,
-.workspace-tab-container-before.is-before-active .workspace-tab-header-inner,
-.workspace-tab-container-after.is-after-active .workspace-tab-header-inner,
-.workspace-tab-header.is-before-active .workspace-tab-header-inner,
-.workspace-tab-header.is-after-active .workspace-tab-header-inner {
-  background-color: transparent;
-  border-radius: var(--radius);
-}
-
-.workspace-tab-header-container {
-  background-color: var(--side-bar);
-  border-radius: var(--radius);
-  padding-top: 0.2em;
-  height: 36px;
-}
-
-/*Sidebar: Icons*/
-.workspace-tab-header-inner {
-  padding: 0.2em 0.5em;
-  margin: 0px 0.2em;
-}
-
-.workspace-tab-header.is-active .workspace-tab-header-inner-icon {
-  color: var(--text-dl);
-}
-
-/*Sidebar Icons: Add Padding to All*/
-.workspace-tab-header {
-  padding-top: 0.17em;
-  border-top: 2px solid transparent;
-}
-
-.workspace-tab-header.is-active {
-  border-top: 1px solid transparent;
-  background-color: var(--bttn);
-  border-radius: var(--radius);
-}
-
-/*Sidebar Icons: Remove Animation*/
-.workspace-tab-header,
-.workspace-tab-header-inner,
-.workspace-tab-container-before,
-.workspace-tab-container-after {
-  transition: none;
 }
 
 /* Resize Handle */
@@ -3586,6 +3774,10 @@ button.mod-cta,
   padding: 0 0.1em;
   border-left: 1px solid var(--th);
   border-top: 1px solid var(--th);
+}
+
+.o-stat-bar .app-container .status-bar {
+  position: unset;
 }
 
 /*--NOTE TITLEBAR--*/
@@ -3649,6 +3841,16 @@ button.mod-cta,
   margin-right: auto;
 }
 
+/* Note Title */
+.view-header {
+  align-content: center;
+  align-items: center;
+}
+
+.is-mobile .view-actions {
+  flex-wrap: wrap;
+}
+
 .markdown-source-view.mod-cm6 .cm-scroller {
   padding: 10px 20px;
 }
@@ -3668,6 +3870,220 @@ button.mod-cta,
 .CodeMirror-cursor,
 .cm-s-obsidian .cm-cursor {
   border-left: 1px solid var(--text);
+}
+
+/* Empty Pane */
+.empty-state-container {
+  background: var(--note);
+  margin: 0;
+  padding: 50px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.empty-state-title {
+  text-transform: capitalize;
+}
+
+.empty-state-action:hover {
+  font-weight: 600;
+}
+
+.nt-clear .mod-active .view-header {
+  background: var(--note);
+}
+
+.nt-underline .workspace-leaf-content .view-header {
+  border-bottom: 4px solid transparent;
+}
+.nt-underline .workspace-leaf.mod-active .view-header {
+  border-bottom-color: var(--h1-c);
+}
+
+.nt-overline .workspace-leaf-content .view-header {
+  border-top: 4px solid transparent;
+}
+.nt-overline .workspace-leaf.mod-active .view-header {
+  border-top-color: var(--h1-c);
+}
+
+/*--Sidebar--*/
+.workspace-split.mod-left-split .workspace-tabs .workspace-leaf,
+.workspace-split.mod-right-split .workspace-tabs .workspace-leaf,
+.workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content,
+.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+  border-radius: var(--radius);
+}
+
+/*Recolor Top*/
+.workspace-tabs,
+.workspace-tab-container-before.is-before-active,
+.workspace-tab-container-after.is-after-active,
+.workspace-tab-header.is-before-active,
+.workspace-tab-header.is-after-active,
+.workspace-tab-container-before.is-before-active .workspace-tab-header-inner,
+.workspace-tab-container-after.is-after-active .workspace-tab-header-inner,
+.workspace-tab-header.is-before-active .workspace-tab-header-inner,
+.workspace-tab-header.is-after-active .workspace-tab-header-inner {
+  background-color: transparent;
+  border-radius: var(--radius);
+}
+
+.workspace-tab-header-container {
+  background-color: var(--side-bar);
+  border-radius: var(--radius);
+  padding-top: 0;
+  height: 36px;
+}
+
+/*Sidebar: Icons*/
+.workspace-tab-header-inner {
+  padding: 0em 0.8em;
+  margin: auto;
+  align-items: center;
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+  color: var(--text-dl);
+}
+
+/*Sidebar Icons: Add Padding to All*/
+.workspace-tab-header.is-active:hover,
+.workspace-tab-header:hover {
+  background: var(--aside-bg);
+}
+.workspace-tab-header.is-active:hover .workspace-tab-header-inner-icon,
+.workspace-tab-header:hover .workspace-tab-header-inner-icon {
+  color: var(--lite-accent);
+}
+
+.workspace-tab-header.is-active {
+  background-color: var(--bttn);
+  border-radius: var(--radius);
+}
+
+/*Sidebar Icons: Remove Animation*/
+.workspace-tab-header,
+.workspace-tab-header-inner,
+.workspace-tab-container-before,
+.workspace-tab-container-after {
+  transition: none;
+}
+
+/* Sidebar: Overflow Tabs */
+.workspace-split:is(.mod-left-split, .mod-right-split) .workspace-tab-header-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.workspace-tab-header-container:not(:hover)::-webkit-scrollbar {
+  height: 0px;
+}
+
+/* Sidebar Mobile Style for Desktop */
+.mbl-sidebar .app-container.is-left-sidedock-collapsed .workspace-split.mod-left-split,
+.mbl-sidebar .app-container.is-right-sidedock-collapsed .workspace-split.mod-right-split {
+  position: absolute;
+  z-index: 1;
+}
+
+.mbl-sidebar .app-container.is-left-sidedock-collapsed .workspace-split.mod-left-split {
+  left: 38px;
+}
+
+.mbl-sidebar .app-container.is-right-sidedock-collapsed .workspace-split.mod-right-split {
+  right: 38px;
+}
+
+.mbl-sidebar:is(.sd-float, .sd-mini-float) .app-container.is-left-sidedock-collapsed .workspace-split.mod-left-split {
+  left: 0px;
+}
+
+.mbl-sidebar:is(.sd-float, .sd-mini-float) .app-container.is-right-sidedock-collapsed .workspace-split.mod-right-split {
+  right: 0px;
+}
+
+/* Wide Tabs */
+.wide-sb-tabs .workspace-tab-container-before, .wide-sb-tabs .workspace-tab-container-after {
+  display: none;
+}
+.wide-sb-tabs .workspace-tab-container-inner, .wide-sb-tabs .workspace-tab-header-container-inner {
+  flex: 1 0 auto;
+}
+.wide-sb-tabs .workspace-tab-header {
+  width: 100%;
+}
+.wide-sb-tabs .workspace-tab-header-inner {
+  justify-content: center;
+}
+
+.sb-tabs-underline .workspace-tab-header {
+  background-color: transparent;
+  border-bottom: 2px solid var(--table);
+  --bttn: var(--accent);
+}
+.sb-tabs-underline .workspace-tab-header .workspace-tab-header-inner-icon {
+  color: var(--inactive);
+}
+.sb-tabs-underline .workspace-tab-header.is-active {
+  border-color: var(--bttn);
+}
+.sb-tabs-underline .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+  color: var(--bttn);
+}
+
+.tabs-sidebar .workspace-tab-container-inner {
+  align-items: center;
+}
+.tabs-sidebar .workspace-tab-container-before .workspace-tab-header-inner, .tabs-sidebar .workspace-tab-container-after .workspace-tab-header-inner, .tabs-sidebar .workspace-tab-header-inner {
+  padding: 0em 1.5em;
+}
+.tabs-sidebar .workspace-tab-header.is-active {
+  background: var(--table);
+}
+.tabs-sidebar .workspace-tab-header:not(.is-active) {
+  background: var(--aside-bg);
+}
+.tabs-sidebar .workspace-tab-header:not(.is-active), .tabs-sidebar .workspace-tab-header.is-active {
+  border: 2px solid var(--table);
+  height: 25px;
+}
+.tabs-sidebar .workspace-tab-header-inner-icon {
+  margin-top: 5px;
+}
+.tabs-sidebar .workspace-tab-header-inner-icon svg {
+  transform: scale(0.8);
+}
+.tabs-sidebar .workspace-tab-header + .workspace-tab-header {
+  border-left: 0;
+}
+
+.sb-tabs-original .workspace-split.mod-horizontal.mod-right-split .workspace-tab-header-container {
+  margin-left: 0;
+}
+.sb-tabs-original .workspace-tab-container-before, .sb-tabs-original .workspace-tab-container-after {
+  display: none;
+}
+.sb-tabs-original .workspace-tab-header-container {
+  background-color: var(--outer-bar);
+}
+.sb-tabs-original .workspace-tab-header-inner {
+  padding: 0 1em;
+}
+.sb-tabs-original .workspace-tab-header.is-active {
+  background-color: var(--side-bar);
+}
+.sb-tabs-original .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+  color: var(--text);
+}
+.sb-tabs-original .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-icon {
+  color: var(--inactive);
+}
+.sb-tabs-original .workspace-tabs .workspace-leaf-content {
+  padding-top: 10px;
+}
+.sb-tabs-original .workspace-tab-header::before, .sb-tabs-original .workspace-tab-header-inner-icon {
+  margin-bottom: -10px;
 }
 
 /*-File Navbar-*/
@@ -3708,13 +4124,47 @@ button.mod-cta,
   font-weight: var(--f-w-v);
 }
 
+/* Vault Icon */
+.vlt-icon .workspace-drawer-header-name::before,
+.vlt-icon .nav-folder.mod-root > .nav-folder-title::before {
+  content: "";
+  background-image: var(--vlt-icon-img);
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: crisp-edges;
+  width: 32px;
+  height: 28px;
+}
+
+.vlt-icon .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content {
+  width: unset;
+}
+
+.vlt-icon .nav-folder.mod-root > .nav-folder-title {
+  margin-bottom: 5px;
+}
+
+.vlt-icon .workspace-drawer-header-name::before {
+  margin-right: 10px;
+}
+
+.vlt-icon .workspace-drawer-header {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-folder.mod-root > .nav-folder-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*Remove Empty Div to Fix Folder Adjusting When Open
 .nav-folder-children > div:not(.nav-folder):not(.nav-file) { display: none; }
 */
 /*Nav Folder/File Icons*/
 .nav-folder-children .nav-folder-title-content::before,
 .nav-file-title .nav-file-title-content::before {
-  font-family: "its";
   margin-right: 6px;
   vertical-align: top;
   font-size: 13px;
@@ -3722,21 +4172,18 @@ button.mod-cta,
 }
 
 .nav-folder-children .nav-folder-title-content::before {
-  content: "\e801";
+  content: var(--folder-icon);
+  font-family: var(--folder-f);
   color: var(--folder);
 }
 
 .nav-file-title .nav-file-title-content::before {
-  content: "\e800";
+  content: var(--file-icon);
+  font-family: var(--file-f);
   text-align: center;
   color: var(--file);
 }
 
-/*
-.nav-file-tag + .nav-file-title-content::before {
-    content: '\ed1e';
-    font-family: var(--rmx);
-}*/
 /*Move File Extension to Right*/
 .nav-folder-title-content,
 .nav-file-title-content {
@@ -3944,29 +4391,24 @@ strong {
 }
 
 /*-Code-*/
+:is(.theme-dark, .theme-light) :not(pre) > code[class*=language-],
+:is(.theme-dark, .theme-light) pre[class*=language-],
 .markdown-rendered code,
 code,
 .markdown-preview-view code,
 .markdown-preview-view pre {
-  color: var(--code-text);
-  z-index: 0 !important;
   background-color: var(--code-bg);
-  line-height: 1.4em;
+  color: var(--code-text);
   border-radius: var(--radius);
+  line-height: 1.4em;
   font-size: var(--f-s-code);
   font-family: var(--font-monospace);
   overflow: auto;
+  z-index: 0 !important;
 }
 
-.markdown-preview-view pre[class*=language-],
-.markdown-preview-view code[class*=language-] {
-  background: var(--code-bg);
-  line-height: 1.4em;
-  display: block;
-  white-space: pre-wrap !important;
-  color: var(--text);
-  border-radius: var(--radius);
-  z-index: 0 !important;
+.unwrap-codeblock .markdown-preview-view code {
+  white-space: pre;
 }
 
 /*Apply Dropshadow*/
@@ -4114,10 +4556,23 @@ body .markdown-source-view.mod-cm6 .is-unresolved .cm-hmd-internal-link,
   color: var(--inactive);
 }
 
+.markdown-rendered .internal-link,
+.markdown-rendered .external-link,
+.internal-link,
+.external-link,
+.cm-link,
+.cm-hmd-internal-link,
+a:not(.tag) {
+  font-family: var(--link-f);
+  text-decoration: none;
+}
+
 /*Notion Style Links*/
-.link-ntn .internal-link, .link-ntn .external-link, .link-ntn .cm-link, .link-ntn .cm-hmd-internal-link {
+.link-ntn:not(.unset-link-c) {
   --text-accent: var(--text);
   --accent2-lite: var(--text);
+}
+.link-ntn .internal-link, .link-ntn .external-link, .link-ntn .cm-link, .link-ntn .cm-hmd-internal-link {
   font-weight: 600;
   border-bottom: 1px solid var(--inactive);
 }
@@ -4133,6 +4588,20 @@ body .markdown-source-view.mod-cm6 .is-unresolved .cm-hmd-internal-link,
 }
 .link-ntn .cm-s-obsidian span.cm-url {
   color: var(--footnote);
+}
+
+/* Uppercase/All Caps Link */
+.link-caps :is(.cm-underline,
+a:not(.tag),
+.internal-link) {
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.link-underline :is(.cm-underline.cm-underline.cm-underline,
+a:not(.tag),
+.internal-link) {
+  text-decoration: 2px underline var(--accent2-lite);
 }
 
 /*--List--*/
@@ -4153,7 +4622,7 @@ ol > li::marker {
 }
 
 /*Bullet Shape*/
-ul li::before {
+ul > li::before {
   content: var(--bullet);
   font-family: var(--bul-f);
   margin-left: -22px;
@@ -4166,7 +4635,7 @@ ul li::before {
   font-size: var(--f-text);
 }
 
-ul li:nth-child(even)::before {
+ul > li:nth-child(even)::before {
   color: var(--accent2);
 }
 
@@ -4177,6 +4646,12 @@ li.task-list-item::before,
 
 ol ul > li::before {
   visibility: visible;
+}
+
+.rtl ul li::before {
+  float: right;
+  margin-left: unset;
+  margin-right: -22px;
 }
 
 /*Smaller Indentation*/
@@ -4192,12 +4667,12 @@ ul > li.task-list-item .task-list-item-checkbox {
   padding-left: 10px;
 }
 
-/*Fix breaking when Space in between Lists*/
-ul li.task-list-item > p {
+/* Spaced Lists: Fix breaking when Space in between Lists*/
+:is(ul, ol) li.task-list-item > p {
   margin-block-end: unset;
 }
 
-ul li > p {
+:is(ul, ol) li > p {
   margin-block-end: unset;
 }
 
@@ -4215,17 +4690,15 @@ ul li > p {
   margin-right: -11px;
 }
 
-.markdown-source-view.mod-cm6 .list-bullet::after {
+.markdown-source-view.mod-cm6:not(.is-rtl) .list-bullet::after {
   padding-left: 0;
   margin-right: 0;
 }
-
-.markdown-source-view.mod-cm6:not(.is-live-preview) .list-bullet {
-  padding-right: 0.55em;
-}
-
 .markdown-source-view.mod-cm6.is-live-preview .list-bullet {
   padding-right: 0.45em;
+}
+.markdown-source-view.mod-cm6:not(.is-live-preview) .list-bullet {
+  padding-right: 0.55em;
 }
 
 .markdown-rendered.show-indentation-guide ol li.task-list-item > ol::before {
@@ -4390,7 +4863,7 @@ input[type=checkbox]:checked {
 
 /*--Blockquote--*/
 :is(.markdown-preview-view, .reveal) blockquote {
-  display: flex;
+  display: flow-root;
   border: 0px;
   background-color: var(--embed-bg);
   border-left: 8px solid var(--bg);
@@ -4737,6 +5210,7 @@ th,
 }
 
 /*--Tags--*/
+.markdown-rendered .tag:not(.token),
 a.tag {
   background-color: var(--tag);
   border: none;
@@ -4753,6 +5227,7 @@ a.tag {
 }
 
 /*Hover Underline*/
+.markdown-rendered .tag:not(.token):hover,
 a.tag:hover {
   color: var(--text-dl);
   text-decoration: underline;
@@ -4910,10 +5385,12 @@ iframe {
   border-image: initial;
 }
 
-/*Undo Obsidian 13.26 Embed Error*/
-.markdown-embed div.markdown-preview-section {
-  padding-bottom: unset !important;
-  min-height: fit-content !important;
+/* Fix Live Preview Rendered Codeblock Line Height */
+.cm-preview-code-block.cm-embed-block.markdown-rendered > * {
+  line-height: var(--lh);
+  white-space: normal;
+  word-break: keep-all;
+  word-wrap: normal;
 }
 
 /*--Popover--*/
@@ -4938,9 +5415,10 @@ iframe {
 }
 
 /*Fit image in popover*/
-.popover.hover-popover img {
+.popover.hover-popover img:not([alt=""]):not(.cm-widgetBuffer):not(.emoji):not(.link-favicon) {
   max-width: 100%;
-  height: auto;
+  width: 100%;
+  object-fit: cover;
 }
 
 .popover.hover-popover img[alt] {
@@ -5017,13 +5495,27 @@ iframe {
   background-color: var(--outer-bar);
 }
 
+.is-mobile .workspace-drawer-ribbon .side-dock-ribbon-action {
+  padding: 5px 0;
+}
+
+.is-mobile .workspace-drawer-backdrop {
+  background-color: var(--outer-bar);
+  opacity: 0.95 !important;
+}
+
 .workspace-drawer.mod-left,
 .workspace-drawer.mod-right {
   border: none;
+  box-shadow: 0 0 5px var(--outline), 0 0 5px var(--outline), 0 0 5px var(--outline);
 }
 
-.is-mobile .status-bar {
-  display: none;
+.workspace-drawer-tab-option-item {
+  margin: 15px 10px;
+}
+
+.workspace-drawer-active-tab-container.is-fullscreen .workspace-drawer-active-tab-title {
+  text-align: center;
 }
 
 /*Unset Mobile Changes*/
@@ -5036,7 +5528,8 @@ iframe {
 .is-mobile .modal,
 .is-mobile .workspace,
 .is-mobile .prompt,
-.is-mobile .suggestion-item {
+.is-mobile .suggestion-item,
+.is-mobile .suggestion-container {
   border-radius: var(--radius) !important;
 }
 
@@ -5230,6 +5723,49 @@ progress::-webkit-progress-value {
 
 .callout-fold svg {
   margin-bottom: -3px;
+}
+
+.is-rtl.markdown-source-view.mod-cm6 .list-bullet::after, .is-rtl.markdown-source-view:not(.is-live-preview) .cm-formatting-list-ul::before {
+  margin-right: -7px;
+}
+.is-rtl.cm-s-obsidian.is-live-preview span.cm-formatting-list-ol {
+  padding-right: unset;
+}
+.is-rtl input[type=checkbox i] {
+  margin-right: -6px;
+}
+
+.rtl li {
+  border-left: unset;
+  padding-left: unset;
+  border-right: var(--b-line) solid var(--accent);
+  padding-right: 5px;
+}
+.rtl li:nth-child(even) {
+  border-left: unset;
+  border-right: var(--b-line) solid var(--accent2);
+}
+.rtl.markdown-rendered.show-indentation-guide li > ul::before, .rtl.markdown-rendered.show-indentation-guide li > ol::before {
+  left: unset;
+  right: -1em;
+}
+.rtl li.task-list-item {
+  margin-right: unset;
+}
+.rtl ul > li.task-list-item .task-list-item-checkbox {
+  margin-left: 10px;
+  margin-right: -26px;
+}
+.rtl ol.contains-task-list li > .task-list-item-checkbox {
+  margin-left: 5px;
+  margin-right: -2px;
+}
+
+/* List Arrow Indicators */
+.rtl.markdown-preview-view .collapse-indicator {
+  float: right;
+  margin-left: unset;
+  margin-right: -45px;
 }
 
 /*CSS class, Hide Frontmatter*/
@@ -5428,8 +5964,6 @@ img[alt*=circle] {
 
 /*Center Image*/
 img:is([alt*=ctr], [alt*=center]),
-.image-embed:is([src*="#ctr"], [src*="#center"]),
-.image-embed[alt*=center],
 .imgctr img {
   display: block;
   margin-left: auto;
@@ -5439,24 +5973,20 @@ img:is([alt*=ctr], [alt*=center]),
 /*--Simplified Version--*/
 /*Image Locations*/
 /*Left & Right*/
-body .popover.hover-popover img[alt*=left], body .popover.hover-popover img[alt*=locl], body .popover.hover-popover img[src*="#locl"] img, body .popover.hover-popover .image-embed[alt*=left], body .popover.hover-popover .image-embed[alt*=locl], body .popover.hover-popover .image-embed[src*="#locl"] img,
-body :is(.markdown-source-view, .markdown-preview-view):not(.is-live-preview) img[alt*=left],
-body :is(.markdown-source-view, .markdown-preview-view):not(.is-live-preview) img[alt*=locl],
+body .popover.hover-popover img:is([alt*=left], [alt*=locl]), body .popover.hover-popover img[src*="#locl"] img, body .popover.hover-popover .image-embed:is([alt*=left], [alt*=locl]), body .popover.hover-popover .image-embed[src*="#locl"] img,
+body :is(.markdown-source-view, .markdown-preview-view):not(.is-live-preview) img:is([alt*=left], [alt*=locl]),
 body :is(.markdown-source-view, .markdown-preview-view):not(.is-live-preview) img[src*="#locl"] img,
-body :is(.markdown-source-view, .markdown-preview-view):not(.is-live-preview) .image-embed[alt*=left],
-body :is(.markdown-source-view, .markdown-preview-view):not(.is-live-preview) .image-embed[alt*=locl],
+body :is(.markdown-source-view, .markdown-preview-view):not(.is-live-preview) .image-embed:is([alt*=left], [alt*=locl]),
 body :is(.markdown-source-view, .markdown-preview-view):not(.is-live-preview) .image-embed[src*="#locl"] img {
   float: left;
   margin-right: 2%;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-body .popover.hover-popover img[alt*=right], body .popover.hover-popover img[alt*=locr], body .popover.hover-popover img[src*="#locr"] img, body .popover.hover-popover .image-embed[alt*=right], body .popover.hover-popover .image-embed[alt*=locr], body .popover.hover-popover .image-embed[src*="#locr"] img,
-body :is(.markdown-source-view, .markdown-preview-view):not(.is-live-preview) img[alt*=right],
-body :is(.markdown-source-view, .markdown-preview-view):not(.is-live-preview) img[alt*=locr],
+body .popover.hover-popover img:is([alt*=right], [alt*=locr]), body .popover.hover-popover img[src*="#locr"] img, body .popover.hover-popover .image-embed:is([alt*=right], [alt*=locr]), body .popover.hover-popover .image-embed[src*="#locr"] img,
+body :is(.markdown-source-view, .markdown-preview-view):not(.is-live-preview) img:is([alt*=right], [alt*=locr]),
 body :is(.markdown-source-view, .markdown-preview-view):not(.is-live-preview) img[src*="#locr"] img,
-body :is(.markdown-source-view, .markdown-preview-view):not(.is-live-preview) .image-embed[alt*=right],
-body :is(.markdown-source-view, .markdown-preview-view):not(.is-live-preview) .image-embed[alt*=locr],
+body :is(.markdown-source-view, .markdown-preview-view):not(.is-live-preview) .image-embed:is([alt*=right], [alt*=locr]),
 body :is(.markdown-source-view, .markdown-preview-view):not(.is-live-preview) .image-embed[src*="#locr"] img {
   float: right;
   margin-left: 2%;
@@ -5574,102 +6104,102 @@ span.image-embed:is([src*="#cover"], [src*="#cvr"]) img {
 }
 
 /*Height*/
-img[alt*=hmicro],
+img[alt][alt][alt*=hmicro],
 .image-embed[src*="#hmicro"] img {
   height: var(--micro);
 }
 
-img[alt*=htiny],
+img[alt][alt][alt*=htiny],
 .image-embed[src*="#htiny"] img {
   height: var(--tiny);
 }
 
-img[alt*=hsmall],
+img[alt][alt][alt*=hsmall],
 .image-embed[src*="#hsmall"] img {
   height: var(--small);
 }
 
-img[alt*=hs-med],
+img[alt][alt][alt*=hs-med],
 .image-embed[src*="#hs-med"] img {
   height: var(--small-med);
 }
 
-img[alt*=hm-sm],
+img[alt][alt][alt*=hm-sm],
 .image-embed[src*="#hs-sm"] img {
   height: var(--med-small);
 }
 
-img[alt*=hmed],
+img[alt][alt][alt*=hmed],
 .image-embed[src*="#hmed"] img {
   height: var(--medium);
 }
 
-img[alt*=hm-tl],
+img[alt][alt][alt*=hm-tl],
 .image-embed[src*="#hm-tl"],
 .image-embed[src*="#hm-tl"] img {
   height: var(--med-tall);
 }
 
-img[alt*=htall],
+img[alt][alt][alt*=htall],
 .image-embed[src*="#htall"] img {
   height: var(--tall);
 }
 
-img[alt*=hfull],
+img[alt][alt][alt*=hfull],
 .internal-embed[src*="#hfull"] img {
   height: 100%;
 }
 
 /*Width*/
-img[alt*=wmicro],
+img[alt][alt][alt*=wmicro],
 .image-embed[src*="#wmicro"] img,
 .image-embed[alt*="#wmicro"]::after {
   width: var(--micro);
 }
 
-img[alt*=wtiny],
+img[alt][alt][alt*=wtiny],
 .image-embed[src*="#wtiny"] img,
 .image-embed[src*="#wtiny"]::after {
   width: var(--tiny);
 }
 
-img[alt*=wsmall],
+img[alt][alt][alt*=wsmall],
 .image-embed[src*="#wsmall"] img,
 .image-embed[src*="#wsmall"]::after {
   width: var(--small);
 }
 
-img[alt*=ws-med],
+img[alt][alt][alt*=ws-med],
 .image-embed[src*="#ws-med"] img,
 .image-embed[src*="#ws-med"]::after {
   width: var(--small-med);
 }
 
-img[alt*=wm-sm],
+img[alt][alt][alt*=wm-sm],
 .image-embed[src*="#wm-sm"] img,
 .image-embed[src*="#wm-sm"]::after {
   width: var(--med-small);
 }
 
-img[alt*=wmed],
+img[alt][alt][alt*=wmed],
 .image-embed[src*="#wmed"] img,
 .image-embed[src*="#wmed"]::after {
   width: var(--medium);
 }
 
-img[alt*=wm-tl],
+img[alt][alt][alt*=wm-tl],
 .image-embed[src*="#wm-tl"] img,
 .image-embed[src*="#wm-tl"]::after {
   width: var(--med-tall);
 }
 
-img[alt*=wtall],
+img[alt][alt][alt*=wtall],
 .image-embed[src*="#wtall"] img,
 .image-embed[src*="#wtall"]::after {
   width: var(--tall);
 }
 
-img[alt*=wfull],
+img[alt][alt][alt*=wfull],
 .internal-embed[src*="#wfull"] img {
   width: 100%;
 }
@@ -6205,7 +6735,7 @@ div:not(.w-hcl).writing .HyperMD-header-4::before {
 }
 
 /*Italicized Text <i></i>*/
-.markdown-preview-section i,
+:is(.markdown-preview-section, .markdown-source-view) i,
 .i-at,
 .cm-html-embed i,
 .reveal i {
@@ -6215,7 +6745,11 @@ div:not(.w-hcl).writing .HyperMD-header-4::before {
   color: var(--i-at);
   text-align: center;
   background-color: var(--outer-bar);
-  padding: 0 1em;
+  padding: 2px 1em;
+}
+
+.markdown-source-view i {
+  padding: 5px 1em;
 }
 
 #right,
@@ -6446,32 +6980,32 @@ h4::after, .HyperMD-header-4::after {
 }
 .hcl h1::before, .hcl h1::after, .hcl .HyperMD-header-1::after {
   height: 6px;
-  background: var(--accent);
+  background: var(--h1-c);
   width: auto;
 }
 .hcl h2::before, .hcl h2::after, .hcl .HyperMD-header-2::after {
   height: 5px;
-  background: var(--headers);
+  background: var(--h2-c);
   width: auto;
 }
 .hcl h3::before, .hcl h3::after, .hcl .HyperMD-header-3::after {
   height: 4px;
-  background: var(--i-at);
+  background: var(--h3-c);
   width: auto;
 }
 .hcl h4::before, .hcl h4::after, .hcl .HyperMD-header-4::after {
   height: 3px;
-  background: var(--accent2-lite);
+  background: var(--h4-c);
   width: 100%;
 }
 .hcl h5::before, .hcl h5::after, .hcl .HyperMD-header-5::after {
   height: 3px;
-  background: var(--lines);
+  background: var(--h5-c);
   width: auto;
 }
 .hcl h6::before, .hcl h6::after, .hcl .HyperMD-header-6::after {
   height: 3px;
-  background: var(--table);
+  background: var(--h6-c);
   width: auto;
 }
 
@@ -6961,7 +7495,8 @@ body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-t
 [data-task=E],
 [data-task=A],
 [data-task=r],
-[data-task=c]) > .task-list-item-checkbox, body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task=X],
+[data-task=c],
+[data-task=o]) > .task-list-item-checkbox, body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task=X],
 [data-task=">"],
 [data-task="-"],
 [data-task=">"],
@@ -6984,7 +7519,8 @@ body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-t
 [data-task=E],
 [data-task=A],
 [data-task=r],
-[data-task=c]) input:is([type=checkbox], [type=checkbox i]):checked, body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task=X],
+[data-task=c],
+[data-task=o]) input:is([type=checkbox], [type=checkbox i]):checked, body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task=X],
 [data-task=">"],
 [data-task="-"],
 [data-task=">"],
@@ -7007,7 +7543,8 @@ body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-t
 [data-task=E],
 [data-task=A],
 [data-task=r],
-[data-task=c]) input:is([type=checkbox], [type=checkbox i]):checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked:is([data-task=X],
+[data-task=c],
+[data-task=o]) input:is([type=checkbox], [type=checkbox i]):checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked:is([data-task=X],
 [data-task=">"],
 [data-task="-"],
 [data-task=">"],
@@ -7030,7 +7567,8 @@ body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-t
 [data-task=E],
 [data-task=A],
 [data-task=r],
-[data-task=c]) > .task-list-item-checkbox, body:not(.alt-chkbx-off) .task-list-item.is-checked:is([data-task=X],
+[data-task=c],
+[data-task=o]) > .task-list-item-checkbox, body:not(.alt-chkbx-off) .task-list-item.is-checked:is([data-task=X],
 [data-task=">"],
 [data-task="-"],
 [data-task=">"],
@@ -7053,7 +7591,8 @@ body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-t
 [data-task=E],
 [data-task=A],
 [data-task=r],
-[data-task=c]) input:is([type=checkbox], [type=checkbox i]):checked, body:not(.alt-chkbx-off) .task-list-item.is-checked:is([data-task=X],
+[data-task=c],
+[data-task=o]) input:is([type=checkbox], [type=checkbox i]):checked, body:not(.alt-chkbx-off) .task-list-item.is-checked:is([data-task=X],
 [data-task=">"],
 [data-task="-"],
 [data-task=">"],
@@ -7076,7 +7615,8 @@ body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-t
 [data-task=E],
 [data-task=A],
 [data-task=r],
-[data-task=c]) input:is([type=checkbox], [type=checkbox i]):checked::before {
+[data-task=c],
+[data-task=o]) input:is([type=checkbox], [type=checkbox i]):checked::before {
   background-image: url();
   position: relative;
   -webkit-appearance: none;
@@ -7192,98 +7732,103 @@ body:not(.alt-chkbx-off) {
   /* [A]: Answer */
   /* [r]: Answer */
   /* [c]: Choice */
+  /* [o]: Option */
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=X]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=X]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=X] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=X] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=X]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=X]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=X]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=X] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=X] p > input[type=checkbox]:checked::before {
   color: var(--accent2-lite, var(--text-accent));
   content: "\ec01";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=">"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=">"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=">"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=">"] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=">"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=">"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=">"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=">"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=">"] p > input[type=checkbox]:checked::before {
   color: var(--text-normal);
   content: "\ec03";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=D]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=D]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=D] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=D] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=D]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=D]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=D]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=D] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=D] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-h));
   content: "\ec04";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="-"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="-"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="-"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="-"] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="-"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="-"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task="-"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="-"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="-"] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-d));
   content: "\ec02";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="?"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="?"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="?"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="?"] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="?"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="?"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task="?"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="?"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="?"] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-q));
   content: "\ec05";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="!"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="!"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="!"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="!"] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="!"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="!"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task="!"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="!"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="!"] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-i));
   content: "\ec08";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="+"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="+"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="+"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="+"] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="+"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="+"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task="+"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="+"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="+"] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-a));
   content: "\ec06";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="/"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="/"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="/"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="/"] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task="/"]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task="/"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task="/"]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="/"] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task="/"] p > input[type=checkbox]:checked::before {
   color: var(--accent, var(--interactive-accent));
   content: "\ec17";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=R]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=R]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=R] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=R] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=R]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=R]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=R]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=R] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=R] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-R));
   content: "\ec07";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=i]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=i]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=i] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=i] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=i]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=i]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=i]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=i] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=i] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-id));
   content: "\ec09";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=B]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=B]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=B] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=B] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=B]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=B]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=B]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=B] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=B] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-B));
   content: "\ec10";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=P]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=P]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=P] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=P] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=P]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=P]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=P]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=P] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=P] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-P));
   content: "\ec11";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=C]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=C]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=C] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=C] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=C]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=C]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=C]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=C] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=C] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-C));
   content: "\ec12";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=I]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=I]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=I] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=I] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=I]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=I]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=I]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=I] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=I] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-I));
   content: "\ec16";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=Q]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=Q]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=Q] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=Q] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=Q]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=Q]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=Q]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=Q] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=Q] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-R));
   content: "\ec13";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=N]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=N]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=N] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=N] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=N]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=N]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=N]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=N] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=N] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-N));
   content: "\ec14";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=b]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=b]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=b] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=b] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=b]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=b]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=b]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=b] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=b] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-b));
   content: "\ec15";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=p]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=p]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=p] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=p] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=p]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=p]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=p]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=p] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=p] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-R));
   content: "\ec19";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=E]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=E]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=E] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=E] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=E]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=E]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=E]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=E] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=E] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-I));
   content: "\ec18";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=L]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=L]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=L] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=L] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=L]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=L]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=L]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=L] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=L] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-N));
   content: "\ec21";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=A]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=A]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=A] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=A] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=A]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=A]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=A]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=A] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=A] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-P));
   content: "\ec20";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=r]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=r]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=r] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=r] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=r]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=r]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=r]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=r] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=r] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-r));
   content: "\ec22";
 }
-body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=c]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=c]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=c] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=c] p > input[type=checkbox]:checked::before {
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=c]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=c]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=c]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=c] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=c] p > input[type=checkbox]:checked::before {
   color: rgb(var(--chbx-c));
   content: "\ec23";
+}
+body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[data-task=o]::before, body:not(.alt-chkbx-off) .cm-s-obsidian span.hmd-hidden-token.cm-formatting-task[data-task=o]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked .task-list-item-checkbox[data-task=o]::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=o] > input[type=checkbox]:checked::before, body:not(.alt-chkbx-off) .task-list-item.is-checked[data-task=o] p > input[type=checkbox]:checked::before {
+  color: rgb(var(--chbx-b));
+  content: "\e860";
 }
 
 /*--Checkbox Text Colors--*/
@@ -7369,97 +7914,189 @@ body:not(.alt-chkbx-off) .markdown-source-view.mod-cm6 .task-list-item-checkbox[
   background: rgba(var(--chbx-R), 20%);
   /*#bbcbff17*/
 }
+.check-bg .rtl li[data-task=X].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-R));
+}
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=">"], .check-bg li[data-task=">"].task-list-item.is-checked {
   border-left: 2px double rgb(var(--chbx-h));
   background: rgba(var(--chbx-h), 20%);
+}
+.check-bg .rtl li[data-task=">"].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px double rgb(var(--chbx-h));
 }
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=D], .check-bg li[data-task=D].task-list-item.is-checked {
   border-left: 2px solid rgb(var(--chbx-h));
   background: rgba(var(--chbx-h), 20%);
 }
+.check-bg .rtl li[data-task=D].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-h));
+}
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"], .check-bg li[data-task="-"].task-list-item.is-checked {
   border-left: 2px solid rgb(var(--chbx-d));
   background: rgba(var(--chbx-d), 20%);
+}
+.check-bg .rtl li[data-task="-"].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-d));
 }
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="?"], .check-bg li[data-task="?"].task-list-item.is-checked {
   border-left: 2px dashed rgb(var(--chbx-q));
   background: rgba(var(--chbx-q), 20%);
   /*#fac35d17*/
 }
+.check-bg .rtl li[data-task="?"].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px dashed rgb(var(--chbx-q));
+}
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="!"], .check-bg li[data-task="!"].task-list-item.is-checked {
   border-left: 2px solid rgb(var(--chbx-i));
   background: rgba(var(--chbx-i), 20%);
+}
+.check-bg .rtl li[data-task="!"].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-i));
 }
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="+"], .check-bg li[data-task="+"].task-list-item.is-checked {
   border-left: 2px dashed rgb(var(--chbx-a));
   background: rgba(var(--chbx-a), 20%);
 }
+.check-bg .rtl li[data-task="+"].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px dashed rgb(var(--chbx-a));
+}
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="/"], .check-bg li[data-task="/"].task-list-item.is-checked {
   border-left: 2px dashed rgb(var(--chbx-R));
   background: linear-gradient(to left, var(--accent, var(--interactive-accent)) 0%, transparent 1%);
+}
+.check-bg .rtl li[data-task="/"].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px dashed rgb(var(--chbx-R));
 }
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=R], .check-bg li[data-task=R].task-list-item.is-checked {
   border-left: 2px dashed rgb(var(--chbx-R));
   background: rgba(var(--chbx-R), 20%);
   /*#bbcbff17*/
 }
+.check-bg .rtl li[data-task=R].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px dashed rgb(var(--chbx-R));
+}
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=i], .check-bg li[data-task=i].task-list-item.is-checked {
   border-left: 2px dashed rgb(var(--chbx-id));
   background: rgba(var(--chbx-id), 20%);
+}
+.check-bg .rtl li[data-task=i].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px dashed rgb(var(--chbx-id));
 }
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=B], .check-bg li[data-task=B].task-list-item.is-checked {
   border-left: 2px double rgb(var(--chbx-B));
   background: rgba(var(--chbx-B), 20%);
   /*#945dfa25*/
 }
+.check-bg .rtl li[data-task=B].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px double rgb(var(--chbx-B));
+}
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=P], .check-bg li[data-task=P].task-list-item.is-checked {
   border-left: 2px solid rgb(var(--chbx-P));
   background: rgba(var(--chbx-P), 20%);
+}
+.check-bg .rtl li[data-task=P].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-P));
 }
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=C], .check-bg li[data-task=C].task-list-item.is-checked {
   border-left: 2px solid rgb(var(--chbx-C));
   background: rgba(var(--chbx-C), 20%);
 }
+.check-bg .rtl li[data-task=C].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-C));
+}
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=I], .check-bg li[data-task=I].task-list-item.is-checked {
   border-left: 2px solid rgb(var(--chbx-I));
   background: rgba(var(--chbx-I), 20%);
+}
+.check-bg .rtl li[data-task=I].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-I));
 }
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=Q], .check-bg li[data-task=Q].task-list-item.is-checked {
   border-left: 2px solid rgb(var(--chbx-R));
   border-right: 2px solid rgb(var(--chbx-R));
   background: rgba(var(--chbx-R), 20%);
 }
+.check-bg .rtl li[data-task=Q].task-list-item.is-checked {
+  border-left: 2px solid rgb(var(--chbx-R));
+  border-right: 2px solid rgb(var(--chbx-R));
+}
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=N], .check-bg li[data-task=N].task-list-item.is-checked {
   border-left: 2px solid rgb(var(--chbx-N));
   background: rgba(var(--chbx-N), 20%);
+}
+.check-bg .rtl li[data-task=N].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-N));
 }
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=b], .check-bg li[data-task=b].task-list-item.is-checked {
   border-left: 2px solid rgb(var(--chbx-b));
   background: rgba(var(--chbx-b), 20%);
 }
+.check-bg .rtl li[data-task=b].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-b));
+}
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=p], .check-bg li[data-task=p].task-list-item.is-checked {
   border-left: 2px solid rgb(var(--chbx-R));
   background: rgba(var(--chbx-R), 20%);
+}
+.check-bg .rtl li[data-task=p].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-R));
 }
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=L], .check-bg li[data-task=L].task-list-item.is-checked {
   border-left: 2px solid rgb(var(--chbx-N));
   background: rgba(var(--chbx-N), 20%);
 }
+.check-bg .rtl li[data-task=L].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-N));
+}
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=E], .check-bg li[data-task=E].task-list-item.is-checked {
   border-left: 2px solid rgb(var(--chbx-I));
   background: rgba(var(--chbx-I), 20%);
+}
+.check-bg .rtl li[data-task=E].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-I));
 }
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=A], .check-bg li[data-task=A].task-list-item.is-checked {
   border-left: 2px solid rgb(var(--chbx-P));
   background: rgba(var(--chbx-P), 20%);
 }
+.check-bg .rtl li[data-task=A].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-P));
+}
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=r], .check-bg li[data-task=r].task-list-item.is-checked {
   border-left: 2px solid rgb(var(--chbx-r));
   background: rgba(var(--chbx-r), 20%);
 }
+.check-bg .rtl li[data-task=r].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-r));
+}
 .check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=c], .check-bg li[data-task=c].task-list-item.is-checked {
   border-left: 2px solid rgb(var(--chbx-c));
   background: rgba(var(--chbx-c), 20%);
+}
+.check-bg .rtl li[data-task=c].task-list-item.is-checked {
+  border-left: unset;
+  border-right: 2px solid rgb(var(--chbx-c));
 }
 
 /*Hide Border For LP (Aligns Items Strangely) */
@@ -7526,16 +8163,29 @@ body.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task] {
 .resize .setting-item-description,
 .resize .vertical-tab-header-group-title,
 .resize .setting-hotkey,
-.resize .graph-controls .setting-item-name {
+.resize .graph-controls .setting-item-name,
+.resize .titlebar-text,
+.resize .notice {
   font-size: calc(var(--f-s-ui) - 2px);
+  line-height: calc(var(--f-s-ui) + 4px);
+}
+
+.resize .horizontal-tab-nav-item, .resize .vertical-tab-nav-item:not(.settings-search-input) {
+  padding-left: calc(var(--f-s-ui) + 8px);
+  padding-top: calc(var(--f-s-ui) / 2.6);
+  padding-bottom: calc(var(--f-s-ui) / 2.6);
+  padding-right: calc(var(--f-s-ui) / 2.6);
 }
 
 .resize .modal,
 .resize .prompt,
-.resize .dropdown {
+.resize .dropdown,
+.resize .prompt-instructions,
+.resize .prompt-instruction-command {
   font-size: var(--f-s-ui);
 }
 
+.resize .style-settings-container .setting-item-name,
 .resize .setting-item-name {
   font-size: calc(var(--f-s-ui) - 0px);
 }
@@ -7543,7 +8193,7 @@ body.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task] {
 .resize .horizontal-tab-nav-item,
 .resize .modal.mod-settings .vertical-tab-nav-item {
   font-size: var(--f-s-ui);
-  line-height: calc(var(--f-s-ui) + 10px);
+  line-height: calc(var(--f-s-ui) * 1.625);
 }
 
 /*Resize: Note*/
@@ -7581,6 +8231,35 @@ body.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task] {
 
 .resize .nav-file-title-content {
   line-height: calc(var(--f-s-sb) + 4px);
+}
+
+.resize .side-dock-ribbon-action {
+  padding: 0;
+  padding-top: calc(var(--f-s-rib-i) - 8px);
+  padding-bottom: calc(var(--f-s-rib-i) - 8px);
+}
+.resize .side-dock-ribbon-action svg {
+  height: var(--f-s-rib-i);
+  width: var(--f-s-rib-i);
+}
+.resize .workspace-ribbon-collapse-btn {
+  padding-top: calc(var(--f-s-rib-i) + 2px);
+  padding-bottom: calc(var(--f-s-rib-i) + 2px);
+}
+.resize .workspace-ribbon-collapse-btn svg {
+  height: calc(var(--f-s-rib-i) - 2px);
+  width: calc(var(--f-s-rib-i) - 2px);
+}
+.resize .workspace-ribbon {
+  padding: 0 var(--s-rib-pad);
+}
+.resize .side-dock-ribbon {
+  flex: 0 0 var(--s-rib-pad);
+}
+.resize .workspace-tab-header-inner-icon svg, .resize .workspace-tab-header-inner-icon::before {
+  height: var(--f-s-tab-i);
+  width: var(--f-s-tab-i);
+  font-size: var(--f-s-tab-i);
 }
 
 /*Right Panes*/
@@ -7889,46 +8568,46 @@ body.check-bg .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task] {
   float: unset;
 }
 
-.callout.callout[data-callout-metadata*=wtiny] {
+.callout.callout:not(.is-collapsed)[data-callout-metadata*=wtiny] {
   width: 20%;
 }
-.callout.callout[data-callout-metadata*=wsmall] {
+.callout.callout:not(.is-collapsed)[data-callout-metadata*=wsmall] {
   width: 30%;
 }
-.callout.callout[data-callout-metadata*=ws-med] {
+.callout.callout:not(.is-collapsed)[data-callout-metadata*=ws-med] {
   width: 40%;
 }
-.callout.callout[data-callout-metadata*=wm-sm] {
+.callout.callout:not(.is-collapsed)[data-callout-metadata*=wm-sm] {
   width: 50%;
 }
-.callout.callout[data-callout-metadata*=wmed] {
+.callout.callout:not(.is-collapsed)[data-callout-metadata*=wmed] {
   width: 60%;
 }
-.callout.callout[data-callout-metadata*=wm-tl] {
+.callout.callout:not(.is-collapsed)[data-callout-metadata*=wm-tl] {
   width: 80%;
 }
-.callout.callout[data-callout-metadata*=wtall] {
+.callout.callout:not(.is-collapsed)[data-callout-metadata*=wtall] {
   width: 95%;
 }
-.callout.callout[data-callout-metadata*=wfull] {
+.callout.callout:not(.is-collapsed)[data-callout-metadata*=wfull] {
   width: 100%;
 }
-.callout.callout[data-callout-metadata*=wtiny-c] {
+.callout.callout:not(.is-collapsed)[data-callout-metadata*=wtiny-c] {
   width: 19%;
 }
-.callout.callout[data-callout-metadata*=wsmall-c] {
+.callout.callout:not(.is-collapsed)[data-callout-metadata*=wsmall-c] {
   width: 32.4%;
 }
-.callout.callout[data-callout-metadata*=ws-med-c] {
+.callout.callout:not(.is-collapsed)[data-callout-metadata*=ws-med-c] {
   width: 39%;
 }
-.callout.callout[data-callout-metadata*=wm-sm-c] {
+.callout.callout:not(.is-collapsed)[data-callout-metadata*=wm-sm-c] {
   width: 49%;
 }
-.callout.callout[data-callout-metadata*=wmed-c] {
+.callout.callout:not(.is-collapsed)[data-callout-metadata*=wmed-c] {
   width: 59%;
 }
-.callout.callout[data-callout-metadata*=wm-tl-c] {
+.callout.callout:not(.is-collapsed)[data-callout-metadata*=wm-tl-c] {
   width: 79%;
 }
 
@@ -7936,23 +8615,38 @@ body .callout.callout.callout:is([data-callout-metadata*=nmg], [data-callout-met
   margin: 0;
 }
 
+.callout[data-callout-metadata*=collapse] * {
+  margin: 0 !important;
+  padding: 0 !important;
+  grid-gap: 0 !important;
+}
+
 .callout.callout.callout:is([data-callout-metadata*=nbrd], [data-callout-metadata*=no-border]) {
   border: 0;
 }
 
 .callout.callout:is([data-callout-metadata*=txt-l],
-[data-callout-metadata*=text-Left]) .callout-content {
+[data-callout-metadata*=text-Left]) > .callout-content {
   text-align: left;
 }
 
 .callout.callout:is([data-callout-metadata*=txt-r],
-[data-callout-metadata*=text-Right]) .callout-content {
+[data-callout-metadata*=text-Right]) > .callout-content {
   text-align: right;
 }
 
 .callout.callout:is([data-callout-metadata*=txt-c],
-[data-callout-metadata*=text-Center]) .callout-content {
+[data-callout-metadata*=text-Center]) > .callout-content {
   text-align: center;
+}
+
+.callout[data-callout-metadata*=ttl-c] .callout-title {
+  justify-content: center;
+}
+
+.callout[data-callout-metadata*=ttl-c] .callout-title-inner {
+  display: block;
+  flex: unset;
 }
 
 /*Callout Sizing*/
@@ -7965,27 +8659,50 @@ body .callout.callout.callout:is([data-callout-metadata*=nmg], [data-callout-met
   object-fit: cover;
 }
 
-.callout.callout[data-callout-metadata*=clean] .callout-content {
+.callout.callout.callout[data-callout-metadata*=clean] {
+  border: 0;
+  box-shadow: none;
+}
+.callout.callout.callout[data-callout-metadata*=clean] .callout-content {
   padding: 0;
 }
 
 /*Caption Adjustments*/
 .callout:is([data-callout-metadata*=no-t],
-[data-callout-metadata*=no-title]) .callout-title {
+[data-callout-metadata*=no-title]) > .callout-title {
+  display: none;
+}
+
+.callout:is([data-callout-metadata*=no-i],
+[data-callout-metadata*=no-icon]) > .callout-title .callout-icon {
   display: none;
 }
 
 .callout:is([data-callout-metadata*=n-th],
-[data-callout-metadata*=no-table-header]) th {
+[data-callout-metadata*=no-table-header]) > th {
   display: none;
 }
 .callout:is([data-callout-metadata*=n-th],
-[data-callout-metadata*=no-table-header]) table {
+[data-callout-metadata*=no-table-header]) > table {
   margin-bottom: 5px;
 }
 
 .callout[data-callout-metadata*=t-w] table td {
   width: calc(var(--tbl-w) / 2);
+}
+
+.callout[data-callout-metadata*=t-w] table {
+  width: 100%;
+}
+
+.callout:is([data-callout-metadata*=nmg],
+[data-callout-metadata*=no-margin]) > .callout {
+  margin: 0;
+}
+
+.callout[data-callout-metadata*=embed] .callout-content, .callout[data-callout-metadata*=embed] p {
+  margin: 0;
+  padding: 0;
 }
 
 /*--Callout Types--*/
@@ -7995,7 +8712,8 @@ body {
 }
 
 /* Minimalist Style */
-.alt-co .callout.callout {
+.alt-co .callout.callout,
+.callout[data-callout-metadata*=alt-co] {
   background: rgba(var(--callout-color), 0.1);
   border: 0;
   margin-left: 40px;
@@ -8003,14 +8721,32 @@ body {
   border-radius: var(--radius, var(--co-radius));
   box-shadow: 1px 1px 0 rgba(var(--callout-color), 0.2);
 }
-.alt-co .callout.callout p:first-child {
+.alt-co .callout.callout p:first-child,
+.callout[data-callout-metadata*=alt-co] p:first-child {
   margin-block-start: 5px;
 }
-.alt-co .callout.callout:not(.is-collapsed) .callout-title {
+.alt-co .callout.callout:not(.is-collapsed) .callout-title,
+.callout[data-callout-metadata*=alt-co]:not(.is-collapsed) .callout-title {
   padding-bottom: 0;
 }
-.alt-co .callout-title {
+.alt-co .callout.callout .callout-title,
+.callout[data-callout-metadata*=alt-co] .callout-title {
   background: transparent;
+}
+
+.callout[data-callout-metadata*=alt-line] {
+  border: 0;
+}
+.callout[data-callout-metadata*=alt-line] .callout-title {
+  background: transparent;
+  border-bottom: 2px solid var(--table, var(--background-modifier-border));
+  padding: 5px 0;
+}
+.callout[data-callout-metadata*=alt-line] .callout-fold {
+  color: rgb(var(--callout-color));
+}
+.callout[data-callout-metadata*=alt-line] .callout-content {
+  border-bottom: 1px solid rgba(var(--callout-color), 0.5);
 }
 
 .co-ttl-ctr .callout-title {
@@ -8048,6 +8784,22 @@ body {
 }
 .callout[data-callout*=infobox]:not(:hover):not(.is-collapsed) .callout-title, .callout[data-callout*=infobox] .callout-title :is(.callout-icon, .callout-title-inner) {
   display: none;
+}
+.callout[data-callout*=infobox][data-callout-metadata*=title]:not(:hover):not(.is-collapsed) .callout-title {
+  display: flex;
+}
+.callout[data-callout*=infobox][data-callout-metadata*=title].is-collapsed .callout-title {
+  border: 1px solid var(--hr, var(--background-modifier-border));
+  display: flex;
+}
+.callout[data-callout*=infobox][data-callout-metadata*=title] .callout-fold, .callout[data-callout*=infobox][data-callout-metadata*=title] .callout-title .callout-title-inner {
+  display: unset;
+  align-items: center;
+  align-content: center;
+  padding: 5px 10px;
+}
+.callout[data-callout*=infobox][data-callout-metadata*=title].is-collapsed .callout-fold {
+  border: 0;
 }
 .callout[data-callout*=infobox] .callout-content {
   padding: 1px;
@@ -8285,6 +9037,7 @@ body {
   --tbl-td-w: 5px;
   white-space: nowrap;
   margin: 0;
+  width: 100%;
 }
 .callout.callout[data-callout*=Metadata i] .callout-content p:last-child {
   margin-bottom: 0;
@@ -8294,6 +9047,18 @@ body {
 }
 .callout.callout[data-callout*=Metadata i] .callout-content, .callout.callout[data-callout*=Metadata i] ul {
   margin: 0;
+}
+.callout.callout[data-callout*=Metadata i][data-callout-metadata*=i-at] {
+  background: var(--outer-bar);
+  border: 0;
+  text-align: center;
+  padding: 0;
+}
+.callout.callout[data-callout*=Metadata i][data-callout-metadata*=i-at] .callout-title {
+  display: none;
+}
+.callout.callout[data-callout*=Metadata i][data-callout-metadata*=i-at] .callout-content {
+  padding: 0px;
 }
 
 .callout-list .callout {
@@ -8306,6 +9071,351 @@ body {
 .callout-list .callout ul {
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+/* Cards */
+.callout[data-callout*=cards] {
+  --callout-color: none;
+  --callout-icon: layout-dashboard;
+  box-shadow: none;
+  border: 0;
+  width: auto;
+  padding: 0;
+  background: transparent;
+}
+.callout[data-callout*=cards] .callout-title {
+  display: none;
+}
+.callout[data-callout*=cards] .callout-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  border-radius: 0;
+  padding-inline-start: 0px;
+  padding: 0;
+}
+.callout[data-callout*=cards] p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 0;
+}
+.callout[data-callout*=cards] strong {
+  display: block;
+  text-align: center;
+  margin: auto;
+  background-color: var(--outer-bar, var(--background-secondary));
+}
+
+.callout[data-callout*=cards] br {
+  display: none;
+}
+
+/* Dataview Cards */
+.callout[data-callout*=cards][data-callout-metadata*=dataview] .callout-content {
+  display: unset;
+  grid-template-columns: unset;
+}
+.callout[data-callout*=cards][data-callout-metadata*=dataview] .dataview.table-view-table {
+  display: grid;
+}
+.callout[data-callout*=cards][data-callout-metadata*=dataview] .dataview.table-view-table :is(td, tr) {
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+.callout[data-callout*=cards][data-callout-metadata*=dataview] .dataview.table-view-table strong {
+  background: transparent;
+}
+.callout[data-callout*=cards][data-callout-metadata*=dataview] .table-view-thead th {
+  border: 0;
+  background-color: transparent;
+}
+.callout[data-callout*=cards][data-callout-metadata*=dataview] .table-view-thead tr {
+  display: none;
+}
+.callout[data-callout*=cards][data-callout-metadata*=dataview] .dataview.table-view-table tbody {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.callout[data-callout*=cards][data-callout-metadata*=dataview] .dataview.table-view-table tbody tr {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 10px;
+  box-shadow: 0 0 0 1px var(--outline, var(--background-modifier-box-shadow)), 2px 2px 0 var(--outline, var(--background-modifier-box-shadow));
+}
+
+.callout[data-callout*=cards][data-callout-metadata*=dvl] .callout-content {
+  display: block;
+}
+.callout[data-callout*=cards][data-callout-metadata*=dvl] br {
+  display: unset;
+}
+.callout[data-callout*=cards][data-callout-metadata*=dvl] .block-language-dataviewjs .dataview-result-list-li, .callout[data-callout*=cards][data-callout-metadata*=dvl] .list-view-ul li {
+  padding: 10px;
+  background-color: var(--outer-bar);
+  box-shadow: 2px 2px 0 var(--outline);
+  margin-bottom: 5px;
+}
+.callout[data-callout*=cards][data-callout-metadata*=dvl] .dataview.list-view-ul li::before {
+  margin-left: -27px;
+}
+.callout[data-callout*=cards][data-callout-metadata*=dvl] ul {
+  padding-inline-start: unset;
+}
+
+.callout[data-callout*=cards][data-callout-metadata*="2"] :is(.dataview.table-view-table tbody, .callout-content) {
+  grid-template-columns: repeat(2, 1fr);
+}
+.callout[data-callout*=cards][data-callout-metadata*="4"] :is(.dataview.table-view-table tbody, .callout-content) {
+  grid-template-columns: repeat(4, 1fr);
+}
+.callout[data-callout*=cards][data-callout-metadata*="5"] :is(.dataview.table-view-table tbody, .callout-content) {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* Unwrapped Table */
+.callout.callout[data-callout-metadata*=table],
+.callout.callout[data-callout*=table] {
+  border: 0;
+}
+.callout.callout[data-callout-metadata*=table] .callout-content,
+.callout.callout[data-callout*=table] .callout-content {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+.callout.callout[data-callout-metadata*=table]:not([data-callout-metadata*=show-title], [data-callout-metadata*=s-t]) .callout-title,
+.callout.callout[data-callout*=table]:not([data-callout-metadata*=show-title], [data-callout-metadata*=s-t]) .callout-title {
+  display: none;
+}
+.callout.callout[data-callout-metadata*=table] table,
+.callout.callout[data-callout*=table] table {
+  white-space: nowrap;
+  margin: 0;
+  margin: auto;
+}
+
+/* Asides */
+.callout[data-callout*=aside] {
+  --callout-icon: message-square;
+  --callout-color: "";
+  background-color: var(--aside-bg, var(--background-secondary));
+  box-shadow: 0.3em 0.3em 0 var(--accent, var(--background-modifier-box-shadow)), 0 0 0 1px var(--accent, var(--background-modifier-box-shadow));
+  float: right;
+  position: relative;
+  margin: 0;
+  margin-right: -1.2em;
+  margin-left: 5px;
+  max-width: 400px;
+}
+.callout[data-callout*=aside]:not([data-callout-metadata*=no-t]) .callout-content {
+  padding: 5px 10px;
+}
+.callout[data-callout*=aside]:not([data-callout-metadata*=no-t]) .callout-content p:first-child {
+  margin-top: 0;
+}
+.callout[data-callout*=aside]:not([data-callout-metadata*=title]) .callout-title-inner {
+  display: none;
+}
+.callout[data-callout*=aside]:not([data-callout-metadata*=title]) .callout-title {
+  justify-content: space-between;
+}
+.callout[data-callout*=aside].is-collapsed {
+  background-color: transparent;
+  box-shadow: none;
+}
+.callout[data-callout*=aside].is-collapsed .callout-title-inner {
+  display: none;
+}
+.callout[data-callout*=aside].is-collapsed .callout-title {
+  justify-content: space-between;
+  padding: 0;
+}
+.callout[data-callout*=aside].is-collapsed .callout-fold {
+  margin: 0;
+  padding: 0;
+  margin-left: -25px;
+  visibility: hidden;
+}
+
+.callout[data-callout*=aside][data-callout-metadata*=clean] {
+  background: transparent;
+  box-shadow: none;
+}
+
+.callout[data-callout*=aside][data-callout-metadata*=tufte] {
+  background: transparent;
+  box-shadow: none;
+  float: right;
+  position: relative;
+}
+.callout[data-callout*=aside][data-callout-metadata*=tufte]:not(.is-collapsed) {
+  width: 400px;
+  margin-right: -25.3em;
+}
+.callout[data-callout*=aside][data-callout-metadata*=tufte] .callout-title {
+  padding-top: 0;
+}
+.callout[data-callout*=aside][data-callout-metadata*=tufte].is-collapsed .callout-title {
+  justify-content: unset;
+}
+.callout[data-callout*=aside][data-callout-metadata*=tufte].is-collapsed .callout-content {
+  display: none;
+}
+
+.is-live-preview .callout[data-callout*=aside] {
+  float: unset;
+}
+
+.callout.callout.callout[data-callout*=aside]:is([data-callout-metadata*=left], [data-callout-metadata*="p+l"]) {
+  margin-left: -1.6em;
+}
+.callout.callout.callout[data-callout*=aside]:is([data-callout-metadata*=left], [data-callout-metadata*="p+l"]):not(.is-collapsed) {
+  margin-right: 10px;
+}
+.callout.callout.callout[data-callout*=aside]:is([data-callout-metadata*=left], [data-callout-metadata*="p+l"])[data-callout-metadata*=tufte]:not(.is-collapsed) {
+  margin: unset;
+  margin-left: -25em !important;
+}
+.callout.callout.callout[data-callout*=aside]:is([data-callout-metadata*=left], [data-callout-metadata*="p+l"])[data-callout-metadata*=tufte]:not(.is-collapsed) .callout-title {
+  padding-top: 5px;
+  flex-direction: row-reverse;
+}
+
+/* Columns */
+.callout[data-callout*=column] {
+  --callout-color: var(--text-normal);
+  --callout-icon: layout-dashboard;
+  --columns: 2;
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  width: auto;
+  padding: 0;
+}
+.callout[data-callout*=column] > .callout-content {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  gap: 10px;
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  padding: 0;
+}
+.callout[data-callout*=column][data-callout-metadata*="3"] .callout-content {
+  --columns: 3;
+}
+.callout[data-callout*=column][data-callout-metadata*="4"] .callout-content {
+  --columns: 4;
+}
+.callout[data-callout*=column][data-callout-metadata*=flex] > .callout-content {
+  gap: unset;
+  grid-template-columns: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.callout[data-callout*=column][data-callout-metadata*=flex] > .callout-content .callout {
+  flex: 1 1 250px;
+  margin: 5px;
+  background: transparent;
+}
+
+/* Timeline */
+.callout.callout[data-callout*=timeline] {
+  --callout-icon: clock-12;
+  --micro: 50px;
+  --tiny: 100px;
+  --small: 200px;
+  --small-med: 300px;
+  --med-small: 400px;
+  --medium: 500px;
+  --med-tall: 600px;
+  --tall: 700px;
+  --c-timeline: 49.6%;
+  background-color: transparent;
+  margin: 0;
+  border: 0;
+  clear: both;
+}
+.callout.callout[data-callout*=timeline] .callout-title {
+  background: rgb(var(--callout-color), 0.35);
+  align-content: center;
+  align-items: center;
+}
+.callout.callout[data-callout*=timeline] .callout-title em {
+  font-style: normal;
+  display: block;
+  font-size: 14px;
+  line-height: 12px;
+  color: rgb(var(--callout-color));
+}
+.callout.callout[data-callout*=timeline] .callout-icon {
+  background-color: var(--note, var(--background-primary));
+  transform: scale(1.2);
+  border-radius: 20px;
+}
+.callout.callout[data-callout*=timeline] .callout-content {
+  background-color: rgb(var(--callout-color), 0.1);
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-l] {
+  border-right: 4px solid rgb(var(--callout-color));
+  margin-right: var(--c-timeline);
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-l] > .callout-title, .callout.callout[data-callout*=timeline][data-callout-metadata*=t-l] > .callout-content {
+  box-shadow: -4px 4px 0 var(--outline, var(--background-modifier-box-shadow));
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-r] {
+  border-left: 4px solid rgb(var(--callout-color));
+  margin-left: var(--c-timeline);
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-r] > .callout-title, .callout.callout[data-callout*=timeline][data-callout-metadata*=t-r] > .callout-content {
+  box-shadow: 4px 4px 0 var(--outline, var(--background-modifier-box-shadow));
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-l] > .callout-title {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-l] > .callout-title .callout-icon {
+  float: right;
+  margin-right: -20px;
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-r] > .callout-title .callout-icon {
+  float: left;
+  margin-left: -20px;
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-1] {
+  padding-top: var(--micro);
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-2] {
+  padding-top: var(--tiny);
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-3] {
+  padding-top: var(--small);
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-4] {
+  padding-top: var(--small-med);
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-5] {
+  padding-top: var(--med-small);
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-6] {
+  padding-top: var(--medium);
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-7] {
+  padding-top: 350px;
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-8] {
+  padding-top: var(--med-tall);
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-9] {
+  padding-top: var(--tall);
+}
+.callout.callout[data-callout*=timeline][data-callout-metadata*=t-10] {
+  padding-top: 750px;
 }
 
 /* Kepano: https://forum.obsidian.md/t/image-zoom-click-hold-to-expand-images/5164
@@ -8332,6 +9442,22 @@ Enlarge Image:*/
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+/*Command Palette*/
+.prompt .suggestion-prefix::after {
+  display: none;
+}
+
+.prompt .suggestion-prefix {
+  color: var(--headers);
+  font-weight: 600;
+  padding: 3px 7px 0 0;
+}
+
+.prompt .suggestion-item.is-selected {
+  font-weight: 600;
+  background-color: var(--text-highlight-bg);
 }
 
 /*Outline Pane*/
@@ -8395,8 +9521,14 @@ body:not(.op-h) .outline .tree-item.is-collapsed .tree-item-self:before {
 }
 
 /*Count Squared*/
+.tree-item-self.tag-pane-tag {
+  display: flex;
+  align-items: center;
+}
+
 .tree-item-flair {
   border-radius: var(--radius);
+  box-shadow: 0 1px var(--outline);
 }
 
 /*Tag Pane Lines*/
@@ -8746,6 +9878,10 @@ body .search-result-file-match-destination-file-container .search-result-file-ma
   box-shadow: 0 1px var(--outline);
 }
 
+.tree-item-flair-outer:after {
+  display: none;
+}
+
 /*----Slides----*/
 /*Slides: Background*/
 .slides-container,
@@ -8806,10 +9942,6 @@ body .search-result-file-match-destination-file-container .search-result-file-ma
 }
 
 /*--Publish Settings--*/
-.modal-bg {
-  background-color: var(--background-modifier-form-field-highlighted);
-}
-
 .publish-upload-item.mod-completed > *,
 .list-item-part .mod-extended .publish-upload-item-title {
   color: var(--text);
@@ -8941,6 +10073,154 @@ body .search-result-file-match-destination-file-container .search-result-file-ma
   border-radius: var(--radius);
   background-color: var(--graph-bg);
   padding: 4px;
+}
+
+.site-body .tree-item-children .tree-item-children {
+  margin-left: 10px;
+  border-left: 2px solid var(--lines);
+}
+
+/* File Explorer */
+.nav-view-outer .tree-item-children {
+  margin: 0;
+}
+
+.nav-view-outer .tree-item {
+  margin-left: 10px;
+}
+
+.nav-view-outer .tree-item-self.mod-active {
+  background-color: var(--dark-accent);
+}
+
+.nav-view-outer .tree-item-self.mod-active[data-path$=".md"] .tree-item-inner::before {
+  color: var(--text);
+}
+
+.nav-view-outer .tree-item-self[data-path$=".md"] .tree-item-inner::before,
+.nav-view-outer .tree-item-self:not([data-path$=".md"]) .tree-item-inner::before {
+  margin-left: -15px;
+  padding-right: 5px;
+  font-weight: 100;
+}
+
+.nav-view-outer .tree-item.is-collapsed .tree-item-self:not([data-path$=".md"]) .tree-item-inner::before {
+  color: var(--accent);
+}
+
+.nav-view-outer .tree-item-self:not([data-path$=".md"]) {
+  font-weight: 900;
+}
+
+.nav-view-outer .tree-item-self:not([data-path$=".md"]) .tree-item-inner::before {
+  content: var(--folder-icon);
+  font-family: var(--folder-f);
+  color: var(--folder);
+}
+
+.nav-view-outer .tree-item-self[data-path$=".md"] .tree-item-inner::before {
+  content: var(--file-icon);
+  font-family: var(--file-f);
+  color: var(--f-icon);
+}
+
+.nav-view-outer .tree-item-icon.collapse-icon {
+  visibility: hidden;
+}
+
+/* -- Site Fixes -- */
+body .published-container {
+  --f-s-text: 16px;
+}
+
+.publish-renderer .task-list-item.is-checked:is([data-task=X],
+[data-task=">"],
+[data-task="-"],
+[data-task=">"],
+[data-task=D],
+[data-task="?"],
+[data-task="/"],
+[data-task="+"],
+[data-task=R],
+[data-task="!"],
+[data-task=i],
+[data-task=B],
+[data-task=P],
+[data-task=C],
+[data-task=Q],
+[data-task=N],
+[data-task=b],
+[data-task=I],
+[data-task=p],
+[data-task=L],
+[data-task=E],
+[data-task=A],
+[data-task=r],
+[data-task=c],
+[data-task=o]) > .task-list-item-checkbox, .publish-renderer .task-list-item.is-checked:is([data-task=X],
+[data-task=">"],
+[data-task="-"],
+[data-task=">"],
+[data-task=D],
+[data-task="?"],
+[data-task="/"],
+[data-task="+"],
+[data-task=R],
+[data-task="!"],
+[data-task=i],
+[data-task=B],
+[data-task=P],
+[data-task=C],
+[data-task=Q],
+[data-task=N],
+[data-task=b],
+[data-task=I],
+[data-task=p],
+[data-task=L],
+[data-task=E],
+[data-task=A],
+[data-task=r],
+[data-task=c],
+[data-task=o]) input:is([type=checkbox], [type=checkbox i]):checked, .publish-renderer .task-list-item.is-checked:is([data-task=X],
+[data-task=">"],
+[data-task="-"],
+[data-task=">"],
+[data-task=D],
+[data-task="?"],
+[data-task="/"],
+[data-task="+"],
+[data-task=R],
+[data-task="!"],
+[data-task=i],
+[data-task=B],
+[data-task=P],
+[data-task=C],
+[data-task=Q],
+[data-task=N],
+[data-task=b],
+[data-task=I],
+[data-task=p],
+[data-task=L],
+[data-task=E],
+[data-task=A],
+[data-task=r],
+[data-task=c],
+[data-task=o]) input:is([type=checkbox], [type=checkbox i]):checked::before {
+  margin-left: -17px;
+  margin-right: 0px;
+}
+
+svg.link {
+  background-color: currentColor;
+}
+
+svg.link > path {
+  display: none;
+  stroke-width: 0;
+}
+
+svg.link {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 100 100' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect id='Compound' x='0' y='0' width='100' height='100' style='fill:none;'/%3E%3CclipPath id='_clip1'%3E%3Crect x='0' y='0' width='100' height='100'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23_clip1)'%3E%3Cpath id='Link' d='M37.507,47.202L30.406,40.101L0,70.506L29.698,100.205L60.104,69.799L53.002,62.697L28.961,86.739L13.466,71.244L37.507,47.202ZM71.449,35.858L64.347,28.756L30.375,62.728L37.477,69.83L71.449,35.858ZM62.697,52.798L69.799,59.899L100.205,29.494L70.506,-0.205L40.101,30.201L47.202,37.303L71.244,13.261L86.739,28.756L62.697,52.798Z' style='fill:rgb(237,238,242);'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /*--Mermaid--*/
@@ -9376,9 +10656,26 @@ body.dv-tbl-th .table-view-table > thead > tr > th {
   visibility: hidden;
 }
 
-.dv .dataview-ul {
+.dv .dataview-ul:not(.dataview-result-object-ul) {
   list-style-type: none;
   margin-inline-start: -32px;
+}
+
+.dv .dataview.list-view-ul .dataview-ul {
+  margin-inline-start: -20px;
+}
+.dv .dataview.list-view-ul .dataview-ul::before {
+  display: none;
+}
+
+.dv table.dataview .dataview-ul {
+  margin-inline-start: 0;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.dv table.dataview .dataview-ul li {
+  padding-left: 0;
 }
 
 .dv .table-view-table .dataview-result-list-li {
@@ -10318,22 +11615,6 @@ object.link-favicon {
   margin-right: 5px;
 }
 
-/*Plugin: Indent Group*/
-body.ig-lists .HyperMD-list-line .ig-tab::before,
-body.ig-code .HyperMD-codeblock .ig-tab::before {
-  width: var(--b-line);
-  margin-left: 7px;
-}
-
-/*
-.ig-tab.ig-indent-group-level::before { background: var(--lite-accent) !important; }
-.ig-tab:not(.ig-indent-group-level)::before                 { background-color: var(--b-l-1) !important; }
-.ig-tab:not(.ig-indent-group-level):nth-child(2n):before    { background-color: var(--b-l-2) !important; }
-.ig-tab:not(.ig-indent-group-level):nth-child(3n):before    { background-color: var(--b-l-3) !important; }
-.ig-tab:not(.ig-indent-group-level):nth-child(4n):before    { background-color: var(--b-l-4) !important; }
-.ig-tab:not(.ig-indent-group-level):nth-child(5n):before    { background-color: var(--b-l-5) !important; }
-.ig-tab:not(.ig-indent-group-level):nth-child(6n):before    { background-color: var(--b-l-6) !important; }
-*/
 /*Emoji Toolbar*/
 img.emoji.emoji {
   object-fit: cover;
@@ -10341,11 +11622,48 @@ img.emoji.emoji {
 
 /* Hover Editor */
 body:is(.theme-dark, .theme-light) {
-  --he-title-bar-inactive-pinned-bg: var(--note);
+  --he-title-bar-active-pinned-bg: var(--note);
+  --he-title-bar-active-action: var(--lite-accent);
+  --he-title-bar-active-bg: var(--embed-bg);
+  --he-title-bar-inactive-fg: var(--inactive);
   --he-title-bar-inactive-bg: var(--note);
+  --he-title-bar-inactive-pinned-bg: var(--note);
+  --he-title-bar-inactive-action: var(--soft-text);
   --he-popover-border-radius: var(--radius);
   --he-text-on-accent-inactive: var(--text);
-  --he-text-on-accent-active: var(--text-dl);
+  --he-text-on-accent-active: var(--headers);
+}
+
+/* Heatmap Calendar Fix */
+.heatmap-calendar-graph ul li {
+  border: 0;
+}
+.heatmap-calendar-graph ul li::before {
+  display: none;
+}
+
+/* Settings Search */
+.settings-search-input {
+  padding: 8px 6px;
+  border: 0;
+}
+
+/* Auto Class*/
+.auto-class-settings__match-list li {
+  padding-left: 0px;
+}
+.auto-class-settings__match-list li::before {
+  display: none;
+}
+
+ul.auto-class-settings__match-group-list {
+  margin-left: 15px;
+  border-left: 2px solid var(--accent);
+}
+
+.auto-class-settings__match-group-header:hover,
+li.auto-class-settings__match-list-item:hover {
+  background-color: var(--td);
 }
 
 body.mtb.AT-multirow .mobile-toolbar-options-container {
@@ -10387,6 +11705,171 @@ body.mtb.AT-multirow .mobile-toolbar-options-container {
   margin-top: -0.05em;
 }
 
+/*RSS Feed Plugin*/
+code {
+  font-family: var(--font-monospace);
+}
+
+.rss-modal {
+  width: 60vh;
+  margin: auto;
+  padding: 10px 20px;
+  text-align: justify;
+}
+
+.rss-content {
+  padding: 0 20px;
+}
+
+.rss-title,
+h3.rss-subtitle {
+  display: block;
+  text-align: center;
+}
+
+.rss-title {
+  line-height: 30px;
+}
+
+.rss-subtitle::after {
+  display: none;
+}
+
+.is-mobile .rss-title {
+  font-size: var(--h4);
+}
+.is-mobile h3.rss-subtitle {
+  font-size: var(--h6);
+  margin-block-start: 0;
+}
+.is-mobile .rss-content {
+  padding: 0 10px;
+}
+
+.topButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.topButtons button {
+  padding: 6px 10px;
+}
+
+.topButtons button svg {
+  margin-bottom: -4px;
+}
+
+.rss-content.scrollable-content li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.workspace-leaf-content[data-type=RSS_FEED] .setting-item:not(.setting-item-heading) {
+  padding: 0;
+  margin: auto;
+}
+.workspace-leaf-content[data-type=RSS_FEED] .setting-item:not(.setting-item-heading) .setting-item-info > div {
+  display: none;
+}
+
+/*Feed*/
+.rss-feed-title {
+  font-weight: 600px;
+}
+
+.rss-feed-title svg {
+  vertical-align: -2px;
+}
+
+/*Feed Folders*/
+.rss-feed-item.rss-read a {
+  color: var(--inactive);
+  font-weight: bold;
+}
+
+.rss-feed-item.rss-read a:hover {
+  color: var(--footnote);
+}
+
+.rss-folder > span {
+  background-color: var(--embed-bg);
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+
+.rss-feeds-folders .tree-item-children {
+  margin-left: 0;
+}
+
+.rss-filtered-folders .tree-item-children .tree-item-self::before,
+.rss-folder span > span:first-child::after {
+  content: "\e801";
+  font-family: var(--its);
+  padding-right: 5px;
+}
+
+.rss-feeds-folders span > span svg,
+.rss-filtered-folders span > span svg {
+  display: none;
+}
+
+.rss-filtered-folders .tree-item-children,
+.rss-feeds-folders .tree-item-self,
+.rss-filtered-folders .tree-item-self {
+  padding: 3px 5px;
+  margin: 0;
+  width: 100%;
+}
+
+/*Folder Title*/
+.rss-feeds-folders p svg {
+  display: none;
+}
+
+.rss-filtered-folders > div,
+.rss-feeds-folders > .tree-item .tree-item-self span {
+  font-family: var(--font);
+  font-size: 1.4em;
+  margin: 5px 0px;
+}
+
+:is(.rss-feeds-folders, .rss-filtered-folders) > .tree-item > .tree-item-self {
+  justify-content: center;
+  letter-spacing: 3px;
+}
+
+.rss-folders p span + span {
+  font-size: 1em;
+}
+
+.rss-feeds-folders ul {
+  margin-left: -28px;
+}
+
+.rss-feed ul {
+  padding-left: 50px;
+}
+
+.rss-feed-item {
+  margin-left: 20px;
+}
+
+.rss-feed-item::before {
+  content: var(--bullet);
+  font-family: var(--its);
+  margin-left: -20px;
+}
+
+.rss-feed-items .tree-item-self {
+  border-left: 2px solid var(--lines);
+  margin-left: 12px;
+}
+
+.rss-feed-items .tree-item:nth-child(odd) .tree-item-self {
+  background: var(--td);
+}
+
 /*--Sliding Panes--*/
 /*Hide the gradient of the Title Pane*/
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header > .view-header-title-container:after,
@@ -10405,7 +11888,6 @@ body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header {
   border-right: 2px solid var(--headers);
   border-bottom: none;
-  padding-right: 2px;
 }
 
 /*Hide Black Border When Header is Rotated*/
@@ -10419,13 +11901,13 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 }
 
 /*Rotate Gradient for Sliding Panes*/
-body.plugin-sliding-panes-rotate-header .workspace-leaf.mod-active .view-header {
+body.plugin-sliding-panes-rotate-header:not(.nt-clear) .workspace-leaf.mod-active .view-header {
   border: 0 !important;
   background: linear-gradient(to top, var(--outer-bar), var(--dark-accent));
 }
 
-body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header {
-  border: 0 !important;
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > :is(.workspace-leaf, .workspace-leaf.mod-active) > .workspace-leaf-content > .view-header.view-header {
+  border: 0;
   line-height: var(--lh);
 }
 
@@ -10437,11 +11919,6 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container > .view-header-title {
   line-height: 32px;
-}
-
-body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-header-icon,
-body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-actions {
-  margin-left: 2px;
 }
 
 /*--Plugin: 5e Statblock--*/
@@ -10516,29 +11993,25 @@ body .obsidian-statblock-plugin > .bar {
 
 /*Text Adjustments*/
 /*Headings*/
-.style-settings-heading {
-  padding-bottom: 1px !important;
-  border-bottom: 2px solid var(--accent) !important;
+.style-settings-heading.style-settings-heading,
+.style-settings-heading.style-settings-heading[data-level="2"] {
+  padding-bottom: 1px;
+  border-bottom: 2px solid var(--accent);
 }
 
-.style-settings-heading[data-level="2"] {
-  padding-bottom: 1px !important;
-  border-bottom: 2px solid var(--accent) !important;
-}
-
-.style-settings-heading[data-level="3"] {
-  border-bottom: 2px solid var(--lines) !important;
+.style-settings-heading.style-settings-heading[data-level="3"] {
+  border-bottom: 2px solid var(--lines);
 }
 
 .style-settings-heading .setting-item-name {
   color: var(--headers);
   font-weight: 900;
-  font-size: 1.1em !important;
+  font-size: 1.1em;
 }
 
 .style-settings-container .setting-item-name {
   font-weight: 900;
-  font-size: var(--f-text) !important;
+  font-size: var(--f-text);
 }
 
 .style-settings-container .setting-item-description {
@@ -11072,6 +12545,7 @@ body.slp.plugin-sliding-panes-rotate-header.plugin-sliding-select-orientation-si
 .h-wksp .side-dock-ribbon.mod-right:not(:hover) {
   opacity: 0;
   flex: 0 0 12px;
+  padding: 0;
 }
 
 .h-rib .workspace-drawer.mod-left .workspace-drawer-inner:not(:hover),
@@ -13317,8 +14791,12 @@ body .wotc-beyond.theme-dark .HyperMD-hr-bg {
 .notion .modal.mod-settings .vertical-tab-content-container, .notion .vertical-tab-content, .notion .community-plugin-info {
   background: var(--note);
 }
+.notion:not(.unset-link-c) {
+  --text-accent: var(--text);
+  --accent2-lite: var(--text);
+}
 .notion .internal-link, .notion .external-link, .notion .cm-underline {
-  color: var(--text);
+  color: var(--accent2-lite);
   border-bottom: 1px solid var(--table);
   font-weight: 600;
   text-decoration: unset;

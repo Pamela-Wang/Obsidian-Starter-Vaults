@@ -2665,6 +2665,11 @@ input[type='text'], input[type='search'], input[type='email'], input[type='passw
         font-size: 0.8em !important;
     }
 
+    .theme-light.milk-tea .tag:hover, 
+    .theme-light.milk-tea .cm-hashtag:hover {
+        color: white !important;
+    }
+
 /* @ MARKDOWN A10: Regular Text 📆 */
 
 /* ~~~~~~~~~~~~~~~~~~ MARKDOWN B: LISTS ~~~~~~~~~~~~~~~~~~ */
@@ -6824,18 +6829,18 @@ text-shadow: 0 0 0.7em rgb(164, 50, 187);
 .theme-dark.neoni .cm-header-4,
 .theme-dark.neoni .cm-header-5,
 .theme-dark.neoni .cm-header-6,
-h1 > a.internal-link,
-.cm-header.cm-header-1.cm-hmd-internal-link,
-h2 > a.internal-link,
-.cm-header.cm-header-2.cm-hmd-internal-link,
-h3 > a.internal-link,
-.cm-header.cm-header-3.cm-hmd-internal-link,
-h4 > a.internal-link,
-.cm-header.cm-header-4.cm-hmd-internal-link,
-h5 > a.internal-link,
-.cm-header.cm-header-5.cm-hmd-internal-link,
-h6 > a.internal-link,
-.cm-header.cm-header-6.cm-hmd-internal-link   
+.theme-dark.neoni h1 > a.internal-link,
+.theme-dark.neoni .cm-header.cm-header-1.cm-hmd-internal-link,
+.theme-dark.neoni h2 > a.internal-link,
+.theme-dark.neoni .cm-header.cm-header-2.cm-hmd-internal-link,
+.theme-dark.neoni h3 > a.internal-link,
+.theme-dark.neoni .cm-header.cm-header-3.cm-hmd-internal-link,
+.theme-dark.neoni h4 > a.internal-link,
+.theme-dark.neoni .cm-header.cm-header-4.cm-hmd-internal-link,
+.theme-dark.neoni h5 > a.internal-link,
+.theme-dark.neoni .cm-header.cm-header-5.cm-hmd-internal-link,
+.theme-dark.neoni h6 > a.internal-link,
+.theme-dark.neoni .cm-header.cm-header-6.cm-hmd-internal-link   
  {
     -webkit-text-stroke-width: 0.2px;
     color: transparent;
@@ -7747,15 +7752,6 @@ div.markdown-preview-sizer.markdown-preview-section {
 .markdown-embed:hover .markdown-embed-link svg {
   opacity:1;
   right: 20px !important;
-}
-
-.internal-embed .markdown-embed h1,
-.internal-embed .markdown-embed h2,
-.internal-embed .markdown-embed h3,
-.internal-embed .markdown-embed h4,
-.internal-embed .markdown-embed h5,
-.internal-embed .markdown-embed h6 {
-    display: none;
 }
 
 /* ~~~~~~~~~~~~~~~~~~ AS I: Custom Checkboxes  ~~~~~~~~~~~~~~~~~~ */

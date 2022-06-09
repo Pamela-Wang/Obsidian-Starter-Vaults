@@ -1,0 +1,10 @@
+{
+	"id": "random-structural-diary-plugin",
+	"name": "Random Structural Diary",
+	"version": "1.1.1",
+	"minAppVersion": "0.9.12",
+	"description": "This is a plugin for picking random questions from prepared question list. It allows you answer on different questions each time.",
+	"author": "ShockThunder",
+	"authorUrl": "https://github.com/ShockThunder",
+	"isDesktopOnly": false
+}

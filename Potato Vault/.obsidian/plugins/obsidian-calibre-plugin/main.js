@@ -31,570 +31,71 @@ var __async = (__this, __arguments, generator) => {
     var fulfilled = (value) => {
       try {
         step(generator.next(value));
-      } catch (e3) {
-        reject(e3);
+      } catch (e) {
+        reject(e);
       }
     };
     var rejected = (value) => {
       try {
         step(generator.throw(value));
-      } catch (e3) {
-        reject(e3);
+      } catch (e) {
+        reject(e);
       }
     };
-    var step = (x3) => x3.done ? resolve(x3.value) : Promise.resolve(x3.value).then(fulfilled, rejected);
+    var step = (x) => x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected);
     step((generator = generator.apply(__this, __arguments)).next());
   });
 };
 
-// src/main.ts
+// src/main.tsx
 __export(exports, {
   default: () => CalibrePlugin
 });
-var import_obsidian2 = __toModule(require("obsidian"));
+var import_obsidian3 = __toModule(require("obsidian"));
 
-// src/settings.tsx
+// src/CalibreView.tsx
 var import_obsidian = __toModule(require("obsidian"));
-
-// node_modules/preact/dist/preact.module.js
-var n;
-var l;
-var u;
-var i;
-var t;
-var r;
-var o;
-var f;
-var e = {};
-var c = [];
-var s = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i;
-function a(n2, l3) {
-  for (var u3 in l3)
-    n2[u3] = l3[u3];
-  return n2;
-}
-function h(n2) {
-  var l3 = n2.parentNode;
-  l3 && l3.removeChild(n2);
-}
-function v(l3, u3, i3) {
-  var t3, r3, o2, f3 = {};
-  for (o2 in u3)
-    o2 == "key" ? t3 = u3[o2] : o2 == "ref" ? r3 = u3[o2] : f3[o2] = u3[o2];
-  if (arguments.length > 2 && (f3.children = arguments.length > 3 ? n.call(arguments, 2) : i3), typeof l3 == "function" && l3.defaultProps != null)
-    for (o2 in l3.defaultProps)
-      f3[o2] === void 0 && (f3[o2] = l3.defaultProps[o2]);
-  return y(l3, f3, t3, r3, null);
-}
-function y(n2, i3, t3, r3, o2) {
-  var f3 = { type: n2, props: i3, key: t3, ref: r3, __k: null, __: null, __b: 0, __e: null, __d: void 0, __c: null, __h: null, constructor: void 0, __v: o2 == null ? ++u : o2 };
-  return o2 == null && l.vnode != null && l.vnode(f3), f3;
-}
-function d(n2) {
-  return n2.children;
-}
-function _(n2, l3) {
-  this.props = n2, this.context = l3;
-}
-function k(n2, l3) {
-  if (l3 == null)
-    return n2.__ ? k(n2.__, n2.__.__k.indexOf(n2) + 1) : null;
-  for (var u3; l3 < n2.__k.length; l3++)
-    if ((u3 = n2.__k[l3]) != null && u3.__e != null)
-      return u3.__e;
-  return typeof n2.type == "function" ? k(n2) : null;
-}
-function b(n2) {
-  var l3, u3;
-  if ((n2 = n2.__) != null && n2.__c != null) {
-    for (n2.__e = n2.__c.base = null, l3 = 0; l3 < n2.__k.length; l3++)
-      if ((u3 = n2.__k[l3]) != null && u3.__e != null) {
-        n2.__e = n2.__c.base = u3.__e;
-        break;
-      }
-    return b(n2);
+var CALIBRE_VIEW_TYPE = "calibre-view";
+var CalibreView = class extends import_obsidian.ItemView {
+  constructor(leaf, settings) {
+    super(leaf);
+    this.settings = settings;
   }
-}
-function m(n2) {
-  (!n2.__d && (n2.__d = true) && t.push(n2) && !g.__r++ || o !== l.debounceRendering) && ((o = l.debounceRendering) || r)(g);
-}
-function g() {
-  for (var n2; g.__r = t.length; )
-    n2 = t.sort(function(n3, l3) {
-      return n3.__v.__b - l3.__v.__b;
-    }), t = [], n2.some(function(n3) {
-      var l3, u3, i3, t3, r3, o2;
-      n3.__d && (r3 = (t3 = (l3 = n3).__v).__e, (o2 = l3.__P) && (u3 = [], (i3 = a({}, t3)).__v = t3.__v + 1, j(o2, t3, i3, l3.__n, o2.ownerSVGElement !== void 0, t3.__h != null ? [r3] : null, u3, r3 == null ? k(t3) : r3, t3.__h), z(u3, t3), t3.__e != r3 && b(t3)));
+  getViewType() {
+    return CALIBRE_VIEW_TYPE;
+  }
+  getDisplayText() {
+    return this.settings.displayText;
+  }
+  onOpen() {
+    return __async(this, null, function* () {
+      const container = this.containerEl.children[1];
+      try {
+        const iframe = container.createEl("iframe");
+        iframe.setAttribute("sandbox", "allow-forms allow-presentation allow-same-origin allow-scripts allow-modals");
+        iframe.src = this.settings.address;
+      } catch (e) {
+        console.error(e);
+        const error = container.createDiv({ text: e.toString() });
+        error.style.color = "var(--text-title-h1)";
+      }
     });
-}
-function w(n2, l3, u3, i3, t3, r3, o2, f3, s3, a3) {
-  var h3, v3, p3, _3, b3, m2, g3, w3 = i3 && i3.__k || c, A4 = w3.length;
-  for (u3.__k = [], h3 = 0; h3 < l3.length; h3++)
-    if ((_3 = u3.__k[h3] = (_3 = l3[h3]) == null || typeof _3 == "boolean" ? null : typeof _3 == "string" || typeof _3 == "number" || typeof _3 == "bigint" ? y(null, _3, null, null, _3) : Array.isArray(_3) ? y(d, { children: _3 }, null, null, null) : _3.__b > 0 ? y(_3.type, _3.props, _3.key, null, _3.__v) : _3) != null) {
-      if (_3.__ = u3, _3.__b = u3.__b + 1, (p3 = w3[h3]) === null || p3 && _3.key == p3.key && _3.type === p3.type)
-        w3[h3] = void 0;
-      else
-        for (v3 = 0; v3 < A4; v3++) {
-          if ((p3 = w3[v3]) && _3.key == p3.key && _3.type === p3.type) {
-            w3[v3] = void 0;
-            break;
-          }
-          p3 = null;
-        }
-      j(n2, _3, p3 = p3 || e, t3, r3, o2, f3, s3, a3), b3 = _3.__e, (v3 = _3.ref) && p3.ref != v3 && (g3 || (g3 = []), p3.ref && g3.push(p3.ref, null, _3), g3.push(v3, _3.__c || b3, _3)), b3 != null ? (m2 == null && (m2 = b3), typeof _3.type == "function" && _3.__k === p3.__k ? _3.__d = s3 = x(_3, s3, n2) : s3 = P(n2, _3, p3, w3, b3, s3), typeof u3.type == "function" && (u3.__d = s3)) : s3 && p3.__e == s3 && s3.parentNode != n2 && (s3 = k(p3));
-    }
-  for (u3.__e = m2, h3 = A4; h3--; )
-    w3[h3] != null && (typeof u3.type == "function" && w3[h3].__e != null && w3[h3].__e == u3.__d && (u3.__d = k(i3, h3 + 1)), N(w3[h3], w3[h3]));
-  if (g3)
-    for (h3 = 0; h3 < g3.length; h3++)
-      M(g3[h3], g3[++h3], g3[++h3]);
-}
-function x(n2, l3, u3) {
-  for (var i3, t3 = n2.__k, r3 = 0; t3 && r3 < t3.length; r3++)
-    (i3 = t3[r3]) && (i3.__ = n2, l3 = typeof i3.type == "function" ? x(i3, l3, u3) : P(u3, i3, i3, t3, i3.__e, l3));
-  return l3;
-}
-function A(n2, l3) {
-  return l3 = l3 || [], n2 == null || typeof n2 == "boolean" || (Array.isArray(n2) ? n2.some(function(n3) {
-    A(n3, l3);
-  }) : l3.push(n2)), l3;
-}
-function P(n2, l3, u3, i3, t3, r3) {
-  var o2, f3, e3;
-  if (l3.__d !== void 0)
-    o2 = l3.__d, l3.__d = void 0;
-  else if (u3 == null || t3 != r3 || t3.parentNode == null)
-    n:
-      if (r3 == null || r3.parentNode !== n2)
-        n2.appendChild(t3), o2 = null;
-      else {
-        for (f3 = r3, e3 = 0; (f3 = f3.nextSibling) && e3 < i3.length; e3 += 2)
-          if (f3 == t3)
-            break n;
-        n2.insertBefore(t3, r3), o2 = r3;
-      }
-  return o2 !== void 0 ? o2 : t3.nextSibling;
-}
-function C(n2, l3, u3, i3, t3) {
-  var r3;
-  for (r3 in u3)
-    r3 === "children" || r3 === "key" || r3 in l3 || H(n2, r3, null, u3[r3], i3);
-  for (r3 in l3)
-    t3 && typeof l3[r3] != "function" || r3 === "children" || r3 === "key" || r3 === "value" || r3 === "checked" || u3[r3] === l3[r3] || H(n2, r3, l3[r3], u3[r3], i3);
-}
-function $(n2, l3, u3) {
-  l3[0] === "-" ? n2.setProperty(l3, u3) : n2[l3] = u3 == null ? "" : typeof u3 != "number" || s.test(l3) ? u3 : u3 + "px";
-}
-function H(n2, l3, u3, i3, t3) {
-  var r3;
-  n:
-    if (l3 === "style")
-      if (typeof u3 == "string")
-        n2.style.cssText = u3;
-      else {
-        if (typeof i3 == "string" && (n2.style.cssText = i3 = ""), i3)
-          for (l3 in i3)
-            u3 && l3 in u3 || $(n2.style, l3, "");
-        if (u3)
-          for (l3 in u3)
-            i3 && u3[l3] === i3[l3] || $(n2.style, l3, u3[l3]);
-      }
-    else if (l3[0] === "o" && l3[1] === "n")
-      r3 = l3 !== (l3 = l3.replace(/Capture$/, "")), l3 = l3.toLowerCase() in n2 ? l3.toLowerCase().slice(2) : l3.slice(2), n2.l || (n2.l = {}), n2.l[l3 + r3] = u3, u3 ? i3 || n2.addEventListener(l3, r3 ? T : I, r3) : n2.removeEventListener(l3, r3 ? T : I, r3);
-    else if (l3 !== "dangerouslySetInnerHTML") {
-      if (t3)
-        l3 = l3.replace(/xlink[H:h]/, "h").replace(/sName$/, "s");
-      else if (l3 !== "href" && l3 !== "list" && l3 !== "form" && l3 !== "tabIndex" && l3 !== "download" && l3 in n2)
-        try {
-          n2[l3] = u3 == null ? "" : u3;
-          break n;
-        } catch (n3) {
-        }
-      typeof u3 == "function" || (u3 != null && (u3 !== false || l3[0] === "a" && l3[1] === "r") ? n2.setAttribute(l3, u3) : n2.removeAttribute(l3));
-    }
-}
-function I(n2) {
-  this.l[n2.type + false](l.event ? l.event(n2) : n2);
-}
-function T(n2) {
-  this.l[n2.type + true](l.event ? l.event(n2) : n2);
-}
-function j(n2, u3, i3, t3, r3, o2, f3, e3, c3) {
-  var s3, h3, v3, y3, p3, k2, b3, m2, g3, x3, A4, P3 = u3.type;
-  if (u3.constructor !== void 0)
-    return null;
-  i3.__h != null && (c3 = i3.__h, e3 = u3.__e = i3.__e, u3.__h = null, o2 = [e3]), (s3 = l.__b) && s3(u3);
-  try {
-    n:
-      if (typeof P3 == "function") {
-        if (m2 = u3.props, g3 = (s3 = P3.contextType) && t3[s3.__c], x3 = s3 ? g3 ? g3.props.value : s3.__ : t3, i3.__c ? b3 = (h3 = u3.__c = i3.__c).__ = h3.__E : ("prototype" in P3 && P3.prototype.render ? u3.__c = h3 = new P3(m2, x3) : (u3.__c = h3 = new _(m2, x3), h3.constructor = P3, h3.render = O), g3 && g3.sub(h3), h3.props = m2, h3.state || (h3.state = {}), h3.context = x3, h3.__n = t3, v3 = h3.__d = true, h3.__h = []), h3.__s == null && (h3.__s = h3.state), P3.getDerivedStateFromProps != null && (h3.__s == h3.state && (h3.__s = a({}, h3.__s)), a(h3.__s, P3.getDerivedStateFromProps(m2, h3.__s))), y3 = h3.props, p3 = h3.state, v3)
-          P3.getDerivedStateFromProps == null && h3.componentWillMount != null && h3.componentWillMount(), h3.componentDidMount != null && h3.__h.push(h3.componentDidMount);
-        else {
-          if (P3.getDerivedStateFromProps == null && m2 !== y3 && h3.componentWillReceiveProps != null && h3.componentWillReceiveProps(m2, x3), !h3.__e && h3.shouldComponentUpdate != null && h3.shouldComponentUpdate(m2, h3.__s, x3) === false || u3.__v === i3.__v) {
-            h3.props = m2, h3.state = h3.__s, u3.__v !== i3.__v && (h3.__d = false), h3.__v = u3, u3.__e = i3.__e, u3.__k = i3.__k, u3.__k.forEach(function(n3) {
-              n3 && (n3.__ = u3);
-            }), h3.__h.length && f3.push(h3);
-            break n;
-          }
-          h3.componentWillUpdate != null && h3.componentWillUpdate(m2, h3.__s, x3), h3.componentDidUpdate != null && h3.__h.push(function() {
-            h3.componentDidUpdate(y3, p3, k2);
-          });
-        }
-        h3.context = x3, h3.props = m2, h3.state = h3.__s, (s3 = l.__r) && s3(u3), h3.__d = false, h3.__v = u3, h3.__P = n2, s3 = h3.render(h3.props, h3.state, h3.context), h3.state = h3.__s, h3.getChildContext != null && (t3 = a(a({}, t3), h3.getChildContext())), v3 || h3.getSnapshotBeforeUpdate == null || (k2 = h3.getSnapshotBeforeUpdate(y3, p3)), A4 = s3 != null && s3.type === d && s3.key == null ? s3.props.children : s3, w(n2, Array.isArray(A4) ? A4 : [A4], u3, i3, t3, r3, o2, f3, e3, c3), h3.base = u3.__e, u3.__h = null, h3.__h.length && f3.push(h3), b3 && (h3.__E = h3.__ = null), h3.__e = false;
-      } else
-        o2 == null && u3.__v === i3.__v ? (u3.__k = i3.__k, u3.__e = i3.__e) : u3.__e = L(i3.__e, u3, i3, t3, r3, o2, f3, c3);
-    (s3 = l.diffed) && s3(u3);
-  } catch (n3) {
-    u3.__v = null, (c3 || o2 != null) && (u3.__e = e3, u3.__h = !!c3, o2[o2.indexOf(e3)] = null), l.__e(n3, u3, i3);
   }
-}
-function z(n2, u3) {
-  l.__c && l.__c(u3, n2), n2.some(function(u4) {
-    try {
-      n2 = u4.__h, u4.__h = [], n2.some(function(n3) {
-        n3.call(u4);
-      });
-    } catch (n3) {
-      l.__e(n3, u4.__v);
-    }
-  });
-}
-function L(l3, u3, i3, t3, r3, o2, f3, c3) {
-  var s3, a3, v3, y3 = i3.props, p3 = u3.props, d3 = u3.type, _3 = 0;
-  if (d3 === "svg" && (r3 = true), o2 != null) {
-    for (; _3 < o2.length; _3++)
-      if ((s3 = o2[_3]) && "setAttribute" in s3 == !!d3 && (d3 ? s3.localName === d3 : s3.nodeType === 3)) {
-        l3 = s3, o2[_3] = null;
-        break;
-      }
+  onClose() {
+    return __async(this, null, function* () {
+    });
   }
-  if (l3 == null) {
-    if (d3 === null)
-      return document.createTextNode(p3);
-    l3 = r3 ? document.createElementNS("http://www.w3.org/2000/svg", d3) : document.createElement(d3, p3.is && p3), o2 = null, c3 = false;
-  }
-  if (d3 === null)
-    y3 === p3 || c3 && l3.data === p3 || (l3.data = p3);
-  else {
-    if (o2 = o2 && n.call(l3.childNodes), a3 = (y3 = i3.props || e).dangerouslySetInnerHTML, v3 = p3.dangerouslySetInnerHTML, !c3) {
-      if (o2 != null)
-        for (y3 = {}, _3 = 0; _3 < l3.attributes.length; _3++)
-          y3[l3.attributes[_3].name] = l3.attributes[_3].value;
-      (v3 || a3) && (v3 && (a3 && v3.__html == a3.__html || v3.__html === l3.innerHTML) || (l3.innerHTML = v3 && v3.__html || ""));
-    }
-    if (C(l3, p3, y3, r3, c3), v3)
-      u3.__k = [];
-    else if (_3 = u3.props.children, w(l3, Array.isArray(_3) ? _3 : [_3], u3, i3, t3, r3 && d3 !== "foreignObject", o2, f3, o2 ? o2[0] : i3.__k && k(i3, 0), c3), o2 != null)
-      for (_3 = o2.length; _3--; )
-        o2[_3] != null && h(o2[_3]);
-    c3 || ("value" in p3 && (_3 = p3.value) !== void 0 && (_3 !== y3.value || _3 !== l3.value || d3 === "progress" && !_3) && H(l3, "value", _3, y3.value, false), "checked" in p3 && (_3 = p3.checked) !== void 0 && _3 !== l3.checked && H(l3, "checked", _3, y3.checked, false));
-  }
-  return l3;
-}
-function M(n2, u3, i3) {
-  try {
-    typeof n2 == "function" ? n2(u3) : n2.current = u3;
-  } catch (n3) {
-    l.__e(n3, i3);
-  }
-}
-function N(n2, u3, i3) {
-  var t3, r3;
-  if (l.unmount && l.unmount(n2), (t3 = n2.ref) && (t3.current && t3.current !== n2.__e || M(t3, null, u3)), (t3 = n2.__c) != null) {
-    if (t3.componentWillUnmount)
-      try {
-        t3.componentWillUnmount();
-      } catch (n3) {
-        l.__e(n3, u3);
-      }
-    t3.base = t3.__P = null;
-  }
-  if (t3 = n2.__k)
-    for (r3 = 0; r3 < t3.length; r3++)
-      t3[r3] && N(t3[r3], u3, typeof n2.type != "function");
-  i3 || n2.__e == null || h(n2.__e), n2.__e = n2.__d = void 0;
-}
-function O(n2, l3, u3) {
-  return this.constructor(n2, u3);
-}
-function S(u3, i3, t3) {
-  var r3, o2, f3;
-  l.__ && l.__(u3, i3), o2 = (r3 = typeof t3 == "function") ? null : t3 && t3.__k || i3.__k, f3 = [], j(i3, u3 = (!r3 && t3 || i3).__k = v(d, null, [u3]), o2 || e, e, i3.ownerSVGElement !== void 0, !r3 && t3 ? [t3] : o2 ? null : i3.firstChild ? n.call(i3.childNodes) : null, f3, !r3 && t3 ? t3 : o2 ? o2.__e : i3.firstChild, r3), z(f3, u3);
-}
-n = c.slice, l = { __e: function(n2, l3) {
-  for (var u3, i3, t3; l3 = l3.__; )
-    if ((u3 = l3.__c) && !u3.__)
-      try {
-        if ((i3 = u3.constructor) && i3.getDerivedStateFromError != null && (u3.setState(i3.getDerivedStateFromError(n2)), t3 = u3.__d), u3.componentDidCatch != null && (u3.componentDidCatch(n2), t3 = u3.__d), t3)
-          return u3.__E = u3;
-      } catch (l4) {
-        n2 = l4;
-      }
-  throw n2;
-} }, u = 0, i = function(n2) {
-  return n2 != null && n2.constructor === void 0;
-}, _.prototype.setState = function(n2, l3) {
-  var u3;
-  u3 = this.__s != null && this.__s !== this.state ? this.__s : this.__s = a({}, this.state), typeof n2 == "function" && (n2 = n2(a({}, u3), this.props)), n2 && a(u3, n2), n2 != null && this.__v && (l3 && this.__h.push(l3), m(this));
-}, _.prototype.forceUpdate = function(n2) {
-  this.__v && (this.__e = true, n2 && this.__h.push(n2), m(this));
-}, _.prototype.render = d, t = [], r = typeof Promise == "function" ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, g.__r = 0, f = 0;
-
-// node_modules/preact/hooks/dist/hooks.module.js
-var t2;
-var u2;
-var r2;
-var i2 = [];
-var c2 = l.__b;
-var f2 = l.__r;
-var e2 = l.diffed;
-var a2 = l.__c;
-var v2 = l.unmount;
-function x2() {
-  var t3;
-  for (i2.sort(function(n2, t4) {
-    return n2.__v.__b - t4.__v.__b;
-  }); t3 = i2.pop(); )
-    if (t3.__P)
-      try {
-        t3.__H.__h.forEach(g2), t3.__H.__h.forEach(j2), t3.__H.__h = [];
-      } catch (u3) {
-        t3.__H.__h = [], l.__e(u3, t3.__v);
-      }
-}
-l.__b = function(n2) {
-  u2 = null, c2 && c2(n2);
-}, l.__r = function(n2) {
-  f2 && f2(n2), t2 = 0;
-  var r3 = (u2 = n2.__c).__H;
-  r3 && (r3.__h.forEach(g2), r3.__h.forEach(j2), r3.__h = []);
-}, l.diffed = function(t3) {
-  e2 && e2(t3);
-  var o2 = t3.__c;
-  o2 && o2.__H && o2.__H.__h.length && (i2.push(o2) !== 1 && r2 === l.requestAnimationFrame || ((r2 = l.requestAnimationFrame) || function(n2) {
-    var t4, u3 = function() {
-      clearTimeout(r3), b2 && cancelAnimationFrame(t4), setTimeout(n2);
-    }, r3 = setTimeout(u3, 100);
-    b2 && (t4 = requestAnimationFrame(u3));
-  })(x2)), u2 = null;
-}, l.__c = function(t3, u3) {
-  u3.some(function(t4) {
-    try {
-      t4.__h.forEach(g2), t4.__h = t4.__h.filter(function(n2) {
-        return !n2.__ || j2(n2);
-      });
-    } catch (r3) {
-      u3.some(function(n2) {
-        n2.__h && (n2.__h = []);
-      }), u3 = [], l.__e(r3, t4.__v);
-    }
-  }), a2 && a2(t3, u3);
-}, l.unmount = function(t3) {
-  v2 && v2(t3);
-  var u3, r3 = t3.__c;
-  r3 && r3.__H && (r3.__H.__.forEach(function(n2) {
-    try {
-      g2(n2);
-    } catch (n3) {
-      u3 = n3;
-    }
-  }), u3 && l.__e(u3, r3.__v));
-};
-var b2 = typeof requestAnimationFrame == "function";
-function g2(n2) {
-  var t3 = u2, r3 = n2.__c;
-  typeof r3 == "function" && (n2.__c = void 0, r3()), u2 = t3;
-}
-function j2(n2) {
-  var t3 = u2;
-  n2.__c = n2.__(), u2 = t3;
-}
-
-// node_modules/preact/compat/dist/compat.module.js
-function S2(n2, t3) {
-  for (var e3 in t3)
-    n2[e3] = t3[e3];
-  return n2;
-}
-function C2(n2, t3) {
-  for (var e3 in n2)
-    if (e3 !== "__source" && !(e3 in t3))
-      return true;
-  for (var r3 in t3)
-    if (r3 !== "__source" && n2[r3] !== t3[r3])
-      return true;
-  return false;
-}
-function E(n2) {
-  this.props = n2;
-}
-(E.prototype = new _()).isPureReactComponent = true, E.prototype.shouldComponentUpdate = function(n2, t3) {
-  return C2(this.props, n2) || C2(this.state, t3);
-};
-var w2 = l.__b;
-l.__b = function(n2) {
-  n2.type && n2.type.__f && n2.ref && (n2.props.ref = n2.ref, n2.ref = null), w2 && w2(n2);
-};
-var R = typeof Symbol != "undefined" && Symbol.for && Symbol.for("react.forward_ref") || 3911;
-var A3 = l.__e;
-l.__e = function(n2, t3, e3) {
-  if (n2.then) {
-    for (var r3, u3 = t3; u3 = u3.__; )
-      if ((r3 = u3.__c) && r3.__c)
-        return t3.__e == null && (t3.__e = e3.__e, t3.__k = e3.__k), r3.__c(n2, t3);
-  }
-  A3(n2, t3, e3);
-};
-var O2 = l.unmount;
-function L2() {
-  this.__u = 0, this.t = null, this.__b = null;
-}
-function U(n2) {
-  var t3 = n2.__.__c;
-  return t3 && t3.__e && t3.__e(n2);
-}
-function M2() {
-  this.u = null, this.o = null;
-}
-l.unmount = function(n2) {
-  var t3 = n2.__c;
-  t3 && t3.__R && t3.__R(), t3 && n2.__h === true && (n2.type = null), O2 && O2(n2);
-}, (L2.prototype = new _()).__c = function(n2, t3) {
-  var e3 = t3.__c, r3 = this;
-  r3.t == null && (r3.t = []), r3.t.push(e3);
-  var u3 = U(r3.__v), o2 = false, i3 = function() {
-    o2 || (o2 = true, e3.__R = null, u3 ? u3(l3) : l3());
-  };
-  e3.__R = i3;
-  var l3 = function() {
-    if (!--r3.__u) {
-      if (r3.state.__e) {
-        var n3 = r3.state.__e;
-        r3.__v.__k[0] = function n4(t5, e4, r4) {
-          return t5 && (t5.__v = null, t5.__k = t5.__k && t5.__k.map(function(t6) {
-            return n4(t6, e4, r4);
-          }), t5.__c && t5.__c.__P === e4 && (t5.__e && r4.insertBefore(t5.__e, t5.__d), t5.__c.__e = true, t5.__c.__P = r4)), t5;
-        }(n3, n3.__c.__P, n3.__c.__O);
-      }
-      var t4;
-      for (r3.setState({ __e: r3.__b = null }); t4 = r3.t.pop(); )
-        t4.forceUpdate();
-    }
-  }, c3 = t3.__h === true;
-  r3.__u++ || c3 || r3.setState({ __e: r3.__b = r3.__v.__k[0] }), n2.then(i3, i3);
-}, L2.prototype.componentWillUnmount = function() {
-  this.t = [];
-}, L2.prototype.render = function(n2, t3) {
-  if (this.__b) {
-    if (this.__v.__k) {
-      var e3 = document.createElement("div"), r3 = this.__v.__k[0].__c;
-      this.__v.__k[0] = function n3(t4, e4, r4) {
-        return t4 && (t4.__c && t4.__c.__H && (t4.__c.__H.__.forEach(function(n4) {
-          typeof n4.__c == "function" && n4.__c();
-        }), t4.__c.__H = null), (t4 = S2({}, t4)).__c != null && (t4.__c.__P === r4 && (t4.__c.__P = e4), t4.__c = null), t4.__k = t4.__k && t4.__k.map(function(t5) {
-          return n3(t5, e4, r4);
-        })), t4;
-      }(this.__b, e3, r3.__O = r3.__P);
-    }
-    this.__b = null;
-  }
-  var u3 = t3.__e && v(d, null, n2.fallback);
-  return u3 && (u3.__h = null), [v(d, null, t3.__e ? null : n2.children), u3];
-};
-var T3 = function(n2, t3, e3) {
-  if (++e3[1] === e3[0] && n2.o.delete(t3), n2.props.revealOrder && (n2.props.revealOrder[0] !== "t" || !n2.o.size))
-    for (e3 = n2.u; e3; ) {
-      for (; e3.length > 3; )
-        e3.pop()();
-      if (e3[1] < e3[0])
-        break;
-      n2.u = e3 = e3[2];
-    }
-};
-(M2.prototype = new _()).__e = function(n2) {
-  var t3 = this, e3 = U(t3.__v), r3 = t3.o.get(n2);
-  return r3[0]++, function(u3) {
-    var o2 = function() {
-      t3.props.revealOrder ? (r3.push(u3), T3(t3, n2, r3)) : u3();
-    };
-    e3 ? e3(o2) : o2();
-  };
-}, M2.prototype.render = function(n2) {
-  this.u = null, this.o = new Map();
-  var t3 = A(n2.children);
-  n2.revealOrder && n2.revealOrder[0] === "b" && t3.reverse();
-  for (var e3 = t3.length; e3--; )
-    this.o.set(t3[e3], this.u = [1, 0, this.u]);
-  return n2.children;
-}, M2.prototype.componentDidUpdate = M2.prototype.componentDidMount = function() {
-  var n2 = this;
-  this.o.forEach(function(t3, e3) {
-    T3(n2, e3, t3);
-  });
-};
-var j3 = typeof Symbol != "undefined" && Symbol.for && Symbol.for("react.element") || 60103;
-var P2 = /^(?:accent|alignment|arabic|baseline|cap|clip(?!PathU)|color|dominant|fill|flood|font|glyph(?!R)|horiz|marker(?!H|W|U)|overline|paint|stop|strikethrough|stroke|text(?!L)|underline|unicode|units|v|vector|vert|word|writing|x(?!C))[A-Z]/;
-var V = typeof document != "undefined";
-var z2 = function(n2) {
-  return (typeof Symbol != "undefined" && typeof Symbol() == "symbol" ? /fil|che|rad/i : /fil|che|ra/i).test(n2);
-};
-function B2(n2, t3, e3) {
-  return t3.__k == null && (t3.textContent = ""), S(n2, t3), typeof e3 == "function" && e3(), n2 ? n2.__c : null;
-}
-_.prototype.isReactComponent = {}, ["componentWillMount", "componentWillReceiveProps", "componentWillUpdate"].forEach(function(n2) {
-  Object.defineProperty(_.prototype, n2, { configurable: true, get: function() {
-    return this["UNSAFE_" + n2];
-  }, set: function(t3) {
-    Object.defineProperty(this, n2, { configurable: true, writable: true, value: t3 });
-  } });
-});
-var H2 = l.event;
-function Z() {
-}
-function Y() {
-  return this.cancelBubble;
-}
-function q2() {
-  return this.defaultPrevented;
-}
-l.event = function(n2) {
-  return H2 && (n2 = H2(n2)), n2.persist = Z, n2.isPropagationStopped = Y, n2.isDefaultPrevented = q2, n2.nativeEvent = n2;
-};
-var G;
-var J = { configurable: true, get: function() {
-  return this.class;
-} };
-var K = l.vnode;
-l.vnode = function(n2) {
-  var t3 = n2.type, e3 = n2.props, r3 = e3;
-  if (typeof t3 == "string") {
-    var u3 = t3.indexOf("-") === -1;
-    for (var o2 in r3 = {}, e3) {
-      var i3 = e3[o2];
-      V && o2 === "children" && t3 === "noscript" || o2 === "value" && "defaultValue" in e3 && i3 == null || (o2 === "defaultValue" && "value" in e3 && e3.value == null ? o2 = "value" : o2 === "download" && i3 === true ? i3 = "" : /ondoubleclick/i.test(o2) ? o2 = "ondblclick" : /^onchange(textarea|input)/i.test(o2 + t3) && !z2(e3.type) ? o2 = "oninput" : /^onfocus$/i.test(o2) ? o2 = "onfocusin" : /^onblur$/i.test(o2) ? o2 = "onfocusout" : /^on(Ani|Tra|Tou|BeforeInp)/.test(o2) ? o2 = o2.toLowerCase() : u3 && P2.test(o2) ? o2 = o2.replace(/[A-Z0-9]/, "-$&").toLowerCase() : i3 === null && (i3 = void 0), r3[o2] = i3);
-    }
-    t3 == "select" && r3.multiple && Array.isArray(r3.value) && (r3.value = A(e3.children).forEach(function(n3) {
-      n3.props.selected = r3.value.indexOf(n3.props.value) != -1;
-    })), t3 == "select" && r3.defaultValue != null && (r3.value = A(e3.children).forEach(function(n3) {
-      n3.props.selected = r3.multiple ? r3.defaultValue.indexOf(n3.props.value) != -1 : r3.defaultValue == n3.props.value;
-    })), n2.props = r3, e3.class != e3.className && (J.enumerable = "className" in e3, e3.className != null && (r3.class = e3.className), Object.defineProperty(r3, "className", J));
-  }
-  n2.$$typeof = j3, K && K(n2);
-};
-var Q = l.__r;
-l.__r = function(n2) {
-  Q && Q(n2), G = n2.__c;
 };
 
 // src/settings.tsx
-var SERVER_ADDRESS_CHANGED = "server-address-changed";
-var CONTAINER_HEIGHT_CHANGED = "container-height-changed";
+var import_obsidian2 = __toModule(require("obsidian"));
+var DEBOUNCE_TIMEOUT = 1e3;
 var DEFAULT_SETTINGS = {
   address: "http://localhost:8080",
-  containerHeight: "90%",
-  autoContainerHeight: true
+  displayText: "CALIBRE",
+  splitDirection: "horizontal"
 };
-var CalibreSettingTab = class extends import_obsidian.PluginSettingTab {
+var CalibreSettingTab = class extends import_obsidian2.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
     this.plugin = plugin;
@@ -603,139 +104,36 @@ var CalibreSettingTab = class extends import_obsidian.PluginSettingTab {
     const { containerEl } = this;
     containerEl.empty();
     containerEl.createEl("h2", { text: "Calibre Settings" });
-    new import_obsidian.Setting(containerEl).setName("Server Address").setDesc("The address of calibre Content server.").addText((text) => {
+    new import_obsidian2.Setting(containerEl).setName("Server Address").setDesc("The address of calibre Content server.").addText((text) => {
       text.inputEl.size = 25;
-      text.setPlaceholder(DEFAULT_SETTINGS.address).setValue(this.plugin.settings.address).onChange((value) => __async(this, null, function* () {
+      text.setPlaceholder(DEFAULT_SETTINGS.address).setValue(this.plugin.settings.address).onChange((0, import_obsidian2.debounce)((value) => __async(this, null, function* () {
         this.plugin.settings.address = value;
-        yield this.plugin.saveSettings(SERVER_ADDRESS_CHANGED);
-      }));
+        this.plugin.saveData(this.plugin.settings);
+      }), DEBOUNCE_TIMEOUT));
     });
-    new import_obsidian.Setting(containerEl).setName("Auto Container Height").setDesc("When toggle on, Container Height will be ignored.").addToggle((toggle) => {
-      toggle.setValue(this.plugin.settings.autoContainerHeight).onChange((value) => __async(this, null, function* () {
-        this.plugin.settings.autoContainerHeight = value;
-        yield this.plugin.saveSettings(CONTAINER_HEIGHT_CHANGED);
-      }));
+    new import_obsidian2.Setting(containerEl).setName("View Display Text").setDesc("The title of calibre view.").addText((text) => {
+      text.inputEl.size = 25;
+      text.setPlaceholder(DEFAULT_SETTINGS.displayText).setValue(this.plugin.settings.displayText).onChange((0, import_obsidian2.debounce)((value) => __async(this, null, function* () {
+        this.plugin.settings.displayText = value;
+        this.plugin.saveData(this.plugin.settings);
+      }), DEBOUNCE_TIMEOUT));
     });
-    new import_obsidian.Setting(containerEl).setName("Container Height").setDesc("Change default height of the container, percent or height with a valid CSS unit. e.g., 90%, 860px.").addText((text) => {
-      text.setPlaceholder(DEFAULT_SETTINGS.containerHeight).setValue(this.plugin.settings.containerHeight).onChange((value) => __async(this, null, function* () {
-        this.plugin.settings.containerHeight = value;
-        yield this.plugin.saveSettings(CONTAINER_HEIGHT_CHANGED);
-      }));
-    });
-    if (import_obsidian.Platform.isDesktopApp) {
-      B2(/* @__PURE__ */ v(d, null, /* @__PURE__ */ v("p", null, "Make a donation to support Calibre plugin development."), /* @__PURE__ */ v("p", null, "\u2764\uFE0F Thank you for your support. \u2764\uFE0F"), /* @__PURE__ */ v("a", {
-        href: "https://paypal.me/caronchenhz",
-        className: "paypal"
-      }, /* @__PURE__ */ v("svg", {
-        width: "145px",
-        height: "37px",
-        viewBox: "0 0 145 37",
-        version: "1.1",
-        xmlns: "http://www.w3.org/2000/svg",
-        xmlnsXlink: "http://www.w3.org/1999/xlink"
-      }, /* @__PURE__ */ v("defs", null, /* @__PURE__ */ v("polygon", {
-        id: "path-1",
-        points: "0 0.30377 29.7890799 0.30377 29.7890799 36.629778 0 36.629778"
-      }), /* @__PURE__ */ v("polygon", {
-        id: "path-3",
-        points: "0 0.30377 27.0026179 0.30377 27.0026179 32.599368 0 32.599368"
-      }), /* @__PURE__ */ v("polygon", {
-        id: "path-5",
-        points: "0 0.30377 27.0025944 0.30377 27.0025944 32.599368 0 32.599368"
-      })), /* @__PURE__ */ v("g", {
-        id: "Page-1",
-        stroke: "none",
-        strokeWidth: "1",
-        fill: "none",
-        fillRule: "evenodd"
-      }, /* @__PURE__ */ v("g", {
-        id: "01.2---Corp-Landing---Sticky-Nav",
-        transform: "translate(-80.000000, -21.000000)"
-      }, /* @__PURE__ */ v("g", {
-        id: "logo-paypal",
-        transform: "translate(80.000000, 21.000000)"
-      }, /* @__PURE__ */ v("path", {
-        d: "M112.489747,16.203225 C112.054389,19.158415 109.870796,19.158415 107.758093,19.158415 L106.556562,19.158415 L107.399352,13.640975 C107.450549,13.307605 107.728735,13.061925 108.055253,13.061925 L108.606253,13.061925 C110.04408,13.061925 111.402426,13.061925 112.102364,13.908485 C112.521611,14.415015 112.647994,15.165745 112.489747,16.203225 M111.570698,8.493535 L103.60429,8.493535 C103.059735,8.493535 102.595735,8.903125 102.511241,9.458865 L99.2897346,30.568475 C99.2260062,30.985095 99.5374877,31.362125 99.9456358,31.362125 L104.033204,31.362125 C104.414142,31.362125 104.739228,31.075005 104.798302,30.686135 L105.711623,24.701385 C105.796833,24.145275 106.260475,23.735315 106.805031,23.735315 L109.325525,23.735315 C114.572735,23.735315 117.600907,21.111645 118.3925,15.910185 C118.748735,13.635425 118.406821,11.847955 117.376068,10.596615 C116.243278,9.220955 114.235475,8.493535 111.570698,8.493535",
-        id: "Fill-1",
-        fill: "#009CDE"
-      }), /* @__PURE__ */ v("path", {
-        d: "M55.6725531,16.203225 C55.2371951,19.158415 53.0532444,19.158415 50.9412568,19.158415 L49.7393679,19.158415 L50.582158,13.640975 C50.6333556,13.307605 50.9115407,13.061925 51.2380593,13.061925 L51.7890593,13.061925 C53.2268864,13.061925 54.5852321,13.061925 55.2851704,13.908485 C55.7040593,14.415015 55.8308,15.165745 55.6725531,16.203225 M54.7535037,8.493535 L46.7870963,8.493535 C46.2425407,8.493535 45.7788988,8.903125 45.6936889,9.458865 L42.4725407,30.568475 C42.4091704,30.985095 42.7206519,31.362125 43.128442,31.362125 L46.9320963,31.362125 C47.4766519,31.362125 47.9402938,30.952165 48.0255037,30.396055 L48.8944296,24.701385 C48.9792815,24.145275 49.4432815,23.735315 49.987837,23.735315 L52.5086889,23.735315 C57.7555407,23.735315 60.7840716,21.111645 61.5753062,15.910185 C61.9315407,13.635425 61.5896272,11.847955 60.5592321,10.596615 C59.426084,9.220955 57.4182815,8.493535 54.7535037,8.493535",
-        id: "Fill-3",
-        fill: "#003087"
-      }), /* @__PURE__ */ v("path", {
-        d: "M73.2472333,23.781713 C72.8788259,26.034273 71.1484926,27.546093 68.9416284,27.546093 C67.8353321,27.546093 66.949579,27.178313 66.3803198,26.482343 C65.8160728,25.791923 65.6034062,24.808093 65.7824185,23.712893 C66.1261222,21.480683 67.8840235,19.919653 70.0572333,19.919653 C71.140616,19.919653 72.0199247,20.291133 72.6002827,20.994133 C73.184579,21.701943 73.4144309,22.692063 73.2472333,23.781713 M78.563184,16.108653 L74.7487889,16.108653 C74.4219123,16.108653 74.1437272,16.354333 74.0925296,16.688073 L73.9253321,17.790303 L73.6582457,17.391073 C72.8322827,16.151573 70.9913198,15.737913 69.1525049,15.737913 C64.9385543,15.737913 61.338616,19.038313 60.6379617,23.667013 C60.2731346,25.976553 60.7908383,28.183233 62.0578877,29.723543 C63.222184,31.138793 64.8830605,31.727833 66.862221,31.727833 C70.2588012,31.727833 72.1430852,29.472683 72.1430852,29.472683 L71.9726654,30.568253 C71.908937,30.984873 72.2204185,31.361903 72.6285667,31.361903 L76.0638136,31.361903 C76.6083691,31.361903 77.0720111,30.952683 77.156863,30.396573 L79.2190852,16.901563 C79.2824556,16.485313 78.9709741,16.108653 78.563184,16.108653",
-        id: "Fill-5",
-        fill: "#003087"
-      }), /* @__PURE__ */ v("path", {
-        d: "M130.064427,23.781713 C129.69602,26.034273 127.966044,27.546093 125.75918,27.546093 C124.652526,27.546093 123.766773,27.178313 123.197156,26.482343 C122.633267,25.791923 122.4206,24.808093 122.599612,23.712893 C122.943316,21.480683 124.701217,19.919653 126.874427,19.919653 C127.957452,19.919653 128.837119,20.291133 129.417477,20.994133 C130.001773,21.701943 130.231625,22.692063 130.064427,23.781713 M135.380378,16.108653 L131.565983,16.108653 C131.239106,16.108653 130.960921,16.354333 130.909723,16.688073 L130.742526,17.790303 L130.47544,17.391073 C129.649477,16.151573 127.808156,15.737913 125.969699,15.737913 C121.755748,15.737913 118.15581,19.038313 117.455156,23.667013 C117.090686,25.976553 117.608032,28.183233 118.875081,29.723543 C120.03902,31.138793 121.700254,31.727833 123.679415,31.727833 C127.075995,31.727833 128.960279,29.472683 128.960279,29.472683 L128.789859,30.568253 C128.726131,30.984873 129.037612,31.361903 129.44576,31.361903 L132.881007,31.361903 C133.425563,31.361903 133.889205,30.952683 133.974057,30.396573 L136.036279,16.901563 C136.099649,16.485313 135.788168,16.108653 135.380378,16.108653",
-        id: "Fill-7",
-        fill: "#009CDE"
-      }), /* @__PURE__ */ v("path", {
-        d: "M98.8795457,16.108727 L95.0454593,16.108727 C94.678842,16.108727 94.3358543,16.296687 94.1296321,16.610077 L88.8408914,24.660167 L86.5992988,16.924947 C86.4593111,16.440617 86.0278914,16.108727 85.5391877,16.108727 L81.7702617,16.108727 C81.3148543,16.108727 80.9951383,16.571227 81.1415704,17.016707 L85.3633975,29.823147 L81.3925457,35.613277 C81.0807062,36.068007 81.3954099,36.696267 81.9345951,36.696267 L85.7647432,36.696267 C86.1277802,36.696267 86.4675457,36.512377 86.674484,36.204167 L99.4251753,17.186167 C99.7302123,16.731067 99.4151506,16.108727 98.8795457,16.108727",
-        id: "Fill-9",
-        fill: "#003087"
-      }), /* @__PURE__ */ v("path", {
-        d: "M139.876523,9.07314 L136.606684,30.56903 C136.543314,30.98565 136.855153,31.36194 137.262585,31.36194 L140.551042,31.36194 C141.095598,31.36194 141.55924,30.95235 141.644091,30.39661 L144.867746,9.287 C144.931474,8.87038 144.619993,8.49372 144.211844,8.49372 L140.532425,8.49372 C140.205548,8.49372 139.927363,8.7394 139.876523,9.07314",
-        id: "Fill-11",
-        fill: "#009CDE"
-      }), /* @__PURE__ */ v("g", {
-        id: "Group-15",
-        transform: "translate(0.000000, 0.066415)"
-      }, /* @__PURE__ */ v("mask", {
-        id: "mask-2",
-        fill: "white"
-      }, /* @__PURE__ */ v("use", {
-        xlinkHref: "#path-1"
-      })), /* @__PURE__ */ v("g", {
-        id: "Clip-14"
-      }), /* @__PURE__ */ v("path", {
-        d: "M26.8450852,9.532828 C27.2739988,6.706768 26.842221,4.784248 25.363221,3.042288 C23.7349247,1.124948 20.7933938,0.303548 17.0294802,0.303548 L6.10471481,0.303548 C5.33567778,0.303548 4.68085062,0.881858 4.56091235,1.667368 L0.0114925926,31.479008 C-0.0780135802,32.067308 0.361998765,32.599368 0.938060494,32.599368 L7.68252963,32.599368 L7.21709753,35.650018 C7.13869012,36.164688 7.52320864,36.629778 8.02730741,36.629778 L13.7120235,36.629778 C14.3851099,36.629778 14.9579494,36.123988 15.0628506,35.437268 L15.1187025,35.138308 L16.1895543,28.120148 L16.2586531,27.732388 C16.3635543,27.045668 16.9363938,26.539508 17.6091222,26.539508 L18.4594309,26.539508 C23.9669247,26.539508 28.2793321,24.227378 29.539221,17.539998 C30.0658753,14.745388 29.7934185,12.413278 28.4014185,10.773438 C27.9800235,10.277268 27.4562333,9.867308 26.8450852,9.532828",
-        id: "Fill-13",
-        fill: "#009CDE",
-        mask: "url(#mask-2)"
-      })), /* @__PURE__ */ v("g", {
-        id: "Group-18",
-        transform: "translate(0.000000, 0.066415)"
-      }, /* @__PURE__ */ v("mask", {
-        id: "mask-4",
-        fill: "white"
-      }, /* @__PURE__ */ v("use", {
-        xlinkHref: "#path-3"
-      })), /* @__PURE__ */ v("g", {
-        id: "Clip-17"
-      }), /* @__PURE__ */ v("path", {
-        d: "M26.8450852,9.532828 C27.2739988,6.706768 26.842221,4.784248 25.363221,3.042288 C23.7349247,1.124948 20.7933938,0.303548 17.0294802,0.303548 L6.10471481,0.303548 C5.33567778,0.303548 4.68085062,0.881858 4.56091235,1.667368 L0.0114925926,31.479008 C-0.0780135802,32.067308 0.361998765,32.599368 0.938060494,32.599368 L7.68252963,32.599368 L9.37670247,21.496778 L9.32407284,21.844948 C9.44401111,21.059808 10.0931099,20.481498 10.8625049,20.481498 L14.0679,20.481498 C20.3634062,20.481498 25.2930481,17.838218 26.7333815,10.194018 C26.7759864,9.967578 26.8125049,9.748538 26.8450852,9.532828",
-        id: "Fill-16",
-        fill: "#012169",
-        mask: "url(#mask-4)"
-      })), /* @__PURE__ */ v("g", {
-        id: "Group-21",
-        transform: "translate(0.000000, 0.066415)"
-      }, /* @__PURE__ */ v("mask", {
-        id: "mask-6",
-        fill: "white"
-      }, /* @__PURE__ */ v("use", {
-        xlinkHref: "#path-5"
-      })), /* @__PURE__ */ v("g", {
-        id: "Clip-20"
-      }), /* @__PURE__ */ v("path", {
-        d: "M11.196721,9.570198 C11.268684,9.098078 11.5622642,8.711058 11.9571654,8.515698 C12.1365358,8.426898 12.3370296,8.377318 12.5471901,8.377318 L21.1107827,8.377318 C22.1254247,8.377318 23.0713259,8.445768 23.9363136,8.590068 C24.1833506,8.630768 24.4239432,8.678128 24.6573753,8.731778 C24.8911654,8.785428 25.1177951,8.845368 25.3372642,8.911598 C25.4471778,8.944898 25.5549432,8.979678 25.6612765,9.015938 C26.0858938,9.161718 26.4811531,9.333398 26.8452642,9.532828 C27.2738198,6.706768 26.842042,4.783878 25.363042,3.042288 C23.7351037,1.124948 20.7932148,0.303548 17.0296593,0.303548 L6.10489383,0.303548 C5.33549877,0.303548 4.6806716,0.881858 4.56073333,1.667368 L0.0116716049,31.479008 C-0.0781925926,32.067308 0.361819753,32.599368 0.937881481,32.599368 L7.68270864,32.599368 L9.37688148,21.496778 L11.196721,9.570198 Z",
-        id: "Fill-19",
-        fill: "#003087",
-        mask: "url(#mask-6)"
-      })))))))), containerEl.createDiv({ cls: "calibre-donation" }));
+    new import_obsidian2.Setting(containerEl).setName("Split Direction").addDropdown((dropdown) => dropdown.addOption("horizontal", "Horizontal").addOption("vertical", "Vertical").setValue(this.plugin.settings.splitDirection).onChange((value) => __async(this, null, function* () {
+      this.plugin.settings.splitDirection = value;
+      this.plugin.saveData(this.plugin.settings);
+    })));
+    if (import_obsidian2.Platform.isDesktopApp) {
+      const donation = containerEl.createDiv({ cls: "calibre-donation" });
+      donation.createEl("p", { text: "Make a donation to support Calibre plugin development." });
+      const link = donation.createEl("a", { href: "https://paypal.me/caronchenhz", cls: "paypal" });
+      const img = link.createEl("img");
+      img.src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTI0cHgiIGhlaWdodD0iMzNweCIgdmlld0JveD0iMCAwIDEyNCAzMyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTI0IDMzIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiMyNTNCODAiIGQ9Ik00Ni4yMTEsNi43NDloLTYuODM5Yy0wLjQ2OCwwLTAuODY2LDAuMzQtMC45MzksMC44MDJsLTIuNzY2LDE3LjUzN2MtMC4wNTUsMC4zNDYsMC4yMTMsMC42NTgsMC41NjQsMC42NTgNCgloMy4yNjVjMC40NjgsMCwwLjg2Ni0wLjM0LDAuOTM5LTAuODAzbDAuNzQ2LTQuNzNjMC4wNzItMC40NjMsMC40NzEtMC44MDMsMC45MzgtMC44MDNoMi4xNjVjNC41MDUsMCw3LjEwNS0yLjE4LDcuNzg0LTYuNQ0KCWMwLjMwNi0xLjg5LDAuMDEzLTMuMzc1LTAuODcyLTQuNDE1QzUwLjIyNCw3LjM1Myw0OC41LDYuNzQ5LDQ2LjIxMSw2Ljc0OXogTTQ3LDEzLjE1NGMtMC4zNzQsMi40NTQtMi4yNDksMi40NTQtNC4wNjIsMi40NTQNCgloLTEuMDMybDAuNzI0LTQuNTgzYzAuMDQzLTAuMjc3LDAuMjgzLTAuNDgxLDAuNTYzLTAuNDgxaDAuNDczYzEuMjM1LDAsMi40LDAsMy4wMDIsMC43MDRDNDcuMDI3LDExLjY2OCw0Ny4xMzcsMTIuMjkyLDQ3LDEzLjE1NHoiDQoJLz4NCjxwYXRoIGZpbGw9IiMyNTNCODAiIGQ9Ik02Ni42NTQsMTMuMDc1aC0zLjI3NWMtMC4yNzksMC0wLjUyLDAuMjA0LTAuNTYzLDAuNDgxbC0wLjE0NSwwLjkxNmwtMC4yMjktMC4zMzINCgljLTAuNzA5LTEuMDI5LTIuMjktMS4zNzMtMy44NjgtMS4zNzNjLTMuNjE5LDAtNi43MSwyLjc0MS03LjMxMiw2LjU4NmMtMC4zMTMsMS45MTgsMC4xMzIsMy43NTIsMS4yMiw1LjAzMQ0KCWMwLjk5OCwxLjE3NiwyLjQyNiwxLjY2Niw0LjEyNSwxLjY2NmMyLjkxNiwwLDQuNTMzLTEuODc1LDQuNTMzLTEuODc1bC0wLjE0NiwwLjkxYy0wLjA1NSwwLjM0OCwwLjIxMywwLjY2LDAuNTYyLDAuNjZoMi45NQ0KCWMwLjQ2OSwwLDAuODY1LTAuMzQsMC45MzktMC44MDNsMS43Ny0xMS4yMDlDNjcuMjcxLDEzLjM4OCw2Ny4wMDQsMTMuMDc1LDY2LjY1NCwxMy4wNzV6IE02Mi4wODksMTkuNDQ5DQoJYy0wLjMxNiwxLjg3MS0xLjgwMSwzLjEyNy0zLjY5NSwzLjEyN2MtMC45NTEsMC0xLjcxMS0wLjMwNS0yLjE5OS0wLjg4M2MtMC40ODQtMC41NzQtMC42NjgtMS4zOTEtMC41MTQtMi4zMDENCgljMC4yOTUtMS44NTUsMS44MDUtMy4xNTIsMy42Ny0zLjE1MmMwLjkzLDAsMS42ODYsMC4zMDksMi4xODQsMC44OTJDNjIuMDM0LDE3LjcyMSw2Mi4yMzIsMTguNTQzLDYyLjA4OSwxOS40NDl6Ii8+DQo8cGF0aCBmaWxsPSIjMjUzQjgwIiBkPSJNODQuMDk2LDEzLjA3NWgtMy4yOTFjLTAuMzE0LDAtMC42MDksMC4xNTYtMC43ODcsMC40MTdsLTQuNTM5LDYuNjg2bC0xLjkyNC02LjQyNQ0KCWMtMC4xMjEtMC40MDItMC40OTItMC42NzgtMC45MTItMC42NzhoLTMuMjM0Yy0wLjM5MywwLTAuNjY2LDAuMzg0LTAuNTQxLDAuNzU0bDMuNjI1LDEwLjYzOGwtMy40MDgsNC44MTENCgljLTAuMjY4LDAuMzc5LDAuMDAyLDAuOSwwLjQ2NSwwLjloMy4yODdjMC4zMTIsMCwwLjYwNC0wLjE1MiwwLjc4MS0wLjQwOEw4NC41NjQsMTMuOTdDODQuODI2LDEzLjU5Miw4NC41NTcsMTMuMDc1LDg0LjA5NiwxMy4wNzV6DQoJIi8+DQo8cGF0aCBmaWxsPSIjMTc5QkQ3IiBkPSJNOTQuOTkyLDYuNzQ5aC02Ljg0Yy0wLjQ2NywwLTAuODY1LDAuMzQtMC45MzgsMC44MDJsLTIuNzY2LDE3LjUzN2MtMC4wNTUsMC4zNDYsMC4yMTMsMC42NTgsMC41NjIsMC42NTgNCgloMy41MWMwLjMyNiwwLDAuNjA1LTAuMjM4LDAuNjU2LTAuNTYybDAuNzg1LTQuOTcxYzAuMDcyLTAuNDYzLDAuNDcxLTAuODAzLDAuOTM4LTAuODAzaDIuMTY0YzQuNTA2LDAsNy4xMDUtMi4xOCw3Ljc4NS02LjUNCgljMC4zMDctMS44OSwwLjAxMi0zLjM3NS0wLjg3My00LjQxNUM5OS4wMDQsNy4zNTMsOTcuMjgxLDYuNzQ5LDk0Ljk5Miw2Ljc0OXogTTk1Ljc4MSwxMy4xNTRjLTAuMzczLDIuNDU0LTIuMjQ4LDIuNDU0LTQuMDYyLDIuNDU0DQoJaC0xLjAzMWwwLjcyNS00LjU4M2MwLjA0My0wLjI3NywwLjI4MS0wLjQ4MSwwLjU2Mi0wLjQ4MWgwLjQ3M2MxLjIzNCwwLDIuNCwwLDMuMDAyLDAuNzA0DQoJQzk1LjgwOSwxMS42NjgsOTUuOTE4LDEyLjI5Miw5NS43ODEsMTMuMTU0eiIvPg0KPHBhdGggZmlsbD0iIzE3OUJENyIgZD0iTTExNS40MzQsMTMuMDc1aC0zLjI3M2MtMC4yODEsMC0wLjUyLDAuMjA0LTAuNTYyLDAuNDgxbC0wLjE0NSwwLjkxNmwtMC4yMy0wLjMzMg0KCWMtMC43MDktMS4wMjktMi4yODktMS4zNzMtMy44NjctMS4zNzNjLTMuNjE5LDAtNi43MDksMi43NDEtNy4zMTEsNi41ODZjLTAuMzEyLDEuOTE4LDAuMTMxLDMuNzUyLDEuMjE5LDUuMDMxDQoJYzEsMS4xNzYsMi40MjYsMS42NjYsNC4xMjUsMS42NjZjMi45MTYsMCw0LjUzMy0xLjg3NSw0LjUzMy0xLjg3NWwtMC4xNDYsMC45MWMtMC4wNTUsMC4zNDgsMC4yMTMsMC42NiwwLjU2NCwwLjY2aDIuOTQ5DQoJYzAuNDY3LDAsMC44NjUtMC4zNCwwLjkzOC0wLjgwM2wxLjc3MS0xMS4yMDlDMTE2LjA1MywxMy4zODgsMTE1Ljc4NSwxMy4wNzUsMTE1LjQzNCwxMy4wNzV6IE0xMTAuODY5LDE5LjQ0OQ0KCWMtMC4zMTQsMS44NzEtMS44MDEsMy4xMjctMy42OTUsMy4xMjdjLTAuOTQ5LDAtMS43MTEtMC4zMDUtMi4xOTktMC44ODNjLTAuNDg0LTAuNTc0LTAuNjY2LTEuMzkxLTAuNTE0LTIuMzAxDQoJYzAuMjk3LTEuODU1LDEuODA1LTMuMTUyLDMuNjctMy4xNTJjMC45MywwLDEuNjg2LDAuMzA5LDIuMTg0LDAuODkyQzExMC44MTYsMTcuNzIxLDExMS4wMTQsMTguNTQzLDExMC44NjksMTkuNDQ5eiIvPg0KPHBhdGggZmlsbD0iIzE3OUJENyIgZD0iTTExOS4yOTUsNy4yM2wtMi44MDcsMTcuODU4Yy0wLjA1NSwwLjM0NiwwLjIxMywwLjY1OCwwLjU2MiwwLjY1OGgyLjgyMmMwLjQ2OSwwLDAuODY3LTAuMzQsMC45MzktMC44MDMNCglsMi43NjgtMTcuNTM2YzAuMDU1LTAuMzQ2LTAuMjEzLTAuNjU5LTAuNTYyLTAuNjU5aC0zLjE2QzExOS41NzgsNi43NDksMTE5LjMzOCw2Ljk1MywxMTkuMjk1LDcuMjN6Ii8+DQo8cGF0aCBmaWxsPSIjMjUzQjgwIiBkPSJNNy4yNjYsMjkuMTU0bDAuNTIzLTMuMzIybC0xLjE2NS0wLjAyN0gxLjA2MUw0LjkyNywxLjI5MkM0LjkzOSwxLjIxOCw0Ljk3OCwxLjE0OSw1LjAzNSwxLjENCgljMC4wNTctMC4wNDksMC4xMy0wLjA3NiwwLjIwNi0wLjA3Nmg5LjM4YzMuMTE0LDAsNS4yNjMsMC42NDgsNi4zODUsMS45MjdjMC41MjYsMC42LDAuODYxLDEuMjI3LDEuMDIzLDEuOTE3DQoJYzAuMTcsMC43MjQsMC4xNzMsMS41ODksMC4wMDcsMi42NDRsLTAuMDEyLDAuMDc3djAuNjc2bDAuNTI2LDAuMjk4YzAuNDQzLDAuMjM1LDAuNzk1LDAuNTA0LDEuMDY1LDAuODEyDQoJYzAuNDUsMC41MTMsMC43NDEsMS4xNjUsMC44NjQsMS45MzhjMC4xMjcsMC43OTUsMC4wODUsMS43NDEtMC4xMjMsMi44MTJjLTAuMjQsMS4yMzItMC42MjgsMi4zMDUtMS4xNTIsMy4xODMNCgljLTAuNDgyLDAuODA5LTEuMDk2LDEuNDgtMS44MjUsMmMtMC42OTYsMC40OTQtMS41MjMsMC44NjktMi40NTgsMS4xMDljLTAuOTA2LDAuMjM2LTEuOTM5LDAuMzU1LTMuMDcyLDAuMzU1aC0wLjczDQoJYy0wLjUyMiwwLTEuMDI5LDAuMTg4LTEuNDI3LDAuNTI1Yy0wLjM5OSwwLjM0NC0wLjY2MywwLjgxNC0wLjc0NCwxLjMyOGwtMC4wNTUsMC4yOTlsLTAuOTI0LDUuODU1bC0wLjA0MiwwLjIxNQ0KCWMtMC4wMTEsMC4wNjgtMC4wMywwLjEwMi0wLjA1OCwwLjEyNWMtMC4wMjUsMC4wMjEtMC4wNjEsMC4wMzUtMC4wOTYsMC4wMzVINy4yNjZ6Ii8+DQo8cGF0aCBmaWxsPSIjMTc5QkQ3IiBkPSJNMjMuMDQ4LDcuNjY3TDIzLjA0OCw3LjY2N0wyMy4wNDgsNy42NjdjLTAuMDI4LDAuMTc5LTAuMDYsMC4zNjItMC4wOTYsMC41NQ0KCWMtMS4yMzcsNi4zNTEtNS40NjksOC41NDUtMTAuODc0LDguNTQ1SDkuMzI2Yy0wLjY2MSwwLTEuMjE4LDAuNDgtMS4zMjEsMS4xMzJsMCwwbDAsMEw2LjU5NiwyNi44M2wtMC4zOTksMi41MzMNCgljLTAuMDY3LDAuNDI4LDAuMjYzLDAuODE0LDAuNjk1LDAuODE0aDQuODgxYzAuNTc4LDAsMS4wNjktMC40MiwxLjE2LTAuOTlsMC4wNDgtMC4yNDhsMC45MTktNS44MzJsMC4wNTktMC4zMg0KCWMwLjA5LTAuNTcyLDAuNTgyLTAuOTkyLDEuMTYtMC45OTJoMC43M2M0LjcyOSwwLDguNDMxLTEuOTIsOS41MTMtNy40NzZjMC40NTItMi4zMjEsMC4yMTgtNC4yNTktMC45NzgtNS42MjINCglDMjQuMDIyLDguMjg2LDIzLjU3Myw3Ljk0NSwyMy4wNDgsNy42Njd6Ii8+DQo8cGF0aCBmaWxsPSIjMjIyRDY1IiBkPSJNMjEuNzU0LDcuMTUxYy0wLjE4OS0wLjA1NS0wLjM4NC0wLjEwNS0wLjU4NC0wLjE1Yy0wLjIwMS0wLjA0NC0wLjQwNy0wLjA4My0wLjYxOS0wLjExNw0KCWMtMC43NDItMC4xMi0xLjU1NS0wLjE3Ny0yLjQyNi0wLjE3N2gtNy4zNTJjLTAuMTgxLDAtMC4zNTMsMC4wNDEtMC41MDcsMC4xMTVDOS45MjcsNi45ODUsOS42NzUsNy4zMDYsOS42MTQsNy42OTlMOC4wNSwxNy42MDUNCglsLTAuMDQ1LDAuMjg5YzAuMTAzLTAuNjUyLDAuNjYtMS4xMzIsMS4zMjEtMS4xMzJoMi43NTJjNS40MDUsMCw5LjYzNy0yLjE5NSwxMC44NzQtOC41NDVjMC4wMzctMC4xODgsMC4wNjgtMC4zNzEsMC4wOTYtMC41NQ0KCWMtMC4zMTMtMC4xNjYtMC42NTItMC4zMDgtMS4wMTctMC40MjlDMjEuOTQxLDcuMjA4LDIxLjg0OCw3LjE3OSwyMS43NTQsNy4xNTF6Ii8+DQo8cGF0aCBmaWxsPSIjMjUzQjgwIiBkPSJNOS42MTQsNy42OTljMC4wNjEtMC4zOTMsMC4zMTMtMC43MTQsMC42NTItMC44NzZjMC4xNTUtMC4wNzQsMC4zMjYtMC4xMTUsMC41MDctMC4xMTVoNy4zNTINCgljMC44NzEsMCwxLjY4NCwwLjA1NywyLjQyNiwwLjE3N2MwLjIxMiwwLjAzNCwwLjQxOCwwLjA3MywwLjYxOSwwLjExN2MwLjIsMC4wNDUsMC4zOTUsMC4wOTUsMC41ODQsMC4xNQ0KCWMwLjA5NCwwLjAyOCwwLjE4NywwLjA1NywwLjI3OCwwLjA4NmMwLjM2NSwwLjEyMSwwLjcwNCwwLjI2NCwxLjAxNywwLjQyOWMwLjM2OC0yLjM0Ny0wLjAwMy0zLjk0NS0xLjI3Mi01LjM5Mg0KCUMyMC4zNzgsMC42ODIsMTcuODUzLDAsMTQuNjIyLDBoLTkuMzhjLTAuNjYsMC0xLjIyMywwLjQ4LTEuMzI1LDEuMTMzTDAuMDEsMjUuODk4Yy0wLjA3NywwLjQ5LDAuMzAxLDAuOTMyLDAuNzk1LDAuOTMyaDUuNzkxDQoJbDEuNDU0LTkuMjI1TDkuNjE0LDcuNjk5eiIvPg0KPC9zdmc+DQo=";
+      img.alt = "PayPal";
     }
   }
 };
 
 // src/tools.ts
-var CALIBRE_CONTAINER_FILE_IDENTIFIER = "THIS IS A GENERATED CALIBRE CONTAINER FILE BY CALIBRE PLUGIN. DO NOT EDIT.";
-function calibreContainer(address) {
-  return `<!--
-${CALIBRE_CONTAINER_FILE_IDENTIFIER}
--->
-<div class="calibre-container"><iframe src="${address}"></iframe></div>`;
-}
 var CALIBRE_ICON_ID = "calibre";
 var CALIBRE_ICON_SVG = `
 <g transform="translate(-24.920761,-148.42979)">
@@ -833,80 +231,30 @@ var CALIBRE_ICON_SVG = `
 	/55ysxEAAAAASUVORK5CYII=" x="24.920761" y="148.42979"/>
 </g>`;
 
-// src/main.ts
-var CALIBRE_CONTAINER_FILE_NAME = "@CALIBRE.Container";
-var CALIBRE_CONTAINER_FILE_PATH = `${CALIBRE_CONTAINER_FILE_NAME}.md`;
-var CalibrePlugin = class extends import_obsidian2.Plugin {
+// src/main.tsx
+var CalibrePlugin = class extends import_obsidian3.Plugin {
   onload() {
     return __async(this, null, function* () {
       try {
         yield this.loadSettings();
         this.addSettingTab(new CalibreSettingTab(this.app, this));
-        (0, import_obsidian2.addIcon)(CALIBRE_ICON_ID, CALIBRE_ICON_SVG);
-        this.addRibbonIcon(CALIBRE_ICON_ID, "Calibre", (event) => __async(this, null, function* () {
-          const calibre = yield this.createOrGetCalibreContainerFile();
-          if (calibre != null) {
-            this.app.workspace.getLeaf(true).setViewState({
-              type: "markdown",
-              state: { file: calibre.path, mode: "preview" }
-            });
-          }
+        (0, import_obsidian3.addIcon)(CALIBRE_ICON_ID, CALIBRE_ICON_SVG);
+        this.registerView(CALIBRE_VIEW_TYPE, (leaf) => new CalibreView(leaf, this.settings));
+        this.addRibbonIcon(CALIBRE_ICON_ID, "Calibre", () => __async(this, null, function* () {
+          this.activateView();
         }));
-        this.app.workspace.onLayoutReady(() => {
-          this.autoStylePreviewCalibreContainer(true);
+        this.addCommand({
+          id: "calibre-open-horizontally",
+          name: "Open horizontally",
+          callback: () => this.activateView("horizontal")
         });
-        this.registerEvent(this.app.workspace.on("resize", () => {
-          this.autoStylePreviewCalibreContainer();
-        }));
-        this.registerEvent(this.app.workspace.on("layout-change", () => {
-          this.autoStylePreviewCalibreContainer();
-        }));
-        this.registerEvent(this.app.workspace.on(`calibre:${CONTAINER_HEIGHT_CHANGED}`, () => {
-          this.autoStylePreviewCalibreContainer();
-        }));
-        this.registerEvent(this.app.vault.on(`calibre:${SERVER_ADDRESS_CHANGED}`, () => {
-          this.changeServerAddress();
-        }));
+        this.addCommand({
+          id: "calibre-open-vertically",
+          name: "Open vertically",
+          callback: () => this.activateView("vertical")
+        });
       } catch (error) {
         console.log(`Load error. ${error}`);
-      }
-    });
-  }
-  autoStylePreviewCalibreContainer(autoPreview) {
-    const upperCasePath = CALIBRE_CONTAINER_FILE_PATH.toUpperCase();
-    this.app.workspace.getLeavesOfType("markdown").filter((leaf) => {
-      var _a;
-      return ((_a = leaf.getViewState().state) == null ? void 0 : _a.file).toUpperCase() == upperCasePath;
-    }).forEach((leaf) => {
-      if (autoPreview) {
-        const state = leaf.getViewState();
-        state.state.mode = "preview";
-        leaf.setViewState(state);
-      }
-      let height = this.settings.containerHeight;
-      if (this.settings.autoContainerHeight) {
-        const style = getComputedStyle(leaf.view.containerEl.querySelector("div.markdown-preview-view"));
-        height = (parseFloat(style.height) - parseFloat(style.paddingTop) - parseFloat(style.paddingBottom)).toString() + "px";
-      }
-      leaf.view.containerEl.querySelectorAll("div.calibre-container").forEach((div) => div.style.paddingTop = height);
-    });
-  }
-  createOrGetCalibreContainerFile() {
-    return __async(this, null, function* () {
-      if (yield this.app.vault.adapter.exists(CALIBRE_CONTAINER_FILE_PATH, false)) {
-        return this.app.vault.getRoot().children.filter((file) => file instanceof import_obsidian2.TFile).filter((file) => file.name.toUpperCase() == CALIBRE_CONTAINER_FILE_PATH.toUpperCase()).first();
-      }
-      return this.app.vault.create(CALIBRE_CONTAINER_FILE_PATH, calibreContainer(this.settings.address));
-    });
-  }
-  changeServerAddress() {
-    return __async(this, null, function* () {
-      const calibre = yield this.createOrGetCalibreContainerFile();
-      const content = yield this.app.vault.read(calibre);
-      if (content.contains(CALIBRE_CONTAINER_FILE_IDENTIFIER)) {
-        yield this.app.vault.modify(calibre, calibreContainer(this.settings.address));
-      } else {
-        console.error("INVALID CALIBRE CONTAINER FILE FOUND.");
       }
     });
   }
@@ -915,19 +263,17 @@ var CalibrePlugin = class extends import_obsidian2.Plugin {
       this.settings = Object.assign(DEFAULT_SETTINGS, yield this.loadData());
     });
   }
-  saveSettings(type) {
+  activateView(direction) {
     return __async(this, null, function* () {
-      yield this.saveData(this.settings);
-      switch (type) {
-        case SERVER_ADDRESS_CHANGED:
-          this.app.vault.trigger(`calibre:${type}`);
-          break;
-        case CONTAINER_HEIGHT_CHANGED:
-          this.app.workspace.trigger(`calibre:${type}`);
-          break;
-        default:
-          break;
-      }
+      const leaf = this.app.workspace.splitActiveLeaf(direction != null ? direction : this.settings.splitDirection);
+      yield leaf.setViewState({
+        type: CALIBRE_VIEW_TYPE,
+        active: true
+      });
+      this.app.workspace.revealLeaf(leaf);
     });
+  }
+  onunload() {
+    this.app.workspace.detachLeavesOfType(CALIBRE_VIEW_TYPE);
   }
 };

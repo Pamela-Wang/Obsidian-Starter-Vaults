@@ -3,9 +3,9 @@
   "excludeFirstLineInNote": true,
   "headingFormat": "#",
   "newFileLocation": 2,
-  "customFolder": "pages/",
+  "customFolder": "/",
   "fileNamePrefix": "",
   "transcludeByDefault": true,
   "noteLinkTemplate": "[[{{new_note_title}}]]",
-  "refactoredNoteTemplate": "type:: #Atomic\ntopics::\nparent:: {{link}}\nsummary:: \n\n{{new_note_content}}\n\n"
+  "refactoredNoteTemplate": "mode:: #mode/zettelkasten🗳️ \nkind:: #Z/Idea💡 \nstatus:: #Zettel/Fleeting⚪ \nkind:: #Source/Book📖  \nstatus::  #Status/Blank⚪ \ntopics:: \ndate:: {{link}}\nsummary:: \n\n# Source\n{{new_note_content}}\n\n"
 }

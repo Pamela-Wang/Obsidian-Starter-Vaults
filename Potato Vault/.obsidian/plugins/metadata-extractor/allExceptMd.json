@@ -5,6 +5,10 @@
       "relativePath": "/"
     },
     {
+      "name": "00 System",
+      "relativePath": "00 System"
+    },
+    {
       "name": "10 Templates",
       "relativePath": "10 Templates"
     },
@@ -13,12 +17,12 @@
       "relativePath": "20 Periodic"
     },
     {
-      "name": "90 Meta",
-      "relativePath": "90 Meta"
-    },
-    {
       "name": "50 Pages",
       "relativePath": "50 Pages"
+    },
+    {
+      "name": "90 Meta",
+      "relativePath": "90 Meta"
     },
     {
       "name": "21 Daily Notes",
@@ -41,12 +45,27 @@
       "relativePath": "20 Periodic/25 Yearly Review"
     },
     {
-      "name": "55 All Pages",
-      "relativePath": "50 Pages/55 All Pages"
+      "name": "Readwise",
+      "relativePath": "50 Pages/Readwise"
+    },
+    {
+      "name": "92 Plugins",
+      "relativePath": "90 Meta/92 Plugins"
     },
     {
       "name": "Attachments",
       "relativePath": "90 Meta/Attachments"
+    },
+    {
+      "name": "Templater Scripts",
+      "relativePath": "90 Meta/92 Plugins/Templater Scripts"
+    }
+  ],
+  "nonMdFiles": [
+    {
+      "name": "getTitleSnippet.js",
+      "basename": "getTitleSnippet",
+      "relativePath": "90 Meta/92 Plugins/Templater Scripts/getTitleSnippet.js"
     }
   ]
 }

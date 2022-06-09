@@ -61,11 +61,12 @@ var TaskCollector = class {
   constructor(app) {
     this.app = app;
     this.app = app;
-    this.completedOrCanceled = new RegExp(/^(\s*- \[)[xX-](\] .*)$/);
-    this.anyListItem = new RegExp(/^(\s*- )([^\\[].*)$/);
-    this.anyTaskMark = new RegExp(/^(\s*- \[).(\] .*)$/);
+    this.anyListItem = new RegExp(/^([\s>]*- )([^\\[].*)$/);
+    this.anyTaskMark = new RegExp(/^([\s>]*- \[).(\] .*)$/);
+    this.blockQuote = new RegExp(/^(\s*>[\s>]*)(.*)$/);
     this.blockRef = new RegExp(/^(.*?)( \^[A-Za-z0-9-]+)?$/);
-    this.stripTask = new RegExp(/^(\s*-) \[.\] (.*)$/);
+    this.continuation = new RegExp(/^( {2,}|\t)/);
+    this.stripTask = new RegExp(/^([\s>]*-) \[.\] (.*)$/);
   }
   updateSettings(settings) {
     this.settings = settings;
@@ -88,7 +89,7 @@ var TaskCollector = class {
         }
       }
     }
-    const completedTasks = this.settings.supportCanceledTasks ? "xX-" : "xX";
+    const completedTasks = (this.settings.onlyLowercaseX ? "x" : "xX") + (this.settings.supportCanceledTasks ? "-" : "");
     if (this.settings.incompleteTaskValues.indexOf(" ") < 0) {
       this.settings.incompleteTaskValues = " " + this.settings.incompleteTaskValues;
     }
@@ -110,10 +111,10 @@ var TaskCollector = class {
     return param ? new RegExp(param + "( \\^[A-Za-z0-9-]+)?$") : null;
   }
   tryCreateCompleteRegex(param) {
-    return new RegExp(`^(\\s*- \\[)[${param}](\\] .*)$`);
+    return new RegExp(`^([\\s>]*- \\[)[${param}](\\] .*)$`);
   }
   tryCreateIncompleteRegex(param) {
-    return new RegExp(`^(\\s*- \\[)[${param}](\\] .*)$`);
+    return new RegExp(`^([\\s>]*- \\[)[${param}](\\] .*)$`);
   }
   removeCheckboxFromLine(lineText) {
     return lineText.replace(this.stripTask, "$1 $2");
@@ -124,6 +125,7 @@ var TaskCollector = class {
       marked = marked.replace(this.initSettings.removeRegExp, "");
     }
     if (this.settings.appendDateFormat) {
+      const strictLineEnding = lineText.endsWith("  ");
       let blockid = "";
       const match = this.blockRef.exec(marked);
       if (match && match[2]) {
@@ -134,6 +136,9 @@ var TaskCollector = class {
         marked += " ";
       }
       marked += (0, import_obsidian.moment)().format(this.settings.appendDateFormat) + blockid;
+      if (strictLineEnding) {
+        marked += "  ";
+      }
     }
     return marked;
   }
@@ -190,6 +195,7 @@ var TaskCollector = class {
   }
   resetTaskLine(lineText, mark = " ") {
     let marked = lineText.replace(this.anyTaskMark, "$1" + mark + "$2");
+    const strictLineEnding = lineText.endsWith("  ");
     let blockid = "";
     const match = this.blockRef.exec(marked);
     if (match && match[2]) {
@@ -200,6 +206,9 @@ var TaskCollector = class {
       marked = marked.replace(this.initSettings.resetRegExp, "");
     }
     marked = marked.replace(/\s*$/, blockid);
+    if (strictLineEnding) {
+      marked += "  ";
+    }
     return marked;
   }
   resetTaskOnLine(editor, i, mark) {
@@ -221,7 +230,7 @@ var TaskCollector = class {
       } else if (line.trim() === LOG_HEADING) {
         inCompletedSection = true;
         result.push(line);
-      } else if (this.completedOrCanceled.exec(line)) {
+      } else if (this.isCompletedTaskLine(line)) {
         result.push(this.resetTaskLine(line));
       } else {
         result.push(line);
@@ -243,6 +252,7 @@ var TaskCollector = class {
     const newTasks = [];
     let inCompletedSection = false;
     let inTask = false;
+    let inCallout = false;
     let completedItemsIndex = lines.length;
     for (let line of lines) {
       if (inCompletedSection) {
@@ -257,17 +267,18 @@ var TaskCollector = class {
         completedItemsIndex = remaining.push(line);
         remaining.push("%%%COMPLETED_ITEMS_GO_HERE%%%");
       } else {
-        const taskMatch = line.match(/^(\s*)- \[(.)\]/);
         if (this.isCompletedTaskLine(line)) {
           if (this.settings.completedAreaRemoveCheckbox) {
             line = this.removeCheckboxFromLine(line);
           }
           inTask = true;
+          inCallout = this.isCallout(line);
           newTasks.push(line);
-        } else if (inTask && !taskMatch && line.match(/^( {2,}|\t)/)) {
+        } else if (inTask && !this.isTaskLine(line) && this.isContinuation(line, inCallout)) {
           newTasks.push(line);
         } else {
           inTask = false;
+          inCallout = false;
           remaining.push(line);
         }
       }
@@ -283,6 +294,21 @@ var TaskCollector = class {
   }
   isIncompleteTaskLine(lineText) {
     return this.initSettings.incompleteTaskRegExp.test(lineText);
+  }
+  isTaskLine(lineText) {
+    return this.anyTaskMark.test(lineText);
+  }
+  isContinuation(lineText, inCallout) {
+    if (inCallout) {
+      const match = this.blockQuote.exec(lineText);
+      if (match) {
+        return match[1].endsWith(">") || match[1].endsWith("  ") || match[1].endsWith("	");
+      }
+    }
+    return this.continuation.test(lineText);
+  }
+  isCallout(lineText) {
+    return this.blockQuote.test(lineText);
   }
 };
 
@@ -300,7 +326,8 @@ var DEFAULT_SETTINGS = {
   rightClickResetTask: false,
   rightClickResetAll: false,
   rightClickToggleAll: false,
-  completedAreaRemoveCheckbox: false
+  completedAreaRemoveCheckbox: false,
+  onlyLowercaseX: false
 };
 
 // src/taskcollector-SettingsTab.ts
@@ -315,16 +342,23 @@ var TaskCollectorSettingsTab = class extends import_obsidian2.PluginSettingTab {
     this.containerEl.empty();
     this.containerEl.createEl("h1", { text: "Task Collector" });
     const tempSettings = Object.assign(this.taskCollector.settings);
+    new import_obsidian2.Setting(this.containerEl).setName("Only support x for completed tasks").setDesc("Only use 'x' (lower case) to indicate completed tasks.").addToggle((toggle) => toggle.setValue(tempSettings.onlyLowercaseX).onChange((value) => __async(this, null, function* () {
+      tempSettings.onlyLowercaseX = value;
+      this.taskCollector.updateSettings(tempSettings);
+      yield this.plugin.saveSettings();
+    })));
     new import_obsidian2.Setting(this.containerEl).setName("Support canceled tasks").setDesc("Use a - to indicate canceled tasks. Canceled tasks are processed in the same way as completed tasks using options below.").addToggle((toggle) => toggle.setValue(tempSettings.supportCanceledTasks).onChange((value) => __async(this, null, function* () {
       tempSettings.supportCanceledTasks = value;
       this.taskCollector.updateSettings(tempSettings);
       yield this.plugin.saveSettings();
     })));
     new import_obsidian2.Setting(this.containerEl).setName("Additional task types").setDesc("Specify the set of single characters that indicate in-progress or incomplete tasks, e.g. 'i> !?D'.").addText((text) => text.setPlaceholder("> !?").setValue(tempSettings.incompleteTaskValues).onChange((value) => __async(this, null, function* () {
-      if (value.contains("x") || value.contains("X")) {
-        console.log(`Set of characters should not contain the marker for completed tasks: ${value}`);
+      if (value.contains("x")) {
+        console.log(`Set of characters should not contain the marker for completed tasks (x): ${value}`);
+      } else if (!tempSettings.onlyLowercaseX && value.contains("X")) {
+        console.log(`Set of characters should not contain the marker for canceled tasks (X): ${value}`);
       } else if (tempSettings.supportCanceledTasks && value.contains("-")) {
-        console.log(`Set of characters should not contain the marker for canceled tasks: ${value}`);
+        console.log(`Set of characters should not contain the marker for canceled tasks (-): ${value}`);
       } else {
         if (!value.contains(" ")) {
           value = " " + value;
@@ -348,7 +382,7 @@ var TaskCollectorSettingsTab = class extends import_obsidian2.PluginSettingTab {
         console.log(`Error parsing specified date format: ${value}`);
       }
     })));
-    new import_obsidian2.Setting(this.containerEl).setName("Remove text in completed task").setDesc("Text matching this regular expression should be removed from the task text. Be careful! Test your expression separately. The global flag, 'g' is used for a per-line match.").addText((text) => text.setPlaceholder(" #(todo|task)").setValue(tempSettings.removeExpression).onChange((value) => __async(this, null, function* () {
+    new import_obsidian2.Setting(this.containerEl).setName("Remove text in completed task").setDesc("Text matching this regular expression should be removed from the task text. Be careful! Test your expression first. The global flag, 'g' is used for a per-line match.").addText((text) => text.setPlaceholder(" #(todo|task)").setValue(tempSettings.removeExpression).onChange((value) => __async(this, null, function* () {
       try {
         this.taskCollector.tryCreateRemoveRegex(value);
         tempSettings.removeExpression = value;
@@ -425,7 +459,7 @@ var TaskMarkModal = class extends import_obsidian3.Modal {
   }
   onOpen() {
     const selector = this.contentEl.createDiv("taskcollector-selector markdown-preview-view");
-    const completedTasks = this.taskCollector.settings.supportCanceledTasks ? "xX-" : "xX";
+    const completedTasks = (this.taskCollector.settings.onlyLowercaseX ? "x" : "xX") + (this.taskCollector.settings.supportCanceledTasks ? "-" : "");
     const completedList = selector.createEl("ul");
     completedList.addClass("contains-task-list");
     this.addTaskValues(completedList, completedTasks, true);

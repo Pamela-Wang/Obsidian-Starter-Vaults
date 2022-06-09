@@ -10,16 +10,20 @@
     "pageSize": "A4",
     "landscape": false,
     "margin": "0",
-    "downscalePercent": 60
+    "downscalePercent": 70
   },
   "autoConvertHtml": true,
   "communityPluginSortOrder": "download",
-  "newFileLocation": "folder",
-  "newFileFolderPath": "50 Pages/55 All Pages",
+  "newFileLocation": "root",
+  "newFileFolderPath": "/",
   "newLinkFormat": "shortest",
   "useMarkdownLinks": false,
   "legacyEditor": false,
   "livePreview": true,
   "showFrontmatter": false,
-  "defaultViewMode": "source"
+  "defaultViewMode": "source",
+  "userIgnoreFilters": [
+    "logseq/",
+    "80 Archive/"
+  ]
 }

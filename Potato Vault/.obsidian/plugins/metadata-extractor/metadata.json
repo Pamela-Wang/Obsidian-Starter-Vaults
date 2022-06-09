@@ -1,482 +1,7255 @@
 [
   {
     "fileName": "recent weekly task rollup",
-    "relativePath": "50 Pages/55 All Pages/recent weekly task rollup.md",
-    "tags": [
-      "mode/life🏠",
-      "systemmeta/utility⚙️",
-      "status/completed🟢"
-    ],
-    "headings": [
-      {
-        "heading": "Quick View - Daily",
-        "level": 1
-      },
-      {
-        "heading": "Quick View - Other Files",
-        "level": 1
-      }
-    ]
+    "relativePath": "50 Pages/recent weekly task rollup.md"
   },
   {
-    "fileName": "2022-04-23",
-    "relativePath": "20 Periodic/21 Daily Notes/2022-04-23.md",
+    "fileName": "Tweet Source - 📌the Queue\n#Zettelkaste...",
+    "relativePath": "50 Pages/Readwise/Tweet Source - 📌the Queue\n#Zettelkaste....md",
     "tags": [
-      "mode/life🏠",
-      "periodic/daily📅"
+      "mode/zettelkasten🗳️",
+      "source/tweet🐥",
+      "readwise",
+      "status/blank⚪",
+      "zettelkaste",
+      "zettelkasten",
+      "zettel"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 4,
+          "col": 3,
+          "offset": 47
+        }
+      }
+    },
+    "aliases": [
+      "📌the Queue"
     ],
     "headings": [
       {
-        "heading": "Daily Checklist",
+        "heading": "Summary",
         "level": 1
       },
       {
-        "heading": "Tracking",
-        "level": 4
-      },
-      {
-        "heading": "Tasks",
+        "heading": "About",
         "level": 1
       },
       {
-        "heading": "Log",
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
         "level": 1
       }
     ],
     "links": [
       {
-        "link": "2022-04-22",
-        "relativePath": "20 Periodic/21 Daily Notes/2022-04-22.md"
+        "link": "2022-06-09"
       },
       {
-        "link": "Weekly Review 2022-W17 (Apr-18)"
+        "link": "2021-04-12"
       },
       {
-        "link": "2022-04-24"
-      }
-    ],
-    "backlinks": [
+        "link": "author-@beauhaan on Twitter"
+      },
       {
-        "fileName": "2022-04-22",
-        "link": "2022-04-23",
-        "relativePath": "20 Periodic/21 Daily Notes/2022-04-22.md"
+        "link": "Declarative Statement"
+      },
+      {
+        "link": "Page References"
+      },
+      {
+        "link": "Pages"
+      },
+      {
+        "link": "PAGE REFERENCES"
+      },
+      {
+        "link": "Page Reference"
+      },
+      {
+        "link": "Page"
       }
     ]
+  },
+  {
+    "fileName": "Podcast Source - How Music Soothes Us",
+    "relativePath": "50 Pages/Readwise/Podcast Source - How Music Soothes Us.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/podcast🎙️",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 40
+        }
+      }
+    },
+    "aliases": [
+      "How Music Soothes Us"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-10"
+      },
+      {
+        "link": "author-The Science of Happiness"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Women Food and God",
+    "relativePath": "50 Pages/Readwise/Book Source - Women Food and God.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 38
+        }
+      }
+    },
+    "aliases": [
+      "Women Food and God"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2018-12-27"
+      },
+      {
+        "link": "author-Roth, Geneen"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Why We Get Fat",
+    "relativePath": "50 Pages/Readwise/Book Source - Why We Get Fat.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 34
+        }
+      }
+    },
+    "aliases": [
+      "Why We Get Fat"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2020-05-08"
+      },
+      {
+        "link": "author-Gary Taubes"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - What if This Were Enough",
+    "relativePath": "50 Pages/Readwise/Book Source - What if This Were Enough.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 45
+        }
+      }
+    },
+    "aliases": [
+      "What if This Were Enough?"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2019-01-05"
+      },
+      {
+        "link": "author-Heather Havrilesky"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - What You Knead",
+    "relativePath": "50 Pages/Readwise/Book Source - What You Knead.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 34
+        }
+      }
+    },
+    "aliases": [
+      "What You Knead"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-02-25"
+      },
+      {
+        "link": "author-AgentMalkere"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Those Years in Quest of Honour Mine, Chapter 1 - Chapter 61",
+    "relativePath": "50 Pages/Readwise/Book Source - Those Years in Quest of Honour Mine, Chapter 1 - Chapter 61.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 79
+        }
+      }
+    },
+    "aliases": [
+      "Those Years in Quest of Honour Mine, Chapter 1 - Chapter 61"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-02-20"
+      },
+      {
+        "link": "author-Manmanheqiduo"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Theory and Practice",
+    "relativePath": "50 Pages/Readwise/Book Source - Theory and Practice.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 39
+        }
+      }
+    },
+    "aliases": [
+      "Theory and Practice"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2020-10-01"
+      },
+      {
+        "link": "author-metisket"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - The Woods Are Lovely, Dark and Deep",
+    "relativePath": "50 Pages/Readwise/Book Source - The Woods Are Lovely, Dark and Deep.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 55
+        }
+      }
+    },
+    "aliases": [
+      "The Woods Are Lovely, Dark and Deep"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-02-25"
+      },
+      {
+        "link": "author-llamallamaduck"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - The Serpentine Subterfuge",
+    "relativePath": "50 Pages/Readwise/Book Source - The Serpentine Subterfuge.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 45
+        }
+      }
+    },
+    "aliases": [
+      "The Serpentine Subterfuge"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2017-09-04"
+      },
+      {
+        "link": "author-murkybluematter"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - The Reborn Otaku’s Code of Practice for the Apocalypse, Chapter 1 Part 1 - Chapter 200",
+    "relativePath": "50 Pages/Readwise/Book Source - The Reborn Otaku’s Code of Practice for the Apocalypse, Chapter 1 Part 1 - Chapter 200.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 106
+        }
+      }
+    },
+    "aliases": [
+      "The Reborn Otaku’s Code of Practice for the Apocalypse, Chapter 1 Part 1 - Chapter 200"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-02-22"
+      },
+      {
+        "link": "author-暖荷"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - The Pureblood Pretense",
+    "relativePath": "50 Pages/Readwise/Book Source - The Pureblood Pretense.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 42
+        }
+      }
+    },
+    "aliases": [
+      "The Pureblood Pretense"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2017-09-03"
+      },
+      {
+        "link": "author-murkybluematter"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - The Pack Imperative",
+    "relativePath": "50 Pages/Readwise/Book Source - The Pack Imperative.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 39
+        }
+      }
+    },
+    "aliases": [
+      "The Pack Imperative"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2020-04-25"
+      },
+      {
+        "link": "author-unbidden16"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - The Miracle Morning",
+    "relativePath": "50 Pages/Readwise/Book Source - The Miracle Morning.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 39
+        }
+      }
+    },
+    "aliases": [
+      "The Miracle Morning"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2018-12-27"
+      },
+      {
+        "link": "author-Hal Elrod"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - The Medic-Nin's Guide to Casual Revolution",
+    "relativePath": "50 Pages/Readwise/Book Source - The Medic-Nin's Guide to Casual Revolution.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 62
+        }
+      }
+    },
+    "aliases": [
+      "The Medic-Nin's Guide to Casual Revolution"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2020-05-10"
+      },
+      {
+        "link": "author-spideywhiteys"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - The Invisible History of the Human Race",
+    "relativePath": "50 Pages/Readwise/Book Source - The Invisible History of the Human Race.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 59
+        }
+      }
+    },
+    "aliases": [
+      "The Invisible History of the Human Race"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2017-01-20"
+      },
+      {
+        "link": "author-Christine Kenneally"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - The Longevity Diet",
+    "relativePath": "50 Pages/Readwise/Book Source - The Longevity Diet.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 38
+        }
+      }
+    },
+    "aliases": [
+      "The Longevity Diet"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2020-05-05"
+      },
+      {
+        "link": "author-Valter Longo"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - The Futile Facade",
+    "relativePath": "50 Pages/Readwise/Book Source - The Futile Facade.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 37
+        }
+      }
+    },
+    "aliases": [
+      "The Futile Facade"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2017-09-06"
+      },
+      {
+        "link": "author-murkybluematter"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - The Bullet Journal Method",
+    "relativePath": "50 Pages/Readwise/Book Source - The Bullet Journal Method.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 45
+        }
+      }
+    },
+    "aliases": [
+      "The Bullet Journal Method"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2018-12-26"
+      },
+      {
+        "link": "author-Carroll, Ryder"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - The Ambiguous Artifice",
+    "relativePath": "50 Pages/Readwise/Book Source - The Ambiguous Artifice.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 42
+        }
+      }
+    },
+    "aliases": [
+      "The Ambiguous Artifice"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2017-09-05"
+      },
+      {
+        "link": "author-murkybluematter"
+      },
+      {
+        "link": "funny"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - The 4-Hour Workweek",
+    "relativePath": "50 Pages/Readwise/Book Source - The 4-Hour Workweek.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 39
+        }
+      }
+    },
+    "aliases": [
+      "The 4-Hour Workweek"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2019-11-19"
+      },
+      {
+        "link": "author-Timothy Ferriss"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Tempest",
+    "relativePath": "50 Pages/Readwise/Book Source - Tempest.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 27
+        }
+      }
+    },
+    "aliases": [
+      "Tempest"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2017-09-02"
+      },
+      {
+        "link": "author-cywsaphyre"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Super Thinking",
+    "relativePath": "50 Pages/Readwise/Book Source - Super Thinking.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 34
+        }
+      }
+    },
+    "aliases": [
+      "Super Thinking"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2020-02-16"
+      },
+      {
+        "link": "author-Gabriel Weinberg; Lauren McCann"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Show Your Work!",
+    "relativePath": "50 Pages/Readwise/Book Source - Show Your Work!.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 35
+        }
+      }
+    },
+    "aliases": [
+      "Show Your Work!"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-10"
+      },
+      {
+        "link": "author-Kleon, Austin"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Rich Dad Poor Dad",
+    "relativePath": "50 Pages/Readwise/Book Source - Rich Dad Poor Dad.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 37
+        }
+      }
+    },
+    "aliases": [
+      "Rich Dad Poor Dad"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2019-11-06"
+      },
+      {
+        "link": "author-Robert T. Kiyosaki; Sharon L. Lechter"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Relatively Civilian",
+    "relativePath": "50 Pages/Readwise/Book Source - Relatively Civilian.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 39
+        }
+      }
+    },
+    "aliases": [
+      "Relatively Civilian"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2017-09-01"
+      },
+      {
+        "link": "author-Wingwyrm"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Organized Mind",
+    "relativePath": "50 Pages/Readwise/Book Source - Organized Mind.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 34
+        }
+      }
+    },
+    "aliases": [
+      "Organized Mind"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2017-05-25"
+      },
+      {
+        "link": "author-Levitin, Daniel J."
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - On War",
+    "relativePath": "50 Pages/Readwise/Book Source - On War.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 26
+        }
+      }
+    },
+    "aliases": [
+      "On War"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-01-11"
+      },
+      {
+        "link": "author-Carl von Clausewitz; Michael Eliot Howard; Peter Paret"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Nine Rules to Break When Romancing a Rake",
+    "relativePath": "50 Pages/Readwise/Book Source - Nine Rules to Break When Romancing a Rake.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 61
+        }
+      }
+    },
+    "aliases": [
+      "Nine Rules to Break When Romancing a Rake"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2017-05-07"
+      },
+      {
+        "link": "author-Sarah MacLean"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Make Time",
+    "relativePath": "50 Pages/Readwise/Book Source - Make Time.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 29
+        }
+      }
+    },
+    "aliases": [
+      "Make Time"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-01-06"
+      },
+      {
+        "link": "author-Jake Knapp; John Zeratsky"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Kill Your Heroes",
+    "relativePath": "50 Pages/Readwise/Book Source - Kill Your Heroes.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 36
+        }
+      }
+    },
+    "aliases": [
+      "Kill Your Heroes"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2020-04-30"
+      },
+      {
+        "link": "author-Evil Is A Relative Term"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - How to Take Smart Notes Zettelkasten",
+    "relativePath": "50 Pages/Readwise/Book Source - How to Take Smart Notes Zettelkasten.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 56
+        }
+      }
+    },
+    "aliases": [
+      "How to Take Smart Notes Zettelkasten"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-11"
+      },
+      {
+        "link": "author-Sönke Ahrens"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Gut",
+    "relativePath": "50 Pages/Readwise/Book Source - Gut.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 23
+        }
+      }
+    },
+    "aliases": [
+      "Gut"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2016-09-24"
+      },
+      {
+        "link": "author-Giulia Enders"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - God of Cooking, Chapter 1 - Chapter 200",
+    "relativePath": "50 Pages/Readwise/Book Source - God of Cooking, Chapter 1 - Chapter 200.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 59
+        }
+      }
+    },
+    "aliases": [
+      "God of Cooking, Chapter 1 - Chapter 200"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-01-28"
+      },
+      {
+        "link": "author-Yangchigi Jali"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - From the Ruins of Empire",
+    "relativePath": "50 Pages/Readwise/Book Source - From the Ruins of Empire.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 44
+        }
+      }
+    },
+    "aliases": [
+      "From the Ruins of Empire"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2017-11-07"
+      },
+      {
+        "link": "author-Pankaj Mishra"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Ear to the Wall",
+    "relativePath": "50 Pages/Readwise/Book Source - Ear to the Wall.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 35
+        }
+      }
+    },
+    "aliases": [
+      "Ear to the Wall"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-02-25"
+      },
+      {
+        "link": "author-Vodkassassin"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Deduction in Shadows",
+    "relativePath": "50 Pages/Readwise/Book Source - Deduction in Shadows.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 40
+        }
+      }
+    },
+    "aliases": [
+      "Deduction in Shadows"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2018-12-15"
+      },
+      {
+        "link": "author-GremlinSR"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Compass of Thy Soul",
+    "relativePath": "50 Pages/Readwise/Book Source - Compass of Thy Soul.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 39
+        }
+      }
+    },
+    "aliases": [
+      "Compass of Thy Soul"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-01-10"
+      },
+      {
+        "link": "author-Umei_no_Mai"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Catalysis",
+    "relativePath": "50 Pages/Readwise/Book Source - Catalysis.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 29
+        }
+      }
+    },
+    "aliases": [
+      "Catalysis"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2017-08-30"
+      },
+      {
+        "link": "author-Teh Twinnesses Presents"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Bolt From the Blue",
+    "relativePath": "50 Pages/Readwise/Book Source - Bolt From the Blue.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 38
+        }
+      }
+    },
+    "aliases": [
+      "Bolt From the Blue"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-01-11"
+      },
+      {
+        "link": "author-Umei_no_Mai"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Betwixt Mine Eye and Heart",
+    "relativePath": "50 Pages/Readwise/Book Source - Betwixt Mine Eye and Heart.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 46
+        }
+      }
+    },
+    "aliases": [
+      "Betwixt Mine Eye and Heart"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2020-04-29"
+      },
+      {
+        "link": "author-rinsled05"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - Algorithms to Live By",
+    "relativePath": "50 Pages/Readwise/Book Source - Algorithms to Live By.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 41
+        }
+      }
+    },
+    "aliases": [
+      "Algorithms to Live By"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2016-10-07"
+      },
+      {
+        "link": "author-Brian Christian; Tom Griffiths"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - A Transdimensional Scum Villain’s Tale 1",
+    "relativePath": "50 Pages/Readwise/Book Source - A Transdimensional Scum Villain’s Tale 1.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 60
+        }
+      }
+    },
+    "aliases": [
+      "A Transdimensional Scum Villain’s Tale 1"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2020-04-23"
+      },
+      {
+        "link": "author-Unknown author"
+      }
+    ]
+  },
+  {
+    "fileName": "Book Source - 108 Earthly Temptations",
+    "relativePath": "50 Pages/Readwise/Book Source - 108 Earthly Temptations.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/book📖",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 43
+        }
+      }
+    },
+    "aliases": [
+      "108 Earthly Temptations"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2017-08-31"
+      },
+      {
+        "link": "author-Vixen Tail"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - 【纯享】周华健蒋一侨合唱《其实不想走》，诉说离别心事 《我们的歌》Chinese Idol-Our Song EP11【东方卫视官方频道】",
+    "relativePath": "50 Pages/Readwise/Article Source - 【纯享】周华健蒋一侨合唱《其实不想走》，诉说离别心事 《我们的歌》Chinese Idol-Our Song EP11【东方卫视官方频道】.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 90
+        }
+      }
+    },
+    "aliases": [
+      "【纯享】周华健蒋一侨合唱《其实不想走》，诉说离别心事 |《我们的歌》Chinese Idol-Our Song EP11【东方卫视官方频道】"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-youtube.com"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - The Little Laidly-Worm [Worm] (Dragon) (Canon Divergence)  SpaceBattles Forums",
+    "relativePath": "50 Pages/Readwise/Article Source - The Little Laidly-Worm [Worm] (Dragon) (Canon Divergence)  SpaceBattles Forums.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 99
+        }
+      }
+    },
+    "aliases": [
+      "The Little Laidly-Worm [Worm] (Dragon) (Canon Divergence) | SpaceBattles Forums"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-11"
+      },
+      {
+        "link": "author-forums.spacebattles.com"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - The Little Laidly-Worm [Worm] (Dragon) (Canon Divergence)  SpaceBattles Forums-2",
+    "relativePath": "50 Pages/Readwise/Article Source - The Little Laidly-Worm [Worm] (Dragon) (Canon Divergence)  SpaceBattles Forums-2.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 99
+        }
+      }
+    },
+    "aliases": [
+      "The Little Laidly-Worm [Worm] (Dragon) (Canon Divergence) | SpaceBattles Forums"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "fiction"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-11"
+      },
+      {
+        "link": "author-forums.spacebattles.com"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 99 - Retu - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 99 - Retu - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 86
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 99 - Retu - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 98 - Stare Into the Abyss  - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 98 - Stare Into the Abyss  - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 103
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 98 - Stare Into the Abyss  - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 149 - Meng Chao and the Deity Realm Elite’s Ambition - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 149 - Meng Chao and the Deity Realm Elite’s Ambition - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 129
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 149 - Meng Chao and the Deity Realm Elite’s Ambition - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 148 - Grandfather of the Ultimate Style - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 148 - Grandfather of the Ultimate Style - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 116
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 148 - Grandfather of the Ultimate Style - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 146 - Last Slot - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 146 - Last Slot - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 92
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 146 - Last Slot - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 143 - Submit to Me! - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 143 - Submit to Me! - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 96
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 143 - Submit to Me! - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 145 - Temporary Submissio - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 145 - Temporary Submissio - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 102
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 145 - Temporary Submissio - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 144 - A Small Misunderstanding - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 144 - A Small Misunderstanding - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 107
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 144 - A Small Misunderstanding - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 141 - Make the Best Use of Their Time! - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 141 - Make the Best Use of Their Time! - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 115
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 141 - Make the Best Use of Their Time! - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 142 - Meeting His Match - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 142 - Meeting His Match - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 100
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 142 - Meeting His Match - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 140 - Seven People, Seven Monsters! - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 140 - Seven People, Seven Monsters! - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 112
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 140 - Seven People, Seven Monsters! - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 139 - Terrifying Endurance - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 139 - Terrifying Endurance - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 103
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 139 - Terrifying Endurance - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 137 - Dancing - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 137 - Dancing - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 90
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 137 - Dancing - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 132 - Slot - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 132 - Slot - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 87
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 132 - Slot - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 131 - Panther Hu - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 131 - Panther Hu - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 93
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 131 - Panther Hu - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 130 - That’s All I Can Help With - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 130 - That’s All I Can Help With - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 109
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 130 - That’s All I Can Help With - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 128 - Double Ques - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 128 - Double Ques - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 94
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 128 - Double Ques - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 126 - I Want to Take Part in the Fight! - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 126 - I Want to Take Part in the Fight! - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 116
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 126 - I Want to Take Part in the Fight! - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 125 - Improving by Leaps and Bounds While Remaining Nameless - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 125 - Improving by Leaps and Bounds While Remaining Nameless - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 137
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 125 - Improving by Leaps and Bounds While Remaining Nameless - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 123 - Not the Ultimate! - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 123 - Not the Ultimate! - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 100
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 123 - Not the Ultimate! - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 122 - Acting as the Go Betw - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 122 - Acting as the Go Betw - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 104
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 122 - Acting as the Go Betw - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 121 - Everything Is Ready - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 121 - Everything Is Ready - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 102
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 121 - Everything Is Ready - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 120 - Moth Flying to Flames - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 120 - Moth Flying to Flames - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 104
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 120 - Moth Flying to Flames - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 119 - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 119 - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 80
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 119 - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 118 - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 118 - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 80
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 118 - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 117 - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 117 - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 80
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 117 - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 116 - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 116 - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 80
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 116 - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 112 - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 112 - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 80
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 112 - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 111 - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 111 - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 80
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 111 - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 110 - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 110 - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 80
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 110 - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 109 - A Boy Worth Teaching - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 109 - A Boy Worth Teaching - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 103
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 109 - A Boy Worth Teaching - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 106 - “Small Game” - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 106 - “Small Game” - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 95
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 106 - “Small Game” - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 105 - There Are Five Among the Four Great Kings - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 105 - There Are Five Among the Four Great Kings - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 124
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 105 - There Are Five Among the Four Great Kings - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 101 - Who Won, and Who Lost - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 101 - Who Won, and Who Lost - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 105
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 101 - Who Won, and Who Lost? - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Oh My God! Earthlings Are Insane! - Chapter 100 - Demon Subduing Slash  - WuxiaWorld",
+    "relativePath": "50 Pages/Readwise/Article Source - Oh My God! Earthlings Are Insane! - Chapter 100 - Demon Subduing Slash  - WuxiaWorld.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 104
+        }
+      }
+    },
+    "aliases": [
+      "Oh My God! Earthlings Are Insane! - Chapter 100 - Demon Subduing Slash  - WuxiaWorld"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-wuxiaworld.site"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Machine Learning, Games, and the Aurora Driver [S33280] - #1 AI Conference  GPU Technology Conference  NVIDIA",
+    "relativePath": "50 Pages/Readwise/Article Source - Machine Learning, Games, and the Aurora Driver [S33280] - #1 AI Conference  GPU Technology Conference  NVIDIA.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 131
+        }
+      }
+    },
+    "aliases": [
+      "Machine Learning, Games, and the Aurora Driver [S33280] -"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-gtc21.event.nvidia.com"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Learn Colemak in Steps With the Tarmak Layouts! - User Contributions - Colemak Forum",
+    "relativePath": "50 Pages/Readwise/Article Source - Learn Colemak in Steps With the Tarmak Layouts! - User Contributions - Colemak Forum.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 104
+        }
+      }
+    },
+    "aliases": [
+      "Learn Colemak in Steps With the Tarmak Layouts! - User Contributions - Colemak Forum"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-forum.colemak.com"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-forum.colemak.com"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - GTC 2021 Keynote With NVIDIA CEO Jensen Huang",
+    "relativePath": "50 Pages/Readwise/Article Source - GTC 2021 Keynote With NVIDIA CEO Jensen Huang.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪",
+      "gtc21"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 65
+        }
+      }
+    },
+    "aliases": [
+      "GTC 2021 Keynote With NVIDIA CEO Jensen Huang"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-youtube.com"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Ergonomic Keyboard Mods Curl",
+    "relativePath": "50 Pages/Readwise/Article Source - Ergonomic Keyboard Mods Curl.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 49
+        }
+      }
+    },
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-colemakmods.github.io"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Ergonomic Keyboard Mods Curl-2",
+    "relativePath": "50 Pages/Readwise/Article Source - Ergonomic Keyboard Mods Curl-2.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 49
+        }
+      }
+    },
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-colemakmods.github.io"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - DreymaR's Big Bag of Keyboard Tricks (Main Topic) - User Contributions - Colemak Forum",
+    "relativePath": "50 Pages/Readwise/Article Source - DreymaR's Big Bag of Keyboard Tricks (Main Topic) - User Contributions - Colemak Forum.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪",
+      "handy-links"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 106
+        }
+      }
+    },
+    "aliases": [
+      "DreymaR's Big Bag of Keyboard Tricks (Main Topic) - User Contributions - Colemak Forum"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-forum.colemak.com"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-forum.colemak.com"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Digital Smart Notes Part 4 Creating Permanent Notes in Roam Research",
+    "relativePath": "50 Pages/Readwise/Article Source - Digital Smart Notes Part 4 Creating Permanent Notes in Roam Research.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 89
+        }
+      }
+    },
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-11"
+      },
+      {
+        "link": "author-harleystagner.com"
+      },
+      {
+        "link": "query"
+      },
+      {
+        "link": "Literature Notes"
+      },
+      {
+        "link": "Writing"
+      },
+      {
+        "link": "Permanent Notes"
+      },
+      {
+        "link": "🏰 Mind Palace"
+      },
+      {
+        "link": "📨 Writing Inbox"
+      },
+      {
+        "link": "Permanent Notes"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-11"
+      },
+      {
+        "link": "author-harleystagner.com"
+      },
+      {
+        "link": "query"
+      },
+      {
+        "link": "Literature Notes"
+      },
+      {
+        "link": "Writing"
+      },
+      {
+        "link": "Permanent Notes"
+      },
+      {
+        "link": "🏰 Mind Palace"
+      },
+      {
+        "link": "📨 Writing Inbox"
+      },
+      {
+        "link": "Permanent Notes"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Digital Smart Notes Part 3 Creating Literature Notes in Roam Research",
+    "relativePath": "50 Pages/Readwise/Article Source - Digital Smart Notes Part 3 Creating Literature Notes in Roam Research.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 90
+        }
+      }
+    },
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-11"
+      },
+      {
+        "link": "author-harleystagner.com"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Digital Smart Notes Part 3 Creating Literature Notes in Roam Research-2",
+    "relativePath": "50 Pages/Readwise/Article Source - Digital Smart Notes Part 3 Creating Literature Notes in Roam Research-2.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 90
+        }
+      }
+    },
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-11"
+      },
+      {
+        "link": "author-harleystagner.com"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Digital Smart Notes Part 2 Exporting Highlights to Roam Research With Readwise",
+    "relativePath": "50 Pages/Readwise/Article Source - Digital Smart Notes Part 2 Exporting Highlights to Roam Research With Readwise.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 99
+        }
+      }
+    },
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-10"
+      },
+      {
+        "link": "author-harleystagner.com"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Digital Smart Notes Part 2 Exporting Highlights to Roam Research With Readwise-2",
+    "relativePath": "50 Pages/Readwise/Article Source - Digital Smart Notes Part 2 Exporting Highlights to Roam Research With Readwise-2.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 99
+        }
+      }
+    },
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-10"
+      },
+      {
+        "link": "author-harleystagner.com"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Digital Smart Notes Part 1 The Capture Toolkit",
+    "relativePath": "50 Pages/Readwise/Article Source - Digital Smart Notes Part 1 The Capture Toolkit.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 67
+        }
+      }
+    },
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-10"
+      },
+      {
+        "link": "author-harleystagner.com"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Digital Smart Notes Part 1 The Capture Toolkit-2",
+    "relativePath": "50 Pages/Readwise/Article Source - Digital Smart Notes Part 1 The Capture Toolkit-2.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪",
+      "to-follow-up"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 67
+        }
+      }
+    },
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "roam"
+      },
+      {
+        "link": "workflow"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-10"
+      },
+      {
+        "link": "author-harleystagner.com"
+      },
+      {
+        "link": "favorite"
+      },
+      {
+        "link": "favorite"
+      },
+      {
+        "link": "favorite"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Create More, Consume Less",
+    "relativePath": "50 Pages/Readwise/Article Source - Create More, Consume Less.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 45
+        }
+      }
+    },
+    "aliases": [
+      "Create More, Consume Less"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-11"
+      },
+      {
+        "link": "author-shuomi.me"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Create More, Consume Less-2",
+    "relativePath": "50 Pages/Readwise/Article Source - Create More, Consume Less-2.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 45
+        }
+      }
+    },
+    "aliases": [
+      "Create More, Consume Less"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-11"
+      },
+      {
+        "link": "author-Shu Omi"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Colemak Mod-Dh",
+    "relativePath": "50 Pages/Readwise/Article Source - Colemak Mod-Dh.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 34
+        }
+      }
+    },
+    "aliases": [
+      "Colemak Mod-Dh"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-colemakmods.github.io"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-colemakmods.github.io"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Colemak Mod-Dh - Compare Layouts",
+    "relativePath": "50 Pages/Readwise/Article Source - Colemak Mod-Dh - Compare Layouts.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 52
+        }
+      }
+    },
+    "aliases": [
+      "Colemak Mod-Dh - Compare Layouts"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-colemakmods.github.io"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-colemakmods.github.io"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Colemak Mod-Dh - Switching Difficulty - How Easy to Learn",
+    "relativePath": "50 Pages/Readwise/Article Source - Colemak Mod-Dh - Switching Difficulty - How Easy to Learn.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 78
+        }
+      }
+    },
+    "aliases": [
+      "Colemak Mod-Dh - Switching Difficulty - How Easy to Learn?"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-colemakmods.github.io"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-colemakmods.github.io"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Building Out Your Roam Part 2 Questions, Queries, and Block References-2",
+    "relativePath": "50 Pages/Readwise/Article Source - Building Out Your Roam Part 2 Questions, Queries, and Block References-2.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 91
+        }
+      }
+    },
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-11"
+      },
+      {
+        "link": "author-harleystagner.com"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Building Out Your Roam Part 2 Questions, Queries, and Block References",
+    "relativePath": "50 Pages/Readwise/Article Source - Building Out Your Roam Part 2 Questions, Queries, and Block References.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 91
+        }
+      }
+    },
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-11"
+      },
+      {
+        "link": "author-harleystagner.com"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Building Out Your Roam Part 1 Pages, Blocks, and How to Find Them",
+    "relativePath": "50 Pages/Readwise/Article Source - Building Out Your Roam Part 1 Pages, Blocks, and How to Find Them.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 86
+        }
+      }
+    },
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-11"
+      },
+      {
+        "link": "author-harleystagner.com"
+      },
+      {
+        "link": "Work"
+      },
+      {
+        "link": "Personal"
+      },
+      {
+        "link": "Questions"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Beyond Taking Notes",
+    "relativePath": "50 Pages/Readwise/Article Source - Beyond Taking Notes.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪",
+      "respect",
+      "to-follow-up",
+      "todo"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 39
+        }
+      }
+    },
+    "aliases": [
+      "Beyond Taking Notes"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-11"
+      },
+      {
+        "link": "author-dev.to"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - Beau Haan Roam Book Club, Block-Level Zettelkasten, Roaman Community - RoamFM",
+    "relativePath": "50 Pages/Readwise/Article Source - Beau Haan Roam Book Club, Block-Level Zettelkasten, Roaman Community - RoamFM.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 98
+        }
+      }
+    },
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-11"
+      },
+      {
+        "link": "author-buzzsprout.com"
+      },
+      {
+        "link": "Sönke Ahrens"
+      },
+      {
+        "link": "Matt McKinlay"
+      },
+      {
+        "link": "Sönke Ahrens"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - A Vision for the Next Decade of Computing [S31900] - #1 AI Conference  GPU Technology Conference  NVIDIA",
+    "relativePath": "50 Pages/Readwise/Article Source - A Vision for the Next Decade of Computing [S31900] - #1 AI Conference  GPU Technology Conference  NVIDIA.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 126
+        }
+      }
+    },
+    "aliases": [
+      "A Vision for the Next Decade of Computing [S31900] -"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-15"
+      },
+      {
+        "link": "author-gtc21.event.nvidia.com"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - 25 Lessons That Changed My Life",
+    "relativePath": "50 Pages/Readwise/Article Source - 25 Lessons That Changed My Life.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 51
+        }
+      }
+    },
+    "aliases": [
+      "25 Lessons That Changed My Life"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      },
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-11"
+      },
+      {
+        "link": "author-shuomi.me"
+      },
+      {
+        "link": "favorite"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-11"
+      },
+      {
+        "link": "author-Shu Omi"
+      },
+      {
+        "link": "favorite"
+      },
+      {
+        "link": "favorite"
+      },
+      {
+        "link": "favorite"
+      }
+    ]
+  },
+  {
+    "fileName": "Article Source - 2. Membrane Dynamics - I Became a [Biologist] in a Fantasy World!",
+    "relativePath": "50 Pages/Readwise/Article Source - 2. Membrane Dynamics - I Became a [Biologist] in a Fantasy World!.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "source/article📰",
+      "readwise",
+      "status/blank⚪",
+      "funny"
+    ],
+    "frontmatter": {
+      "position": {
+        "start": {
+          "line": 0,
+          "col": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "col": 3,
+          "offset": 85
+        }
+      }
+    },
+    "aliases": [
+      "2. Membrane Dynamics - I Became a [Biologist] in a Fantasy World!"
+    ],
+    "headings": [
+      {
+        "heading": "Summary",
+        "level": 1
+      },
+      {
+        "heading": "About",
+        "level": 1
+      },
+      {
+        "heading": "Metadata",
+        "level": 2
+      },
+      {
+        "heading": "Highlights",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "fiction"
+      },
+      {
+        "link": "2022-06-09"
+      },
+      {
+        "link": "2021-04-09"
+      },
+      {
+        "link": "author-royalroad.com"
+      }
+    ]
+  },
+  {
+    "fileName": "2022-05-27",
+    "relativePath": "20 Periodic/21 Daily Notes/2022-05-27.md"
   },
   {
     "fileName": "2022-04-22",
-    "relativePath": "20 Periodic/21 Daily Notes/2022-04-22.md",
-    "tags": [
-      "mode/life🏠",
-      "periodic/daily📅"
-    ],
-    "headings": [
-      {
-        "heading": "Daily Checklist",
-        "level": 1
-      },
-      {
-        "heading": "Tracking",
-        "level": 4
-      },
-      {
-        "heading": "Tasks",
-        "level": 1
-      },
-      {
-        "heading": "Log",
-        "level": 1
-      }
-    ],
-    "links": [
-      {
-        "link": "2022-04-21",
-        "relativePath": "20 Periodic/21 Daily Notes/2022-04-21.md"
-      },
-      {
-        "link": "Weekly Review 2022-W17 (Apr-18)"
-      },
-      {
-        "link": "2022-04-23",
-        "relativePath": "20 Periodic/21 Daily Notes/2022-04-23.md"
-      }
-    ],
-    "backlinks": [
-      {
-        "fileName": "2022-04-23",
-        "link": "2022-04-22",
-        "relativePath": "20 Periodic/21 Daily Notes/2022-04-23.md"
-      },
-      {
-        "fileName": "2022-04-21",
-        "link": "2022-04-22",
-        "relativePath": "20 Periodic/21 Daily Notes/2022-04-21.md"
-      }
-    ]
+    "relativePath": "20 Periodic/21 Daily Notes/2022-04-22.md"
   },
   {
-    "fileName": "2022-04-21",
-    "relativePath": "20 Periodic/21 Daily Notes/2022-04-21.md",
-    "tags": [
-      "mode/life🏠",
-      "periodic/daily📅"
-    ],
-    "headings": [
-      {
-        "heading": "Daily Checklist",
-        "level": 1
-      },
-      {
-        "heading": "Tracking",
-        "level": 4
-      },
-      {
-        "heading": "Tasks",
-        "level": 1
-      },
-      {
-        "heading": "Log",
-        "level": 1
-      }
-    ],
-    "links": [
-      {
-        "link": "2022-04-20",
-        "relativePath": "20 Periodic/21 Daily Notes/2022-04-20.md"
-      },
-      {
-        "link": "Weekly Review 2022-W17 (Apr-18)"
-      },
-      {
-        "link": "2022-04-22",
-        "relativePath": "20 Periodic/21 Daily Notes/2022-04-22.md"
-      },
-      {
-        "link": "Book Source -How to not die alone"
-      },
-      {
-        "link": "On the Measure of Intelligence"
-      },
-      {
-        "link": "Video - OpenAI Codex Live Demo - Source"
-      },
-      {
-        "link": "Book Source -How to not die alone"
-      },
-      {
-        "link": "Morning Journal"
-      },
-      {
-        "link": "Work Log for simulation"
-      }
-    ],
-    "backlinks": [
-      {
-        "fileName": "2022-04-22",
-        "link": "2022-04-21",
-        "relativePath": "20 Periodic/21 Daily Notes/2022-04-22.md"
-      },
-      {
-        "fileName": "2022-04-20",
-        "link": "2022-04-21",
-        "relativePath": "20 Periodic/21 Daily Notes/2022-04-20.md"
-      }
-    ]
+    "fileName": "2022-04-23",
+    "relativePath": "20 Periodic/21 Daily Notes/2022-04-23.md"
   },
   {
     "fileName": "2022-04-20",
-    "relativePath": "20 Periodic/21 Daily Notes/2022-04-20.md",
-    "tags": [
-      "mode/life🏠",
-      "periodic/daily📅"
-    ],
-    "headings": [
-      {
-        "heading": "Daily Checklist",
-        "level": 1
-      },
-      {
-        "heading": "Tracking",
-        "level": 4
-      },
-      {
-        "heading": "Tasks",
-        "level": 1
-      },
-      {
-        "heading": "Log",
-        "level": 1
-      }
-    ],
-    "links": [
-      {
-        "link": "2022-04-19"
-      },
-      {
-        "link": "Weekly Review 2022-W17 (Apr-18)"
-      },
-      {
-        "link": "2022-04-21",
-        "relativePath": "20 Periodic/21 Daily Notes/2022-04-21.md"
-      },
-      {
-        "link": "Book Source - The courage to be disliked"
-      },
-      {
-        "link": "Book Source - Getting Things Done"
-      }
-    ],
-    "backlinks": [
-      {
-        "fileName": "2022-04-21",
-        "link": "2022-04-20",
-        "relativePath": "20 Periodic/21 Daily Notes/2022-04-21.md"
-      }
-    ]
+    "relativePath": "20 Periodic/21 Daily Notes/2022-04-20.md"
+  },
+  {
+    "fileName": "2022-04-21",
+    "relativePath": "20 Periodic/21 Daily Notes/2022-04-21.md"
   },
   {
     "fileName": "Weekly Review Template",
-    "relativePath": "10 Templates/Weekly Review Template.md",
-    "tags": [
-      "mode/life🏠",
-      "periodic/weekly📆",
-      "status/blank⚪"
-    ],
-    "headings": [
-      {
-        "heading": "This Week",
-        "level": 1
-      },
-      {
-        "heading": "Review This Week",
-        "level": 1
-      },
-      {
-        "heading": "Notes for Next Week",
-        "level": 2
-      },
-      {
-        "heading": "Events",
-        "level": 3
-      },
-      {
-        "heading": "Must Do",
-        "level": 3
-      },
-      {
-        "heading": "Changes to System",
-        "level": 3
-      },
-      {
-        "heading": "Bonus",
-        "level": 3
-      },
-      {
-        "heading": "Misc",
-        "level": 3
-      },
-      {
-        "heading": "Checklist",
-        "level": 2
-      },
-      {
-        "heading": "Summary of this Week - <% tp.date.weekday(\"YYYY-MM-DD\", 0) %> to <% tp.date.weekday(\"YYYY-MM-DD\", 6) %>",
-        "level": 1
-      },
-      {
-        "heading": "Week Notes",
-        "level": 2
-      },
-      {
-        "heading": "Memories",
-        "level": 2
-      },
-      {
-        "heading": "Goals",
-        "level": 2
-      },
-      {
-        "heading": "Feelings",
-        "level": 3
-      },
-      {
-        "heading": "Habits",
-        "level": 3
-      },
-      {
-        "heading": "Work",
-        "level": 2
-      },
-      {
-        "heading": "Youtube",
-        "level": 2
-      },
-      {
-        "heading": "Life",
-        "level": 2
-      },
-      {
-        "heading": "Reflection",
-        "level": 2
-      },
-      {
-        "heading": "Tasks this Week",
-        "level": 2
-      }
-    ],
-    "links": [
-      {
-        "link": "<% tp.date.weekday(\"[Weekly Review] YYYY-[W]ww (MMM-DD)\",  -7) %>"
-      },
-      {
-        "link": "Monthly Review <% tp.date.now(\"YYYY-MM (MMMM)\") %>"
-      },
-      {
-        "link": "<% tp.date.weekday(\"[Weekly Review] YYYY-[W]ww (MMM-DD)\",  7) %>"
-      },
-      {
-        "link": "Next Weekly Review"
-      },
-      {
-        "link": "<% tp.date.weekday(\"YYYY-MM-DD\", 0) %>"
-      },
-      {
-        "link": "<% tp.date.weekday(\"YYYY-MM-DD\", 1) %>"
-      },
-      {
-        "link": "<% tp.date.weekday(\"YYYY-MM-DD\", 2) %>"
-      },
-      {
-        "link": "<% tp.date.weekday(\"YYYY-MM-DD\", 3) %>"
-      },
-      {
-        "link": "<% tp.date.weekday(\"YYYY-MM-DD\", 4) %>"
-      },
-      {
-        "link": "<% tp.date.weekday(\"YYYY-MM-DD\", 5) %>"
-      },
-      {
-        "link": "<% tp.date.weekday(\"YYYY-MM-DD\", 6) %>"
-      }
-    ]
+    "relativePath": "10 Templates/Weekly Review Template.md"
+  },
+  {
+    "fileName": "Video Source Template",
+    "relativePath": "10 Templates/Video Source Template.md"
+  },
+  {
+    "fileName": "Template for Template",
+    "relativePath": "10 Templates/Template for Template.md"
+  },
+  {
+    "fileName": "Source Prompt Template",
+    "relativePath": "10 Templates/Source Prompt Template.md"
+  },
+  {
+    "fileName": "Simple Zettel Template",
+    "relativePath": "10 Templates/Simple Zettel Template.md"
   },
   {
     "fileName": "Monthly Review Template",
-    "relativePath": "10 Templates/Monthly Review Template.md",
-    "tags": [
-      "mode/life🏠",
-      "periodic/monthly🌔",
-      "status/blank⚪"
-    ],
-    "headings": [
-      {
-        "heading": "This Month <% tp.date.now(\"YYYY-MM\") %>",
-        "level": 1
-      },
-      {
-        "heading": "Keep In Mind",
-        "level": 2
-      },
-      {
-        "heading": "Goals",
-        "level": 2
-      },
-      {
-        "heading": "Task List",
-        "level": 1
-      },
-      {
-        "heading": "Summary of Last Month <% tp.date.now(\"MMMM YYYY\") %>",
-        "level": 1
-      },
-      {
-        "heading": "Weeks of The Month",
-        "level": 2
-      },
-      {
-        "heading": "Memories",
-        "level": 2
-      },
-      {
-        "heading": "Work",
-        "level": 2
-      },
-      {
-        "heading": "Youtube",
-        "level": 2
-      },
-      {
-        "heading": "Goals",
-        "level": 2
-      },
-      {
-        "heading": "Feelings",
-        "level": 3
-      },
-      {
-        "heading": "In-Depth habit Tracker",
-        "level": 3
-      },
-      {
-        "heading": "Habits Overview",
-        "level": 3
-      },
-      {
-        "heading": "Life",
-        "level": 2
-      },
-      {
-        "heading": "Reflection",
-        "level": 2
-      }
-    ],
-    "links": [
-      {
-        "link": "Monthly Academic Report - <% tp.date.now(\"MMM YYYY\") %>"
-      }
-    ]
+    "relativePath": "10 Templates/Monthly Review Template.md"
+  },
+  {
+    "fileName": "Meta Template Picker",
+    "relativePath": "10 Templates/Meta Template Picker.md"
+  },
+  {
+    "fileName": "Journal Template",
+    "relativePath": "10 Templates/Journal Template.md"
   },
   {
     "fileName": "Default Note Template",
     "relativePath": "10 Templates/Default Note Template.md",
     "tags": [
       "status/blank⚪"
+    ],
+    "links": [
+      {
+        "link": "<% tp.date.now(\"YYYY-MM-DD\")%>"
+      }
     ]
   },
   {
     "fileName": "Daily Note Template",
-    "relativePath": "10 Templates/Daily Note Template.md",
+    "relativePath": "10 Templates/Daily Note Template.md"
+  },
+  {
+    "fileName": "Book Source Template",
+    "relativePath": "10 Templates/Book Source Template.md",
     "tags": [
-      "mode/life🏠",
-      "periodic/daily📅"
+      "mode",
+      "source/book📖",
+      "status/blank⚪"
     ],
     "headings": [
       {
-        "heading": "Daily Checklist",
+        "heading": "Source Info",
         "level": 1
       },
       {
-        "heading": "Tracking",
-        "level": 4
-      },
-      {
-        "heading": "Tasks",
-        "level": 1
-      },
-      {
-        "heading": "Log",
+        "heading": "Notes",
         "level": 1
       }
     ],
     "links": [
       {
-        "link": "<% moment(tp.file.title,'YYYY-MM-DD').add(-1,'days').format(\"YYYY-MM-DD\") %>"
-      },
-      {
-        "link": "Weekly Review <% tp.date.weekday(\"YYYY-[W]ww (MMM-DD)\",0, tp.file.title, \"YYYY-MM-DD\") %>"
-      },
-      {
-        "link": "<% moment(tp.file.title,'YYYY-MM-DD').add(1,'days').format(\"YYYY-MM-DD\") %>"
+        "link": "<% tp.date.now(\"YYYY-MM-DD\") %>"
       }
     ]
   }

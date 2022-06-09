@@ -12,6 +12,9 @@ How to install and use this vault in 1 minute :) I assume you already downloaded
 This is a more detailed guide on how the automation of the weekly review works. So it goes into the details of using obsidian dataview rollups, the structure of my weekly review (based off GTD) and also some things to note.
 [![Detailed Automated Weekly Review Guide](https://img.youtube.com/vi/tUWjyzvljfs/0.jpg)](https://www.youtube.com/watch?v=tUWjyzvljfs)
 
+## Shortcut Cheatsheet
+
+
 # Bug fixes
 I try to cover all possible bugs in the  [Detailed Automated Weekly Review Guide Video](https://www.youtube.com/watch?v=tUWjyzvljfs) but here are some things that will break the system.
 - If you change the folder structure, you have to update the Periodic Note Plugin Settings

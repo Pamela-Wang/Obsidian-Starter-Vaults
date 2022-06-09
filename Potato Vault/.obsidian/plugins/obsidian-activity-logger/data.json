@@ -1,5 +1,0 @@
-{
-  "template": "CreatedFiles\n\n- [[$createdFiles]]\n\nDeletedFiles\n\n- [[$deletedFiles]]\n\nModifiedFiles\n\n- [[$modifiedFiles]]\n\n",
-  "startLine": "## Notes Log",
-  "endLine": "## Daily Stats"
-}
