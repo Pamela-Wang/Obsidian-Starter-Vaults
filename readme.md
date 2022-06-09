@@ -12,8 +12,12 @@ How to install and use this vault in 1 minute :) I assume you already downloaded
 This is a more detailed guide on how the automation of the weekly review works. So it goes into the details of using obsidian dataview rollups, the structure of my weekly review (based off GTD) and also some things to note.
 [![Detailed Automated Weekly Review Guide](https://img.youtube.com/vi/tUWjyzvljfs/0.jpg)](https://www.youtube.com/watch?v=tUWjyzvljfs)
 
-## Shortcut Cheatsheet
 
+## Productiviy Tips
+My most commonly used shortcuts (that are already in this vault) 
+
+[![Potato Vault Shortcuts](https://img.youtube.com/vi/DZPi7K53wOE/0.jpg)](https://www.youtube.com/watch?v=DZPi7K53wOE)
+Note that I use the Colemak-dh keyboard layout (helps with typing pain, if you wanna learn it try the Tarmak method by Dreymar) so you may want to remap the shortcuts (to be mostly on the left side of the keyboard since right hand is usually on mouse)
 
 # Bug fixes
 I try to cover all possible bugs in the  [Detailed Automated Weekly Review Guide Video](https://www.youtube.com/watch?v=tUWjyzvljfs) but here are some things that will break the system.
@@ -36,6 +40,7 @@ I left all my css snippets in there, but they actually come from like various pl
 # Upcoming
 - [x] Basic vault for automated weekly review
 - [x] Video on how to install and use for daily note and weekly review
-- [ ] Video on how to use shortcuts for this vault
+- [x] Video on how to use shortcuts for this vault
 - [ ] Cheatsheet on various shortcuts
-- [ ] Add a meta templater for default notes
+- [X] Add a meta templater for default notes
+- [ ] How to build a meta-templater video
