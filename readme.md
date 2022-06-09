@@ -34,6 +34,10 @@ I try to cover all possible bugs in the  [Detailed Automated Weekly Review Guide
 
 - If you see that your embed in the weekly review is cut off, try using the minimal theme as some themes will limit the length of the embed
 
+- Depending on your dataview version, `!completed` may ignore/include the tasks indenting under text so it's best to put any tasks that you want ignored by the weekly rollups under "# Checklist" section headings instead.
+
+`WHERE !contains(meta(section).subpath, "Checklist")` add this to dataview task query tables to exclude the checklist section headings
+
 # Note
 I left all my css snippets in there, but they actually come from like various places? I tried my best to credit. If anyone wants me to remove it, email me at mwahacookie@gmail.com :) I check my email on all working days, so should be fixed within 48-72 hours.
 
