@@ -5,7 +5,7 @@ await tp.file.rename(`${title}`)
 _%>
 ---
 aliases:
-	- <%-* tR += tp.user.getTitleSnippet(tp.file.title) -%>
+- <%-* tR += tp.user.getTitleSnippet(tp.file.title) -%>
 
 ---
 mode:: #mode/zettelkasten🗳️ 
