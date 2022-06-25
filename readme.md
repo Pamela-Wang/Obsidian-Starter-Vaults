@@ -12,6 +12,8 @@ How to install and use this vault in 1 minute :) I assume you already downloaded
 This is a more detailed guide on how the automation of the weekly review works. So it goes into the details of using obsidian dataview rollups, the structure of my weekly review (based off GTD) and also some things to note.
 [![Detailed Automated Weekly Review Guide](https://img.youtube.com/vi/tUWjyzvljfs/0.jpg)](https://www.youtube.com/watch?v=tUWjyzvljfs)
 
+How I built the Meta-Template Picker + How I use it :) this is inspired by Bryan Jenk's Symbol Based Meta-Templater Video, I made a Trigger-Phrase Based Meta-Templater, which helps auto-trigger templates based on the name of the link. This is the absolute most useful mod I have done for my obsidian vault so definitely recommend you check it out :) 
+[![Meta-Template Picker](https://img.youtube.com/vi/5zcdG6ZWja4/0.jpg)](https://www.youtube.com/watch?v=5zcdG6ZWja4)
 
 ## Productiviy Tips
 My most commonly used shortcuts (that are already in this vault) 
