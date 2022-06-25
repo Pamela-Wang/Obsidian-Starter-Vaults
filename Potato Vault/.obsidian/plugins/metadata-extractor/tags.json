@@ -40,8 +40,8 @@
     "relativePaths": [
       "Book Source - the courage to be disliked.md",
       "Book Source - how not to die alone.md",
-      "10 Templates/Video Source Template.md",
       "10 Templates/Weekly Review Template.md",
+      "10 Templates/Video Source Template.md",
       "10 Templates/Monthly Review Template.md",
       "10 Templates/Journal Template.md",
       "10 Templates/Book Source Template.md",
@@ -56,8 +56,8 @@
       "20 Periodic/21 Daily Notes/2022-06-09.md",
       "10 Templates/Weekly Review Template.md",
       "10 Templates/Monthly Review Template.md",
-      "10 Templates/Journal Template.md",
-      "10 Templates/Daily Note Template.md"
+      "10 Templates/Daily Note Template.md",
+      "10 Templates/Journal Template.md"
     ]
   },
   {
@@ -76,17 +76,17 @@
     ]
   },
   {
-    "tag": "source/video🖥️",
-    "tagCount": 1,
-    "relativePaths": [
-      "10 Templates/Video Source Template.md"
-    ]
-  },
-  {
     "tag": "periodic/weekly📆",
     "tagCount": 1,
     "relativePaths": [
       "10 Templates/Weekly Review Template.md"
+    ]
+  },
+  {
+    "tag": "source/video🖥️",
+    "tagCount": 1,
+    "relativePaths": [
+      "10 Templates/Video Source Template.md"
     ]
   },
   {

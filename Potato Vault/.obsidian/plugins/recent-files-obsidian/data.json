@@ -1,20 +1,8 @@
 {
   "recentFiles": [
     {
-      "basename": "Weekly Review Template",
-      "path": "10 Templates/Weekly Review Template.md"
-    },
-    {
-      "basename": "Video Source Template",
-      "path": "10 Templates/Video Source Template.md"
-    },
-    {
-      "basename": "Template for Template",
-      "path": "10 Templates/Template for Template.md"
-    },
-    {
-      "basename": "Source Prompt Template",
-      "path": "10 Templates/Source Prompt Template.md"
+      "basename": "Meta Template Picker",
+      "path": "10 Templates/Meta Template Picker.md"
     },
     {
       "basename": "Simple Zettel Template",
@@ -23,10 +11,6 @@
     {
       "basename": "Monthly Review Template",
       "path": "10 Templates/Monthly Review Template.md"
-    },
-    {
-      "basename": "Meta Template Picker",
-      "path": "10 Templates/Meta Template Picker.md"
     },
     {
       "basename": "Journal Template",
@@ -43,6 +27,22 @@
     {
       "basename": "Book Source Template",
       "path": "10 Templates/Book Source Template.md"
+    },
+    {
+      "basename": "Weekly Review Template",
+      "path": "10 Templates/Weekly Review Template.md"
+    },
+    {
+      "basename": "Video Source Template",
+      "path": "10 Templates/Video Source Template.md"
+    },
+    {
+      "basename": "Template for Template",
+      "path": "10 Templates/Template for Template.md"
+    },
+    {
+      "basename": "Source Prompt Template",
+      "path": "10 Templates/Source Prompt Template.md"
     },
     {
       "basename": "Processing Page - Book List",

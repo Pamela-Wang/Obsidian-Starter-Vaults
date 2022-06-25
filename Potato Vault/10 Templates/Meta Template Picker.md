@@ -6,9 +6,9 @@ if (tp.file.title.includes("-")){
 	var trigger = ""
 } -%>
 <%-* /* In case it is not a meta-template picker note */ -%>
-<%-* if (tp.file.title.startsWith("weekly review")) { -%>
+<%-* if (tp.file.title.startsWith("Weekly Review")) { -%>
 <%-tp.file.include("[[Weekly Review Template]]")-%>
-<%-* } else if (tp.file.title.startsWith("monthly review")) { -%>
+<%-* } else if (tp.file.title.startsWith("Monthly Review")) { -%>
 <%-tp.file.include("[[Monthly Review Template]]")-%>
 <%-* } else if (tp.file.title.includes("template")) { -%>
 <%-tp.file.include("[[Template for Template]]")-%>

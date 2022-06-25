@@ -155,53 +155,6 @@
     ]
   },
   {
-    "fileName": "Video Source Template",
-    "relativePath": "10 Templates/Video Source Template.md",
-    "tags": [
-      "mode",
-      "source/video🖥️",
-      "status/blank⚪"
-    ],
-    "headings": [
-      {
-        "heading": "Video",
-        "level": 1
-      },
-      {
-        "heading": "Notes",
-        "level": 1
-      }
-    ],
-    "links": [
-      {
-        "link": "<% tp.date.now(\"YYYY-MM-DD\") %>"
-      }
-    ],
-    "backlinks": [
-      {
-        "fileName": "Source Prompt Template",
-        "link": "Video Source Template",
-        "relativePath": "10 Templates/Source Prompt Template.md"
-      },
-      {
-        "fileName": "Meta Template Picker",
-        "link": "Video Source Template",
-        "relativePath": "10 Templates/Meta Template Picker.md"
-      }
-    ]
-  },
-  {
-    "fileName": "Template for Template",
-    "relativePath": "10 Templates/Template for Template.md",
-    "backlinks": [
-      {
-        "fileName": "Meta Template Picker",
-        "link": "Template for Template",
-        "relativePath": "10 Templates/Meta Template Picker.md"
-      }
-    ]
-  },
-  {
     "fileName": "Weekly Review Template",
     "relativePath": "10 Templates/Weekly Review Template.md",
     "tags": [
@@ -335,6 +288,53 @@
     ]
   },
   {
+    "fileName": "Template for Template",
+    "relativePath": "10 Templates/Template for Template.md",
+    "backlinks": [
+      {
+        "fileName": "Meta Template Picker",
+        "link": "Template for Template",
+        "relativePath": "10 Templates/Meta Template Picker.md"
+      }
+    ]
+  },
+  {
+    "fileName": "Video Source Template",
+    "relativePath": "10 Templates/Video Source Template.md",
+    "tags": [
+      "mode",
+      "source/video🖥️",
+      "status/blank⚪"
+    ],
+    "headings": [
+      {
+        "heading": "Video",
+        "level": 1
+      },
+      {
+        "heading": "Notes",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "<% tp.date.now(\"YYYY-MM-DD\") %>"
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "Source Prompt Template",
+        "link": "Video Source Template",
+        "relativePath": "10 Templates/Source Prompt Template.md"
+      },
+      {
+        "fileName": "Meta Template Picker",
+        "link": "Video Source Template",
+        "relativePath": "10 Templates/Meta Template Picker.md"
+      }
+    ]
+  },
+  {
     "fileName": "Monthly Review Template",
     "relativePath": "10 Templates/Monthly Review Template.md",
     "tags": [
@@ -413,37 +413,6 @@
       {
         "fileName": "Meta Template Picker",
         "link": "Monthly Review Template",
-        "relativePath": "10 Templates/Meta Template Picker.md"
-      }
-    ]
-  },
-  {
-    "fileName": "Simple Zettel Template",
-    "relativePath": "10 Templates/Simple Zettel Template.md",
-    "tags": [
-      "mode/zettelkasten🗳️",
-      "z/inspired💡",
-      "zettel/fleeting⚪"
-    ],
-    "headings": [
-      {
-        "heading": "Thoughts",
-        "level": 1
-      },
-      {
-        "heading": "Source",
-        "level": 1
-      }
-    ],
-    "links": [
-      {
-        "link": "<% tp.date.now(\"YYYY-MM-DD\") %>"
-      }
-    ],
-    "backlinks": [
-      {
-        "fileName": "Meta Template Picker",
-        "link": "Simple Zettel Template",
         "relativePath": "10 Templates/Meta Template Picker.md"
       }
     ]
@@ -529,6 +498,74 @@
     ]
   },
   {
+    "fileName": "Simple Zettel Template",
+    "relativePath": "10 Templates/Simple Zettel Template.md",
+    "tags": [
+      "mode/zettelkasten🗳️",
+      "z/inspired💡",
+      "zettel/fleeting⚪"
+    ],
+    "headings": [
+      {
+        "heading": "Thoughts",
+        "level": 1
+      },
+      {
+        "heading": "Source",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "<% tp.date.now(\"YYYY-MM-DD\") %>"
+      }
+    ],
+    "backlinks": [
+      {
+        "fileName": "Meta Template Picker",
+        "link": "Simple Zettel Template",
+        "relativePath": "10 Templates/Meta Template Picker.md"
+      }
+    ]
+  },
+  {
+    "fileName": "Daily Note Template",
+    "relativePath": "10 Templates/Daily Note Template.md",
+    "tags": [
+      "mode/life🏠",
+      "periodic/daily📅"
+    ],
+    "headings": [
+      {
+        "heading": "Daily Checklist",
+        "level": 1
+      },
+      {
+        "heading": "Tracking",
+        "level": 4
+      },
+      {
+        "heading": "Tasks",
+        "level": 1
+      },
+      {
+        "heading": "Log",
+        "level": 1
+      }
+    ],
+    "links": [
+      {
+        "link": "<% moment(tp.file.title,'YYYY-MM-DD').add(-1,'days').format(\"YYYY-MM-DD\") %>"
+      },
+      {
+        "link": "Weekly Review <% tp.date.weekday(\"YYYY-[W]ww (MMM-DD)\",0, tp.file.title, \"YYYY-MM-DD\") %>"
+      },
+      {
+        "link": "<% moment(tp.file.title,'YYYY-MM-DD').add(1,'days').format(\"YYYY-MM-DD\") %>"
+      }
+    ]
+  },
+  {
     "fileName": "Journal Template",
     "relativePath": "10 Templates/Journal Template.md",
     "tags": [
@@ -587,43 +624,6 @@
         "fileName": "Meta Template Picker",
         "link": "Book Source Template",
         "relativePath": "10 Templates/Meta Template Picker.md"
-      }
-    ]
-  },
-  {
-    "fileName": "Daily Note Template",
-    "relativePath": "10 Templates/Daily Note Template.md",
-    "tags": [
-      "mode/life🏠",
-      "periodic/daily📅"
-    ],
-    "headings": [
-      {
-        "heading": "Daily Checklist",
-        "level": 1
-      },
-      {
-        "heading": "Tracking",
-        "level": 4
-      },
-      {
-        "heading": "Tasks",
-        "level": 1
-      },
-      {
-        "heading": "Log",
-        "level": 1
-      }
-    ],
-    "links": [
-      {
-        "link": "<% moment(tp.file.title,'YYYY-MM-DD').add(-1,'days').format(\"YYYY-MM-DD\") %>"
-      },
-      {
-        "link": "Weekly Review <% tp.date.weekday(\"YYYY-[W]ww (MMM-DD)\",0, tp.file.title, \"YYYY-MM-DD\") %>"
-      },
-      {
-        "link": "<% moment(tp.file.title,'YYYY-MM-DD').add(1,'days').format(\"YYYY-MM-DD\") %>"
       }
     ]
   },

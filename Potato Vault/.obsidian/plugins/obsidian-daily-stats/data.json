@@ -86,12 +86,13 @@
     "2022/5/7": 4303,
     "2022/5/8": 1786,
     "2022/5/9": 608,
-    "2022/5/13": 0
+    "2022/5/13": 0,
+    "2022/5/25": 0
   },
   "todaysWordCount": {
-    "10 Templates/Simple Zettel Template.md": {
-      "initial": 47,
-      "current": 47
+    "10 Templates/Meta Template Picker.md": {
+      "initial": 165,
+      "current": 165
     }
   }
 }
